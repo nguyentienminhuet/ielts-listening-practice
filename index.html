@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="vi" class="h-full bg-[#ede8dc]">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IELTS Listening Practice - Trọn Bộ Units 1-10 (Tracks 1-100)</title>
+  <meta name="description" content="Ứng dụng Web tự học IELTS Listening - Trọn bộ 100 bài tập 10 Units phong cách vở ghi sinh viên dịu mắt, chấm điểm thông minh.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-full flex flex-col text-slate-800 bg-[#ede8dc] antialiased selection:bg-blue-500 selection:text-white">
+
+  <!-- Top Global Header -->
+  <header class="sticky top-0 z-40 bg-[#fdfbf7]/95 backdrop-blur border-b border-[#e2ddd3] shadow-sm transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        
+        <!-- Brand Logo & Title -->
+        <div class="flex items-center gap-3">
+          <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-xl text-slate-600 hover:bg-[#f3ede1] focus:outline-none" title="Mở danh sách bài">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-700 to-indigo-700 flex items-center justify-center text-white font-black text-xl shadow-md shadow-blue-600/20">
+            IE
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <h1 class="text-base sm:text-lg font-bold text-slate-900 tracking-tight">IELTS Listening Practice</h1>
+              <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-900 border border-amber-300">Band 5.0 - 6.0</span>
+            </div>
+            <p id="headerSubtitle" class="text-xs text-slate-600 font-medium hidden sm:block">Unit 2: Gap Filling – Form / Note / Table Completion</p>
+          </div>
+        </div>
+
+        <!-- Back to Menu Button (Visible inside workspace) -->
+        <div class="flex items-center gap-2">
+          <button 
+            id="btnBackToMenu" 
+            type="button" 
+            class="hidden flex items-center gap-2 px-3.5 py-1.5 sm:py-2 rounded-xl bg-white hover:bg-blue-50 active:scale-95 border border-[#ded5c4] hover:border-blue-300 text-slate-700 hover:text-blue-700 text-xs sm:text-sm font-bold shadow-xs transition-all cursor-pointer select-none group"
+            title="Quay lại Menu chọn Unit"
+          >
+            <svg class="w-4 h-4 text-slate-600 group-hover:text-blue-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+            </svg>
+            <span>Quay lại Menu</span>
+          </button>
+        </div>
+
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Sticky Audio Player Bar (Anti-glare Deep Ink Navy) -->
+  <div id="stickyAudioBar" class="sticky top-16 z-30 bg-[#222d3d] text-white shadow-xl border-b border-[#19222d] transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-2.5">
+        
+        <!-- Track title & Wave indicator -->
+        <div class="flex items-center gap-3 w-full md:w-auto justify-between md:justify-start">
+          <div class="flex items-center gap-2">
+            <div id="soundWave" class="sound-wave paused">
+              <span class="sound-bar"></span>
+              <span class="sound-bar"></span>
+              <span class="sound-bar"></span>
+              <span class="sound-bar"></span>
+              <span class="sound-bar"></span>
+            </div>
+            <span id="playerTrackTitle" class="text-xs sm:text-sm font-semibold text-slate-200 truncate max-w-[240px] sm:max-w-[320px]">
+              Đang tải bài nghe...
+            </span>
+          </div>
+        </div>
+
+        <!-- Audio Central Controls & Slider -->
+        <div class="flex items-center gap-2 sm:gap-3 w-full md:max-w-xl">
+          <!-- Seek -5s -->
+          <button id="seekBackwardBtn" type="button" class="p-1.5 text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg transition" title="Tua lùi 5 giây">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.066 11.2a1 1 0 000 1.6l5.334 4A1 1 0 0019 16V8a1 1 0 00-1.6-.8l-5.334 4zM4.066 11.2a1 1 0 000 1.6l5.334 4A1 1 0 0011 16V8a1 1 0 00-1.6-.8l-5.334 4z"></path>
+            </svg>
+          </button>
+
+          <!-- Play / Pause -->
+          <button id="playPauseBtn" type="button" class="w-9 h-9 sm:w-10 sm:h-10 bg-blue-600 hover:bg-blue-500 active:scale-95 text-white rounded-full flex items-center justify-center shadow-lg shadow-blue-600/30 transition shrink-0" title="Phát / Dừng">
+            <svg id="playPauseIcon" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </button>
+
+          <!-- Seek +5s -->
+          <button id="seekForwardBtn" type="button" class="p-1.5 text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg transition" title="Tua tới 5 giây">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.933 12.8a1 1 0 000-1.6L6.6 7.2A1 1 0 005 8v8a1 1 0 001.6.8l5.333-4zM19.933 12.8a1 1 0 000-1.6l-5.333-4A1 1 0 0013 8v8a1 1 0 001.6.8l5.333-4z"></path>
+            </svg>
+          </button>
+
+          <!-- Current Time -->
+          <span id="audioCurrentTime" class="text-xs font-mono text-slate-300 min-w-[38px] text-right">00:00</span>
+
+          <!-- Timeline Slider -->
+          <div class="flex-1 relative flex items-center">
+            <input id="audioProgress" type="range" min="0" max="100" value="0" step="0.1" class="w-full h-1.5 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-400 focus:outline-none">
+          </div>
+
+          <!-- Duration -->
+          <span id="audioDuration" class="text-xs font-mono text-slate-400 min-w-[38px]">--:--</span>
+        </div>
+
+        <!-- Speed and Volume -->
+        <div class="flex items-center gap-2 justify-end w-full md:w-auto">
+          <!-- Speed Selector Chips -->
+          <div class="flex items-center bg-[#192331] p-0.5 rounded-lg border border-slate-700/60">
+            <button type="button" class="speed-btn px-2 py-0.5 text-xs font-semibold rounded bg-white text-slate-800 transition" data-speed="0.75">0.75x</button>
+            <button type="button" class="speed-btn px-2 py-0.5 text-xs font-semibold rounded bg-blue-600 text-white transition" data-speed="1.0">1.0x</button>
+            <button type="button" class="speed-btn px-2 py-0.5 text-xs font-semibold rounded bg-white text-slate-800 transition" data-speed="1.25">1.25x</button>
+          </div>
+
+          <!-- Volume Controls -->
+          <div class="hidden sm:flex items-center gap-1.5 pl-2 border-l border-slate-700">
+            <button id="volumeBtn" type="button" class="p-1 text-slate-300 hover:text-white" title="Bật/Tắt âm thanh">
+              <svg id="volumeIcon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path>
+              </svg>
+            </button>
+            <input id="volumeSlider" type="range" min="0" max="1" step="0.05" value="0.9" class="w-16 h-1 bg-slate-700 rounded appearance-none cursor-pointer accent-blue-400">
+          </div>
+
+          <!-- Shortcuts Button -->
+          <div class="hidden md:flex items-center pl-2 border-l border-slate-700">
+            <button id="shortcutsBtn" type="button" class="px-2 py-1 rounded-lg text-slate-300 hover:text-white hover:bg-slate-700/60 transition text-xs font-semibold flex items-center gap-1.5" title="Phím tắt luyện nghe (Nhấn ? hoặc click)">
+              <kbd class="px-1.5 py-0.5 rounded bg-slate-800 border border-slate-600 text-[10px] font-mono text-blue-400 font-bold">⌨️ Hotkeys</kbd>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- HTML5 Audio Hidden Element -->
+  <audio id="audioElement" preload="auto"></audio>
+
+  <!-- Unit Selection Hub Section (Default landing screen) -->
+  <section id="unitHubSection" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 w-full animate-scaleIn">
+    
+    <!-- Hero / Welcome Banner -->
+    <div class="relative overflow-hidden bg-gradient-to-br from-[#fbf8f1] to-[#f4eddf] border border-[#ded5c4] rounded-3xl p-6 sm:p-8 shadow-sm mb-8">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div class="space-y-2 max-w-2xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-bold border border-blue-200">
+            <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
+            IELTS Listening Master Course (Tracks 1 - 100)
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+            Lộ Trình Tự Học IELTS Listening
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Chọn một trong 10 Units bên dưới để bắt đầu luyện nghe. Toàn bộ 100 bài nghe bám sát định dạng Section 1 - Section 4 chuẩn đề thi thật.
+          </p>
+        </div>
+
+        <!-- Overall Progress Box in Hub -->
+        <div class="bg-white p-5 rounded-2xl border border-[#ded5c4] shadow-xs shrink-0 w-full md:w-72">
+          <div class="flex items-center justify-between text-xs text-slate-500 font-bold uppercase mb-2">
+            <span>Tiến độ toàn khóa</span>
+            <span id="hubOverallTracksDone" class="text-blue-700 font-extrabold">0/100 Tracks</span>
+          </div>
+          <div class="w-full h-2.5 bg-[#f0ece1] rounded-full overflow-hidden mb-3">
+            <div id="hubOverallProgressBar" class="h-full bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full transition-all duration-500" style="width: 0%;"></div>
+          </div>
+          <div class="text-[11px] text-slate-500 flex justify-between font-medium">
+            <span>10 Units hoàn chỉnh</span>
+            <span>622 câu hỏi</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category Filter Chips -->
+      <div class="flex flex-wrap items-center gap-2 pt-6 mt-6 border-t border-[#ded5c4]/80">
+        <span class="text-xs font-bold text-slate-500 uppercase tracking-wider mr-1">Phân loại:</span>
+        <button type="button" class="hub-filter-btn active px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all bg-blue-700 text-white shadow-xs cursor-pointer" data-category="all">
+          Tất cả (10 Units)
+        </button>
+        <button type="button" class="hub-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all bg-white hover:bg-slate-100 text-slate-700 border border-[#ded5c4] cursor-pointer" data-category="foundation">
+          Chữ cái & Điền từ (U1 - U5)
+        </button>
+        <button type="button" class="hub-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all bg-white hover:bg-slate-100 text-slate-700 border border-[#ded5c4] cursor-pointer" data-category="maps_mcq">
+          Bản đồ & Trắc nghiệm (U6 - U8)
+        </button>
+        <button type="button" class="hub-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all bg-white hover:bg-slate-100 text-slate-700 border border-[#ded5c4] cursor-pointer" data-category="advanced">
+          Sơ đồ & Mở rộng (U9 - U10)
+        </button>
+      </div>
+    </div>
+
+    <!-- 10 Units Grid Container -->
+    <div id="unitHubCardsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Populated dynamically via JS -->
+    </div>
+  </section>
+
+  <!-- Main Practice Workspace Container (Hidden initially until unit is selected) -->
+  <div id="practiceWorkspaceSection" class="hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-1 w-full flex gap-6">
+
+    <!-- Desktop Sidebar / Track Selector -->
+    <aside class="hidden lg:block w-72 shrink-0">
+      <div class="bg-[#fdfbf7] rounded-2xl border border-[#e2ddd3] p-4 shadow-sm sticky top-36 max-h-[calc(100vh-10rem)] flex flex-col">
+        <div class="flex items-center justify-between pb-3 mb-3 border-b border-[#e5dfd2]">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+            <h2 id="sidebarUnitTitle" class="font-bold text-sm uppercase tracking-wider text-slate-700">Mục Lục Unit 2</h2>
+          </div>
+          <span id="sidebarTrackCount" class="text-xs font-semibold px-2 py-0.5 rounded-full bg-[#f1ede4] text-slate-600">20 Tracks</span>
+        </div>
+
+        <!-- Scrollable Track List -->
+        <div id="trackNavList" class="overflow-y-auto space-y-1.5 flex-1 pr-1">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+    </aside>
+
+    <!-- Mobile Sidebar Drawer -->
+    <div id="sidebarDrawer" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden lg:hidden">
+      <div class="fixed inset-y-0 left-0 w-80 max-w-full bg-[#fdfbf7] shadow-2xl p-5 flex flex-col">
+        <div class="flex items-center justify-between pb-4 border-b border-[#e2ddd3]">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+            <h2 id="mobileSidebarUnitTitle" class="font-bold text-base text-slate-800">Danh Sách Bài Nghe</h2>
+          </div>
+          <button id="closeSidebarBtn" class="p-1 rounded-lg text-slate-400 hover:text-slate-600 hover:bg-[#f1ede4]">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Back to Menu & Unit Switcher -->
+        <div class="py-3 border-b border-[#e2ddd3]">
+          <button 
+            id="mobileBtnBackToMenu" 
+            type="button" 
+            class="w-full mb-3 flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl bg-white hover:bg-blue-50 active:scale-95 border border-[#ded5c4] hover:border-blue-300 text-slate-800 hover:text-blue-700 text-xs font-bold shadow-xs transition"
+          >
+            <svg class="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+            </svg>
+            <span>Quay lại Menu 10 Units</span>
+          </button>
+          <div class="text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-2">Đổi Nhanh Unit</div>
+          <div id="mobileUnitOptionsList" class="grid grid-cols-2 gap-2">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <!-- Mobile Track List -->
+        <div class="overflow-y-auto space-y-1.5 flex-1 py-3" id="mobileTrackNavList">
+          <!-- Populated from same items -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Workspace Area -->
+    <main class="flex-1 min-w-0">
+      
+      <!-- Top Navigation Header with Previous / Next Buttons & Tabs -->
+      <div class="bg-[#fdfbf7] rounded-2xl border border-[#e2ddd3] p-4 shadow-sm mb-6">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 border-b border-[#e5dfd2] pb-3">
+          <div>
+            <span id="currentTrackBadge" class="text-xs font-bold text-blue-700 uppercase tracking-wider block mb-0.5">
+              Unit 2 • Track 14
+            </span>
+            <h2 id="currentTrackTitle" class="text-lg sm:text-xl font-extrabold text-slate-900 tracking-tight">
+              Track 14: Self-Drive Tours in the USA
+            </h2>
+          </div>
+
+          <!-- Prev & Next Track Buttons -->
+          <div class="flex items-center gap-2 self-end sm:self-auto">
+            <button id="prevTrackBtn" type="button" class="px-3.5 py-1.5 rounded-xl border border-[#dcd6c9] bg-white hover:bg-[#f7f4ee] text-slate-700 font-semibold text-xs transition flex items-center gap-1 disabled:opacity-40 disabled:cursor-not-allowed shadow-sm">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+              </svg>
+              Bài trước
+            </button>
+            <button id="nextTrackBtn" type="button" class="px-3.5 py-1.5 rounded-xl border border-[#dcd6c9] bg-white hover:bg-[#f7f4ee] text-slate-700 font-semibold text-xs transition flex items-center gap-1 disabled:opacity-40 disabled:cursor-not-allowed shadow-sm">
+              Bài tiếp theo
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div class="flex items-center gap-2 pt-3 text-sm font-semibold">
+          <button id="tabExerciseBtn" class="px-4 py-2 border-b-2 border-blue-600 text-blue-700 font-bold transition flex items-center gap-1.5">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+            </svg>
+            Làm bài tập
+          </button>
+          <button id="tabReviewBtn" class="px-4 py-2 border-b-2 border-transparent text-slate-500 font-medium hover:text-slate-800 transition flex items-center gap-1.5">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+            Audioscript & Lời giải
+          </button>
+          <button id="tabVocabBtn" class="px-4 py-2 border-b-2 border-transparent text-slate-500 font-medium hover:text-slate-800 transition flex items-center gap-1.5">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+            </svg>
+            Từ vựng trọng tâm
+          </button>
+        </div>
+      </div>
+
+      <!-- Score Banner Area (Dynamically shown after submission) -->
+      <div id="scoreBanner" class="hidden"></div>
+
+      <!-- TAB 1: EXERCISE WORKSPACE -->
+      <div id="tabExerciseContent" class="space-y-6">
+        
+        <!-- Instruction Card -->
+        <div id="exerciseInstructionBox" class="bg-[#f7f4ec] border border-[#e5dfd2] rounded-2xl p-4 shadow-sm">
+          <!-- Dynamic Content -->
+        </div>
+
+        <!-- Exercise Form / Note / Table Container (Notebook Lined Paper Pattern) -->
+        <div id="exerciseFormContainer" class="notebook-page rounded-2xl p-6 sm:p-8">
+          <!-- Dynamic Form / Table Content with in-situ Inputs -->
+        </div>
+
+        <!-- Action Buttons Footer -->
+        <div class="bg-[#fdfbf7] rounded-2xl border border-[#e2ddd3] p-4 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-2 text-xs font-semibold text-slate-600">
+            <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+            <span id="filledCounter">0/4 đã điền</span>
+          </div>
+
+          <div class="flex items-center gap-3 w-full sm:w-auto justify-end">
+            <!-- Reset Track Button -->
+            <button id="resetBtn" type="button" class="px-3.5 py-2.5 rounded-xl border border-[#dcd6c9] bg-white hover:bg-[#f7f4ee] text-slate-700 font-semibold text-xs sm:text-sm transition flex items-center gap-1.5 shadow-sm" title="Xóa câu trả lời bài này để làm lại">
+              <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+              </svg>
+              Làm lại bài
+            </button>
+
+            <!-- Reset Unit Button -->
+            <button id="resetUnitBtn" type="button" class="px-3 py-2.5 rounded-xl border border-[#dcd6c9] bg-white hover:bg-rose-50 hover:border-rose-300 hover:text-rose-700 text-slate-600 font-semibold text-xs sm:text-sm transition flex items-center gap-1.5 shadow-sm" title="Xóa toàn bộ điểm số & tiến độ của Unit này để luyện lại từ đầu">
+              <svg class="w-4 h-4 text-slate-400 group-hover:text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+              </svg>
+              Làm lại cả Unit
+            </button>
+
+            <!-- Review Shortcut Button -->
+            <button id="reviewShortcutBtn" type="button" class="px-4 py-2.5 rounded-xl border border-blue-300 bg-blue-50/80 hover:bg-blue-100 text-blue-800 font-semibold text-sm transition flex items-center gap-1.5 shadow-sm">
+              <svg class="w-4 h-4 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+              </svg>
+              Xem Transcript
+            </button>
+
+            <!-- Submit Button -->
+            <button id="submitBtn" type="button" class="px-6 py-2.5 rounded-xl bg-blue-700 hover:bg-blue-800 active:scale-95 text-white font-bold text-sm shadow-md shadow-blue-700/20 transition flex items-center gap-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Nộp bài (Chấm điểm)
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- TAB 2: AUDIOSCRIPT & REVIEW WORKSPACE -->
+      <div id="tabReviewContent" class="hidden space-y-6">
+        
+        <!-- Controls Bar for Audioscript -->
+        <div class="bg-[#fdfbf7] rounded-2xl border border-[#e2ddd3] p-4 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+            <span class="font-bold text-sm text-slate-800">Bằng chứng đáp án được bôi sáng màu vàng cam kèm nhãn [1], [2]...</span>
+          </div>
+
+          <!-- Bilingual Toggle Button -->
+          <button id="bilingualToggleBtn" type="button" class="px-4 py-2 rounded-xl border border-[#dcd6c9] bg-white hover:bg-[#f7f4ee] text-slate-700 font-semibold text-xs transition flex items-center gap-2 shadow-sm">
+            <svg class="w-4 h-4 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+            </svg>
+            <span id="bilingualStatusText">Song ngữ Anh - Việt</span>
+          </button>
+        </div>
+
+        <!-- Transcript Content Container -->
+        <div id="transcriptContainer">
+          <!-- Rendered dynamically -->
+        </div>
+
+      </div>
+
+      <!-- TAB 3: VOCABULARY WORKSPACE -->
+      <div id="tabVocabContent" class="hidden space-y-6">
+        
+        <!-- Vocab Header & Search Bar -->
+        <div class="bg-[#fdfbf7] rounded-2xl border border-[#e2ddd3] p-4 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-3">
+            <h3 class="font-bold text-base text-slate-900">Sổ Tay Từ Vựng Trọng Tâm</h3>
+            <span id="vocabCountBadge" class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-100 text-blue-800">
+              0 từ
+            </span>
+          </div>
+
+          <!-- Search Input -->
+          <div class="w-full sm:w-72 relative">
+            <input
+              id="vocabSearchInput"
+              type="text"
+              placeholder="Tìm kiếm từ vựng hoặc nghĩa..."
+              class="w-full pl-9 pr-4 py-2 text-xs sm:text-sm bg-white border border-[#dcd6c9] rounded-xl focus:outline-none focus:border-blue-500 transition"
+            />
+            <svg class="w-4 h-4 text-slate-400 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Vocab List Cards -->
+        <div id="vocabListContainer">
+          <!-- Rendered dynamically -->
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <!-- Keyboard Shortcuts Modal -->
+  <div id="shortcutsModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-[#fdfbf7] rounded-2xl border border-[#ded5c4] shadow-2xl max-w-md w-full p-6 animate-scaleIn">
+      <div class="flex items-center justify-between border-b border-[#e5dfd2] pb-3 mb-4">
+        <div class="flex items-center gap-2">
+          <span class="text-2xl">⌨️</span>
+          <div>
+            <h3 class="font-bold text-base text-slate-800">Phím Tắt Luyện Nghe</h3>
+            <p class="text-xs text-slate-500">Điều khiển âm thanh không cần rời tay khỏi bàn phím</p>
+          </div>
+        </div>
+        <button id="closeShortcutsModalBtn" class="p-1 rounded-lg text-slate-400 hover:text-slate-600 hover:bg-[#efeae0] transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="space-y-2.5 text-sm text-slate-700">
+        <div class="flex items-center justify-between p-2.5 rounded-xl bg-white border border-[#e5dfd2]">
+          <span class="font-medium">Dừng / Tiếp tục phát âm thanh</span>
+          <kbd class="px-2.5 py-1 rounded bg-[#f0ece1] border border-[#d5cebf] font-mono text-xs font-bold text-slate-800 shadow-xs">Space</kbd>
+        </div>
+        <div class="flex items-center justify-between p-2.5 rounded-xl bg-white border border-[#e5dfd2]">
+          <span class="font-medium">Tua lùi 5 giây (Rewind)</span>
+          <kbd class="px-2.5 py-1 rounded bg-[#f0ece1] border border-[#d5cebf] font-mono text-xs font-bold text-slate-800 shadow-xs">←</kbd>
+        </div>
+        <div class="flex items-center justify-between p-2.5 rounded-xl bg-white border border-[#e5dfd2]">
+          <span class="font-medium">Tua tới 5 giây (Forward)</span>
+          <kbd class="px-2.5 py-1 rounded bg-[#f0ece1] border border-[#d5cebf] font-mono text-xs font-bold text-slate-800 shadow-xs">→</kbd>
+        </div>
+        <div class="flex items-center justify-between p-2.5 rounded-xl bg-white border border-[#e5dfd2]">
+          <span class="font-medium">Giảm / Tăng tốc độ nghe</span>
+          <div class="flex gap-1">
+            <kbd class="px-2 py-1 rounded bg-[#f0ece1] border border-[#d5cebf] font-mono text-xs font-bold text-slate-800 shadow-xs">[</kbd>
+            <kbd class="px-2 py-1 rounded bg-[#f0ece1] border border-[#d5cebf] font-mono text-xs font-bold text-slate-800 shadow-xs">]</kbd>
+          </div>
+        </div>
+        <div class="flex items-center justify-between p-2.5 rounded-xl bg-white border border-[#e5dfd2]">
+          <span class="font-medium">Bật / Tắt âm thanh (Mute)</span>
+          <kbd class="px-2.5 py-1 rounded bg-[#f0ece1] border border-[#d5cebf] font-mono text-xs font-bold text-slate-800 shadow-xs">M</kbd>
+        </div>
+        <div class="flex items-center justify-between p-2.5 rounded-xl bg-white border border-[#e5dfd2]">
+          <span class="font-medium">Đóng bảng / Menu</span>
+          <kbd class="px-2.5 py-1 rounded bg-[#f0ece1] border border-[#d5cebf] font-mono text-xs font-bold text-slate-800 shadow-xs">Esc</kbd>
+        </div>
+      </div>
+      <div class="mt-5 text-right">
+        <button id="understoodShortcutsBtn" type="button" class="px-5 py-2 rounded-xl bg-blue-700 text-white text-xs font-bold shadow hover:bg-blue-800 transition cursor-pointer">
+          Đã hiểu
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-auto bg-[#faf7f0] border-t border-[#e2ddd3] py-6 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4">
+      <p class="font-semibold text-slate-700 mb-1">IELTS Listening Practice – Trọn Bộ 10 Units (Tracks 1 - 100)</p>
+      <p>Dữ liệu trích xuất từ tài liệu "EBOOK BÀI TẬP IELTS LISTENING ONLINE" • Giao diện tập vở sinh viên dịu mắt</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
