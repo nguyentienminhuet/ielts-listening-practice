@@ -510,5 +510,204 @@ mark {
   overflow: hidden;
 }
 
+/* =========================================================================
+   IELTS READING MODULE STYLES (Computer-Delivered IELTS Split-Screen Style)
+   ========================================================================= */
+
+:root {
+  --reading-font-size: 1.025rem;
+}
+
+.reading-passage-panel {
+  max-height: calc(100vh - 12.5rem);
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  font-size: var(--reading-font-size);
+  line-height: 1.8;
+  color: #1e293b;
+}
+
+.reading-passage-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.reading-questions-panel {
+  max-height: calc(100vh - 12.5rem);
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.reading-paragraph-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 0.5rem;
+  background-color: #f1f5f9;
+  border: 1.5px solid #cbd5e1;
+  font-weight: 800;
+  font-size: 0.85rem;
+  color: #1e293b;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.reading-evidence-mark {
+  background-color: #fef08a;
+  border-bottom: 2px solid #eab308;
+  border-radius: 0.25rem;
+  padding: 0.1rem 0.35rem;
+  font-weight: 600;
+  color: #713f12;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reading-evidence-mark:hover,
+.reading-evidence-mark.active-evidence {
+  background-color: #fde047;
+  outline: 2px solid #ca8a04;
+  box-shadow: 0 0 10px rgba(234, 179, 8, 0.4);
+}
+
+.reading-gap-input {
+  min-width: 130px;
+  max-width: 240px;
+  display: inline-block;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1e40af;
+  background-color: #ffffff;
+  border: 1.5px dashed #94a3b8;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: all 0.15s ease-in-out;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.reading-gap-input:focus {
+  border-color: #2563eb;
+  border-style: solid;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.reading-gap-input.correct {
+  border-color: #10b981 !important;
+  border-style: solid !important;
+  background-color: #ecfdf5 !important;
+  color: #065f46 !important;
+}
+
+.reading-gap-input.incorrect {
+  border-color: #ef4444 !important;
+  border-style: solid !important;
+  background-color: #fef2f2 !important;
+  color: #991b1b !important;
+}
+
+.reading-tfng-btn {
+  padding: 0.4rem 0.85rem;
+  border-radius: 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  border: 1.5px solid #dcd6c9;
+  background-color: #ffffff;
+  color: #475569;
+  transition: all 0.15s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.reading-tfng-btn:hover {
+  background-color: #eff6ff;
+  border-color: #bfdbfe;
+  color: #1d4ed8;
+}
+
+.reading-tfng-btn.selected {
+  background-color: #2563eb;
+  border-color: #1d4ed8;
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.25);
+}
+
+.reading-tfng-btn.correct-btn {
+  background-color: #10b981 !important;
+  border-color: #059669 !important;
+  color: #ffffff !important;
+}
+
+.reading-tfng-btn.incorrect-btn {
+  background-color: #ef4444 !important;
+  border-color: #dc2626 !important;
+  color: #ffffff !important;
+}
+
+.reading-mcq-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: 0.75rem;
+  border: 1.5px solid #e2ddd3;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.reading-mcq-option:hover {
+  background-color: #eff6ff;
+  border-color: #93c5fd;
+}
+
+.reading-mcq-option.selected {
+  background-color: #eff6ff;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.reading-mcq-option.correct-option {
+  background-color: #ecfdf5 !important;
+  border-color: #10b981 !important;
+}
+
+.reading-mcq-option.incorrect-option {
+  background-color: #fef2f2 !important;
+  border-color: #ef4444 !important;
+}
+
+.reading-mcq-letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.65rem;
+  height: 1.65rem;
+  border-radius: 9999px;
+  background-color: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  font-weight: 800;
+  font-size: 0.75rem;
+  color: #334155;
+  flex-shrink: 0;
+}
+
+.reading-mcq-option.selected .reading-mcq-letter {
+  background-color: #2563eb;
+  border-color: #1d4ed8;
+  color: #ffffff;
+}
+
+.reading-timer-pill {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+
 
 

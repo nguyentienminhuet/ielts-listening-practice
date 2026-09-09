@@ -50,14 +50,38 @@
           </div>
           <div>
             <div class="flex items-center gap-2">
-              <h1 class="text-base sm:text-lg font-bold text-slate-900 tracking-tight">IELTS Listening Practice</h1>
-              <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-900 border border-amber-300">Band 5.0 - 6.0</span>
+              <h1 id="headerMainTitle" class="text-base sm:text-lg font-bold text-slate-900 tracking-tight">IELTS Practice</h1>
+              <span id="headerBandBadge" class="px-2 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-900 border border-amber-300">Band 5.0 - 6.5</span>
             </div>
             <p id="headerSubtitle" class="text-xs text-slate-600 font-medium hidden sm:block">Unit 2: Gap Filling – Form / Note / Table Completion</p>
           </div>
         </div>
 
-        <!-- Back to Menu Button (Visible inside workspace) -->
+        <!-- Skill Mode Switcher (Listening vs Reading) -->
+        <div class="flex items-center bg-[#ede8dc] p-1 rounded-2xl border border-[#ded5c4] shadow-xs">
+          <button 
+            id="modeListeningBtn" 
+            type="button" 
+            class="px-3 sm:px-4 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-white text-blue-700 shadow-xs flex items-center gap-1.5 cursor-pointer select-none"
+            title="Chuyển sang luyện nghe IELTS Listening"
+          >
+            <span>🎧</span>
+            <span class="hidden sm:inline">IELTS</span>
+            <span>Listening</span>
+          </button>
+          <button 
+            id="modeReadingBtn" 
+            type="button" 
+            class="px-3 sm:px-4 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all text-slate-600 hover:text-slate-900 flex items-center gap-1.5 cursor-pointer select-none"
+            title="Chuyển sang luyện đọc IELTS Reading"
+          >
+            <span>📖</span>
+            <span class="hidden sm:inline">IELTS</span>
+            <span>Reading</span>
+          </button>
+        </div>
+
+        <!-- Back to Menu Button (Visible inside Listening workspace) -->
         <div class="flex items-center gap-2">
           <button 
             id="btnBackToMenu" 
@@ -71,7 +95,6 @@
             <span>Quay lại Menu</span>
           </button>
         </div>
-
 
       </div>
     </div>
@@ -467,6 +490,265 @@
 
   </div>
 
+  <!-- Reading Selection Hub Section (13 Lessons from Cambridge Reading Book) -->
+  <section id="readingHubSection" class="hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 w-full animate-scaleIn">
+    
+    <!-- Hero / Welcome Banner -->
+    <div class="relative overflow-hidden bg-gradient-to-br from-[#fbf8f1] to-[#f4eddf] border border-[#ded5c4] rounded-3xl p-6 sm:p-8 shadow-sm mb-8">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div class="space-y-2 max-w-2xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-100 text-indigo-800 text-xs font-bold border border-indigo-200">
+            <span class="w-2 h-2 rounded-full bg-indigo-600 animate-pulse"></span>
+            IELTS Reading Master Course (V02 - V15)
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+            Lộ Trình Tự Học 13 Dạng Bài IELTS Reading
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Chinh phục toàn bộ các dạng bài cốt lõi trong đề thi IELTS Reading: True/False/Not Given, Matching Headings, Summary, Table/Flow-chart, Multiple Choice với các bài đọc học thuật chuẩn Cambridge.
+          </p>
+        </div>
+
+        <!-- Overall Progress Box in Reading Hub -->
+        <div class="bg-white p-5 rounded-2xl border border-[#ded5c4] shadow-xs shrink-0 w-full md:w-72">
+          <div class="flex items-center justify-between text-xs text-slate-500 font-bold uppercase mb-2">
+            <span>Tiến độ Reading</span>
+            <span id="hubReadingProgressText" class="text-indigo-700 font-extrabold">0/13 Lessons</span>
+          </div>
+          <div class="w-full h-2.5 bg-[#f0ece1] rounded-full overflow-hidden mb-3">
+            <div id="hubReadingProgressBar" class="h-full bg-gradient-to-r from-indigo-600 to-blue-600 rounded-full transition-all duration-500" style="width: 0%;"></div>
+          </div>
+          <div class="text-[11px] text-slate-500 flex justify-between font-medium">
+            <span>31 Bài đọc / Sets</span>
+            <span id="hubReadingTotalQuestionsText">137 câu hỏi</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category Filter Chips -->
+      <div class="flex flex-wrap items-center gap-2 pt-6 mt-6 border-t border-[#ded5c4]/80">
+        <span class="text-xs font-bold text-slate-500 uppercase tracking-wider mr-1">Dạng bài:</span>
+        <button type="button" class="reading-hub-filter active px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all bg-indigo-700 text-white shadow-xs cursor-pointer" data-category="all">
+          Tất cả (13 Lessons)
+        </button>
+        <button type="button" class="reading-hub-filter px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all bg-white hover:bg-slate-100 text-slate-700 border border-[#ded5c4] cursor-pointer" data-category="foundation">
+          Từ Khóa & Đoán Nghĩa (V02 - V03)
+        </button>
+        <button type="button" class="reading-hub-filter px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all bg-white hover:bg-slate-100 text-slate-700 border border-[#ded5c4] cursor-pointer" data-category="completion">
+          Điền Từ & Tóm Tắt (V05 - V07)
+        </button>
+        <button type="button" class="reading-hub-filter px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all bg-white hover:bg-slate-100 text-slate-700 border border-[#ded5c4] cursor-pointer" data-category="tables_tfng">
+          Bảng, Sơ Đồ & T/F/NG (V08 - V10)
+        </button>
+        <button type="button" class="reading-hub-filter px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all bg-white hover:bg-slate-100 text-slate-700 border border-[#ded5c4] cursor-pointer" data-category="matching_mcq">
+          Matching & Trắc Nghiệm (V11 - V15)
+        </button>
+      </div>
+    </div>
+
+    <!-- 13 Reading Lessons Grid Container -->
+    <div id="readingHubCardsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Populated dynamically via JS -->
+    </div>
+  </section>
+
+  <!-- Reading Practice Workspace (Split-screen Computer-delivered IELTS Style) -->
+  <section id="readingWorkspaceSection" class="hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-1 w-full animate-scaleIn">
+    
+    <!-- Top Toolbar: Navigation, Passage Tabs, Timer, Font Controls -->
+    <div class="bg-[#fdfbf7] rounded-2xl border border-[#e2ddd3] p-4 shadow-sm mb-6">
+      <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
+        
+        <!-- Left: Lesson info & Back button -->
+        <div class="flex items-center gap-3">
+          <button 
+            id="btnReadingBackToHub" 
+            type="button" 
+            class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white hover:bg-indigo-50 active:scale-95 border border-[#ded5c4] hover:border-indigo-300 text-slate-700 hover:text-indigo-700 text-xs font-bold shadow-xs transition-all cursor-pointer select-none"
+            title="Quay lại danh sách bài Reading"
+          >
+            <svg class="w-4 h-4 text-slate-600 group-hover:text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+            </svg>
+            <span>Menu Reading</span>
+          </button>
+          <div>
+            <div class="flex items-center gap-2">
+              <span id="readingWorkspaceBadge" class="text-xs font-extrabold text-indigo-700 uppercase tracking-wider bg-indigo-50 px-2 py-0.5 rounded border border-indigo-200">
+                Lesson 1 • V02
+              </span>
+              <span id="readingWorkspacePassageCount" class="text-xs font-semibold text-slate-500">
+                1 bài đọc
+              </span>
+            </div>
+            <h2 id="readingWorkspaceTitle" class="text-base sm:text-lg font-extrabold text-slate-900 tracking-tight mt-0.5">
+              V02 – CÁCH TÌM TỪ KHÓA
+            </h2>
+          </div>
+        </div>
+
+        <!-- Center: Passage Tabs (if lesson has multiple passages) -->
+        <div id="readingPassageTabsContainer" class="flex flex-wrap items-center gap-1.5">
+          <!-- Rendered dynamically -->
+        </div>
+
+        <!-- Right: Countdown Timer & Font Resizer -->
+        <div class="flex items-center gap-3 self-end lg:self-auto">
+          
+          <!-- 20-min IELTS Timer -->
+          <div class="flex items-center gap-2 bg-[#222d3d] text-white px-3 py-1.5 rounded-xl shadow-xs border border-[#19222d]">
+            <span class="text-sm">⏱️</span>
+            <span id="readingTimerDisplay" class="reading-timer-pill font-bold text-sm tracking-wider text-amber-300">20:00</span>
+            <button id="readingTimerToggleBtn" type="button" class="p-1 hover:bg-slate-700 rounded text-slate-300 hover:text-white transition" title="Bắt đầu / Tạm dừng đồng hồ">
+              <svg id="readingTimerIcon" class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+            <button id="readingTimerResetBtn" type="button" class="p-1 hover:bg-slate-700 rounded text-slate-300 hover:text-white transition" title="Đặt lại 20 phút">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Font Size Adjustment (A- / A+) -->
+          <div class="flex items-center bg-white border border-[#ded5c4] rounded-xl p-0.5 shadow-xs">
+            <button id="readingFontDecBtn" type="button" class="px-2.5 py-1 text-xs font-bold text-slate-700 hover:bg-slate-100 rounded-lg transition" title="Giảm cỡ chữ">A-</button>
+            <button id="readingFontIncBtn" type="button" class="px-2.5 py-1 text-xs font-bold text-slate-700 hover:bg-slate-100 rounded-lg transition" title="Tăng cỡ chữ">A+</button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Mobile Tab Switcher (Bài đọc / Câu hỏi) -->
+      <div class="flex lg:hidden items-center border-t border-[#e2ddd3] mt-3 pt-3 gap-2">
+        <button id="mobileReadingTabPassage" type="button" class="flex-1 py-2 rounded-xl text-xs font-bold bg-indigo-700 text-white shadow-xs text-center cursor-pointer">
+          📄 Bài đọc (Passage)
+        </button>
+        <button id="mobileReadingTabQuestions" type="button" class="flex-1 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 border border-[#ded5c4] text-center cursor-pointer">
+          ✍️ Câu hỏi & Làm bài
+        </button>
+      </div>
+    </div>
+
+    <!-- Computer-Delivered Split Screen Container (2 Panels) -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+      
+      <!-- Left Panel: Reading Passage -->
+      <div id="readingLeftPanel" class="lg:col-span-6 bg-[#fdfbf7] rounded-2xl border border-[#e2ddd3] p-5 sm:p-7 shadow-sm">
+        <div class="border-b border-[#e2ddd3] pb-3 mb-4 flex items-center justify-between">
+          <h3 id="readingPassageTitle" class="text-base sm:text-lg font-bold text-slate-900 tracking-tight">
+            Reading Passage
+          </h3>
+          <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-amber-50 border border-amber-200 text-amber-900">
+            📄 Academic Reading
+          </span>
+        </div>
+
+        <div id="readingPassageContent" class="reading-passage-panel pr-2 space-y-4">
+          <!-- Paragraphs rendered dynamically with Paragraph Labels & Evidence Highlighting -->
+        </div>
+      </div>
+
+      <!-- Right Panel: Questions & Answers -->
+      <div id="readingRightPanel" class="lg:col-span-6 bg-[#fdfbf7] rounded-2xl border border-[#e2ddd3] p-5 sm:p-7 shadow-sm flex flex-col">
+        
+        <!-- Instructions / Tasks -->
+        <div class="border-b border-[#e2ddd3] pb-4 mb-4">
+          <div class="flex items-center justify-between gap-2 mb-2">
+            <span id="readingQuestionsRange" class="text-xs font-extrabold text-indigo-700 uppercase tracking-wider">
+              Questions 1–10
+            </span>
+            <span id="readingQuestionTypeBadge" class="text-xs font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-200">
+              Dạng bài
+            </span>
+          </div>
+          <p id="readingQuestionsInstructions" class="text-xs sm:text-sm text-slate-700 font-medium bg-amber-50/70 border border-amber-200/80 rounded-xl p-3 leading-relaxed">
+            Hướng dẫn làm bài...
+          </p>
+        </div>
+
+        <!-- Questions List / Form -->
+        <div id="readingQuestionsList" class="reading-questions-panel pr-2 space-y-4 flex-1">
+          <!-- Rendered dynamically -->
+        </div>
+
+        <!-- Action Buttons (Submit & Reset) -->
+        <div class="border-t border-[#e2ddd3] pt-5 mt-5 flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center gap-2">
+            <button 
+              id="readingSubmitBtn" 
+              type="button" 
+              class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-700 hover:to-blue-700 active:scale-95 text-white text-xs sm:text-sm font-bold shadow-md shadow-indigo-600/25 transition cursor-pointer flex items-center gap-1.5"
+            >
+              <span>✅</span>
+              <span>Nộp bài & Chấm điểm</span>
+            </button>
+            <button 
+              id="readingResetBtn" 
+              type="button" 
+              class="px-3.5 py-2.5 rounded-xl bg-white hover:bg-slate-100 active:scale-95 text-slate-700 border border-[#ded5c4] text-xs sm:text-sm font-semibold transition cursor-pointer"
+            >
+              Làm lại
+            </button>
+          </div>
+
+          <div id="readingQuickScorePill" class="hidden text-xs font-bold px-3 py-1.5 rounded-xl bg-indigo-50 border border-indigo-200 text-indigo-800">
+            Điểm: 0/0
+          </div>
+        </div>
+
+        <!-- Result Card (Shown after submit) -->
+        <div id="readingResultCard" class="hidden mt-6 p-5 rounded-2xl bg-gradient-to-br from-indigo-50/80 to-blue-50/80 border border-indigo-200 animate-scaleIn">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <span class="text-2xl">🎯</span>
+              <div>
+                <h4 class="font-extrabold text-sm sm:text-base text-slate-900">Kết Quả Bài Đọc</h4>
+                <p id="readingResultFeedback" class="text-xs text-slate-600 font-medium">Làm rất tốt! Bạn đã nắm vững dạng bài này.</p>
+              </div>
+            </div>
+            <div class="text-right">
+              <span id="readingScoreNumber" class="text-2xl font-black text-indigo-700">0/0</span>
+              <span id="readingScorePercent" class="text-xs block text-slate-500 font-bold">0%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detailed Explanations Section (Shown after submit) -->
+        <div id="readingExplanationsSection" class="hidden mt-6 pt-5 border-t border-[#e2ddd3]">
+          <h4 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-700 mb-3 flex items-center gap-2">
+            <span>💡</span>
+            <span>Đáp Án Chi Tiết & Dẫn Chứng Bài Đọc (Evidence)</span>
+          </h4>
+          <div id="readingExplanationsList" class="space-y-3">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+
+        <!-- Vocabulary Notebook Card (Always available at bottom or toggleable) -->
+        <div id="readingVocabSection" class="mt-6 pt-5 border-t border-[#e2ddd3]">
+          <div class="flex items-center justify-between mb-3">
+            <h4 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-700 flex items-center gap-2">
+              <span>📚</span>
+              <span>Sổ Tay Từ Vựng Học Thuật Bài Đọc</span>
+            </h4>
+            <button id="readingVocabToggleBtn" type="button" class="text-xs font-bold text-indigo-600 hover:text-indigo-800 transition">
+              Ẩn / Hiện
+            </button>
+          </div>
+          <div id="readingVocabList" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
   <!-- Keyboard Shortcuts Modal -->
   <div id="shortcutsModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
     <div class="bg-[#fdfbf7] rounded-2xl border border-[#ded5c4] shadow-2xl max-w-md w-full p-6 animate-scaleIn">
@@ -524,13 +806,15 @@
   <!-- Footer -->
   <footer class="mt-auto bg-[#faf7f0] border-t border-[#e2ddd3] py-6 text-center text-xs text-slate-500">
     <div class="max-w-7xl mx-auto px-4">
-      <p class="font-semibold text-slate-700 mb-1">IELTS Listening Practice – Trọn Bộ 10 Units (Tracks 1 - 100)</p>
-      <p>Dữ liệu trích xuất từ tài liệu "EBOOK BÀI TẬP IELTS LISTENING ONLINE" • Giao diện tập vở sinh viên dịu mắt</p>
+      <p class="font-semibold text-slate-700 mb-1">IELTS Master Practice – Listening (Tracks 1 - 100) & Reading (13 Lessons)</p>
+      <p>Dữ liệu chuẩn hóa từ tài liệu luyện thi IELTS Online Cambridge • Giao diện tập vở sinh viên dịu mắt</p>
     </div>
   </footer>
 
   <!-- Scripts -->
   <script src="js/data.js"></script>
+  <script src="js/reading_data.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/reading_app.js"></script>
 </body>
 </html>
