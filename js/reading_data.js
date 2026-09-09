@@ -1,9 +1,9 @@
 /**
- * IELTS READING PRACTICE DATA
- * Total Lessons: 13
- * Total Passages / Sets: 31
- * Total Questions: 137
- * Source: TAI-LIEU-KHOA-IELTS-READING-ONLINE-VIDEO-B
+ * IELTS READING PRACTICE DATA - 100% COMPLETE BOOK AUDIT
+ * Total Lessons: 13 (V02 to V15)
+ * Total Passages / Sets: 39
+ * Total Questions: 210
+ * Source: TAI-LIEU-KHOA-IELTS-READING-ONLINE-VIDEO-B (All 84 Pages)
  */
 
 const readingLessons = [
@@ -38,30 +38,29 @@ const readingLessons = [
             },
             {
               "label": "C",
-              "text": "Quy trình làm bài:\nBước 1: Đọc câu hỏi và gạch chân ngay lập tức các Hard Keywords.\nBước 2: Xác định ý chính của câu hỏi thông qua các Soft Keywords.\nBước 3: Dùng kỹ năng Scanning để dò tìm Hard Keywords trong bài đọc, sau đó đọc kỹ câu chứa từ khóa để tìm đáp án."
+              "text": "10 câu hỏi bên dưới trích xuất trực tiếp từ các đề thi Cambridge IELTS. Hãy phân tích và tìm ra từ khóa quan trọng nhất trong từng câu."
             }
           ]
         },
         "questions": [
           {
             "id": 1,
-            "num": 1,
             "type": "keywords",
-            "questionText": "1. Many seed banks are themselves under threat due to a lack of funds.",
+            "questionText": "1. Many seed banks are themselves under threat due to a lack of funds.\n(Từ khóa quan trọng nhất định vị bài đọc là gì?)",
             "acceptableAnswers": [
               "seed banks",
               "lack of funds",
               "funds",
               "threat"
             ],
-            "explanation": "Từ khóa chính không thể thay thế là 'seed banks' (ngân hàng hạt giống). Từ khóa nội dung là 'lack of funds' (thiếu vốn) và 'under threat' (bị đe dọa).",
-            "evidence": "Many seed banks are themselves under threat due to a lack of funds."
+            "explanation": "Từ khóa khó thay thế: 'seed banks' (ngân hàng hạt giống - thuật ngữ sinh học chuyên ngành). Từ khóa nội dung: 'lack of funds' (thiếu vốn), 'threat' (nguy cơ).",
+            "evidence": "Many seed banks are themselves under threat due to a lack of funds.",
+            "num": 1
           },
           {
             "id": 2,
-            "num": 2,
             "type": "keywords",
-            "questionText": "2. The charity raises money to pay for education and the daily needs of poor people.",
+            "questionText": "2. The charity raises money to pay for education and the daily needs of poor people.\n(Từ khóa quan trọng nhất là gì?)",
             "acceptableAnswers": [
               "charity",
               "education",
@@ -69,14 +68,14 @@ const readingLessons = [
               "poor people",
               "raises money"
             ],
-            "explanation": "Từ khóa chính: 'charity' (tổ chức từ thiện), 'education' (giáo dục), 'daily needs' (nhu cầu hàng ngày), 'poor people' (người nghèo).",
-            "evidence": "The charity raises money to pay for education and the daily needs of poor people."
+            "explanation": "Từ khóa: 'charity' (tổ chức từ thiện), 'education' (giáo dục), 'daily needs' (nhu cầu hàng ngày), 'poor people' (người nghèo).",
+            "evidence": "The charity raises money to pay for education and the daily needs of poor people.",
+            "num": 2
           },
           {
             "id": 3,
-            "num": 3,
             "type": "keywords",
-            "questionText": "3. Persuading people to use trains and buses will always be an uphill struggle.",
+            "questionText": "3. Persuading people to use trains and buses will always be an uphill struggle.\n(Từ khóa phương tiện và tính chất là gì?)",
             "acceptableAnswers": [
               "trains and buses",
               "trains",
@@ -84,126 +83,133 @@ const readingLessons = [
               "uphill struggle",
               "persuading"
             ],
-            "explanation": "Từ khóa cụ thể: 'trains and buses' (phương tiện công cộng), 'uphill struggle' (thách thức khó khăn, thành ngữ quan trọng).",
-            "evidence": "Persuading people to use trains and buses will always be an uphill struggle."
+            "explanation": "Từ khóa định vị: 'trains and buses' (xe buýt và tàu hỏa), 'uphill struggle' (thách thức khó khăn, gian khổ).",
+            "evidence": "Persuading people to use trains and buses will always be an uphill struggle.",
+            "num": 3
           },
           {
             "id": 4,
-            "num": 4,
             "type": "keywords",
-            "questionText": "4. The amount of open space in California has diminished over the last ten years.",
+            "questionText": "4. The amount of open space in California has diminished over the last ten years.\n(Từ khóa tên riêng và thời gian là gì?)",
             "acceptableAnswers": [
-              "California",
-              "open space",
-              "diminished",
+              "california",
               "ten years",
-              "last ten years"
+              "open space",
+              "last ten years",
+              "diminished"
             ],
-            "explanation": "Hard Keyword: 'California' (tên riêng bang, viết hoa), 'ten years' (thời gian). Soft Keyword: 'open space', 'diminished' (giảm sút).",
-            "evidence": "The amount of open space in California has diminished over the last ten years."
+            "explanation": "Từ khóa bất biến: 'California' (tên riêng bang nước Mỹ), 'ten years' (số liệu thời gian 10 năm), 'open space' (không gian mở), 'diminished' (bị thu hẹp / giảm).",
+            "evidence": "The amount of open space in California has diminished over the last ten years.",
+            "num": 4
           },
           {
             "id": 5,
-            "num": 5,
             "type": "keywords",
-            "questionText": "5. The farmers of a tribe grow a wide range of plants.",
+            "questionText": "5. The farmers of a tribe grow a wide range of plants.\n(Từ khóa chủ thể và hành động là gì?)",
             "acceptableAnswers": [
-              "farmers",
               "tribe",
+              "farmers",
+              "plants",
               "wide range of plants",
               "grow"
             ],
-            "explanation": "Từ khóa chính: 'farmers' (nông dân), 'tribe' (bộ lạc), 'wide range of plants' (đa dạng cây trồng).",
-            "evidence": "The farmers of a tribe grow a wide range of plants."
+            "explanation": "Từ khóa: 'tribe' (bộ lạc / bộ tộc), 'farmers' (nông dân), 'plants' (cây trồng / thực vật).",
+            "evidence": "The farmers of a tribe grow a wide range of plants.",
+            "num": 5
           },
           {
             "id": 6,
-            "num": 6,
             "type": "keywords",
-            "questionText": "6. Who is the person that first used the word 'serendipity'?",
+            "questionText": "6. Who is the person that first used the word 'serendipity'?\n(Từ khóa thuật ngữ trong ngoặc kép là gì?)",
             "acceptableAnswers": [
               "serendipity",
-              "first used",
-              "person"
+              "'serendipity'",
+              "first used"
             ],
-            "explanation": "Hard Keyword: 'serendipity' (từ để trong ngoặc kép, cực kỳ dễ tìm khi scan), 'first used' (lần đầu tiên sử dụng).",
-            "evidence": "Who is the person that first used the word 'serendipity'?"
+            "explanation": "Từ khóa bất biến: 'serendipity' (sự tình cờ phát hiện ra điều may mắn / thú vị). Từ hỏi: 'Who' -> tìm tên người.",
+            "evidence": "Who is the person that first used the word 'secrendipity'?",
+            "num": 6
           },
           {
             "id": 7,
-            "num": 7,
             "type": "keywords",
-            "questionText": "7. What did eggs represent on the whole?",
+            "questionText": "7. What did eggs represent on the whole?\n(Từ khóa chủ thể và ý nghĩa là gì?)",
             "acceptableAnswers": [
               "eggs",
               "represent",
               "on the whole"
             ],
-            "explanation": "Từ khóa chính: 'eggs' (trứng), 'represent' (đại diện / tượng trưng cho điều gì).",
-            "evidence": "What did eggs represent on the whole?"
+            "explanation": "Từ khóa: 'eggs' (trứng), 'represent' (đại diện / tượng trưng cho).",
+            "evidence": "What did eggs represent on the whole?",
+            "num": 7
           },
           {
             "id": 8,
-            "num": 8,
             "type": "keywords",
-            "questionText": "8. Who was the first non-Italian architect influenced by Palladio?",
+            "questionText": "8. Who was the first non-Italian architect influenced by Palladio?\n(Từ khóa tên riêng và quốc tịch là gì?)",
             "acceptableAnswers": [
-              "Palladio",
-              "non-Italian architect",
-              "first",
+              "palladio",
+              "non-italian architect",
+              "non-italian",
               "architect"
             ],
-            "explanation": "Hard Keyword: 'Palladio' (tên riêng kiến trúc sư), 'non-Italian architect' (kiến trúc sư không phải người Ý), 'first' (đầu tiên).",
-            "evidence": "Who was the first non-Italian architect influenced by Palladio?"
+            "explanation": "Từ khóa bất biến: 'Palladio' (tên kiến trúc sư), 'non-Italian' (không phải người Ý), 'architect' (kiến trúc sư).",
+            "evidence": "Who was the first non-Italian architect influenced by Palladio?",
+            "num": 8
           },
           {
             "id": 9,
-            "num": 9,
             "type": "keywords",
-            "questionText": "9. Who arranged Palladio’s architectural studies?",
+            "questionText": "9. Who arranged Palladio’s architectural studies?\n(Từ khóa tên riêng và hoạt động là gì?)",
             "acceptableAnswers": [
-              "Palladio",
+              "palladio",
               "architectural studies",
               "arranged"
             ],
-            "explanation": "Hard Keyword: 'Palladio', từ khóa hành động: 'arranged' (sắp xếp), 'architectural studies' (việc học kiến trúc).",
-            "evidence": "Who arranged Palladio’s architectural studies?"
+            "explanation": "Từ khóa: 'Palladio’s architectural studies' (quá trình học tập kiến trúc của Palladio).",
+            "evidence": "Who arranged Palladio ’s architectural studies?",
+            "num": 9
           },
           {
             "id": 10,
-            "num": 10,
             "type": "keywords",
-            "questionText": "10. Michael Eisenberg believes in giving children financial incentives to do certain tasks.",
+            "questionText": "10. Michael Eisenberg believes in giving children financial incentives to do certain tasks.\n(Từ khóa tên riêng và khái niệm tài chính là gì?)",
             "acceptableAnswers": [
-              "Michael Eisenberg",
+              "michael eisenberg",
               "financial incentives",
               "children",
-              "tasks"
+              "eisenberg"
             ],
-            "explanation": "Hard Keyword: 'Michael Eisenberg' (tên riêng người), 'financial incentives' (ưu đãi/phần thưởng tài chính), 'children' (trẻ em).",
-            "evidence": "Michael Eisenberg believes in giving children financial incentives to do certain tasks."
+            "explanation": "Từ khóa bất biến: 'Michael Eisenberg' (tên người). Từ khóa nội dung: 'financial incentives' (khích lệ/thưởng bằng tiền bạc), 'children'.",
+            "evidence": "Michael Eisenberg believes in giving children financial incentives to do certain tasks.",
+            "num": 10
           }
         ],
         "vocabulary": [
           {
-            "word": "hard keyword",
-            "meaning": "Từ khóa bất biến (tên riêng, số, năm, thuật ngữ viết hoa)",
-            "example": "California, Michael Eisenberg, 1996"
-          },
-          {
-            "word": "soft keyword",
-            "meaning": "Từ khóa có thể bị paraphrase (động từ, tính từ)",
-            "example": "diminished = decreased, reduced"
-          },
-          {
-            "word": "financial incentive",
-            "meaning": "Động lực tài chính, khuyến khích bằng tiền bạc",
-            "example": "giving children financial incentives"
+            "word": "seed bank",
+            "meaning": "Ngân hàng lưu trữ hạt giống cây trồng",
+            "example": "Seed banks preserve crop diversity."
           },
           {
             "word": "uphill struggle",
-            "meaning": "Cuộc chiến cam go, thử thách vô cùng khó khăn",
-            "example": "an uphill struggle to convince voters"
+            "meaning": "Cuộc đấu tranh/thử thách vô cùng gian khó",
+            "example": "Quitting smoking is an uphill struggle."
+          },
+          {
+            "word": "diminish",
+            "meaning": "Giảm bớt, thu hẹp lại",
+            "example": "The area of forest has diminished greatly."
+          },
+          {
+            "word": "serendipity",
+            "meaning": "Sự tình cờ phát hiện ra những điều kỳ diệu/may mắn",
+            "example": "Finding this book was pure serendipity."
+          },
+          {
+            "word": "financial incentive",
+            "meaning": "Động lực tài chính, tiền thưởng khích lệ",
+            "example": "Companies offer financial incentives for high performance."
           }
         ]
       }
@@ -218,277 +224,263 @@ const readingLessons = [
     "category": "foundation",
     "categoryLabel": "Kỹ Năng Nền Tảng",
     "badge": "Kỹ năng cốt lõi",
-    "description": "Kỹ thuật đoán nghĩa từ vựng khó trong phòng thi thông qua ngữ cảnh, dấu câu, mệnh đề đồng vị (apposition), ví dụ minh họa và từ trái nghĩa.",
+    "description": "5 kỹ thuật đoán nghĩa từ vựng học thuật dựa vào ngữ cảnh: Mệnh đề quan hệ & đồng vị, Từ đồng nghĩa/Trái nghĩa, Từ chỉ ví dụ minh họa, Dấu câu đặc biệt (ngoặc đơn, gạch nối), và Logic câu.",
     "examplesCount": 1,
     "totalQuestions": 15,
     "examples": [
       {
         "id": "r2_ex1",
         "exampleNum": 1,
-        "title": "15 Câu Luyện Đoán Nghĩa Từ Vựng Theo Dấu Hiệu Ngữ Cảnh",
-        "instructions": "Vận dụng phương pháp phân tích ngữ cảnh (dấu ngoặc đơn, dấu gạch ngang, từ nối 'such as', 'e.g.', mệnh đề đồng vị) để đoán nghĩa từ in đậm gạch chân.",
+        "title": "Luyện Tập 15 Câu Đoán Nghĩa Ngữ Cảnh Chuẩn Đề Thi",
+        "instructions": "Vận dụng các manh mối ngữ cảnh (dấu câu, từ nối, từ chỉ ví dụ, định nghĩa) để xác định nghĩa hoặc từ đồng nghĩa của từ/cụm từ in đậm trong 15 câu sau.",
         "passage": {
-          "title": "5 Dấu Hiệu Đoán Nghĩa Từ Mới Trong IELTS Reading",
+          "title": "5 Phương Pháp Suy Luận Nghĩa Từ Mới Trong Reading",
           "paragraphs": [
             {
-              "label": "1. Mệnh đề đồng vị (Apposition)",
-              "text": "Từ mới đứng ngay trước hoặc sau một danh từ/cụm danh từ giải thích cho nó, ngăn cách bởi dấu phẩy. Ví dụ: 'Metaphor, a kind of symbol, is...'"
+              "label": "A",
+              "text": "Trong bài thi IELTS Reading, bạn chắc chắn sẽ bắt gặp những từ vựng học thuật hoặc thuật ngữ chuyên ngành cực kỳ lạ lẫm. Đừng hoảng sợ! Tác giả bài đọc luôn cung cấp 'manh mối ngữ cảnh' (Context Clues) ngay xung quanh từ đó."
             },
             {
-              "label": "2. Dấu ngoặc đơn và gạch ngang (Punctuation)",
-              "text": "Tác giả thường đặt định nghĩa hoặc giải thích trực tiếp bên trong dấu ngoặc đơn hoặc giữa hai dấu gạch ngang. Ví dụ: 'Sleet (half rain and half snow)...'"
-            },
-            {
-              "label": "3. Cụm từ đưa ra ví dụ (Examples: such as, e.g., for example)",
-              "text": "Dựa vào các ví dụ cụ thể đằng sau để suy luận ra nhóm nghĩa của từ tổng quát. Ví dụ: 'luxury items – e.g., Rolls Royces and Rolex watches'."
-            },
-            {
-              "label": "4. Ngữ cảnh nhân quả / Tình huống (Context & Contrast)",
-              "text": "Dựa vào hành động kế tiếp hoặc lý do. Ví dụ: 'tea was tepid, so she put it in the microwave' -> nước nguội/âm ấm nên mới hâm lò vi sóng."
+              "label": "B",
+              "text": "1. Mệnh đề đồng vị & Dấu phẩy đôi (, ... ,): Giải thích ngay ý nghĩa của danh từ phía trước (ví dụ: 'Metaphor, a kind of symbol...').\n2. Cụm từ đưa ra ví dụ: 'such as', 'for example', 'e.g.,' giúp ta hiểu nhóm khái niệm của từ đó.\n3. Dấu ngoặc đơn (...), gạch nối (- ... -): Trực tiếp định nghĩa từ ngay bên trong.\n4. Mối quan hệ nguyên nhân - kết quả và logic mệnh đề: Suy luận dựa trên hành động kế tiếp (ví dụ: trà bị nguội nên bỏ vào lò vi sóng)."
             }
           ]
         },
         "questions": [
           {
             "id": 1,
-            "num": 1,
             "type": "vocab-clue",
-            "questionText": "1. Metaphor, a kind of symbol, is an important analytical concept.\nNghĩa của từ 'Metaphor' là gì?",
+            "questionText": "1. Metaphor, a kind of symbol, is an important analytical concept.\nNghĩa của từ 'Metaphor' dựa theo manh mối đồng vị là gì?",
             "acceptableAnswers": [
               "a kind of symbol",
               "symbol",
+              "biểu tượng",
               "phép ẩn dụ",
-              "ẩn dụ",
-              "biểu tượng"
+              "một loại biểu tượng"
             ],
-            "explanation": "Dấu hiệu mệnh đề đồng vị đứng giữa 2 dấu phẩy ', a kind of symbol,'. Nghĩa: một dạng biểu tượng / phép ẩn dụ.",
-            "evidence": "Metaphor, a kind of symbol, is an important analytical concept."
+            "explanation": "Manh mối: Cụm đồng vị đứng giữa 2 dấu phẩy ', a kind of symbol,' định nghĩa trực tiếp Metaphor là một loại biểu tượng (phép ẩn dụ).",
+            "evidence": "Metaphor, a kind of symbol, is an important analytical concept.",
+            "num": 1
           },
           {
             "id": 2,
-            "num": 2,
             "type": "vocab-clue",
-            "questionText": "2. The deluge, a flood of rain, threatened to drown the little town.\nNghĩa của từ 'The deluge' là gì?",
+            "questionText": "2. The deluge, a flood of rain, threatened to drown the little town.\nNghĩa của từ 'deluge' là gì?",
             "acceptableAnswers": [
               "a flood of rain",
+              "flood of rain",
               "flood",
-              "mưa lũ",
-              "trận lụt",
-              "lũ lụt"
+              "lũ lụt",
+              "mưa lũ"
             ],
-            "explanation": "Mệnh đề đồng vị ', a flood of rain,' giải thích trực tiếp. Nghĩa: trận mưa lớn như trút nước / lũ lụt.",
-            "evidence": "The deluge, a flood of rain, threatened to drown the little town."
+            "explanation": "Manh mối giữa 2 dấu phẩy ', a flood of rain,' giải thích deluge chính là trận mưa lũ xối xả.",
+            "evidence": "The deluge, a flood of rain, threatened to drown the little town.",
+            "num": 2
           },
           {
             "id": 3,
-            "num": 3,
             "type": "vocab-clue",
-            "questionText": "3. They buy real estate such as houses, office buildings, and land.\nNghĩa của từ 'real estate' là gì?",
+            "questionText": "3. They buy real estate such as houses, office buildings, and land.\nTừ 'real estate' gồm những tài sản gì?",
             "acceptableAnswers": [
               "houses, office buildings, and land",
               "bất động sản",
-              "nhà đất",
-              "địa ốc",
-              "houses and land"
+              "nhà cửa, văn phòng, đất đai",
+              "land"
             ],
-            "explanation": "Dấu hiệu 'such as houses, office buildings, and land' liệt kê ví dụ về nhà cửa, tòa nhà, đất đai -> Bất động sản.",
-            "evidence": "They buy real estate such as houses, office buildings, and land."
+            "explanation": "Manh mối 'such as' đưa ra các ví dụ: houses (nhà cửa), office buildings (tòa nhà văn phòng), land (đất đai) -> Bất động sản.",
+            "evidence": "They buy real estate such as houses, office buildings, and land.",
+            "num": 3
           },
           {
             "id": 4,
-            "num": 4,
             "type": "vocab-clue",
-            "questionText": "4. They bought luxury items – e.g., Rolls Royces and Rolex watches.\nNghĩa của từ 'luxury items' là gì?",
+            "questionText": "4. They bought luxury items – e.g., Rolls Royces and Rolex watches.\n'luxury items' là những mặt hàng thuộc phân khúc nào?",
             "acceptableAnswers": [
-              "Rolls Royces and Rolex watches",
-              "đồ xa xỉ",
               "hàng xa xỉ",
-              "đồ đắt tiền",
-              "hàng cao cấp"
+              "xa xỉ",
+              "expensive items",
+              "luxury",
+              "cao cấp"
             ],
-            "explanation": "Dấu gạch ngang và 'e.g., Rolls Royces and Rolex watches' đưa ví dụ về xe sang và đồng hồ đắt tiền -> Đồ xa xỉ, cao cấp.",
-            "evidence": "They bought luxury items – e.g., Rolls Royces and Rolex watches."
+            "explanation": "Manh mối 'e.g., Rolls Royces and Rolex watches' đưa ra ví dụ về xe siêu sang và đồng hồ đắt đỏ -> Hàng xa xỉ.",
+            "evidence": "They bought luxury items – e.g., Rolls Royces and Rolex watches.",
+            "num": 4
           },
           {
             "id": 5,
-            "num": 5,
             "type": "vocab-clue",
-            "questionText": "5. Black is the colour of mourning; at a funeral people wear black clothing.\nNghĩa của từ 'mourning' là gì?",
+            "questionText": "5. Black is the colour of mourning; at a funeral people wear black clothing.\n'mourning' chỉ trạng thái/dịp gì?",
             "acceptableAnswers": [
-              "tang tóc",
-              "đau buồn",
-              "đám tang",
-              "sự để tang",
-              "grief at a funeral"
+              "tang chế",
+              "tang lễ",
+              "tang",
+              "funeral",
+              "grief"
             ],
-            "explanation": "Dấu chấm phẩy nối với mệnh đề 'at a funeral people wear black clothing' (ở đám tang mọi người mặc đồ đen) -> Sự để tang, tang tóc.",
-            "evidence": "Black is the colour of mourning; at a funeral people wear black clothing."
+            "explanation": "Manh mối sau dấu chấm phẩy: 'at a funeral people wear black clothing' (trong đám tang mọi người mặc áo đen) -> Sự tang chế / tưởng niệm người đã mất.",
+            "evidence": "Black is the colour of mourning; at a funeral people wear black clothing.",
+            "num": 5
           },
           {
             "id": 6,
-            "num": 6,
             "type": "vocab-clue",
-            "questionText": "6. Her tea was tepid, so she put it in the microwave.\nNghĩa của từ 'tepid' là gì?",
+            "questionText": "6. Her tea was tepid, so she put it in the microwave.\nNghĩa của từ 'tepid' đối với nước/trà là gì?",
             "acceptableAnswers": [
               "lukewarm",
-              "âm ấm",
+              "slightly warm",
               "nguội",
-              "hơi ấm",
-              "not hot enough"
+              "âm ấm",
+              "ấm ấm"
             ],
-            "explanation": "Hành động hệ quả 'so she put it in the microwave' (cho vào lò vi sóng để hâm nóng) suy ra nước trà bị nguội, âm ấm (lukewarm).",
-            "evidence": "Her tea was tepid, so she put it in the microwave."
+            "explanation": "Manh mối logic: Trà bị 'tepid' nên cô ấy phải cho vào lò vi sóng (microwave) để hâm nóng -> Trà bị nguội, âm ấm.",
+            "evidence": "Her tea was tepid, so she put it in the microwave.",
+            "num": 6
           },
           {
             "id": 7,
-            "num": 7,
             "type": "vocab-clue",
-            "questionText": "7. Sleet (half rain and half snow) can be very difficult to drive in due to poor visibility.\nNghĩa của từ 'Sleet' là gì?",
+            "questionText": "7. Sleet (half rain and half snow) can be very difficult to drive in due to poor visibility.\n'sleet' là loại thời tiết gì?",
             "acceptableAnswers": [
               "half rain and half snow",
               "mưa tuyết",
-              "mưa đá nhỏ",
-              "mưa lẫn tuyết"
+              "mưa lẫn tuyết",
+              "rain and snow"
             ],
-            "explanation": "Định nghĩa đặt trực tiếp trong dấu ngoặc đơn: '(half rain and half snow)' -> mưa tuyết (vừa mưa vừa tuyết).",
-            "evidence": "Sleet (half rain and half snow) can be very difficult to drive in"
+            "explanation": "Định nghĩa trực tiếp trong ngoặc đơn: '(half rain and half snow)' -> Mưa tuyết (nửa mưa nửa tuyết).",
+            "evidence": "Sleet (half rain and half snow) can be very difficult to drive in",
+            "num": 7
           },
           {
             "id": 8,
-            "num": 8,
             "type": "vocab-clue",
-            "questionText": "8. The podiatrist told the woman to take the medicine for 5 days and call him if she did not feel better.\nNghĩa của từ 'podiatrist' là gì?",
+            "questionText": "8. The podiatrist told the woman to take the medicine for 5 days and call him if she did not feel better.\n'podiatrist' làm nghề nghiệp gì?",
             "acceptableAnswers": [
-              "foot doctor",
+              "doctor",
               "bác sĩ",
-              "bác sĩ chữa chân",
-              "doctor"
+              "bác sĩ chân",
+              "foot doctor",
+              "chuyên gia bàn chân"
             ],
-            "explanation": "Ngữ cảnh kê đơn thuốc ('told to take medicine for 5 days and call him') -> Bác sĩ (chuyên khoa bàn chân).",
-            "evidence": "The podiatrist told the woman to take the medicine for 5 days"
+            "explanation": "Manh mối: 'told the woman to take the medicine... and call him if she did not feel better' -> Bác sĩ (chuyên khoa bàn chân).",
+            "evidence": "The podiatrist told the woman to take the medicine for 5 days",
+            "num": 8
           },
           {
             "id": 9,
-            "num": 9,
             "type": "vocab-clue",
-            "questionText": "9. A tornado (a violent storm of twisting wind) struck Edmonton and caused a lot of damage.\nNghĩa của từ 'tornado' là gì?",
+            "questionText": "9. A tornado (a violent storm of twisting wind) struck Edmonton and caused a lot of damage.\n'tornado' là hiện tượng thiên tai gì?",
             "acceptableAnswers": [
               "a violent storm of twisting wind",
               "lốc xoáy",
               "cơn lốc xoáy",
-              "bão lốc"
+              "bão lốc xoáy"
             ],
-            "explanation": "Định nghĩa trong ngoặc đơn: '(a violent storm of twisting wind)' -> Cơn bão gió xoáy dữ dội (Lốc xoáy).",
-            "evidence": "A tornado (a violent storm of twisting wind) struck Edmonton"
+            "explanation": "Định nghĩa trong ngoặc đơn: '(a violent storm of twisting wind)' -> Cơn lốc xoáy dữ dội.",
+            "evidence": "A tornado (a violent storm of twisting wind) struck Edmonton",
+            "num": 9
           },
           {
             "id": 10,
-            "num": 10,
             "type": "vocab-clue",
-            "questionText": "10. In spite of the adversity of the environment, the small desert plant continued to grow.\nNghĩa của từ 'adversity' là gì?",
+            "questionText": "10. Giggling involves laughing in a silly way.\n'Giggling' nghĩa là gì?",
             "acceptableAnswers": [
-              "hardship",
-              "difficulties",
-              "khó khăn",
-              "nghịch cảnh",
-              "khắc nghiệt"
+              "laughing in a silly way",
+              "cười khúc khích",
+              "cười ngớ ngẩn",
+              "laughing"
             ],
-            "explanation": "Cụm 'In spite of... the small desert plant continued to grow' (mặc dù... cây sa mạc vẫn tiếp tục lớn) -> Sự khắc nghiệt, nghịch cảnh, khó khăn.",
-            "evidence": "In spite of the adversity of the environment, the small desert plant continued to grow."
+            "explanation": "Định nghĩa trực tiếp qua từ 'involves': 'laughing in a silly way' -> Cười khúc khích, cười rúc rích.",
+            "evidence": "Giggling involves laughing in a silly way.",
+            "num": 10
           },
           {
             "id": 11,
-            "num": 11,
             "type": "vocab-clue",
-            "questionText": "11. The room had a somber atmosphere because the curtains were drawn and everyone spoke in whispers.\nNghĩa của từ 'somber' là gì?",
+            "questionText": "11. People have gotten lost 10 metres from their homes in blizzard – snowfalls that come down very quickly.\n'blizzard' là hiện tượng gì?",
             "acceptableAnswers": [
-              "dark and gloomy",
-              "u ám",
-              "ảm đạm",
-              "buồn bã",
-              "serious"
+              "snowfalls that come down very quickly",
+              "bão tuyết",
+              "trận bão tuyết"
             ],
-            "explanation": "Ngữ cảnh 'curtains were drawn and everyone spoke in whispers' (kéo rèm tối, nói thì thào) -> Bầu không khí u ám, ảm đạm.",
-            "evidence": "The room had a somber atmosphere because the curtains were drawn"
+            "explanation": "Định nghĩa sau dấu gạch ngang: 'snowfalls that come down very quickly' -> Trận bão tuyết rơi dồn dập.",
+            "evidence": "blizzard – snowfalls that come down very quickly.",
+            "num": 11
           },
           {
             "id": 12,
-            "num": 12,
             "type": "vocab-clue",
-            "questionText": "12. Owls are nocturnal birds; they sleep during the day and hunt at night.\nNghĩa của từ 'nocturnal' là gì?",
+            "questionText": "12. Another dangerous form of weather is hail (falling balls of ice) which has been known to get so big that it can break a care windshield.\n'hail' nghĩa là gì?",
             "acceptableAnswers": [
-              "active at night",
-              "hunt at night",
-              "hoạt động về đêm",
-              "sống về đêm"
+              "falling balls of ice",
+              "mưa đá",
+              "cục băng rơi"
             ],
-            "explanation": "Giải thích sau dấu chấm phẩy: 'they sleep during the day and hunt at night' -> Hoạt động về đêm.",
-            "evidence": "Owls are nocturnal birds; they sleep during the day and hunt at night."
+            "explanation": "Định nghĩa trong ngoặc đơn: '(falling balls of ice)' -> Mưa đá (những khối băng rơi từ trên trời xuống).",
+            "evidence": "hail (falling balls of ice) which has been known to get so big",
+            "num": 12
           },
           {
             "id": 13,
-            "num": 13,
             "type": "vocab-clue",
-            "questionText": "13. Unlike her gregarious sister who loved parties, Emma preferred staying home alone.\nNghĩa của từ 'gregarious' là gì?",
+            "questionText": "13. Breaking even involves making money to pay for business costs but no more.\nKhái niệm tài chính 'Breaking even' nghĩa là gì?",
             "acceptableAnswers": [
-              "sociable",
-              "outgoing",
-              "thích giao du",
-              "hòa đồng",
-              "fond of company"
+              "hòa vốn",
+              "making money to pay for business costs but no more",
+              "điểm hòa vốn"
             ],
-            "explanation": "Từ đối lập 'Unlike... who loved parties' tương phản với 'preferred staying home alone' -> Thích giao lưu, hòa đồng, thích tiệc tùng.",
-            "evidence": "Unlike her gregarious sister who loved parties, Emma preferred staying home alone."
+            "explanation": "Định nghĩa qua 'involves': 'making money to pay for business costs but no more' -> Hòa vốn (doanh thu chỉ vừa đủ bù chi phí).",
+            "evidence": "Breaking even involves making money to pay for business costs but no more.",
+            "num": 13
           },
           {
             "id": 14,
-            "num": 14,
             "type": "vocab-clue",
-            "questionText": "14. The events in the history textbook are arranged in chronological order, starting from 1900 to 2000.\nNghĩa của từ 'chronological' là gì?",
+            "questionText": "14. Many new businesses go bankrupt, which means they lost everything.\n'bankrupt' mang ý nghĩa gì?",
             "acceptableAnswers": [
-              "in order of time",
-              "theo thứ tự thời gian",
-              "theo thời gian"
+              "phá sản",
+              "lost everything",
+              "vỡ nợ"
             ],
-            "explanation": "Diễn giải 'starting from 1900 to 2000' -> Sắp xếp theo trình tự thời gian.",
-            "evidence": "arranged in chronological order, starting from 1900 to 2000."
+            "explanation": "Manh mối qua mệnh đề 'which means': 'they lost everything' -> Phá sản, mất sạch vốn liếng.",
+            "evidence": "Many new businesses go bankrupt, which means they lost everything.",
+            "num": 14
           },
           {
             "id": 15,
-            "num": 15,
             "type": "vocab-clue",
-            "questionText": "15. The beauty of the cherry blossoms is ephemeral; they only last for a single week before falling.\nNghĩa của từ 'ephemeral' là gì?",
+            "questionText": "15. The Big Three are designing radical new cars including vehicles that use radar and advanced computers.\n'radical' mang nét nghĩa gì đối với công nghệ mới?",
             "acceptableAnswers": [
-              "short-lived",
-              "lasting a short time",
-              "phù du",
-              "chóng tàn",
-              "ngắn ngủi"
+              "đột phá",
+              "mới mẻ",
+              "tiên tiến",
+              "cải tiến vượt bậc",
+              "revolutionary"
             ],
-            "explanation": "Giải thích sau dấu chấm phẩy: 'they only last for a single week before falling' -> Tồn tại trong thời gian rất ngắn, chóng tàn, phù du.",
-            "evidence": "The beauty of the cherry blossoms is ephemeral; they only last for a single week"
+            "explanation": "Manh mối qua 'including vehicles that use radar and advanced computers' -> Đột phá, mang tính cách mạng, mới mẻ hoàn toàn.",
+            "evidence": "designing radical new cars including vehicles that use radar and advanced computers.",
+            "num": 15
           }
         ],
         "vocabulary": [
           {
-            "word": "apposition",
-            "meaning": "Mệnh đề đồng vị (dùng giải thích danh từ đứng trước)",
-            "example": "Paris, the capital of France"
-          },
-          {
-            "word": "context clue",
-            "meaning": "Manh mối ngữ cảnh để suy luận nghĩa từ",
-            "example": "Using context clues to infer meaning"
+            "word": "deluge",
+            "meaning": "Trận đại hồng thủy, mưa như trút nước",
+            "example": "The deluge caused severe flooding in the city."
           },
           {
             "word": "tepid",
-            "meaning": "Âm ấm, nguội (nước/chất lỏng)",
-            "example": "tepid water"
+            "meaning": "Âm ấm, nguội (chất lỏng)",
+            "example": "He drank a cup of tepid water."
           },
           {
-            "word": "ephemeral",
-            "meaning": "Phù du, ngắn ngủi, chóng tàn",
-            "example": "ephemeral pleasure"
+            "word": "sleet",
+            "meaning": "Mưa tuyết (nửa mưa nửa tuyết)",
+            "example": "Driving in sleet requires extreme caution."
+          },
+          {
+            "word": "break even",
+            "meaning": "Hòa vốn (doanh thu bằng chi phí)",
+            "example": "The company expects to break even by next quarter."
           }
         ]
       }
@@ -498,224 +490,376 @@ const readingLessons = [
     "id": "reading_3",
     "lessonNum": 3,
     "code": "V05",
-    "title": "V05 - SHORT ANSWER QUESTIONS",
+    "title": "V05 – SHORT ANSWER QUESTIONS",
     "shortTitle": "Short Answer Questions",
     "category": "completion",
-    "categoryLabel": "Dạng Điền Từ",
-    "badge": "Trả lời câu hỏi ngắn",
-    "description": "Chiến thuật trả lời câu hỏi ngắn: Đọc kỹ giới hạn số từ (NO MORE THAN TWO WORDS), xác định từ để hỏi (Who, What, Where, When) và scan từ khóa.",
-    "examplesCount": 2,
-    "totalQuestions": 9,
+    "categoryLabel": "Điền Từ & Tóm Tắt",
+    "badge": "Điền từ ngắn",
+    "description": "Dạng bài trả lời câu hỏi ngắn với giới hạn số từ nghiêm ngặt (NO MORE THAN THREE WORDS / TWO WORDS / ONE WORD). Gồm 8 câu bài tập cơ bản và 2 bài đọc Cambridge hoàn chỉnh (Stepwells & Perkin Dyes).",
+    "examplesCount": 3,
+    "totalQuestions": 17,
     "examples": [
       {
         "id": "r3_ex1",
         "exampleNum": 1,
-        "title": "Example 1: STEPWELLS (Giếng bậc thang Ấn Độ)",
-        "instructions": "Answer the questions below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer.",
+        "title": "Phần 1: Bài Tập Luyện Tập Cơ Bản (8 Đoạn Văn Ngắn)",
+        "instructions": "Đọc các đoạn văn ngắn dưới đây và trả lời các câu hỏi 1–8. Chú ý giới hạn từ cho từng phần.",
         "passage": {
-          "title": "STEPWELLS",
+          "title": "8 Đoạn Văn Luyện Kỹ Năng Định Vị Câu Trả Lời Ngắn",
           "paragraphs": [
             {
-              "label": "A",
-              "text": "Some wells are vast, open craters with hundreds of steps paving each sloping side, often in tiers. Others are more elaborate, with long stepped passages leading to the water via several storeys built from stone and supported by pillars, they also included pavilions that sheltered visitors from the relentless heat. But perhaps the most impressive features are the intricate decorative sculptures that embellish many of the monuments, displaying fine craftsmanship and depicting scenes from Hindu mythology."
+              "label": "1",
+              "text": "In addition to the reptiles, birds, mammals and insects which we see all around us, other groups that have succeeded out of water include scorpions, snails, crustaceans such as woodlice and land crabs, millipedes and centipedes, spiders and various worms. And we mustn’t forget the plants, without whose prior invasion of the land none of the other migrations could have happened."
             },
             {
-              "label": "B",
-              "text": "Maximum levels of rainfall occur between July and September, when the southwest monsoon floods the land with precious water. For the remaining nine months, however, barely a drop falls, and groundwater is the only reliable resource. Stepwells were engineered to collect rainwater as well as gain access to the deep subterranean water table during dry periods."
+              "label": "2",
+              "text": "Moving from water to land involved a major redesign of every aspect of life, including breathing and reproduction."
             },
             {
-              "label": "C",
-              "text": "However, in the late nineteenth century, stepwells suffered a dramatic decline in importance. The British raj introduced piped water and sanitation systems, and the ancient wells were considered unhygienic breeding grounds for disease. Many were filled in or neglected. Recently, however, southern Rajasthan suffered an eight-year drought between 1996 and 2004, causing severe water crises. This crisis prompted local communities and historians to rediscover the wisdom of ancient water architecture."
+              "label": "3",
+              "text": "Whales (including the small whales we call dolphins) and dugongs, with their close cousins the manatees, ceased to be land creatures altogether and reverted to the full marine habits of their remote ancestors. They don’t even come ashore to breed. They do, however, still breathe air, having never developed anything equivalent to the gills of their earlier marine incarnation."
             },
             {
-              "label": "D",
-              "text": "Today, following years of neglect, many of these monuments to medieval engineering have been saved by the Archaeological Survey of India. The government has recognized their cultural value, and tourists flock to wells in far-flung corners of north-western India to admire their stunning architecture. Furthermore, the state government of Rajasthan is now funding a project to restore several stepwells, while also encouraging a revival of traditional rainwater harvesting to safeguard the region's agricultural future."
+              "label": "4",
+              "text": "Ichthyosaurs were reptilian contemporaries of the dinosaurs, with fins and streamlined bodies. The fossils look like dolphins and they surely lived like dolphins, in the water."
+            },
+            {
+              "label": "5",
+              "text": "The New Zealand Ministry of Health has found from research carried out over two decades that 6-10% of children in that country are affected by hearing loss."
+            },
+            {
+              "label": "6",
+              "text": "Autistic spectrum disorders often result in major difficulties in comprehending verbal information and speech processing. Those experiencing these disorders often find sounds such as crowd noise and the noise generated by machinery painful and distressing."
+            },
+            {
+              "label": "7",
+              "text": "It is probable that many undiagnosed children exist in the education system with 'invisible' disabilities."
+            },
+            {
+              "label": "8",
+              "text": "The New Zealand Government has developed a New Zealand Disability Strategy and has embarked on a wide-ranging consultation process. The strategy recognises that people experiencing disability face significant barriers in achieving a full quality of life in areas such as attitude, education, employment and access to services. Objective 3 of the New Zealand Disability Strategy is to 'Provide the Best Education for Disabled People' by improving education so that all children, youth learners and adult learners will have equal opportunities to learn and develop within their already existing local school."
             }
           ]
         },
         "questions": [
           {
-            "id": 6,
-            "num": 6,
-            "type": "gap-fill",
-            "questionText": "6. What type of serious climatic event, which took place in southern Rajasthan, is mentioned in the article?",
+            "id": 1,
+            "type": "short-answer",
+            "questionText": "1. What had to transfer from sea to land before any animals could migrate? (NO MORE THAN THREE WORDS)",
             "acceptableAnswers": [
-              "drought",
-              "droughts",
-              "an eight-year drought",
-              "eight-year drought"
+              "plants",
+              "the plants"
             ],
-            "explanation": "Đoạn C có câu: 'southern Rajasthan suffered an eight-year drought between 1996 and 2004'. Sự kiện khí hậu nghiêm trọng là hạn hán ('drought').",
-            "evidence": "southern Rajasthan suffered an eight-year drought between 1996 and 2004"
+            "explanation": "Đoạn 1: 'And we mustn't forget the plants, without whose prior invasion of the land none of the other migrations could have happened' -> Thực vật (plants).",
+            "evidence": "without whose prior invasion of the land none of the other migrations could have happened",
+            "num": 1
+          },
+          {
+            "id": 2,
+            "type": "short-answer",
+            "questionText": "2. Which TWO processes are mentioned as those in which animals had to make big changes as they moved onto land? (NO MORE THAN THREE WORDS)",
+            "acceptableAnswers": [
+              "breathing and reproduction",
+              "breathing, reproduction",
+              "reproduction and breathing"
+            ],
+            "explanation": "Đoạn 2: 'involved a major redesign of every aspect of life, including breathing and reproduction'.",
+            "evidence": "including breathing and reproduction",
+            "num": 2
+          },
+          {
+            "id": 3,
+            "type": "short-answer",
+            "questionText": "3. Which physical feature, possessed by their ancestors, do whales lack? (NO MORE THAN THREE WORDS)",
+            "acceptableAnswers": [
+              "gills",
+              "the gills"
+            ],
+            "explanation": "Đoạn 3: 'having never developed anything equivalent to the gills of their earlier marine incarnation' -> Cá voi không có mang (gills).",
+            "evidence": "having never developed anything equivalent to the gills of their earlier marine incarnation",
+            "num": 3
+          },
+          {
+            "id": 4,
+            "type": "short-answer",
+            "questionText": "4. Which animals might ichthyosaurs have resembled? (NO MORE THAN THREE WORDS)",
+            "acceptableAnswers": [
+              "dolphins"
+            ],
+            "explanation": "Đoạn 4: 'The fossils look like dolphins and they surely lived like dolphins' -> dolphins.",
+            "evidence": "The fossils look like dolphins and they surely lived like dolphins",
+            "num": 4
+          },
+          {
+            "id": 5,
+            "type": "short-answer",
+            "questionText": "5. For what period of time has hearing loss in schoolchildren been studied in New Zealand? (NO MORE THAN TWO WORDS AND/OR A NUMBER)",
+            "acceptableAnswers": [
+              "two decades",
+              "2 decades",
+              "over two decades"
+            ],
+            "explanation": "Đoạn 5: 'research carried out over two decades' -> two decades.",
+            "evidence": "from research carried out over two decades",
+            "num": 5
+          },
+          {
+            "id": 6,
+            "type": "short-answer",
+            "questionText": "6. In addition to machinery noise, what other type of noise can upset children with autism? (NO MORE THAN TWO WORDS AND/OR A NUMBER)",
+            "acceptableAnswers": [
+              "crowd noise",
+              "crowd"
+            ],
+            "explanation": "Đoạn 6: 'sounds such as crowd noise and the noise generated by machinery' -> crowd noise.",
+            "evidence": "sounds such as crowd noise and the noise generated by machinery painful and distressing",
+            "num": 6
           },
           {
             "id": 7,
-            "num": 7,
-            "type": "gap-fill",
-            "questionText": "7. Who are frequent visitors to stepwells nowadays?",
+            "type": "short-answer",
+            "questionText": "7. What term is used to describe the hearing problems of schoolchildren which have not been diagnosed? (NO MORE THAN TWO WORDS AND/OR A NUMBER)",
             "acceptableAnswers": [
-              "tourists",
-              "tourist"
+              "invisible disabilities",
+              "invisible",
+              "'invisible' disabilities"
             ],
-            "explanation": "Đoạn D có câu: 'tourists flock to wells in far-flung corners of north-western India'. 'Flock to' đồng nghĩa với 'frequent visitors'. Đáp án là 'tourists'.",
-            "evidence": "tourists flock to wells in far-flung corners of north-western India"
+            "explanation": "Đoạn 7: 'many undiagnosed children exist in the education system with 'invisible' disabilities' -> invisible disabilities.",
+            "evidence": "undiagnosed children exist in the education system with 'invisible' disabilities",
+            "num": 7
           },
           {
             "id": 8,
-            "num": 8,
-            "type": "gap-fill",
-            "questionText": "8. What is the term for water collection that has recently been reintroduced in India?",
+            "type": "short-answer",
+            "questionText": "8. What part of the New Zealand Disability Strategy aims to give schoolchildren equal opportunity? (NO MORE THAN TWO WORDS AND/OR A NUMBER)",
             "acceptableAnswers": [
-              "rainwater harvesting",
-              "traditional rainwater harvesting"
+              "Objective 3",
+              "Objective three",
+              "Objective 3."
             ],
-            "explanation": "Đoạn D có câu: 'encouraging a revival of traditional rainwater harvesting'. 'Revival' đồng nghĩa với 'reintroduced' (tái áp dụng). Đáp án là 'rainwater harvesting'.",
-            "evidence": "encouraging a revival of traditional rainwater harvesting"
+            "explanation": "Đoạn 8: 'Objective 3 of the New Zealand Disability Strategy is to Provide the Best Education for Disabled People by improving education so that all children... will have equal opportunities' -> Objective 3.",
+            "evidence": "Objective 3 of the New Zealand Disability Strategy is to 'Provide the Best Education for Disabled People'",
+            "num": 8
           }
         ],
         "vocabulary": [
           {
-            "word": "stepwell",
-            "meaning": "Giếng bậc thang truyền thống ở Ấn Độ",
-            "example": "Ancient stepwells were architectural wonders."
+            "word": "migration",
+            "meaning": "Sự di cư",
+            "example": "Animal migration is triggered by seasonal changes."
           },
           {
-            "word": "drought",
-            "meaning": "Hạn hán kéo dài",
-            "example": "suffered an eight-year drought"
+            "word": "gills",
+            "meaning": "Mang (của cá/động vật dưới nước)",
+            "example": "Fish use gills to absorb oxygen from water."
           },
           {
-            "word": "rainwater harvesting",
-            "meaning": "Hệ thống thu thập và lưu trữ nước mưa",
-            "example": "revival of rainwater harvesting"
+            "word": "decade",
+            "meaning": "Thập kỷ (10 năm)",
+            "example": "He has worked here for two decades."
           },
           {
-            "word": "subterranean",
-            "meaning": "Dưới lòng đất, ngầm",
-            "example": "subterranean water table"
+            "word": "autistic",
+            "meaning": "Tự kỷ",
+            "example": "Children with autism may be sensitive to noise."
           }
         ]
       },
       {
         "id": "r3_ex2",
         "exampleNum": 2,
-        "title": "Example 2: WILLIAM HENRY PERKIN (Nhà Hóa Học Phát Minh Phẩm Nhuộm)",
-        "instructions": "Answer the questions below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+        "title": "Phần 2: Stepwells (Giếng Bậc Thang Cổ Ấn Độ)",
+        "instructions": "Answer the questions below. Choose ONE WORD ONLY from the passage for each answer. Write your answers in boxes 6–8.",
         "passage": {
-          "title": "WILLIAM HENRY PERKIN - The man who invented synthetic dyes",
+          "title": "Stepwells of Northwestern India",
           "paragraphs": [
             {
               "label": "A",
-              "text": "Historically, textile dyes were made from such natural sources as plants and animal excretions. Some of these, such as the glandular mucus of snails, were difficult to obtain and outrageously expensive. Indeed, the purple colour extracted from a snail was once so prized by the ancient Greeks and Romans that only the imperial family could afford to wear garments dyed in it."
+              "text": "Some wells are vast, open craters with hundreds of steps paving each sloping side, often in tiers. Others are more elaborate, with long stepped passages leading to the water via several storeys built from stone and supported by pillars, they also included pavilions that sheltered visitors from the relentless heat. But perhaps the most impressive features are the intricate decorative sculptures that embellish many stepwells, showing activities from fighting and dancing to everyday acts such as women combing their hair and churning butter."
             },
             {
               "label": "B",
-              "text": "In 1856, William Henry Perkin was an eighteen-year-old student at the Royal College of Chemistry in London. At the time, quinine was the only viable medical treatment for malaria, a deadly disease that afflicted thousands of European troops stationed in tropical regions. The drug was derived from the bark of the cinchona tree, native to South America, and supplies were scarce. Perkin's tutor, August Wilhelm von Hofmann, believed quinine might be synthesized artificially in a laboratory."
+              "text": "Down the centuries, thousands of wells were constructed throughout northwestern India, but the majority have now fallen into disuse; many are derelict and dry, as groundwater has been diverted for industrial use and the wells no longer reach the water table. Their condition hasn’t been helped by recent dry spells: southern Rajasthan suffered an eight-year drought between 1996 and 2004."
             },
             {
               "label": "C",
-              "text": "During his Easter vacation, Perkin set to work in his makeshift laboratory at home. Attempting to manufacture quinine from coal tar, he began incorporating potassium dichromate and aniline into the mix. At the end of his attempt, he did not get the intended clear quinine crystals, but instead produced a dark, murky sludge. When he cleaned the flask with alcohol, the solution unexpectedly turned a rich purple."
+              "text": "Today, following years of neglect, many of these monuments to medieval engineering have been saved by the Archaeological Survey of India, which has recognised the importance of preserving them as part of the country’s rich history. Tourists flock to wells in far-flung corners of northwestern India to gaze in wonder at these architectural marvels from 1,000 years ago, which serve as a reminder of both the ingenuity and artistry of ancient civilisations and of the value of water to human existence."
+            }
+          ]
+        },
+        "questions": [
+          {
+            "id": 6,
+            "type": "short-answer",
+            "questionText": "6. Which part of some stepwells provided shade for people? (ONE WORD ONLY)",
+            "acceptableAnswers": [
+              "pavilions",
+              "pavilion"
+            ],
+            "explanation": "Đoạn A: 'they also included pavilions that sheltered visitors from the relentless heat' -> sheltered from the heat đồng nghĩa với provided shade -> Đáp án: pavilions.",
+            "evidence": "included pavilions that sheltered visitors from the relentless heat",
+            "num": 6
+          },
+          {
+            "id": 7,
+            "type": "short-answer",
+            "questionText": "7. What type of serious climatic event, which took place in southern Rajasthan, is mentioned in the article? (ONE WORD ONLY)",
+            "acceptableAnswers": [
+              "drought"
+            ],
+            "explanation": "Đoạn B: 'southern Rajasthan suffered an eight-year drought between 1996 and 2004' -> Hiện tượng khí hậu nghiêm trọng kéo dài 8 năm là hạn hán (drought).",
+            "evidence": "southern Rajasthan suffered an eight-year drought between 1996 and 2004",
+            "num": 7
+          },
+          {
+            "id": 8,
+            "type": "short-answer",
+            "questionText": "8. Who are frequent visitors to stepwells nowadays? (ONE WORD ONLY)",
+            "acceptableAnswers": [
+              "tourists",
+              "tourist"
+            ],
+            "explanation": "Đoạn C: 'Tourists flock to wells in far-flung corners of northwestern India to gaze in wonder...' -> 'flock to' = đến rất đông / thường xuyên ghé thăm -> Đáp án: tourists.",
+            "evidence": "Tourists flock to wells in far-flung corners of northwestern India",
+            "num": 8
+          }
+        ],
+        "vocabulary": [
+          {
+            "word": "pavilion",
+            "meaning": "Gian đình, lều nghỉ chân có mái che",
+            "example": "Visitors rested in the marble pavilion."
+          },
+          {
+            "word": "drought",
+            "meaning": "Hạn hán",
+            "example": "The area experienced a severe drought for years."
+          },
+          {
+            "word": "ingenuity",
+            "meaning": "Sự khéo léo, tài tình",
+            "example": "The ancient water system showed great ingenuity."
+          }
+        ]
+      },
+      {
+        "id": "r3_ex3",
+        "exampleNum": 3,
+        "title": "Phần 3: William Henry Perkin (Nhà Phát Minh Thuốc Nhuộm Nhân Tạo)",
+        "instructions": "Answer the questions below. Choose NO MORE THAN TWO WORDS from the passage for each answer. Write your answers in boxes 8–13.",
+        "passage": {
+          "title": "William Henry Perkin - The Man Who Invented Synthetic Dyes",
+          "paragraphs": [
+            {
+              "label": "A",
+              "text": "Historically, textile dyes were made from such natural sources as plants and animal excretions. Some of these, such as the glandular mucus of snails, were difficult to obtain and outrageously expensive. Indeed, the purple colour extracted from a snail was once so costly that in society at the time only the rich could afford it. Further, natural dyes tended to be muddy in hue and fade quickly. It was against this backdrop that Perkin’s discovery was made."
+            },
+            {
+              "label": "B",
+              "text": "Perkin quickly grasped that his purple solution could be used to colour fabric, thus making it the world’s first synthetic dye. Realising the importance of this breakthrough, he lost no time in patenting it. But perhaps the most fascinating of all Perkin’s reactions to his find was his nearly instant recognition that the new dye had commercial possibilities."
+            },
+            {
+              "label": "C",
+              "text": "Perkin originally named his dye Tyrian Purple, but it later became commonly known as mauve (from the French for the plant used to make the colour violet). He asked advice of Scottish dye works owner Robert Pullar, who assured him that manufacturing the dye would be well worth it if the colour remained fast (i.e. would not fade) and the cost was relatively low. So, over the fierce objections of his mentor Hofmann, he left college to give birth to the modern chemical industry."
             },
             {
               "label": "D",
-              "text": "Recognizing that the substance had potential as a colorant, Perkin tested it on pieces of silk and found that the colour did not fade when washed or exposed to light. He initially named the colour Tyrian purple, but later it became known simply as mauve. A prominent Scottish textile producer named Robert Pullar recognized its enormous commercial potential and urged Perkin to patent his invention and build a factory."
+              "text": "With the help of his father and brother, Perkin set up a factory not far from London. Utilising the cheap and plentiful coal tar that was an almost unlimited by-product of London’s gas street lighting, the dye works began producing the world’s first synthetically dyed material in 1857. The company received a commercial boost from the Empress Eugenie of France, when she decided the new colour flattered her. Very soon, mauve was the necessary shade for all the fashionable ladies in that country."
+            },
+            {
+              "label": "E",
+              "text": "Not to be outdone, England’s Queen Victoria also appeared in public wearing a mauve gown, thus making it all the rage in England as well. The dye was bold and fast, and the public clamoured for more. Perkin went back to the drawing board."
+            },
+            {
+              "label": "F",
+              "text": "Although Perkin’s fame was achieved and fortune assured by his first discovery, the chemist continued his research. Among other dyes he developed and introduced were aniline red (1859) and aniline black (1863) and, in the late 1860s, Perkin’s green. It is important to note that Perkin’s synthetic dye discoveries had outcomes far beyond the merely decorative. The dyes also became vital to medical research in many ways. For instance, they were used to stain previously invisible microbes and bacteria, allowing researchers to identify such bacilli as tuberculosis, cholera, and anthrax. Artificial dyes continue to play a crucial role today. And, in what would have been particularly pleasing to Perkin, their current use is in the search for a vaccine against malaria."
             }
           ]
         },
         "questions": [
           {
             "id": 8,
-            "num": 8,
-            "type": "gap-fill",
-            "questionText": "8. Before synthetic dyes were discovered, what had been used to produce the colour purple?",
+            "type": "short-answer",
+            "questionText": "8. Before Perkin’s discovery, with what group in society was the colour purple associated? (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
-              "snails",
-              "snail",
-              "mucus of snails",
-              "glandular mucus"
+              "the rich",
+              "rich"
             ],
-            "explanation": "Đoạn A nêu: 'the purple colour extracted from a snail was once so prized...'. Đáp án là 'snails' hoặc 'mucus of snails'.",
-            "evidence": "the purple colour extracted from a snail was once so prized"
+            "explanation": "Đoạn A: 'the purple colour extracted from a snail was once so costly that in society at the time only the rich could afford it' -> Tầng lớp người giàu (the rich).",
+            "evidence": "only the rich could afford it",
+            "num": 8
           },
           {
             "id": 9,
-            "num": 9,
-            "type": "gap-fill",
-            "questionText": "9. What disease did Perkin’s research hope to treat?",
+            "type": "short-answer",
+            "questionText": "9. What potential did Perkin immediately understand that his new dye had? (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
-              "malaria"
+              "commercial possibilities"
             ],
-            "explanation": "Đoạn B nêu: 'quinine was the only viable medical treatment for malaria... Perkin's tutor believed quinine might be synthesized'. Nghiên cứu nhằm điều trị bệnh sốt rét ('malaria').",
-            "evidence": "quinine was the only viable medical treatment for malaria"
+            "explanation": "Đoạn B: 'his nearly instant recognition that the new dye had commercial possibilities' -> Tiềm năng thương mại (commercial possibilities).",
+            "evidence": "his nearly instant recognition that the new dye had commercial possibilities",
+            "num": 9
           },
           {
             "id": 10,
-            "num": 10,
-            "type": "gap-fill",
-            "questionText": "10. What was the extract from coal tar that Perkin intended to use?",
+            "type": "short-answer",
+            "questionText": "10. What was the name finally used to refer to the first colour Perkin invented? (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
-              "aniline",
-              "potassium dichromate and aniline"
+              "mauve"
             ],
-            "explanation": "Đoạn C nêu: 'he began incorporating potassium dichromate and aniline into the mix'. Chiết xuất từ than đá là 'aniline'.",
-            "evidence": "incorporating potassium dichromate and aniline into the mix"
+            "explanation": "Đoạn C: 'Perkin originally named his dye Tyrian Purple, but it later became commonly known as mauve' -> Tên chính thức sau đó được dùng rộng rãi là mauve (màu hoa cà).",
+            "evidence": "it later became commonly known as mauve",
+            "num": 10
           },
           {
             "id": 11,
-            "num": 11,
-            "type": "gap-fill",
-            "questionText": "11. What was the colour of the extract that Perkin produced from coal tar?",
-            "acceptableAnswers": [
-              "purple",
-              "rich purple"
-            ],
-            "explanation": "Đoạn C nêu: 'the solution unexpectedly turned a rich purple'. Màu sắc dung dịch là 'purple'.",
-            "evidence": "the solution unexpectedly turned a rich purple"
-          },
-          {
-            "id": 12,
-            "num": 12,
-            "type": "gap-fill",
-            "questionText": "12. What was the name of the synthetic dye originally given by Perkin?",
-            "acceptableAnswers": [
-              "Tyrian purple",
-              "mauve"
-            ],
-            "explanation": "Đoạn D nêu: 'He initially named the colour Tyrian purple, but later it became known simply as mauve'. Đáp án ban đầu là 'Tyrian purple' (hoặc 'mauve').",
-            "evidence": "He initially named the colour Tyrian purple"
-          },
-          {
-            "id": 13,
-            "num": 13,
-            "type": "gap-fill",
-            "questionText": "13. Who was the person who suggested Perkin open a factory?",
+            "type": "short-answer",
+            "questionText": "11. What was the name of the person Perkin consulted before setting up his own dye works? (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
               "Robert Pullar"
             ],
-            "explanation": "Đoạn D nêu: 'A prominent Scottish textile producer named Robert Pullar recognized its enormous commercial potential and urged Perkin to patent his invention and build a factory'.",
-            "evidence": "Robert Pullar recognized its enormous commercial potential and urged Perkin to patent his invention and build a factory"
+            "explanation": "Đoạn C: 'He asked advice of Scottish dye works owner Robert Pullar' -> 'asked advice of' = consulted -> Robert Pullar.",
+            "evidence": "He asked advice of Scottish dye works owner Robert Pullar",
+            "num": 11
+          },
+          {
+            "id": 12,
+            "type": "short-answer",
+            "questionText": "12. In what country did Perkin’s newly invented colour first become fashionable? (NO MORE THAN TWO WORDS)",
+            "acceptableAnswers": [
+              "France"
+            ],
+            "explanation": "Đoạn D: 'The company received a commercial boost from the Empress Eugenie of France... Very soon, mauve was the necessary shade for all the fashionable ladies in that country' -> France.",
+            "evidence": "The company received a commercial boost from the Empress Eugenie of France",
+            "num": 12
+          },
+          {
+            "id": 13,
+            "type": "short-answer",
+            "questionText": "13. According to the passage, which disease is now being targeted by researchers using synthetic dyes? (NO MORE THAN TWO WORDS)",
+            "acceptableAnswers": [
+              "malaria"
+            ],
+            "explanation": "Đoạn F: 'their current use is in the search for a vaccine against malaria' -> Căn bệnh sốt rét (malaria).",
+            "evidence": "their current use is in the search for a vaccine against malaria",
+            "num": 13
           }
         ],
         "vocabulary": [
           {
             "word": "synthetic dye",
-            "meaning": "Phẩm nhuộm nhân tạo / hóa học",
-            "example": "invention of synthetic dye"
+            "meaning": "Thuốc nhuộm nhân tạo / tổng hợp",
+            "example": "Synthetic dyes transformed the garment industry."
+          },
+          {
+            "word": "patent",
+            "meaning": "Đăng ký bằng sáng chế",
+            "example": "He decided to patent his invention immediately."
           },
           {
             "word": "malaria",
             "meaning": "Bệnh sốt rét",
-            "example": "quinine was used to treat malaria"
-          },
-          {
-            "word": "makeshift laboratory",
-            "meaning": "Phòng thí nghiệm dã chiến, tự chế tại nhà",
-            "example": "worked in his makeshift laboratory"
-          },
-          {
-            "word": "patent",
-            "meaning": "Bằng sáng chế độc quyền",
-            "example": "patent his invention"
+            "example": "Synthetic dyes helped research vaccines against malaria."
           }
         ]
       }
@@ -725,269 +869,439 @@ const readingLessons = [
     "id": "reading_4",
     "lessonNum": 4,
     "code": "V06",
-    "title": "V06 - SENTENCE COMPLETION",
+    "title": "V06 – SENTENCE COMPLETION",
     "shortTitle": "Sentence Completion",
     "category": "completion",
-    "categoryLabel": "Dạng Điền Từ",
+    "categoryLabel": "Điền Từ & Tóm Tắt",
     "badge": "Hoàn thành câu",
-    "description": "Chiến thuật điền từ vào câu: Phân tích ngữ pháp của từ cần điền (danh từ số ít/nhiều, tính từ, động từ), tìm từ khóa xung quanh chỗ trống và định vị câu trong bài đọc.",
-    "examplesCount": 3,
-    "totalQuestions": 11,
+    "description": "Chiến thuật hoàn thành câu văn học thuật với trọn bộ bài tập cơ bản (10 câu về khứu giác, tia laser, radar ở loài dơi) và 3 bài đọc chuyên sâu Cambridge: Tourism, Autumn Leaves, Gifted Children.",
+    "examplesCount": 4,
+    "totalQuestions": 21,
     "examples": [
       {
         "id": "r4_ex1",
         "exampleNum": 1,
-        "title": "Example 1: THE CONTEXT, MEANING AND SCOPE OF TOURISM",
-        "instructions": "Complete the sentences below. Choose NO MORE THAN THREE WORDS from the passage for each answer.",
+        "title": "Phần 1: Bài Tập Luyện Tập Hoàn Thành Câu Cơ Bản (10 Câu)",
+        "instructions": "Đọc các đoạn văn và hoàn thành các câu sau. Câu 1–4 điền ONE WORD, câu 5–10 điền NO MORE THAN TWO WORDS.",
         "passage": {
-          "title": "THE CONTEXT, MEANING AND SCOPE OF TOURISM",
+          "title": "10 Đoạn Trích Luyện Hoàn Thành Câu (Smell, Lasers & Bats)",
           "paragraphs": [
             {
-              "label": "A",
-              "text": "Once the exclusive province of the wealthy, travel and tourism have become an institutionalised way of life for most of the population. In fact, McIntosh and Goeldner (1990) suggest that tourism has become the largest commodity in international trade for many nations and, for a significant number of other countries, it ranks second or third."
+              "label": "1",
+              "text": "In one well-known test, women and men were able to distinguish by smell alone clothing worn by their marriage partners from similar clothing worn by other people."
             },
             {
-              "label": "B",
-              "text": "For example, in Greece, tourism is the primary source of income and foreign exchange earnings, underpinning their whole economy. In Jamaica, travel and tourism is the major employer, with over 25 percent of the working population employed directly or indirectly in hotels, tour operations, and transportation services."
+              "label": "2",
+              "text": "Odours, unlike colours, for instance, cannot be named in many languages because the specific vocabulary simply doesn’t exist. ‘It smells like . . . ,’ we have to say when describing an odour, struggling to express our olfactory experience."
             },
             {
-              "label": "C",
-              "text": "However, the task of accurately assessing the economic significance of tourism is extremely complex. Many businesses serve both tourists and local residents, making separation difficult. Furthermore, the problems and complications associated with measuring international tourism are greatly magnified in domestic tourism, because travellers within a country rarely pass through border controls where statistics can easily be logged."
+              "label": "3",
+              "text": "Researchers have still to decide whether smell is one sense or two - one responding to odours proper and the other registering odourless chemicals in the air."
+            },
+            {
+              "label": "4",
+              "text": "Odours are invested with cultural values: smells that are considered to be offensive in some cultures may be perfectly acceptable in others."
+            },
+            {
+              "label": "5",
+              "text": "The technique survives to this day at a test site in Florida run by the University of Florida, with support from the Electrical Power Research Institute (EPRI), based in California. EPRI, which is funded by power companies, is looking at ways to protect the United States’ power grid from lightning strikes."
+            },
+            {
+              "label": "6",
+              "text": "However, there is still a big stumbling block. The laser is no nifty portable: it’s a monster that takes up a whole room. Diels is trying to cut down the size and says that a laser around the size of a small table is in the offing."
+            },
+            {
+              "label": "7",
+              "text": "The Sonar and Radar pioneers didn't know it then, but all the world now knows that bats, or rather natural selection working on bats, had perfected the system tens of millions of years earlier; and their radar' achieves feats of detection and navigation that would strike an engineer dumb with admiration."
+            },
+            {
+              "label": "8",
+              "text": "It is technically incorrect to talk about bat 'radar', since they do not use radio waves. It is sonar."
+            },
+            {
+              "label": "9",
+              "text": "The underlying mathematical theories of radar and sonar are very similar; and much of our scientific understanding of the details of what bats are doing has come from applying radar theory to them."
+            },
+            {
+              "label": "10",
+              "text": "The American zoologist Donald Griffin, who was largely responsible for the discovery of sonar in bats, coined the term 'echolocation' to cover both sonar and radar, whether used by animals or by human instruments."
             }
           ]
         },
         "questions": [
           {
-            "id": 11,
-            "num": 11,
+            "id": 1,
             "type": "gap-fill",
-            "questionText": "11. In Greece, tourism is the most important _______",
+            "questionText": "1. Tests have shown that odours can help people recognise the …………… belonging to their husbands and wives. (ONE WORD)",
             "acceptableAnswers": [
-              "source of income",
-              "source of foreign exchange"
+              "clothing"
             ],
-            "explanation": "Đoạn B nêu: 'in Greece, tourism is the primary source of income'. 'Primary' = 'most important'. Đáp án là 'source of income'.",
-            "evidence": "in Greece, tourism is the primary source of income"
+            "explanation": "Đoạn 1: 'distinguish by smell alone clothing worn by their marriage partners' -> clothing.",
+            "evidence": "distinguish by smell alone clothing worn by their marriage partners",
+            "num": 1
           },
           {
-            "id": 12,
-            "num": 12,
+            "id": 2,
             "type": "gap-fill",
-            "questionText": "12. The travel and tourism industry in Jamaica is the major _______",
+            "questionText": "2. Certain linguistic groups may have difficulty describing smell because they lack the appropriate …………… (ONE WORD)",
             "acceptableAnswers": [
-              "employer"
+              "vocabulary"
             ],
-            "explanation": "Đoạn B nêu: 'In Jamaica, travel and tourism is the major employer'. Đáp án là 'employer'.",
-            "evidence": "In Jamaica, travel and tourism is the major employer"
+            "explanation": "Đoạn 2: 'cannot be named in many languages because the specific vocabulary simply doesn't exist' -> vocabulary.",
+            "evidence": "specific vocabulary simply doesn’t exist",
+            "num": 2
           },
           {
-            "id": 13,
-            "num": 13,
+            "id": 3,
             "type": "gap-fill",
-            "questionText": "13. The problems associated with measuring international tourism are often reflected in the measurement of _______",
+            "questionText": "3. The sense of smell may involve response to ……………… which do not smell, in addition to obvious odours. (ONE WORD)",
             "acceptableAnswers": [
-              "domestic tourism"
+              "chemicals"
             ],
-            "explanation": "Đoạn C nêu: 'measuring international tourism are greatly magnified in domestic tourism'. Đáp án là 'domestic tourism'.",
-            "evidence": "measuring international tourism are greatly magnified in domestic tourism"
+            "explanation": "Đoạn 3: 'the other registering odourless chemicals in the air' -> chemicals.",
+            "evidence": "the other registering odourless chemicals in the air",
+            "num": 3
+          },
+          {
+            "id": 4,
+            "type": "gap-fill",
+            "questionText": "4. Odours regarded as unpleasant in certain ……………… are not regarded as unpleasant in others. (ONE WORD)",
+            "acceptableAnswers": [
+              "cultures"
+            ],
+            "explanation": "Đoạn 4: 'smells that are considered to be offensive in some cultures may be perfectly acceptable in others' -> cultures.",
+            "evidence": "smells that are considered to be offensive in some cultures",
+            "num": 4
+          },
+          {
+            "id": 5,
+            "type": "gap-fill",
+            "questionText": "5. EPRI receives financial support from ……………… (NO MORE THAN TWO WORDS)",
+            "acceptableAnswers": [
+              "power companies"
+            ],
+            "explanation": "Đoạn 5: 'EPRI, which is funded by power companies' -> power companies.",
+            "evidence": "EPRI, which is funded by power companies",
+            "num": 5
+          },
+          {
+            "id": 6,
+            "type": "gap-fill",
+            "questionText": "6. The main difficulty associated with using the laser equipment is related to its ……………… (NO MORE THAN TWO WORDS)",
+            "acceptableAnswers": [
+              "size"
+            ],
+            "explanation": "Đoạn 6: 'The laser is no nifty portable: it’s a monster that takes up a whole room. Diels is trying to cut down the size' -> size.",
+            "evidence": "Diels is trying to cut down the size",
+            "num": 6
+          },
+          {
+            "id": 7,
+            "type": "gap-fill",
+            "questionText": "7. Long before the invention of radar, ……………… had resulted in a sophisticated radar-like system in bats. (NO MORE THAN TWO WORDS)",
+            "acceptableAnswers": [
+              "natural selection"
+            ],
+            "explanation": "Đoạn 7: 'natural selection working on bats, had perfected the system tens of millions of years earlier' -> natural selection.",
+            "evidence": "natural selection working on bats, had perfected the system",
+            "num": 7
+          },
+          {
+            "id": 8,
+            "type": "gap-fill",
+            "questionText": "8. Radar is an inaccurate term when referring to bats because ……………… are not used in their navigation system. (NO MORE THAN TWO WORDS)",
+            "acceptableAnswers": [
+              "radio waves"
+            ],
+            "explanation": "Đoạn 8: 'incorrect to talk about bat radar, since they do not use radio waves' -> radio waves.",
+            "evidence": "since they do not use radio waves. It is sonar.",
+            "num": 8
+          },
+          {
+            "id": 9,
+            "type": "gap-fill",
+            "questionText": "9. Radar and sonar are based on similar ……………… (NO MORE THAN TWO WORDS)",
+            "acceptableAnswers": [
+              "mathematical theories"
+            ],
+            "explanation": "Đoạn 9: 'The underlying mathematical theories of radar and sonar are very similar' -> mathematical theories.",
+            "evidence": "The underlying mathematical theories of radar and sonar are very similar",
+            "num": 9
+          },
+          {
+            "id": 10,
+            "type": "gap-fill",
+            "questionText": "10. The word ‘echolocation’ was first used by someone working as a ……………… (NO MORE THAN TWO WORDS)",
+            "acceptableAnswers": [
+              "zoologist"
+            ],
+            "explanation": "Đoạn 10: 'The American zoologist Donald Griffin... coined the term 'echolocation'' -> zoologist.",
+            "evidence": "The American zoologist Donald Griffin, who was largely responsible for the discovery of sonar in bats, coined the term 'echolocation'",
+            "num": 10
           }
         ],
         "vocabulary": [
           {
-            "word": "commodity",
-            "meaning": "Hàng hóa thương mại",
-            "example": "largest commodity in international trade"
+            "word": "odour",
+            "meaning": "Mùi hương, mùi vị",
+            "example": "Odours trigger powerful emotional memories."
           },
           {
-            "word": "underpin",
-            "meaning": "Chống đỡ, làm nền tảng cho",
-            "example": "underpinning their whole economy"
+            "word": "natural selection",
+            "meaning": "Chọn lọc tự nhiên",
+            "example": "Darwin formulated the principle of natural selection."
           },
           {
-            "word": "domestic tourism",
-            "meaning": "Du lịch nội địa",
-            "example": "measuring domestic tourism is challenging"
+            "word": "echolocation",
+            "meaning": "Định vị bằng tiếng vang",
+            "example": "Bats use echolocation to navigate in the dark."
           }
         ]
       },
       {
         "id": "r4_ex2",
         "exampleNum": 2,
-        "title": "Example 2: AUTUMN LEAVES (Sắc Đỏ Của Lá Mùa Thu)",
-        "instructions": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+        "title": "Phần 2: The Context, Meaning and Scope of Tourism",
+        "instructions": "Complete the sentences below. Choose NO MORE THAN THREE WORDS from the passage for each answer. Write your answers in boxes 11–13.",
         "passage": {
-          "title": "AUTUMN LEAVES - Why leaves turn red in the fall",
+          "title": "The Context, Meaning and Scope of Tourism",
           "paragraphs": [
             {
               "label": "A",
-              "text": "Chlorophyll, although exquisitely evolved to capture the energy of sunlight, can sometimes be overwhelmed by it, especially in situations of drought, low temperatures, or nutrient deficiency. Moreover, the problem of oversensitivity to light is even more acute in the fall, when leaves are busy preparing for winter by dismantling their internal machinery."
+              "text": "Once the exclusive province of the wealthy, travel and tourism have become an institutionalised way of life for most of the population. In fact, McIntosh and Goeldner (1990) suggest that tourism has become the largest commodity in international trade for many nations and, for a significant number of other countries, it ranks second or third. For example, tourism is the major source of income in Bermuda, Greece, Italy, Spain, Switzerland and most Caribbean countries."
             },
             {
               "label": "B",
-              "text": "The energy absorbed by the chlorophyll molecules of the unstable autumn leaf is not immediately channeled into useful products and processes, as it would be in summer. Instead, vulnerable internal structures become damaged. To protect themselves, trees synthesize red pigments called anthocyanins, which act as a solar shield."
+              "text": "In addition, Hawkins and Ritchie, quoting from data published by the American Express Company, suggest that the travel and tourism industry is the number one ranked employer in the Bahamas, Brazil, Canada, France, (the former) West Germany, Hong Kong, Italy, Jamaica, Japan, Singapore, the United Kingdom and the United States."
             },
             {
               "label": "C",
-              "text": "Field studies have shown that trees exposed to brighter sunlight generate substantially higher amounts of anthocyanin than shaded trees. Furthermore, scientists discovered that when trees suffer from nitrogen deficiency in the soil, they dramatically boost anthocyanin production to salvage every scrap of nutrient before winter sets in."
+              "text": "However, because of problems of definition, which directly affect statistical measurement, it is not possible with any degree of certainty to provide precise, valid or reliable data about the extent of world-wide tourism participation or its economic impact. In many cases, similar difficulties arise when attempts are made to measure domestic tourism."
             }
           ]
         },
         "questions": [
           {
-            "id": 19,
-            "num": 19,
+            "id": 11,
             "type": "gap-fill",
-            "questionText": "19. It is in situations of _______ that trees are at greater risk of being damaged by sunlight.",
+            "questionText": "11. In Greece, tourism is the most important ………………………………….. (NO MORE THAN THREE WORDS)",
             "acceptableAnswers": [
-              "drought",
-              "nutrient deficiency",
-              "low temperatures"
+              "source of income"
             ],
-            "explanation": "Đoạn A: 'especially in situations of drought, low temperatures, or nutrient deficiency'. Đáp án chuẩn xác là 'drought'.",
-            "evidence": "especially in situations of drought, low temperatures, or nutrient deficiency"
+            "explanation": "Đoạn A: 'tourism is the major source of income in Bermuda, Greece, Italy, Spain...' -> 'most important' = major -> source of income.",
+            "evidence": "tourism is the major source of income in Bermuda, Greece, Italy",
+            "num": 11
           },
           {
-            "id": 20,
-            "num": 20,
+            "id": 12,
             "type": "gap-fill",
-            "questionText": "20. The effect of intense sunlight is more severe on trees in autumn than in _______",
+            "questionText": "12. The travel and tourism industry in Jamaica is the major ………………………………….. (NO MORE THAN THREE WORDS)",
             "acceptableAnswers": [
-              "summer",
-              "the summer"
+              "employer"
             ],
-            "explanation": "Đoạn A & B so sánh: 'even more acute in the fall than in summer'. Đáp án là 'summer'.",
-            "evidence": "acute in the fall... as it would be in summer"
+            "explanation": "Đoạn B: 'travel and tourism industry is the number one ranked employer in the Bahamas... Jamaica, Japan...' -> employer.",
+            "evidence": "number one ranked employer in the Bahamas, Brazil, Canada, France... Jamaica",
+            "num": 12
           },
           {
-            "id": 21,
-            "num": 21,
+            "id": 13,
             "type": "gap-fill",
-            "questionText": "21. Plants which produce more anthocyanin grow in areas where sunlight is _______",
+            "questionText": "13. The problems associated with measuring international tourism are often reflected in the measurement of ………………………………….. (NO MORE THAN THREE WORDS)",
             "acceptableAnswers": [
-              "brighter",
-              "more bright"
+              "domestic tourism"
             ],
-            "explanation": "Đoạn C: 'trees exposed to brighter sunlight generate substantially higher amounts of anthocyanin'. Đáp án là 'brighter'.",
-            "evidence": "trees exposed to brighter sunlight generate substantially higher amounts of anthocyanin"
-          },
-          {
-            "id": 22,
-            "num": 22,
-            "type": "gap-fill",
-            "questionText": "22. The production of anthocyanin may be a response to a deficiency in _______",
-            "acceptableAnswers": [
-              "nitrogen",
-              "nutrients"
-            ],
-            "explanation": "Đoạn C: 'when trees suffer from nitrogen deficiency in the soil, they dramatically boost anthocyanin production'. Đáp án là 'nitrogen'.",
-            "evidence": "suffer from nitrogen deficiency in the soil, they dramatically boost anthocyanin production"
+            "explanation": "Đoạn C: 'In many cases, similar difficulties arise when attempts are made to measure domestic tourism' -> domestic tourism.",
+            "evidence": "similar difficulties arise when attempts are made to measure domestic tourism",
+            "num": 13
           }
         ],
         "vocabulary": [
           {
-            "word": "chlorophyll",
-            "meaning": "Chất diệp lục trong lá cây",
-            "example": "Chlorophyll captures sunlight energy."
+            "word": "source of income",
+            "meaning": "Nguồn thu nhập",
+            "example": "Tourism is a primary source of income for island nations."
           },
           {
-            "word": "anthocyanin",
-            "meaning": "Hợp chất tạo sắc tố đỏ ở thực vật",
-            "example": "anthocyanins act as a sunscreen for leaves"
-          },
-          {
-            "word": "deficiency",
-            "meaning": "Sự thiếu hụt (chất dinh dưỡng)",
-            "example": "nitrogen deficiency in the soil"
+            "word": "domestic tourism",
+            "meaning": "Du lịch nội địa",
+            "example": "Domestic tourism increased rapidly during the holidays."
           }
         ]
       },
       {
         "id": "r4_ex3",
         "exampleNum": 3,
-        "title": "Example 3: GIFTED CHILDREN AND LEARNING (Trẻ Năng Khiếu)",
-        "instructions": "Complete the sentences below. Choose NO MORE THAN THREE WORDS from the passage for each answer.",
+        "title": "Phần 3: Autumn Leaves (Bí Ẩn Lá Đổi Màu Trong Mùa Thu)",
+        "instructions": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer. Write your answers in boxes 19–22.",
         "passage": {
-          "title": "GIFTED CHILDREN AND LEARNING",
+          "title": "Autumn Leaves - Why Leaves Turn Red in Fall",
           "paragraphs": [
             {
               "label": "A",
-              "text": "Internationally, 'giftedness' is most frequently determined by a score on a general intelligence test, known as an IQ test, which is above a chosen cutoff point, usually at around the top 2-5%. Children's educational environment contributes enormously to their IQ score and the way intelligence is exercised. For example, a very close positive relationship was found between children's intellectual achievement and the availability of books and learning resources at home."
+              "text": "Chlorophyll, although exquisitely evolved to capture the energy of sunlight, can sometimes be overwhelmed by it, especially in situations of drought, low temperatures, or nutrient deficiency. Moreover, the problem of oversensitivity to light is even more acute in the fall, when the leaf is busy preparing for winter by dismantling its internal machinery. The energy absorbed by the chlorophyll molecules of the unstable autumn leaf is not immediately channelled into useful products and processes, as it would be in an intact summer leaf. The weakened fall leaf then becomes vulnerable to the highly destructive effects of the oxygen created by the excited chlorophyll molecules."
             },
             {
               "label": "B",
-              "text": "However, emotional wellbeing also plays an integral role. Negative feelings such as intense anxiety can disrupt a child's mental processing and completely inhibit their ability to engage in complex learning activities. Children who feel overwhelmed fail to convert their innate potential into tangible performance."
+              "text": "Even if you had never suspected that this is what was going on when leaves turn red, there are clues out there. One is straightforward: on many trees, the leaves that are the reddest are those on the side of the tree which gets most sun. Not only that, but the red is brighter on the upper side of the leaf. It has also been recognised for decades that the best conditions for intense red colours are dry, sunny days and cool nights, conditions that nicely match those that make leaves susceptible to excess light. And finally, trees such as maples usually get much redder the more north you travel in the northern hemisphere. It’s colder there, they’re more stressed, their chlorophyll is more sensitive and it needs more sunblock."
             },
             {
               "label": "C",
-              "text": "In addition, research indicates that high-ability children demonstrate advanced self-regulatory habits. Consequently, highly gifted children may not require as much continuous supervision from adults as children of average ability. Therefore, strategies used to nurture gifted learners should emulate the flexible methods used by teachers who cultivate independent thinking."
+              "text": "What is still not fully understood, however, is why some trees resort to producing red pigments while others don’t bother, and simply reveal their orange or yellow hues. Do these trees have other means at their disposal to prevent overexposure to light in autumn? Their story, though not as spectacular to the eye, will surely turn out to be as subtle and as complex."
+            }
+          ]
+        },
+        "questions": [
+          {
+            "id": 19,
+            "type": "gap-fill",
+            "questionText": "19. The most vividly coloured red leaves are found on the side of the tree facing the ……………. (ONE WORD ONLY)",
+            "acceptableAnswers": [
+              "sun"
+            ],
+            "explanation": "Đoạn B: 'the leaves that are the reddest are those on the side of the tree which gets most sun' -> sun.",
+            "evidence": "the leaves that are the reddest are those on the side of the tree which gets most sun",
+            "num": 19
+          },
+          {
+            "id": 20,
+            "type": "gap-fill",
+            "questionText": "20. The ……………. surfaces of leaves contain the most red pigment. (ONE WORD ONLY)",
+            "acceptableAnswers": [
+              "upper"
+            ],
+            "explanation": "Đoạn B: 'Not only that, but the red is brighter on the upper side of the leaf' -> upper.",
+            "evidence": "the red is brighter on the upper side of the leaf",
+            "num": 20
+          },
+          {
+            "id": 21,
+            "type": "gap-fill",
+            "questionText": "21. Red leaves are most abundant when daytime weather conditions are ……………. and sunny. (ONE WORD ONLY)",
+            "acceptableAnswers": [
+              "dry"
+            ],
+            "explanation": "Đoạn B: 'best conditions for intense red colours are dry, sunny days and cool nights' -> dry.",
+            "evidence": "the best conditions for intense red colours are dry , sunny days and coo nights",
+            "num": 21
+          },
+          {
+            "id": 22,
+            "type": "gap-fill",
+            "questionText": "22. The intensity of the red colour of leaves increases as you go further ……………. (ONE WORD ONLY)",
+            "acceptableAnswers": [
+              "north"
+            ],
+            "explanation": "Đoạn B: 'maples usually get much redder the more north you travel in the northern hemisphere' -> north.",
+            "evidence": "maples usually get much redder the more north you travel in the northern hemisphere",
+            "num": 22
+          }
+        ],
+        "vocabulary": [
+          {
+            "word": "chlorophyll",
+            "meaning": "Chất diệp lục",
+            "example": "Chlorophyll absorbs sunlight during photosynthesis."
+          },
+          {
+            "word": "pigment",
+            "meaning": "Sắc tố",
+            "example": "Anthocyanin is the red pigment in autumn leaves."
+          },
+          {
+            "word": "susceptible",
+            "meaning": "Dễ bị tổn thương, dễ bị ảnh hưởng",
+            "example": "Trees become susceptible to frost in winter."
+          }
+        ]
+      },
+      {
+        "id": "r4_ex4",
+        "exampleNum": 4,
+        "title": "Phần 4: Gifted Children and Learning",
+        "instructions": "Complete the sentences below. Choose NO MORE THAN THREE WORDS from the passage for each answer. Write your answers in boxes 23–26.",
+        "passage": {
+          "title": "Gifted Children and Learning",
+          "paragraphs": [
+            {
+              "label": "A",
+              "text": "Internationally, ‘giftedness’ is most frequently determined by a score on a general intelligence test, known as an IQ test, which is above a chosen cutoff point, usually at around the top 2-5%. Children’s educational environment contributes to the IQ score and the way intelligence is used. For example, a very close positive relationship was found when children’s IQ scores were compared with their home educational provision (Freeman, 2010). The higher the children’s IQ scores, especially over IQ 130, the better the quality of their educational backup, measured in terms of reported verbal interactions with parents, number of books and activities in their home etc. Because IQ tests are decidedly influenced by what the child has learned, they are to some extent measures of current achievement based on age-norms; that is, how well the children have learned to manipulate their knowledge and know-how within the terms of the test. The vocabulary aspect, for example, is dependent on having heard those words. But IQ tests can neither identify the processes of learning and thinking nor predict creativity."
+            },
+            {
+              "label": "B",
+              "text": "Excellence does not emerge without appropriate help. To reach an exceptionally high standard in any area very able children need the means to learn, which includes material to work with and focused challenging tuition -and the encouragement to follow their dream. There appears to be a qualitative difference in the way the intellectually highly able think, compared with more average-ability or older pupils, for whom external regulation by the teacher often compensates for lack of internal regulation. To be at their most effective in their self-regulation, all children can be helped to identify their own ways of learning – metacognition – which will include strategies of planning, monitoring, evaluation, and choice of what to learn. Emotional awareness is also part of metacognition, so children should be helped to be aware of their feelings around the area to be learned, feelings of curiosity or confidence, for example."
+            },
+            {
+              "label": "C",
+              "text": "Yet in order to learn by themselves, the gifted do need some support from their teachers. Conversely, teachers who have a tendency to ‘overdirect’ can diminish their gifted pupils’ learning autonomy. Although ‘spoon-feeding’ can produce extremely high examination results, these are not always followed by equally impressive life successes. Too much dependence on the teachers risks loss of autonomy and motivation to discover. However, when teachers urge pupils to reflect on their own learning and thinking activities, they increase their pupils’ self-regulation. For a young child, it may be just the simple question ‘What have you learned today?’ which helps them to recognise what they are doing. Given that a fundamental goal of education is to transfer the control of learning from teachers to pupils, improving pupils’ learning to learn techniques should be a major outcome of the school experience, especially for the highly competent."
             }
           ]
         },
         "questions": [
           {
             "id": 23,
-            "num": 23,
             "type": "gap-fill",
-            "questionText": "23. Less-privileged children may need more _______ than other children in order to achieve high educational standards.",
+            "questionText": "23. One study found a strong connection between children’s IQ and the availability of ………………………………….. at home. (NO MORE THAN THREE WORDS)",
             "acceptableAnswers": [
-              "books",
-              "learning resources",
-              "books and learning resources"
+              "educational backup",
+              "books and activities",
+              "educational provision"
             ],
-            "explanation": "Đoạn A: 'availability of books and learning resources at home'. Đáp án là 'books' hoặc 'learning resources'.",
-            "evidence": "availability of books and learning resources at home"
+            "explanation": "Đoạn A: 'close positive relationship was found when children’s IQ scores were compared with their home educational provision... the better the quality of their educational backup' -> educational backup / educational provision.",
+            "evidence": "the better the quality of their educational backup, measured in terms of reported verbal interactions with parents, number of books and activities in their home",
+            "num": 23
           },
           {
             "id": 24,
-            "num": 24,
             "type": "gap-fill",
-            "questionText": "24. A child’s emotional state may prevent them from succeeding in certain educational _______",
+            "questionText": "24. Children of average ability seem to need more direction from teachers because they do not have …………………………………... (NO MORE THAN THREE WORDS)",
             "acceptableAnswers": [
-              "activities",
-              "learning activities",
-              "tasks"
+              "internal regulation",
+              "self-regulation"
             ],
-            "explanation": "Đoạn B: 'anxiety can disrupt... and completely inhibit their ability to engage in complex learning activities'. Đáp án là 'activities' hoặc 'learning activities'.",
-            "evidence": "inhibit their ability to engage in complex learning activities"
+            "explanation": "Đoạn B: 'for whom external regulation by the teacher often compensates for lack of internal regulation' -> thiếu khả năng tự điều chỉnh -> lack of internal regulation.",
+            "evidence": "external regulation by the teacher often compensates for lack of internal regulation",
+            "num": 24
           },
           {
             "id": 25,
-            "num": 25,
             "type": "gap-fill",
-            "questionText": "25. Highly gifted children may not require as much help from adults as children of _______",
+            "questionText": "25. Meta-cognition involves children understanding their own learning strategies, as well as developing …………………………………... (NO MORE THAN THREE WORDS)",
             "acceptableAnswers": [
-              "average ability"
+              "emotional awareness"
             ],
-            "explanation": "Đoạn C: 'may not require as much continuous supervision from adults as children of average ability'. Đáp án là 'average ability'.",
-            "evidence": "supervision from adults as children of average ability"
+            "explanation": "Đoạn B: 'Emotional awareness is also part of metacognition, so children should be helped to be aware of their feelings' -> emotional awareness.",
+            "evidence": "Emotional awareness is also part of metacognition",
+            "num": 25
           },
           {
             "id": 26,
-            "num": 26,
             "type": "gap-fill",
-            "questionText": "26. The methods used to support gifted children should be based on techniques used by _______",
+            "questionText": "26. Teachers who rely on what is known as ………………………………….. often produce sets of impressive grades in class tests. (NO MORE THAN THREE WORDS)",
             "acceptableAnswers": [
-              "teachers"
+              "spoon-feeding",
+              "spoon feeding",
+              "spoon-feeding "
             ],
-            "explanation": "Đoạn C: 'emulate the flexible methods used by teachers'. Đáp án là 'teachers'.",
-            "evidence": "emulate the flexible methods used by teachers"
+            "explanation": "Đoạn C: 'Although ‘spoon-feeding’ can produce extremely high examination results' -> spoon-feeding (cách dạy nhồi sọ, mớm sẵn kiến thức).",
+            "evidence": "Although ‘ spoon-feeding ’ can produce extremely high examination results",
+            "num": 26
           }
         ],
         "vocabulary": [
           {
-            "word": "giftedness",
-            "meaning": "Tố chất năng khiếu, sự thông minh bẩm sinh",
-            "example": "identifying children with giftedness"
+            "word": "metacognition",
+            "meaning": "Nhận thức về quá trình tư duy (siêu nhận thức)",
+            "example": "Metacognition helps students improve their learning strategies."
           },
           {
-            "word": "inhibit",
-            "meaning": "Kìm hãm, ngăn chặn",
-            "example": "fear can inhibit intellectual performance"
+            "word": "spoon-feeding",
+            "meaning": "Phương pháp dạy học mớm sẵn, nhồi sọ",
+            "example": "Spoon-feeding reduces students' critical thinking ability."
           },
           {
-            "word": "average ability",
-            "meaning": "Năng lực trung bình",
-            "example": "students of average ability"
+            "word": "autonomy",
+            "meaning": "Sự tự chủ, độc lập",
+            "example": "Encouraging learner autonomy is vital for long-term success."
           }
         ]
       }
@@ -997,22 +1311,22 @@ const readingLessons = [
     "id": "reading_5",
     "lessonNum": 5,
     "code": "V07",
-    "title": "V07 - SUMMARY COMPLETION",
-    "shortTitle": "Summary Completion",
+    "title": "V07 – SUMMARY COMPLETION",
+    "shortTitle": "Hoàn Thành Tóm Tắt",
     "category": "completion",
-    "categoryLabel": "Dạng Điền Từ",
-    "badge": "Điền tóm tắt",
-    "description": "Chiến thuật điền từ vào đoạn tóm tắt: Đoán từ loại của chỗ trống, nhận diện paraphrase trong văn bản tóm tắt và quét từ khóa định vị vùng bài đọc.",
+    "categoryLabel": "Điền Từ Vào Chỗ Trống",
+    "badge": "Dạng bài phổ biến",
+    "description": "Chiến thuật hoàn thành đoạn văn tóm tắt: xác định từ loại, từ khóa xung quanh chỗ trống, và phân biệt giữa điền từ trực tiếp từ bài (Direct) và chọn từ trong ô cho sẵn (Word Box with synonyms).",
     "examplesCount": 4,
-    "totalQuestions": 19,
+    "totalQuestions": 18,
     "examples": [
       {
         "id": "r5_ex1",
         "exampleNum": 1,
         "title": "Example 1: Young Children’s Sense of Identity",
-        "instructions": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+        "instructions": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer. (Questions 24-25, Page 21)",
         "passage": {
-          "title": "Young Children's Developing Sense of Self",
+          "title": "How Children Acquire a Sense of Identity",
           "paragraphs": [
             {
               "label": "A",
@@ -1020,94 +1334,49 @@ const readingLessons = [
             },
             {
               "label": "B",
-              "text": "This understanding that children gain of themselves as active agents continues to develop in their day-to-day social interactions with caregivers. Through social communication, toddlers begin to realise that other people have perspectives and desires different from their own."
-            },
-            {
-              "label": "C",
-              "text": "Another powerful indicator of a child's emergent sense of identity is the burgeoning assertion of ownership over personal possessions. Toddlers frequently claim toys by shouting 'Mine!' to mark boundaries between self and others. Research demonstrates that this cognitive leap typically consolidates at around eighteen months to two years of age."
-            },
-            {
-              "label": "D",
-              "text": "However, with self-awareness comes a surge of emotional volatility. When a child's strong will is frustrated by parental boundaries, expressions of intense anger and temper tantrums often emerge as the child struggles to reconcile autonomy with external limits."
+              "text": "This understanding that children gain of themselves as active agents continues to develop in their attempts to co-operate with others in play. Dunn (1988) points out that it is in such day-to-day relationships and interactions that the child's understanding of his- or herself emerges. Empirical investigations of the self-as-subject in young children are, however, rather scarce because of difficulties of communication: even if young infants can reflect on their experience, they certainly cannot express this aspect of the self directly."
             }
           ]
         },
         "questions": [
           {
-            "id": 27,
-            "num": 27,
+            "id": 24,
+            "num": 24,
             "type": "gap-fill",
-            "questionText": "27. Infants develop self-awareness by realizing that visual feedback in a _______ reflects their physical actions.",
+            "questionText": "24. First, children come to realise that they can have an effect on the world around them, for example by handling objects, or causing the image to move when they face a ……………………… (ONE WORD ONLY)",
             "acceptableAnswers": [
-              "mirror",
-              "the mirror"
+              "mirror"
             ],
-            "explanation": "Đoạn A: 'movements they see in the mirror are contingent on their own'. Đáp án là 'mirror'.",
-            "evidence": "movements they see in the mirror are contingent on their own"
+            "explanation": "Đoạn A: 'the movements they see in the mirror are contingent on their own... they, and only they, can change the reflection in the mirror' -> facing a mirror.",
+            "evidence": "the movements they see in the mirror are contingent on their own, leads to a growing awareness that they are distinct from other people"
           },
           {
-            "id": 28,
-            "num": 28,
+            "id": 25,
+            "num": 25,
             "type": "gap-fill",
-            "questionText": "28. Children expand their understanding through social _______ with people around them.",
+            "questionText": "25. This aspect of self-awareness is difficult to research directly, because of ……………………… problems. (ONE WORD ONLY)",
             "acceptableAnswers": [
-              "communication",
-              "interactions",
-              "social interactions"
+              "communication"
             ],
-            "explanation": "Đoạn B: 'Through social communication... realise that other people have perspectives'. Đáp án là 'communication'.",
-            "evidence": "Through social communication, toddlers begin to realise"
-          },
-          {
-            "id": 29,
-            "num": 29,
-            "type": "gap-fill",
-            "questionText": "29. Toddlers often assert their individuality by expressing _______ over their toys and objects.",
-            "acceptableAnswers": [
-              "ownership"
-            ],
-            "explanation": "Đoạn C: 'assertion of ownership over personal possessions'. Đáp án là 'ownership'.",
-            "evidence": "burgeoning assertion of ownership over personal possessions"
-          },
-          {
-            "id": 30,
-            "num": 30,
-            "type": "gap-fill",
-            "questionText": "30. This landmark developmental stage usually stabilizes at a particular _______ between 18 months and two years.",
-            "acceptableAnswers": [
-              "age"
-            ],
-            "explanation": "Đoạn C: 'typically consolidates at around eighteen months to two years of age'. Đáp án là 'age'.",
-            "evidence": "eighteen months to two years of age"
-          },
-          {
-            "id": 31,
-            "num": 31,
-            "type": "gap-fill",
-            "questionText": "31. The conflict between autonomy and restrictions can manifest as outbursts of _______",
-            "acceptableAnswers": [
-              "anger",
-              "intense anger"
-            ],
-            "explanation": "Đoạn D: 'expressions of intense anger and temper tantrums often emerge'. Đáp án là 'anger'.",
-            "evidence": "expressions of intense anger and temper tantrums often emerge"
+            "explanation": "Đoạn B: 'Empirical investigations... are, however, rather scarce because of difficulties of communication' -> communication problems.",
+            "evidence": "Empirical investigations of the self-as-subject in young children are, however, rather scarce because of difficulties of communication"
           }
         ],
         "vocabulary": [
           {
             "word": "contingent on",
             "meaning": "Phụ thuộc vào, gắn liền với",
-            "example": "movements are contingent on their own"
+            "example": "A child's reflection in a mirror is contingent on their own movements."
           },
           {
-            "word": "assertion of ownership",
-            "meaning": "Sự khẳng định quyền sở hữu",
-            "example": "assertion of ownership over toys"
+            "word": "empirical",
+            "meaning": "Thực nghiệm, dựa trên quan sát thực tế",
+            "example": "Empirical evidence is vital for scientific theories."
           },
           {
-            "word": "autonomy",
-            "meaning": "Tính tự chủ, độc lập",
-            "example": "striving for personal autonomy"
+            "word": "self-awareness",
+            "meaning": "Ý thức về bản thân",
+            "example": "Self-awareness emerges early in human childhood."
           }
         ]
       },
@@ -1115,17 +1384,17 @@ const readingLessons = [
         "id": "r5_ex2",
         "exampleNum": 2,
         "title": "Example 2: Pulling Strings to Build Pyramids",
-        "instructions": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+        "instructions": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer. (Questions 8-13, Page 22)",
         "passage": {
-          "title": "Harnessing the Wind to Build the Pyramids",
+          "title": "Pulling Strings to Build Pyramids",
           "paragraphs": [
             {
               "label": "A",
-              "text": "Others feel there is more of a case for the theory. Harnessing the wind would not have been a problem for accomplished sailors like the ancient Egyptians. And they are known to have used strong ropes and wooden pulleys, which could have been made sturdy enough to bear the weight of massive blocks of stone."
+              "text": "Others feel there is more of a case for the theory. Harnessing the wind would not have been a problem for accomplished sailors like the Egyptians. And they are known to have used wooden pulleys, which could have been made strong enough to bear the weight of massive blocks of stone. In addition, there is some physical evidence that the ancient Egyptians were interested in flight."
             },
             {
               "label": "B",
-              "text": "In addition, there is intriguing physical evidence that the ancient Egyptians were fascinated by mechanical flight. A carved wooden glider found inside the step pyramid at Saqqara looks uncannily aerodynamic. Moreover, hieroglyphs demonstrate that builders studied the aerodynamic wing shapes of soaring birds."
+              "text": "A wooden artefact found on the step pyramid at Saqqara looks uncannily like a modern glider. Although it dates from several hundred years after the building of the pyramids, its sophistication suggests that the Egyptians might have been developing ideas of flight for a long time. And other ancient civilisations certainly knew about kites; as early as 1250 BC, the Chinese were using them to deliver messages and dump flaming debris on their foes."
             }
           ]
         },
@@ -1134,111 +1403,110 @@ const readingLessons = [
             "id": 8,
             "num": 8,
             "type": "gap-fill",
-            "questionText": "8. Sailors could exploit the energy of the _______ to facilitate heavy construction.",
+            "questionText": "8. The Egyptians had ………………………………….. which could lift large pieces of... (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
-              "wind",
-              "the wind"
+              "wooden pulleys",
+              "pulleys"
             ],
-            "explanation": "Đoạn A: 'Harnessing the wind would not have been a problem'. Đáp án là 'wind'.",
-            "evidence": "Harnessing the wind would not have been a problem"
+            "explanation": "Đoạn A: 'And they are known to have used wooden pulleys, which could have been made strong enough to bear the weight of massive blocks of stone.'",
+            "evidence": "And they are known to have used wooden pulleys, which could have been made strong enough to bear the weight of massive blocks of stone."
           },
           {
             "id": 9,
             "num": 9,
             "type": "gap-fill",
-            "questionText": "9. Heavy stones were lifted using durable _______ attached to mechanical systems.",
+            "questionText": "9. ...which could lift large pieces of ………………………………….. (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
-              "ropes"
+              "stone"
             ],
-            "explanation": "Đoạn A: 'used strong ropes and wooden pulleys'. Đáp án là 'ropes'.",
-            "evidence": "used strong ropes and wooden pulleys"
+            "explanation": "Đoạn A: 'to bear the weight of massive blocks of stone' -> large pieces of stone.",
+            "evidence": "bear the weight of massive blocks of stone"
           },
           {
             "id": 10,
             "num": 10,
             "type": "gap-fill",
-            "questionText": "10. These rigging systems were engineered to support the immense _______ of limestone blocks.",
+            "questionText": "10. ...and they knew how to use the energy of the wind from their skill as ………………………………….. (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
-              "weight",
-              "weights"
+              "sailors",
+              "accomplished sailors"
             ],
-            "explanation": "Đoạn A: 'bear the weight of massive blocks of stone'. Đáp án là 'weight'.",
-            "evidence": "bear the weight of massive blocks of stone"
+            "explanation": "Đoạn A: 'Harnessing the wind would not have been a problem for accomplished sailors like the Egyptians.'",
+            "evidence": "Harnessing the wind would not have been a problem for accomplished sailors like the Egyptians."
           },
           {
             "id": 11,
             "num": 11,
             "type": "gap-fill",
-            "questionText": "11. Friction was minimized by utilizing wooden _______",
+            "questionText": "11. The discovery on one pyramid of an object which resembled a ………………………………….. (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
-              "pulleys",
-              "wooden pulleys"
+              "modern glider",
+              "glider"
             ],
-            "explanation": "Đoạn A: 'used strong ropes and wooden pulleys'. Đáp án là 'pulleys'.",
-            "evidence": "used strong ropes and wooden pulleys"
+            "explanation": "Đoạn B: 'A wooden artefact found on the step pyramid at Saqqara looks uncannily like a modern glider.'",
+            "evidence": "A wooden artefact found on the step pyramid at Saqqara looks uncannily like a modern glider."
           },
           {
             "id": 12,
             "num": 12,
             "type": "gap-fill",
-            "questionText": "12. Evidence of an interest in flight includes a small _______ discovered in Saqqara.",
+            "questionText": "12. ...suggests they may have experimented with ………………………………….. (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
-              "wooden glider",
-              "glider"
+              "flight",
+              "ideas of flight"
             ],
-            "explanation": "Đoạn B: 'A carved wooden glider found inside the step pyramid at Saqqara'. Đáp án là 'wooden glider' hoặc 'glider'.",
-            "evidence": "A carved wooden glider found inside the step pyramid at Saqqara"
+            "explanation": "Đoạn B: 'its sophistication suggests that the Egyptians might have been developing ideas of flight for a long time.'",
+            "evidence": "suggests that the Egyptians might have been developing ideas of flight for a long time"
           },
           {
             "id": 13,
             "num": 13,
             "type": "gap-fill",
-            "questionText": "13. Egyptian engineers were inspired by observing the natural flight of _______",
+            "questionText": "13. In addition, over two thousand years ago kites were used in China as weapons, as well as for sending ………………………………….. (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
-              "birds",
-              "soaring birds"
+              "messages"
             ],
-            "explanation": "Đoạn B: 'studied the aerodynamic wing shapes of soaring birds'. Đáp án là 'birds'.",
-            "evidence": "studied the aerodynamic wing shapes of soaring birds"
+            "explanation": "Đoạn B: 'the Chinese were using them to deliver messages and dump flaming debris on their foes.' -> sending messages.",
+            "evidence": "the Chinese were using them to deliver messages and dump flaming debris on their foes"
           }
         ],
         "vocabulary": [
           {
             "word": "harness",
-            "meaning": "Khai thác (năng lượng tự nhiên)",
-            "example": "harnessing the wind"
+            "meaning": "Khai thác (năng lượng gió, nước)",
+            "example": "Harnessing wind power enabled long sea voyages."
           },
           {
             "word": "pulley",
             "meaning": "Ròng rọc",
-            "example": "wooden pulleys for lifting heavy stone"
+            "example": "Pulleys reduce the effort needed to lift heavy weights."
           },
           {
-            "word": "aerodynamic",
-            "meaning": "Khí động học (lướt gió tốt)",
-            "example": "aerodynamic wing shape"
+            "word": "artefact",
+            "meaning": "Cổ vật khảo cổ",
+            "example": "Ancient artefacts provide clues to early technology."
           }
         ]
       },
       {
         "id": "r5_ex3",
         "exampleNum": 3,
-        "title": "Example 3: Beyond the Blue Horizon (Lapita Seafarers)",
-        "instructions": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+        "title": "Example 3: The Efate Burial Site (Summary with Box A-J)",
+        "instructions": "Complete the summary using the list of words and phrases, A-J, below. Write the correct letter, A-J, in boxes 27-31. (Questions 27-31, Pages 23-24)\n\nWord Box: A proof | B plantation | C harbour | D bones | E data | F archaeological discovery | G burial urn | H source | I animals | J maps",
         "passage": {
-          "title": "BEYOND THE BLUE HORIZON",
+          "title": "Beyond the Blue Horizon: The Efate Discovery",
           "paragraphs": [
             {
               "label": "A",
-              "text": "An important archaeological discovery on the island of Efate in the Pacific archipelago of Vanuatu has revealed traces of an ancient seafaring people, the Lapita, distant ancestors of today's Polynesians. An agricultural worker accidentally unearthed a vast ancient cemetery containing dozens of well-preserved human skeletons."
+              "text": "An important archaeological discovery on the island of Efate in the Pacific archipelago of Vanuatu has revealed traces of an ancient seafaring people, the distant ancestors of today's Polynesians. The site came to light only by chance. An agricultural worker, digging in the grounds of a derelict plantation, scraped open a grave – the first of dozens in a burial ground some 3,000 years old. It is the oldest cemetery ever found in the Pacific islands, and it harbors the remains of an ancient people archaeologists call the Lapita."
             },
             {
               "label": "B",
-              "text": "The discovery was miraculous because human bones deteriorate quickly in tropical acidic soil. However, the remains had been buried underneath a protective blanket of volcanic ash from a nearby eruption, shielding the bones from decay."
+              "text": "They were daring blue-water adventurers who used basic canoes to rove across the ocean. But they were not just explorers. They were also pioneers who carried with them everything they would need to build new lives – their livestock, taro seedlings and stone tools. Within the span of several centuries, the Lapita stretched the boundaries of their world from the jungle-clad volcanoes of Papua New Guinea to the loneliest coral outliers of Tonga."
             },
             {
               "label": "C",
-              "text": "The Lapita were master navigators who traversed thousands of nautical miles in double-hulled wooden canoes. Rather than drifting aimlessly, they deliberately sailed into prevailing trade winds, knowing that if they failed to sight land, they could turn around and swiftly return home with the wind behind them."
+              "text": "The Lapita left precious few clues about themselves, but Efate expands the volume of data available to researchers dramatically. The remains of 62 individuals have been uncovered so far, and archaeologists were also thrilled to find six complete Lapita pots. Other items included a Lapita burial urn with modeled birds arranged on the rim as though peering down at the human remains sealed inside. ‘It’s an important discovery,’ says Matthew Spriggs, professor of archaeology at the Australian National University and head of the international team digging up the site, ‘for it conclusively identifies the remains as Lapita.’"
             }
           ]
         },
@@ -1246,97 +1514,166 @@ const readingLessons = [
           {
             "id": 27,
             "num": 27,
-            "type": "gap-fill",
-            "questionText": "27. The site on Efate turned out to be an expansive prehistoric _______",
-            "acceptableAnswers": [
-              "cemetery",
-              "ancient cemetery"
+            "type": "summary",
+            "options": [
+              "A proof",
+              "B plantation",
+              "C harbour",
+              "D bones",
+              "E data",
+              "F archaeological discovery",
+              "G burial urn",
+              "H source",
+              "I animals",
+              "J maps"
             ],
-            "explanation": "Đoạn A: 'unearthed a vast ancient cemetery'. Đáp án là 'cemetery'.",
-            "evidence": "unearthed a vast ancient cemetery containing dozens of skeletons"
+            "questionText": "27. A 3,000-year-old burial ground of a seafaring people called the Lapita has been found on an abandoned [ 27 ] on the Pacific island of Efate.",
+            "acceptableAnswers": [
+              "B",
+              "plantation",
+              "B plantation"
+            ],
+            "explanation": "Đoạn A: 'digging in the grounds of a derelict plantation' -> derelict = abandoned -> B (plantation).",
+            "evidence": "An agricultural worker, digging in the grounds of a derelict plantation, scraped open a grave"
           },
           {
             "id": 28,
             "num": 28,
-            "type": "gap-fill",
-            "questionText": "28. Skeletons were remarkable because human _______ typically disintegrate rapidly in the tropics.",
-            "acceptableAnswers": [
-              "bones",
-              "human bones"
+            "type": "summary",
+            "options": [
+              "A proof",
+              "B plantation",
+              "C harbour",
+              "D bones",
+              "E data",
+              "F archaeological discovery",
+              "G burial urn",
+              "H source",
+              "I animals",
+              "J maps"
             ],
-            "explanation": "Đoạn B: 'human bones deteriorate quickly in tropical acidic soil'. Đáp án là 'bones'.",
-            "evidence": "human bones deteriorate quickly in tropical acidic soil"
+            "questionText": "28. The cemetery, which is a significant [ 28 ], was uncovered accidentally by an agricultural worker.",
+            "acceptableAnswers": [
+              "F",
+              "archaeological discovery",
+              "F archaeological discovery"
+            ],
+            "explanation": "Đoạn A: 'An important archaeological discovery on the island of Efate... came to light only by chance' -> significant archaeological discovery -> F.",
+            "evidence": "An important archaeological discovery on the island of Efate in the Pacific archipelago of Vanuatu"
           },
           {
             "id": 29,
             "num": 29,
-            "type": "gap-fill",
-            "questionText": "29. The skeletons survived owing to a thick deposit of _______",
-            "acceptableAnswers": [
-              "volcanic ash",
-              "ash"
+            "type": "summary",
+            "options": [
+              "A proof",
+              "B plantation",
+              "C harbour",
+              "D bones",
+              "E data",
+              "F archaeological discovery",
+              "G burial urn",
+              "H source",
+              "I animals",
+              "J maps"
             ],
-            "explanation": "Đoạn B: 'buried underneath a protective blanket of volcanic ash'. Đáp án là 'volcanic ash'.",
-            "evidence": "protective blanket of volcanic ash from a nearby eruption"
+            "questionText": "29. They took many things with them on their voyages including [ 29 ] and tools.",
+            "acceptableAnswers": [
+              "I",
+              "animals",
+              "I animals"
+            ],
+            "explanation": "Đoạn B: 'carried with them everything they would need to build new lives – their livestock, taro seedlings and stone tools.' -> livestock = animals -> I.",
+            "evidence": "carried with them everything they would need to build new lives – their livestock , taro seedlings and stone tools"
           },
           {
             "id": 30,
             "num": 30,
-            "type": "gap-fill",
-            "questionText": "30. Voyagers explored remote Pacific islands using specialized ocean-going _______",
-            "acceptableAnswers": [
-              "canoes",
-              "wooden canoes"
+            "type": "summary",
+            "options": [
+              "A proof",
+              "B plantation",
+              "C harbour",
+              "D bones",
+              "E data",
+              "F archaeological discovery",
+              "G burial urn",
+              "H source",
+              "I animals",
+              "J maps"
             ],
-            "explanation": "Đoạn C: 'traversed thousands of nautical miles in double-hulled wooden canoes'. Đáp án là 'canoes'.",
-            "evidence": "traversed thousands of nautical miles in double-hulled wooden canoes"
+            "questionText": "30. Spriggs believes the [ 30 ] which was found at the site is very important...",
+            "acceptableAnswers": [
+              "G",
+              "burial urn",
+              "G burial urn"
+            ],
+            "explanation": "Đoạn C: 'Other items included a Lapita burial urn... ‘It’s an important discovery,’ says Matthew Spriggs... ‘for it conclusively identifies the remains as Lapita.’' -> G (burial urn).",
+            "evidence": "Other items included a Lapita burial urn with modeled birds arranged on the rim"
           },
           {
             "id": 31,
             "num": 31,
-            "type": "gap-fill",
-            "questionText": "31. Their navigation strategy relied on the predictability of the _______",
-            "acceptableAnswers": [
-              "trade winds",
-              "prevailing trade winds"
+            "type": "summary",
+            "options": [
+              "A proof",
+              "B plantation",
+              "C harbour",
+              "D bones",
+              "E data",
+              "F archaeological discovery",
+              "G burial urn",
+              "H source",
+              "I animals",
+              "J maps"
             ],
-            "explanation": "Đoạn C: 'deliberately sailed into prevailing trade winds'. Đáp án là 'trade winds'.",
-            "evidence": "deliberately sailed into prevailing trade winds"
+            "questionText": "31. ...since it confirms that the [ 31 ] found inside are Lapita.",
+            "acceptableAnswers": [
+              "D",
+              "bones",
+              "D bones"
+            ],
+            "explanation": "Đoạn C: 'peering down at the human remains sealed inside... conclusively identifies the remains as Lapita' -> human remains = bones -> D.",
+            "evidence": "peering down at the human remains sealed inside. ‘It’s an important discovery,’ says Matthew Spriggs... ‘for it conclusively identifies the remains as Lapita.’"
           }
         ],
         "vocabulary": [
           {
-            "word": "cemetery",
-            "meaning": "Nghĩa trang, khu mộ cổ",
-            "example": "prehistoric cemetery"
+            "word": "derelict",
+            "meaning": "Bị bỏ hoang, không ai chăm sóc",
+            "example": "The ruins stood in a derelict plantation."
           },
           {
-            "word": "volcanic ash",
-            "meaning": "Tro bụi núi lửa",
-            "example": "preserved under volcanic ash"
+            "word": "livestock",
+            "meaning": "Gia súc, vật nuôi",
+            "example": "The voyagers brought livestock and crops to seed new islands."
           },
           {
-            "word": "trade winds",
-            "meaning": "Gió mậu dịch / gió mùa",
-            "example": "navigating by trade winds"
+            "word": "burial urn",
+            "meaning": "Hũ đựng tro cốt / di cốt",
+            "example": "A burial urn was uncovered containing ancient remains."
           }
         ]
       },
       {
         "id": "r5_ex4",
         "exampleNum": 4,
-        "title": "Example 4: The Little Ice Age",
-        "instructions": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+        "title": "Example 4: The Little Ice Age (Summary with Box A-I)",
+        "instructions": "Complete the summary using the list of words, A-I, below. Write the correct letter, A-I, in boxes 18-22. (Questions 18-22, Pages 25-26)\n\nWord Box: A climatic shifts | B ice cores | C tree rings | D glaciers | E interactions | F weather observations | G heat waves | H storms | I written accounts",
         "passage": {
-          "title": "THE LITTLE ICE AGE - Climatic Shifts and Human History",
+          "title": "Weather During the Little Ice Age",
           "paragraphs": [
             {
               "label": "A",
-              "text": "To reconstruct historical temperatures before modern thermometers existed, paleoclimatologists analyze annual growth patterns in tree rings, which record summer temperatures with extraordinary precision. Scientists also drill deep into polar glaciers to extract ice cores, revealing ancient atmospheric gas compositions."
+              "text": "This book will provide a detailed examination of the Little Ice Age and other climatic shifts, but, before I embark on that, let me provide a historical context. We tend to think of climate - as opposed to weather - as something unchanging, yet humanity has been at the mercy of climate change for its entire existence, with at least eight glacial episodes in the past 730,000 years. Our ancestors adapted to the universal but irregular global warming since the end of the last great Ice Age, around 10,000 years ago, with dazzling opportunism."
             },
             {
               "label": "B",
-              "text": "Physical markers left by mountain glaciers corroborate this data: between 1300 and 1850, a sudden climate cooling enveloped Europe, known as the Little Ice Age. Freezing winters caused rivers like the Thames to freeze solid, and shortened growing seasons triggered severe agricultural crises across the continent."
+              "text": "The Little Ice Age lasted from roughly 1300 until the middle of the nineteenth century. Only two centuries ago, Europe experienced a cycle of bitterly cold winters; mountain glaciers in the Swiss Alps were the lowest in recorded memory, and pack ice surrounded Iceland for much of the year. The climatic events of the Little Ice Age did more than help shape the modern world. They are the deeply important context for the current unprecedented global warming. The Little Ice Age was far from a deep freeze, however; rather an irregular seesaw of rapid climatic shifts, few lasting more than a quarter-century, driven by complex and still little understood interactions between the atmosphere and the ocean. The seesaw brought cycles of intensely cold winters and easterly winds, then switched abruptly to years of heavy spring and early summer rains, mild winters, and frequent Atlantic storms, or to periods of droughts, light northeasterly winds, and summer heat waves."
+            },
+            {
+              "label": "C",
+              "text": "Reconstructing the climate changes of the past is extremely difficult, because systematic weather observations began only a few centuries ago, in Europe and North America. Records from India and tropical Africa are even more recent. For the time before records began, we have only ‘proxy records’ reconstructed largely from tree rings and ice cores, supplemented by a few incomplete written accounts. We now have hundreds of tree-ring records from throughout the northern hemisphere, and many from south of the equator, too, amplified with a growing body of temperature data from ice cores drilled in Antarctica, Greenland, the Peruvian Andes, and other locations."
             }
           ]
         },
@@ -1344,78 +1681,145 @@ const readingLessons = [
           {
             "id": 18,
             "num": 18,
-            "type": "gap-fill",
-            "questionText": "18. Past climate variations can be measured by studying the thickness of _______",
-            "acceptableAnswers": [
-              "tree rings",
-              "rings"
+            "type": "summary",
+            "options": [
+              "A climatic shifts",
+              "B ice cores",
+              "C tree rings",
+              "D glaciers",
+              "E interactions",
+              "F weather observations",
+              "G heat waves",
+              "H storms",
+              "I written accounts"
             ],
-            "explanation": "Đoạn A: 'analyze annual growth patterns in tree rings'. Đáp án là 'tree rings'.",
-            "evidence": "analyze annual growth patterns in tree rings"
+            "questionText": "18. Documentation of past weather conditions is limited: our main sources of knowledge of conditions in the distant past are [ 18 ]...",
+            "acceptableAnswers": [
+              "C",
+              "B",
+              "tree rings",
+              "ice cores",
+              "C tree rings",
+              "B ice cores"
+            ],
+            "explanation": "Đoạn C: 'proxy records reconstructed largely from tree rings and ice cores' -> 18 có thể là C (tree rings) hoặc B (ice cores).",
+            "evidence": "we have only ‘proxy records’ reconstructed largely from tree rings and ice cores"
           },
           {
             "id": 19,
             "num": 19,
-            "type": "gap-fill",
-            "questionText": "19. Ancient gas samples are retrieved by extracting polar _______",
-            "acceptableAnswers": [
-              "ice cores"
+            "type": "summary",
+            "options": [
+              "A climatic shifts",
+              "B ice cores",
+              "C tree rings",
+              "D glaciers",
+              "E interactions",
+              "F weather observations",
+              "G heat waves",
+              "H storms",
+              "I written accounts"
             ],
-            "explanation": "Đoạn A: 'drill deep into polar glaciers to extract ice cores'. Đáp án là 'ice cores'.",
-            "evidence": "drill deep into polar glaciers to extract ice cores"
+            "questionText": "19. ...and [ 19 ]. (Điền từ còn lại giữa C và B)",
+            "acceptableAnswers": [
+              "B",
+              "C",
+              "ice cores",
+              "tree rings",
+              "B ice cores",
+              "C tree rings"
+            ],
+            "explanation": "Đoạn C: 'reconstructed largely from tree rings and ice cores' -> 19 là B (nếu 18 chọn C) hoặc C (nếu 18 chọn B).",
+            "evidence": "reconstructed largely from tree rings and ice cores, supplemented by a few incomplete written accounts"
           },
           {
             "id": 20,
             "num": 20,
-            "type": "gap-fill",
-            "questionText": "20. The historical boundaries of Alpine _______ provide evidence of frozen periods.",
-            "acceptableAnswers": [
-              "glaciers",
-              "mountain glaciers"
+            "type": "summary",
+            "options": [
+              "A climatic shifts",
+              "B ice cores",
+              "C tree rings",
+              "D glaciers",
+              "E interactions",
+              "F weather observations",
+              "G heat waves",
+              "H storms",
+              "I written accounts"
             ],
-            "explanation": "Đoạn B: 'markers left by mountain glaciers corroborate this data'. Đáp án là 'glaciers'.",
-            "evidence": "markers left by mountain glaciers corroborate this data"
+            "questionText": "20. We can deduce that the Little Ice Age was a time of [ 20 ] rather than of consistent freezing.",
+            "acceptableAnswers": [
+              "A",
+              "climatic shifts",
+              "A climatic shifts"
+            ],
+            "explanation": "Đoạn B: 'The Little Ice Age was far from a deep freeze, however; rather an irregular seesaw of rapid climatic shifts' -> A (climatic shifts).",
+            "evidence": "The Little Ice Age was far from a deep freeze, however; rather an irregular seesaw of rapid climatic shifts"
           },
           {
             "id": 21,
             "num": 21,
-            "type": "gap-fill",
-            "questionText": "21. Between the 14th and 19th centuries, Europe experienced an era of significant _______",
-            "acceptableAnswers": [
-              "cooling",
-              "climate cooling"
+            "type": "summary",
+            "options": [
+              "A climatic shifts",
+              "B ice cores",
+              "C tree rings",
+              "D glaciers",
+              "E interactions",
+              "F weather observations",
+              "G heat waves",
+              "H storms",
+              "I written accounts"
             ],
-            "explanation": "Đoạn B: 'a sudden climate cooling enveloped Europe'. Đáp án là 'cooling'.",
-            "evidence": "a sudden climate cooling enveloped Europe, known as the Little Ice Age"
+            "questionText": "21. Within it there were some periods of very cold winters, others of [ 21 ] and heavy rain...",
+            "acceptableAnswers": [
+              "H",
+              "storms",
+              "H storms"
+            ],
+            "explanation": "Đoạn B: 'years of heavy spring and early summer rains, mild winters, and frequent Atlantic storms' -> H (storms).",
+            "evidence": "switched abruptly to years of heavy spring and early summer rains, mild winters, and frequent Atlantic storms"
           },
           {
             "id": 22,
             "num": 22,
-            "type": "gap-fill",
-            "questionText": "22. The extended chill caused serious devastation to European _______",
-            "acceptableAnswers": [
-              "agriculture",
-              "harvests"
+            "type": "summary",
+            "options": [
+              "A climatic shifts",
+              "B ice cores",
+              "C tree rings",
+              "D glaciers",
+              "E interactions",
+              "F weather observations",
+              "G heat waves",
+              "H storms",
+              "I written accounts"
             ],
-            "explanation": "Đoạn B: 'shortened growing seasons triggered severe agricultural crises'. Đáp án là 'agriculture'.",
-            "evidence": "triggered severe agricultural crises across the continent"
+            "questionText": "22. ...and yet others that saw [ 22 ] with no rain at all.",
+            "acceptableAnswers": [
+              "G",
+              "heat waves",
+              "G heat waves"
+            ],
+            "explanation": "Đoạn B: 'or to periods of droughts, light northeasterly winds, and summer heat waves.' -> droughts = no rain at all -> G (heat waves).",
+            "evidence": "periods of droughts, light northeasterly winds, and summer heat waves"
           }
         ],
         "vocabulary": [
           {
-            "word": "paleoclimatologist",
-            "meaning": "Nhà cổ khí hậu học (nghiên cứu khí hậu quá khứ)",
-            "example": "Paleoclimatologists analyze ice cores."
+            "word": "proxy records",
+            "meaning": "Dữ liệu đại diện gián tiếp (vòng cây, lõi băng)",
+            "example": "Scientists use proxy records to study climates of the past."
           },
           {
-            "word": "ice core",
-            "meaning": "Lõi băng lấy từ sông băng / địa cực",
-            "example": "drilling ice cores in Antarctica"
+            "word": "seesaw",
+            "meaning": "Sự dao động bấp bênh, biến thiên liên tục",
+            "example": "The weather was an irregular seesaw of hot and cold periods."
           },
           {
-            "word": "glacier",
-            "meaning": "Sông băng",
-            "example": "retreating glaciers"
+            "word": "drought",
+            "meaning": "Hạn hán kéo dài",
+            "example": "Severe droughts destroyed crops during the warm cycles."
           }
         ]
       }
@@ -1425,34 +1829,34 @@ const readingLessons = [
     "id": "reading_6",
     "lessonNum": 6,
     "code": "V08",
-    "title": "V08 - TABLE/ FLOW CHART COMPLETION",
-    "shortTitle": "Table & Flow Chart",
+    "title": "V08 – TABLE / FLOW CHART COMPLETION",
+    "shortTitle": "Bảng Biểu & Sơ Đồ Quy Trình",
     "category": "completion",
-    "categoryLabel": "Dạng Điền Từ",
-    "badge": "Bảng & Lưu đồ",
-    "description": "Chiến thuật hoàn thành bảng và sơ đồ quy trình: Theo dõi mũi tên tuần tự của quy trình (chronological order) và tiêu đề các cột mốc trong bảng.",
+    "categoryLabel": "Điền Từ Vào Chỗ Trống",
+    "badge": "Quy trình & Số liệu",
+    "description": "Chiến thuật bám theo luồng thông tin tuần tự (trên xuống dưới, trái qua phải) của bảng biểu và sơ đồ quy trình khoa học / lịch sử.",
     "examplesCount": 3,
-    "totalQuestions": 18,
+    "totalQuestions": 17,
     "examples": [
       {
         "id": "r6_ex1",
         "exampleNum": 1,
-        "title": "Example 1: Sheet Glass Manufacture (Quy trình sản xuất kính nổi)",
-        "instructions": "Complete the flow chart below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer.",
+        "title": "Example 1: Sheet Glass Manufacture (Table & Diagram)",
+        "instructions": "Complete the table and diagram below. Choose NO MORE THAN TWO WORDS from the passage for each answer. (Questions 1-8, Page 27)",
         "passage": {
-          "title": "SHEET GLASS MANUFACTURE: THE FLOAT PROCESS",
+          "title": "Sheet Glass Manufacture: The Float Process",
           "paragraphs": [
             {
               "label": "A",
-              "text": "Glass, which has been made since the time of the Mesopotamians and Egyptians, is little more than a mixture of sand, soda ash and lime. When heated to about 1500 degrees Celsius (°C) this becomes a molten mass that hardens when slowly cooled. The first successful method for making clear, flat glass involved spinning. This method was very effective as the glass had an unblemished surface, but the process was slow and expensive."
+              "text": "Glass, which has been made since the time of the Mesopotamians and Egyptians, is little more than a mixture of sand, soda ash and lime. When heated to about 1500 degrees Celsius (°C) this becomes a molten mass that hardens when slowly cooled. The first successful method for making clear, flat glass involved spinning. This method was very effective as the glass had not touched any surfaces between being soft and becoming hard, so it stayed perfectly unblemished, with a 'fire finish'. However, the process took a long time and was labour intensive."
             },
             {
               "label": "B",
-              "text": "The breakthrough came in the 1950s when Alastair Pilkington invented the float glass process. Molten glass is poured continuously from a furnace onto the surface of a shallow bath of molten tin. Because tin is denser than glass and does not mix with it, the glass floats, spreading out under its own weight to form a level ribbon of uniform thickness."
+              "text": "Nevertheless, demand for flat glass was very high and glassmakers across the world were looking for a method of making it continuously. The first continuous ribbon process involved squeezing molten glass through two hot rollers, similar to an old mangle. This allowed glass of virtually any thickness to be made non-stop, but the rollers would leave both sides of the glass marked, and these would then need to be ground and polished. This part of the process rubbed away around 20 per cent of the glass, and the machines were very expensive."
             },
             {
               "label": "C",
-              "text": "As the ribbon travels over the tin, it cools gradually from 1100°C to 600°C, solidifying into a rigid sheet. It is then lifted clear of the tin bath onto motorized rollers and enters an annealing lehr, a controlled cooling zone where internal stresses are relieved. Finally, computer-controlled optical inspection cameras examine the sheet for any microscopic imperfections before diamond cutters slice it into custom sheets."
+              "text": "In 1952, Alastair Pilkington patented the float process. Molten glass flows from the furnace onto the surface of a bath of molten tin at 1000°C. Because glass is less dense than tin, it floats, forming a level ribbon of uniform thickness. As it moves down the bath, it cools gradually until it is rigid enough to enter the rollers of an annealing lehr, where it cools without internal stresses."
             }
           ]
         },
@@ -1460,231 +1864,231 @@ const readingLessons = [
           {
             "id": 1,
             "num": 1,
-            "type": "gap-fill",
-            "questionText": "1. Early flat glass production relied on a method called _______",
+            "type": "table",
+            "questionText": "1. Early Method 1 (Name of method): ……………………. (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
-              "spinning"
+              "spinning",
+              "Spinning"
             ],
-            "explanation": "Đoạn A: 'first successful method for making clear, flat glass involved spinning'. Đáp án là 'spinning'.",
-            "evidence": "making clear, flat glass involved spinning"
+            "explanation": "Đoạn A: 'The first successful method for making clear, flat glass involved spinning.'",
+            "evidence": "The first successful method for making clear, flat glass involved spinning ."
           },
           {
             "id": 2,
             "num": 2,
-            "type": "gap-fill",
-            "questionText": "2. Spinning produced glass with an _______ surface, although cost remained high.",
+            "type": "table",
+            "questionText": "2. Method Spinning - Advantages: Glass remained ……………………. (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
               "unblemished",
-              "unblemished surface",
-              "clear"
+              "perfectly unblemished"
             ],
-            "explanation": "Đoạn A: 'the glass had an unblemished surface'. Đáp án là 'unblemished'.",
-            "evidence": "the glass had an unblemished surface"
+            "explanation": "Đoạn A: 'so it stayed perfectly unblemished, with a fire finish.'",
+            "evidence": "so it stayed perfectly  unblemished , with a 'fire finish'."
           },
           {
             "id": 3,
             "num": 3,
-            "type": "gap-fill",
-            "questionText": "3. The modern process begins by pouring _______ from a furnace.",
+            "type": "table",
+            "questionText": "3. Method Spinning - Disadvantages: Slow and ……………………. (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
-              "molten glass",
-              "liquid glass"
+              "labour intensive",
+              "labor intensive"
             ],
-            "explanation": "Đoạn B: 'Molten glass is poured continuously from a furnace'. Đáp án là 'molten glass'.",
-            "evidence": "Molten glass is poured continuously from a furnace"
+            "explanation": "Đoạn A: 'However, the process took a long time and was labour intensive.'",
+            "evidence": "However, the process took a long time and was labour intensive ."
           },
           {
             "id": 4,
             "num": 4,
-            "type": "gap-fill",
-            "questionText": "4. The liquid floats across a bath of denser _______",
+            "type": "table",
+            "questionText": "4. Method Ribbon - Advantages: Could produce glass sheets of varying ……………………. (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
-              "molten tin",
-              "tin"
+              "thickness"
             ],
-            "explanation": "Đoạn B: 'onto the surface of a shallow bath of molten tin'. Đáp án là 'molten tin' hoặc 'tin'.",
-            "evidence": "onto the surface of a shallow bath of molten tin"
+            "explanation": "Đoạn B: 'This allowed glass of virtually any thickness to be made non-stop'",
+            "evidence": "This allowed glass of virtually any thickness to be made non-stop"
           },
           {
             "id": 5,
             "num": 5,
-            "type": "gap-fill",
-            "questionText": "5. Solidified glass is drawn across motorized _______ into the annealing lehr.",
+            "type": "table",
+            "questionText": "5. Method Ribbon - Disadvantages: Glass was ……………………. (both sides marked) (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
-              "rollers",
-              "motorized rollers"
+              "marked"
             ],
-            "explanation": "Đoạn C: 'lifted clear of the tin bath onto motorized rollers'. Đáp án là 'rollers'.",
-            "evidence": "onto motorized rollers and enters an annealing lehr"
+            "explanation": "Đoạn B: 'but the rollers would leave both sides of the glass marked, and these would then need to be ground and polished.'",
+            "evidence": "rollers would leave both sides of the glass  marked"
           },
           {
             "id": 6,
             "num": 6,
-            "type": "gap-fill",
-            "questionText": "6. The sheet leaves the float chamber once temperature falls to approximately _______",
+            "type": "diagram",
+            "questionText": "6. Float Process Diagram: Inflow of liquid raw material: ……………………. (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
-              "600°C",
-              "600 degrees Celsius",
-              "600 degrees",
-              "600 C"
+              "molten glass",
+              "liquid glass"
             ],
-            "explanation": "Đoạn C: 'cools gradually from 1100°C to 600°C'. Đáp án là '600°C'.",
-            "evidence": "cools gradually from 1100°C to 600°C"
+            "explanation": "Đoạn C: 'Molten glass flows from the furnace onto the surface of a bath of molten tin'",
+            "evidence": "Molten glass flows from the furnace onto the surface of a bath of molten tin"
           },
           {
             "id": 7,
             "num": 7,
-            "type": "gap-fill",
-            "questionText": "7. The annealing lehr functions as a specialized _______ to remove internal tension.",
+            "type": "diagram",
+            "questionText": "7. Float Process Diagram: Bath of liquid metal: ……………………. (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
-              "cooling zone",
-              "controlled cooling zone"
+              "molten tin",
+              "tin"
             ],
-            "explanation": "Đoạn C: 'annealing lehr, a controlled cooling zone where internal stresses are relieved'. Đáp án là 'cooling zone'.",
-            "evidence": "an annealing lehr, a controlled cooling zone"
+            "explanation": "Đoạn C: 'surface of a bath of molten tin at 1000°C. Because glass is less dense than tin, it floats'",
+            "evidence": "surface of a bath of molten tin at 1000°C"
           },
           {
             "id": 8,
             "num": 8,
-            "type": "gap-fill",
-            "questionText": "8. Before cutting, sheets undergo _______ to detect any structural flaws.",
+            "type": "diagram",
+            "questionText": "8. Float Process Diagram: Glass enters motorized ……………………. of the annealing lehr. (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
-              "optical inspection",
-              "inspection"
+              "rollers",
+              "hot rollers"
             ],
-            "explanation": "Đoạn C: 'computer-controlled optical inspection cameras examine the sheet'. Đáp án là 'optical inspection'.",
-            "evidence": "computer-controlled optical inspection cameras examine the sheet for any microscopic imperfections"
+            "explanation": "Đoạn C: 'it cools gradually until it is rigid enough to enter the rollers of an annealing lehr'",
+            "evidence": "until it is rigid enough to enter the rollers of an annealing lehr"
           }
         ],
         "vocabulary": [
           {
-            "word": "molten",
-            "meaning": "Nóng chảy (ở nhiệt độ cao)",
-            "example": "molten glass poured onto molten tin"
-          },
-          {
             "word": "unblemished",
             "meaning": "Không tì vết, hoàn hảo",
-            "example": "an unblemished glass surface"
+            "example": "The glass surface remained unblemished after spinning."
           },
           {
-            "word": "annealing lehr",
-            "meaning": "Lò ủ làm nguội kính có kiểm soát nhiệt",
-            "example": "entering the annealing lehr"
+            "word": "labour intensive",
+            "meaning": "Cần nhiều nhân công",
+            "example": "Handmade crafts are highly labour intensive."
+          },
+          {
+            "word": "molten",
+            "meaning": "Nấu chảy ở nhiệt độ cao",
+            "example": "Molten glass floats evenly on liquid tin."
           }
         ]
       },
       {
         "id": "r6_ex2",
         "exampleNum": 2,
-        "title": "Example 2: Secrets of the Swarm (Trí tuệ bầy đàn)",
-        "instructions": "Complete the table below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+        "title": "Example 2: Secrets of the Swarm (Flow-Chart)",
+        "instructions": "Complete the flow-chart below. Choose NO MORE THAN TWO WORDS from the text for each answer. (Questions 10-13, Page 28)",
         "passage": {
-          "title": "SECRETS OF THE SWARM",
+          "title": "Secrets of the Swarm: Honeybee Decision Making",
           "paragraphs": [
             {
               "label": "A",
-              "text": "Miller explains that he first really understood the impact that swarm behaviour could have on humans when he read a study of honeybees by Tom Seeley, a biologist at Cornell University. When honeybees choose a new nest, hundreds of scouts fly off to investigate multiple potential sites. Upon their return, scouts perform a specialized 'waggle dance' on the surface of the cluster to advertise their chosen location."
+              "text": "Miller explains that he first really understood the impact that swarm behaviour could have on humans when he read a study of honeybees by Tom Seeley, a biologist at Cornell University. The honeybees choose a group which new nest to move to. First, scouts fly off to investigate multiple sites. When they return they do a ‘waggle dance’ for their spot, and other scouts will then fly off and investigate it."
             },
             {
               "label": "B",
-              "text": "The enthusiasm of the dance communicates the suitability of the cavity. If other scouts are persuaded, they visit the recommended site and, if impressed, perform the waggle dance themselves. In this manner, positive feedback builds a democratic consensus until a quorum is reached, whereupon the entire swarm takes off to their new home."
+              "text": "Many bees go out, but none tries to compare all sites. Each reports back on just one. The more they liked their nest, the more vigorous and lengthy their waggle dance and the more bees will choose to visit it. Gradually the volume of bees builds up towards one site; it’s a system that ensures that support for the best site snowballs and the decision is made in the most democratic way."
             }
           ]
         },
         "questions": [
           {
-            "id": 1,
-            "num": 1,
-            "type": "gap-fill",
-            "questionText": "1. Honeybee foraging colonies delegate the search for nests to experienced _______",
+            "id": 10,
+            "num": 10,
+            "type": "flow-chart",
+            "questionText": "10. Honeybee ……………………. explore possible nest sites. (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
               "scouts"
             ],
-            "explanation": "Đoạn A: 'hundreds of scouts fly off to investigate'. Đáp án là 'scouts'.",
-            "evidence": "hundreds of scouts fly off to investigate multiple potential sites"
+            "explanation": "Đoạn A: 'First, scouts fly off to investigate multiple sites.' -> Honeybee scouts.",
+            "evidence": "First, scouts fly off to investigate multiple sites."
           },
           {
-            "id": 2,
-            "num": 2,
-            "type": "gap-fill",
-            "questionText": "2. Returned explorers communicate potential destinations by demonstrating a _______",
+            "id": 11,
+            "num": 11,
+            "type": "flow-chart",
+            "questionText": "11. They perform what is known as a ……………………. on their return. (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
-              "waggle dance"
+              "waggle dance",
+              "‘waggle dance’"
             ],
-            "explanation": "Đoạn A: 'perform a specialized waggle dance'. Đáp án là 'waggle dance'.",
-            "evidence": "perform a specialized waggle dance on the surface of the cluster"
+            "explanation": "Đoạn A: 'When they return they do a ‘waggle dance’ for their spot'",
+            "evidence": "When they return they do a ‘waggle dance’ for their spot"
           },
           {
-            "id": 3,
-            "num": 3,
-            "type": "gap-fill",
-            "questionText": "3. Dance vigor reflects the overall quality and _______ of the prospective nesting cavity.",
+            "id": 12,
+            "num": 12,
+            "type": "flow-chart",
+            "questionText": "12. Enthusiasm and ……………………. increase for one particular site. (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
-              "suitability",
-              "volume"
+              "volume",
+              "the volume"
             ],
-            "explanation": "Đoạn B: 'communicates the suitability of the cavity'. Đáp án là 'suitability'.",
-            "evidence": "communicates the suitability of the cavity"
+            "explanation": "Đoạn B: 'Gradually the volume of bees builds up towards one site; it’s a system that ensures that support for the best site snowballs'",
+            "evidence": "Gradually the volume of bees builds up towards one site"
           },
           {
-            "id": 4,
-            "num": 4,
-            "type": "gap-fill",
-            "questionText": "4. The colony reaches an agreement through democratic _______",
+            "id": 13,
+            "num": 13,
+            "type": "flow-chart",
+            "questionText": "13. A final choice is reached using a ……………………. process. (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
-              "consensus",
-              "a consensus"
+              "democratic"
             ],
-            "explanation": "Đoạn B: 'positive feedback builds a democratic consensus'. Đáp án là 'consensus'.",
-            "evidence": "positive feedback builds a democratic consensus until a quorum is reached"
-          },
-          {
-            "id": 5,
-            "num": 5,
-            "type": "gap-fill",
-            "questionText": "5. Once verified by quorum, the full _______ departs together.",
-            "acceptableAnswers": [
-              "swarm",
-              "entire swarm"
-            ],
-            "explanation": "Đoạn B: 'the entire swarm takes off to their new home'. Đáp án là 'swarm'.",
-            "evidence": "the entire swarm takes off to their new home"
+            "explanation": "Đoạn B: 'and the decision is made in the most democratic way.' -> democratic process.",
+            "evidence": "and the decision is made in the most democratic way."
           }
         ],
         "vocabulary": [
           {
-            "word": "swarm behaviour",
-            "meaning": "Tập tính bầy đàn (ong, kiến, chim)",
-            "example": "studying swarm behaviour in nature"
+            "word": "scout",
+            "meaning": "Trinh sát, ong thám thính",
+            "example": "Scout bees locate promising new hollow trees for nesting."
           },
           {
             "word": "waggle dance",
-            "meaning": "Vũ điệu lắc bụng của ong thợ báo hiệu vị trí thức ăn/tổ",
-            "example": "honeybees perform a waggle dance"
+            "meaning": "Điệu múa lắc bụng truyền tin",
+            "example": "Bees use the waggle dance to communicate distance and direction."
           },
           {
-            "word": "quorum",
-            "meaning": "Túc số, số lượng tối thiểu để thông qua quyết định",
-            "example": "until a quorum is reached"
+            "word": "democratic",
+            "meaning": "Dân chủ, dựa trên sự đồng thuận số đông",
+            "example": "Swarm decisions follow remarkably democratic principles."
           }
         ]
       },
       {
         "id": "r6_ex3",
         "exampleNum": 3,
-        "title": "Example 3: The Dover Bronze-Age Boat (Con thuyền thời đồ đồng)",
-        "instructions": "Complete the flow chart below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+        "title": "Example 3: The Dover Bronze-Age Boat (Flow Chart: Key Events)",
+        "instructions": "Complete the flow chart below. Choose ONE WORD ONLY from the text for each answer. (Questions 1-5, Pages 29-31)",
         "passage": {
-          "title": "THE DOVER BRONZE-AGE BOAT",
+          "title": "The Dover Bronze-Age Boat",
           "paragraphs": [
             {
               "label": "A",
-              "text": "In 1992, workmen excavating a new underpass through Dover discovered prehistoric oak timbers buried six meters below ground. Recognizing its significance, archaeologists rushed in to preserve the waterlogged remains of a Bronze Age boat dating back roughly 3,500 years."
+              "text": "It was 1992. In England, workmen were building a new road through the heart of Dover, to connect the ancient port and the Channel Tunnel, which, when it opened just two years later, was to be the first land link between Britain and Europe for over 10,000 years. A small team from the Canterbury Archaeological Trust (CAT) worked alongside the workmen, recording new discoveries brought to light by the machines."
             },
             {
               "label": "B",
-              "text": "The boat had been fashioned out of massive oak planks, carved and fastened together using yew stitches. To ensure waterproofing, the seams between the planks had been caulked with moss and sealed with tree resin. In subsequent years, researchers constructed a full-scale reconstruction to test its seafaring stability in the English Channel."
+              "text": "At the base of a deep shaft six metres below the modern streets a wooden structure was revealed. Cleaning away the waterlogged site overlying the timbers, archeologists realized its true nature. They had found a prehistoric boat, preserved by the type of sediment in which it was buried. It was then named the Dover Bronze-Age Boat."
+            },
+            {
+              "label": "C",
+              "text": "In 2002, on the tenth anniversary of the discovery, the Dover Bronze-Age Boat Trust hosted a conference, where this meeting of different traditions became apparent. Alongside technical papers about the boat, other speakers explored its social and economic contexts, and the religious perceptions of boats in Bronze-Age societies."
+            },
+            {
+              "label": "D",
+              "text": "Detailed proposals to reconstruct the boat were drawn up in 2004. Archaeological evidence was beginning to suggest a Bronze-Age community straddling the Channel, brought together by the sea, rather than separated by it."
+            },
+            {
+              "label": "E",
+              "text": "Discussions began early in 2005 with archaeological bodies, universities and heritage organizations either side of the Channel. There was much enthusiasm and support, and an official launch of the project was held at an international seminar in France in 2007. Financial support was confirmed in 2008 and the project then named BOAT 1550BC got under way in June 2011."
+            },
+            {
+              "label": "F",
+              "text": "Meanwhile, the exhibition was being prepared ready for opening in July 2012 at the Castle Museum in Boulogne-sur-Mer. Entitled ‘Beyond the Horizon: Societies of the Channel & North Sea 3,500 years ago’, it brought together for the first time a remarkable collection of Bronze-Age objects. The reconstructed boat was the centerpiece."
             }
           ]
         },
@@ -1692,77 +2096,74 @@ const readingLessons = [
           {
             "id": 1,
             "num": 1,
-            "type": "gap-fill",
-            "questionText": "1. Timbers were exceptionally preserved because they remained _______ deep in the soil.",
+            "type": "flow-chart",
+            "questionText": "1. 1992 – the boat was discovered during the construction of a …………………… (ONE WORD ONLY)",
             "acceptableAnswers": [
-              "waterlogged"
+              "road"
             ],
-            "explanation": "Đoạn A: 'preserve the waterlogged remains of a Bronze Age boat'. Đáp án là 'waterlogged'.",
-            "evidence": "preserve the waterlogged remains of a Bronze Age boat"
+            "explanation": "Đoạn A: 'workmen were building a new road through the heart of Dover... brought to light by the machines' -> road.",
+            "evidence": "workmen were building a new road through the heart of Dover"
           },
           {
             "id": 2,
             "num": 2,
-            "type": "gap-fill",
-            "questionText": "2. Construction utilized enormous carved oak _______",
+            "type": "flow-chart",
+            "questionText": "2. 2002 – an international …………………… was held to gather information (ONE WORD ONLY)",
             "acceptableAnswers": [
-              "planks",
-              "oak planks"
+              "conference"
             ],
-            "explanation": "Đoạn B: 'fashioned out of massive oak planks'. Đáp án là 'planks'.",
-            "evidence": "fashioned out of massive oak planks"
+            "explanation": "Đoạn C: 'In 2002, on the tenth anniversary of the discovery, the Dover Bronze-Age Boat Trust hosted a conference' -> conference.",
+            "evidence": "the Dover Bronze-Age Boat Trust hosted a conference"
           },
           {
             "id": 3,
             "num": 3,
-            "type": "gap-fill",
-            "questionText": "3. The hull panels were bound together with strong yew _______",
+            "type": "flow-chart",
+            "questionText": "3. 2004 – …………………… for the construction were produced (ONE WORD ONLY)",
             "acceptableAnswers": [
-              "stitches",
-              "yew stitches"
+              "proposals"
             ],
-            "explanation": "Đoạn B: 'fastened together using yew stitches'. Đáp án là 'stitches'.",
-            "evidence": "fastened together using yew stitches"
+            "explanation": "Đoạn D: 'Detailed proposals to reconstruct the boat were drawn up in 2004.' -> proposals.",
+            "evidence": "Detailed proposals to reconstruct the boat were drawn up in 2004."
           },
           {
             "id": 4,
             "num": 4,
-            "type": "gap-fill",
-            "questionText": "4. Gaps in the joints were insulated with packed _______",
+            "type": "flow-chart",
+            "questionText": "4. 2007 – the …………………… of BOAT 1550BC took place (ONE WORD ONLY)",
             "acceptableAnswers": [
-              "moss"
+              "launch"
             ],
-            "explanation": "Đoạn B: 'caulked with moss and sealed with tree resin'. Đáp án là 'moss'.",
-            "evidence": "caulked with moss and sealed with tree resin"
+            "explanation": "Đoạn E: 'an official launch of the project was held at an international seminar in France in 2007' -> launch.",
+            "evidence": "an official launch of the project was held at an international seminar in France in 2007"
           },
           {
             "id": 5,
             "num": 5,
-            "type": "gap-fill",
-            "questionText": "5. Marine capability was evaluated by building a full-size _______",
+            "type": "flow-chart",
+            "questionText": "5. 2012 – the Bronze Age …………………… featured the boat and other objects. (ONE WORD ONLY)",
             "acceptableAnswers": [
-              "reconstruction",
-              "full-scale reconstruction"
+              "exhibition"
             ],
-            "explanation": "Đoạn B: 'constructed a full-scale reconstruction to test its seafaring stability'. Đáp án là 'reconstruction'.",
-            "evidence": "constructed a full-scale reconstruction to test its seafaring stability"
+            "explanation": "Đoạn F: 'the exhibition was being prepared ready for opening in July 2012 at the Castle Museum... The reconstructed boat was the centerpiece.' -> exhibition.",
+            "evidence": "the exhibition was being prepared ready for opening in July 2012 at the Castle Museum in Boulogne-sur-Mer"
           }
         ],
         "vocabulary": [
           {
-            "word": "waterlogged",
-            "meaning": "Úng nước, ngập nước (giúp bảo quản gỗ cổ)",
-            "example": "waterlogged timber preserves well"
+            "word": "prehistoric",
+            "meaning": "Tiền sử (trước khi có sử liệu thành văn)",
+            "example": "Prehistoric vessels reveal ancient seafaring prowess."
           },
           {
-            "word": "caulked",
-            "meaning": "Trét kín, xảm kín kẽ hở chống thấm nước",
-            "example": "caulked with moss and resin"
+            "word": "straddle",
+            "meaning": "Bắc qua hai bờ, trải dài hai bên",
+            "example": "A single community straddled both sides of the English Channel."
           },
           {
-            "word": "yew stitches",
-            "meaning": "Mũi khâu làm từ cành cây thủy tùng dẻo dai",
-            "example": "fastened by yew stitches"
+            "word": "outreach",
+            "meaning": "Hoạt động kết nối cộng đồng",
+            "example": "Museum outreach programmes bring archaeology to schools."
           }
         ]
       }
@@ -1772,30 +2173,30 @@ const readingLessons = [
     "id": "reading_7",
     "lessonNum": 7,
     "code": "V09",
-    "title": "V09 - PLAN/MAP/DIAGRAM COMPLETION",
-    "shortTitle": "Plan, Map & Diagram",
-    "category": "completion",
-    "categoryLabel": "Dạng Điền Từ",
-    "badge": "Sơ đồ & Bản đồ",
-    "description": "Chiến thuật điền nhãn sơ đồ cấu tạo và bản đồ: Quan sát các bộ phận liên kết cơ học, phương hướng di chuyển và chú thích hình vẽ.",
+    "title": "V09 – PLAN / MAP / DIAGRAM LABELLING",
+    "shortTitle": "Dán Nhãn Bản Đồ & Sơ Đồ",
+    "category": "diagram",
+    "categoryLabel": "Sơ Đồ & Bản Đồ",
+    "badge": "Cấu tạo & Vị trí",
+    "description": "Chiến thuật dán nhãn sơ đồ kỹ thuật và cấu tạo máy móc: phân tích hình dạng, chuyển động cơ học và vị trí không gian của các bộ phận.",
     "examplesCount": 3,
-    "totalQuestions": 12,
+    "totalQuestions": 13,
     "examples": [
       {
         "id": "r7_ex1",
         "exampleNum": 1,
-        "title": "Example 1: Anchor Escapement in Timekeeping (Bộ hồi mỏ neo đồng hồ)",
-        "instructions": "Label the diagram below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+        "title": "Example 1: The Anchor Escapement (How the 1670 device worked)",
+        "instructions": "Label the diagram below. Choose NO MORE THAN TWO WORDS from the passage for each answer. (Questions 9-13, Pages 32-33)",
         "passage": {
-          "title": "A CHRONICLE OF TIMEKEEPING - The Anchor Escapement",
+          "title": "A Chronicle of Timekeeping: The Anchor Escapement",
           "paragraphs": [
             {
               "label": "A",
-              "text": "To address the inaccuracy of early pendulum clocks, a variation on the original escapement was invented in 1670 in England. It was called the anchor escapement, which was a lever-based device shaped like a ship's anchor. The continuous swinging motion of a weighted pendulum rocks this device from side to side."
+              "text": "To address this, a variation on the original escapement was invented in 1670, in England. It was called the anchor escapement, which was a lever-based device shaped like a ship's anchor. The motion of a pendulum rocks this device so that it catches and then releases each tooth of the escape wheel, in turn allowing it to turn a precise amount."
             },
             {
               "label": "B",
-              "text": "As the anchor rocks, its curved pallets catch and then release each tooth of the rotating escape wheel, allowing the wheel to advance by a precise, consistent increment. This revolutionary mechanism significantly reduced the swing arc of the pendulum, improving accuracy tenfold."
+              "text": "Unlike the original form used in early pendulum clocks, the anchor escapement permitted the pendulum to travel in a very small arc. Moreover, this invention allowed the use of a long pendulum which could beat once a second and thus led to the development of a new floor-standing case design, which became known as the grandfather clock."
             }
           ]
         },
@@ -1803,85 +2204,101 @@ const readingLessons = [
           {
             "id": 9,
             "num": 9,
-            "type": "gap-fill",
-            "questionText": "9. The pivoting upper rocking lever resembles a ship’s _______",
+            "type": "diagram",
+            "questionText": "9. Label 9: Rocking lever device resembling a ship's …………………… (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
               "anchor",
               "ship's anchor"
             ],
-            "explanation": "Đoạn A: 'a lever-based device shaped like a ship's anchor'. Đáp án là 'anchor'.",
-            "evidence": "lever-based device shaped like a ship's anchor"
+            "explanation": "Đoạn A: 'It was called the anchor escapement, which was a lever-based device shaped like a ship's anchor.'",
+            "evidence": "It was called the anchor escapement, which was a lever-based device shaped like a ship's anchor."
           },
           {
             "id": 10,
             "num": 10,
-            "type": "gap-fill",
-            "questionText": "10. Controlled rotational energy is governed by the notched _______",
+            "type": "diagram",
+            "questionText": "10. Label 10: Cogged gear component: the …………………… (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
               "escape wheel",
               "wheel"
             ],
-            "explanation": "Đoạn B: 'each tooth of the rotating escape wheel'. Đáp án là 'escape wheel'.",
-            "evidence": "each tooth of the rotating escape wheel"
+            "explanation": "Đoạn A: 'catches and then releases each tooth of the escape wheel, in turn allowing it to turn a precise amount.'",
+            "evidence": "releases each tooth of the escape wheel , in turn allowing it to turn a precise amount"
           },
           {
             "id": 11,
             "num": 11,
-            "type": "gap-fill",
-            "questionText": "11. The anchor arms engage with each individual gear _______",
+            "type": "diagram",
+            "questionText": "11. Label 11: Individual projections on the wheel: each …………………… (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
               "tooth",
               "teeth"
             ],
-            "explanation": "Đoạn B: 'catches and then releases each tooth of the escape wheel'. Đáp án là 'tooth'.",
-            "evidence": "catches and then releases each tooth"
+            "explanation": "Đoạn A: 'catches and then releases each tooth of the escape wheel' -> tooth.",
+            "evidence": "catches and then releases each tooth of the escape wheel"
           },
           {
             "id": 12,
             "num": 12,
-            "type": "gap-fill",
-            "questionText": "12. Continuous periodic oscillation is driven by the swinging _______",
+            "type": "diagram",
+            "questionText": "12. Label 12: Oscillating drive mechanism: the …………………… (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
               "pendulum",
-              "weighted pendulum"
+              "long pendulum"
             ],
-            "explanation": "Đoạn A: 'swinging motion of a weighted pendulum'. Đáp án là 'pendulum'.",
-            "evidence": "swinging motion of a weighted pendulum rocks this device"
+            "explanation": "Đoạn A & B: 'The motion of a pendulum rocks this device... allowed the use of a long pendulum which could beat once a second' -> pendulum.",
+            "evidence": "The motion of a pendulum rocks this device so that it catches and then releases"
+          },
+          {
+            "id": 13,
+            "num": 13,
+            "type": "diagram",
+            "questionText": "13. Label 13: Floor-standing case clock developed from this: the …………………… (NO MORE THAN TWO WORDS)",
+            "acceptableAnswers": [
+              "grandfather clock",
+              "floor-standing case"
+            ],
+            "explanation": "Đoạn B: 'led to the development of a new floor-standing case design, which became known as the grandfather clock.'",
+            "evidence": "became known as the grandfather clock."
           }
         ],
         "vocabulary": [
           {
-            "word": "anchor escapement",
-            "meaning": "Bộ hồi mỏ neo trong đồng hồ quả lắc",
-            "example": "invented the anchor escapement"
+            "word": "escapement",
+            "meaning": "Bộ hồi (cơ cấu truyền xung lực nhịp nhàng trong đồng hồ)",
+            "example": "The anchor escapement revolutionized clock accuracy."
           },
           {
             "word": "pendulum",
-            "meaning": "Quả lắc đồng hồ",
-            "example": "the swinging pendulum maintains rhythm"
+            "meaning": "Con lắc dao động",
+            "example": "A one-meter pendulum has a period of approximately two seconds."
           },
           {
-            "word": "escape wheel",
-            "meaning": "Bánh cóc, bánh xe thoát",
-            "example": "advancing the escape wheel"
+            "word": "grandfather clock",
+            "meaning": "Đồng hồ quả lắc dáng đứng cao",
+            "example": "Grandfather clocks became iconic Victorian household fixtures."
           }
         ]
       },
       {
         "id": "r7_ex2",
         "exampleNum": 2,
-        "title": "Example 2: Tidal Power Turbines (Tua bin điện thủy triều)",
-        "instructions": "Label the diagram below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer.",
+        "title": "Example 2: An Undersea Turbine (Diagram)",
+        "instructions": "Label the diagram below. Choose NO MORE THAN TWO WORDS from the passage for each answer. (Questions 23-26, Pages 34-35)",
         "passage": {
-          "title": "TIDAL POWER - Harnessing Ocean Currents",
+          "title": "Tidal Power: Undersea Turbine",
           "paragraphs": [
             {
               "label": "A",
-              "text": "A marine turbine blade needs to be only one third of the size of a wind generator to produce three times as much power. The submerged blades will be about 20 metres in diameter, operating in sea water around 30 metres deep. Unlike wind power, tidal generators are concealed beneath the sea surface and create no visual impact on the landscape."
+              "text": "A marine turbine blade needs to be only one third of the size of a wind generator to produce three times as much power. The blades will be about 20 metres in diameter, so around 30 metres of water is required. Unlike wind power, there are unlikely to be environmental objections. Fish and other creatures are thought unlikely to be at risk from the relatively slow-turning blades. Each turbine will be mounted on a tower which will connect to the national power supply grid via underwater cables. The towers will stick out of the water and be lit, to warn shipping, and also be designed to be lifted out of the water for maintenance and to clean seaweed from the blades."
             },
             {
               "label": "B",
-              "text": "The rotating blades turn a drive shaft connected to an electrical generator housed within the central nacelle atop a robust support tower. Heavy underwater transmission cables anchored to the seabed carry the generated electricity safely to an onshore substation."
+              "text": "Dr Bahaj has done most work on the Alderney site, where there are powerful currents. The single undersea turbine farm would produce far more power than needed for the Channel Islands and most would be fed into the French Grid and be re-imported into Britain via the cable under the Channel."
+            },
+            {
+              "label": "C",
+              "text": "One technical difficulty is cavitation, where low pressure behind a turning blade causes air bubbles. These can cause vibration and damage the blades of the turbines. Dr Bahaj said: ‘We have to test a number of blade types to avoid this happening or at least make sure it does not damage the turbines or reduce performance.’"
             }
           ]
         },
@@ -1889,85 +2306,89 @@ const readingLessons = [
           {
             "id": 23,
             "num": 23,
-            "type": "gap-fill",
-            "questionText": "23. Submerged revolving propeller components: _______ (approx. 20m diameter)",
-            "acceptableAnswers": [
-              "blades",
-              "turbine blades"
-            ],
-            "explanation": "Đoạn A: 'marine turbine blade... blades will be about 20 metres in diameter'. Đáp án là 'blades'.",
-            "evidence": "marine turbine blade... blades will be about 20 metres in diameter"
-          },
-          {
-            "id": 24,
-            "num": 24,
-            "type": "gap-fill",
-            "questionText": "24. Structural column anchoring the unit to sea floor: support _______",
+            "type": "diagram",
+            "questionText": "23. Label 23: Vertical mounting column: the …………………… (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
               "tower",
               "support tower"
             ],
-            "explanation": "Đoạn B: 'atop a robust support tower'. Đáp án là 'tower'.",
-            "evidence": "central nacelle atop a robust support tower"
+            "explanation": "Đoạn A: 'Each turbine will be mounted on a tower which will connect to the national power supply grid'",
+            "evidence": "Each turbine will be mounted on a tower which will connect to the national power supply grid"
+          },
+          {
+            "id": 24,
+            "num": 24,
+            "type": "diagram",
+            "questionText": "24. Label 24: Seabed power grid connection conduits: the …………………… (NO MORE THAN TWO WORDS)",
+            "acceptableAnswers": [
+              "underwater cables",
+              "cables"
+            ],
+            "explanation": "Đoạn A: 'connect to the national power supply grid via underwater cables.'",
+            "evidence": "connect to the national power supply grid via underwater cables."
           },
           {
             "id": 25,
             "num": 25,
-            "type": "gap-fill",
-            "questionText": "25. Power conversion equipment inside the housing: _______",
+            "type": "diagram",
+            "questionText": "25. Label 25: Rotating drive surfaces (20 metres in diameter): the …………………… (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
-              "generator",
-              "electrical generator"
+              "blades",
+              "turbine blades",
+              "marine turbine blade"
             ],
-            "explanation": "Đoạn B: 'electrical generator housed within the central nacelle'. Đáp án là 'generator'.",
-            "evidence": "electrical generator housed within the central nacelle"
+            "explanation": "Đoạn A: 'The blades will be about 20 metres in diameter... relatively slow-turning blades.'",
+            "evidence": "The blades will be about 20 metres in diameter"
           },
           {
             "id": 26,
             "num": 26,
-            "type": "gap-fill",
-            "questionText": "26. High-voltage power conduits routed across the seabed: _______",
+            "type": "diagram",
+            "questionText": "26. Label 26: Risk of low pressure air bubbles behind blades: …………………… (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
-              "cables",
-              "transmission cables"
+              "cavitation"
             ],
-            "explanation": "Đoạn B: 'underwater transmission cables anchored to the seabed'. Đáp án là 'cables' hoặc 'transmission cables'.",
-            "evidence": "underwater transmission cables anchored to the seabed"
+            "explanation": "Đoạn C: 'One technical difficulty is cavitation, where low pressure behind a turning blade causes air bubbles.'",
+            "evidence": "One technical difficulty is cavitation, where low pressure behind a turning blade causes air bubbles."
           }
         ],
         "vocabulary": [
           {
-            "word": "tidal generator",
-            "meaning": "Máy phát điện thủy triều",
-            "example": "submerged tidal generators"
+            "word": "cavitation",
+            "meaning": "Hiện tượng xâm thực bọt khí",
+            "example": "Cavitation can pit and erode underwater propeller blades."
           },
           {
-            "word": "nacelle",
-            "meaning": "Vỏ chứa động cơ/máy phát",
-            "example": "generator housed in the nacelle"
+            "word": "currents",
+            "meaning": "Hải lưu, dòng chảy xiết",
+            "example": "Powerful tidal currents supply continuous renewable power."
           },
           {
-            "word": "transmission cable",
-            "meaning": "Cáp truyền tải điện ngầm",
-            "example": "underwater transmission cables"
+            "word": "debris",
+            "meaning": "Rác rưởi, mảnh vỡ trôi nổi",
+            "example": "Floating marine debris could pose risks to spinning turbines."
           }
         ]
       },
       {
         "id": "r7_ex3",
         "exampleNum": 3,
-        "title": "Example 3: Collecting Ant Specimens (Phương pháp thu mẫu kiến)",
-        "instructions": "Label the diagram below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+        "title": "Example 3: Collecting Ant Specimens (Diagram: Winkler Extractor / Funnel)",
+        "instructions": "Label the diagram below. Choose NO MORE THAN TWO WORDS from the passage for each answer. (Questions 37-40, Pages 36-37)",
         "passage": {
-          "title": "COLLECTING ANT SPECIMENS",
+          "title": "Collecting Ant Specimens",
           "paragraphs": [
             {
               "label": "A",
-              "text": "For entomologists surveying biodiversity, various sampling techniques exist. Baits can be placed on tree trunks or on the ground to attract foraging species. Ground-dwelling ants can be captured passively using a pitfall trap, which consists of a small plastic cup sunk level with the surrounding soil, partially filled with preservative fluid."
+              "text": "Baits can be used to attract and concentrate foragers. This often increases the number of individuals collected and attracts species that are otherwise elusive. Sugars and meats or oils will attract different species and a range should be utilised. These baits can be placed either on the ground or on the trunks of trees or large shrubs. When placed on the ground, baits should be situated on small paper cards or other flat, light-coloured surfaces, or in test-tubes or vials. This makes it easier to spot ants and to capture them before they can escape into the surrounding leaf litter."
             },
             {
               "label": "B",
-              "text": "To capture elusive subterranean species, researchers collect decomposing leaf litter and place it into a specialized Berlese funnel. A bright light bulb suspended above heats and dries the leaf matter, driving the moisture-seeking ants downwards through a wire mesh into a collection vial below."
+              "text": "Many ants are small and forage primarily in the layer of leaves and other debris on the ground. Collecting these species by hand can be difficult. One of the most successful ways to collect them is to gather the leaf litter in which they are foraging and extract the ants from it. This is most commonly done by placing leaf litter on a screen over a large funnel, often under some heat. As the leaf litter dries from above, ants move downward and eventually fall out the bottom and are collected in alcohol placed below the funnel."
+            },
+            {
+              "label": "C",
+              "text": "A method of improving the catch when using a funnel is to sift the leaf litter through a coarse screen before placing it above the funnel. This will concentrate the litter and remove larger leaves and twigs. It will also allow more litter to be sampled when using a limited number of funnels."
             }
           ]
         },
@@ -1975,65 +2396,66 @@ const readingLessons = [
           {
             "id": 37,
             "num": 37,
-            "type": "gap-fill",
-            "questionText": "37. Chemical food attractants used to lure foraging colonies: _______",
+            "type": "diagram",
+            "questionText": "37. Label 37: Heat source applied above: …………………… (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
-              "baits",
-              "bait"
+              "heat",
+              "some heat"
             ],
-            "explanation": "Đoạn A: 'Baits can be placed on tree trunks or on the ground'. Đáp án là 'baits'.",
-            "evidence": "Baits can be placed on tree trunks or on the ground"
+            "explanation": "Đoạn B: 'placing leaf litter on a screen over a large funnel, often under some heat. As the leaf litter dries from above...'",
+            "evidence": "often under some heat . As the leaf litter dries from above"
           },
           {
             "id": 38,
             "num": 38,
-            "type": "gap-fill",
-            "questionText": "38. In-ground sunk reservoir cup device: _______",
+            "type": "diagram",
+            "questionText": "38. Label 38: Forest ground material holding ants: …………………… (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
-              "pitfall trap",
-              "trap"
+              "leaf litter",
+              "litter"
             ],
-            "explanation": "Đoạn A: 'captured passively using a pitfall trap, which consists of a small plastic cup sunk level'. Đáp án là 'pitfall trap'.",
-            "evidence": "captured passively using a pitfall trap"
+            "explanation": "Đoạn B: 'placing leaf litter on a screen over a large funnel' -> leaf litter.",
+            "evidence": "placing leaf litter on a screen over a large funnel"
           },
           {
             "id": 39,
             "num": 39,
-            "type": "gap-fill",
-            "questionText": "39. Organic forest floor organic matter sampled: _______",
+            "type": "diagram",
+            "questionText": "39. Label 39: Mesh separating debris: …………………… (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
-              "leaf litter"
+              "screen",
+              "coarse screen"
             ],
-            "explanation": "Đoạn B: 'researchers collect decomposing leaf litter'. Đáp án là 'leaf litter'.",
-            "evidence": "researchers collect decomposing leaf litter"
+            "explanation": "Đoạn B & C: 'on a screen over a large funnel... sift the leaf litter through a coarse screen' -> screen / coarse screen.",
+            "evidence": "sift the leaf litter through a coarse screen before placing it above the funnel"
           },
           {
             "id": 40,
             "num": 40,
-            "type": "gap-fill",
-            "questionText": "40. Heat-driven separation apparatus: _______",
+            "type": "diagram",
+            "questionText": "40. Label 40: Preservative liquid in bottom jar: …………………… (NO MORE THAN TWO WORDS)",
             "acceptableAnswers": [
-              "Berlese funnel"
+              "alcohol"
             ],
-            "explanation": "Đoạn B: 'place it into a specialized Berlese funnel'. Đáp án là 'Berlese funnel'.",
-            "evidence": "place it into a specialized Berlese funnel"
+            "explanation": "Đoạn B: 'eventually fall out the bottom and are collected in alcohol placed below the funnel.'",
+            "evidence": "eventually fall out the bottom and are collected in alcohol placed below the funnel."
           }
         ],
         "vocabulary": [
           {
-            "word": "pitfall trap",
-            "meaning": "Bẫy hố (bẫy côn trùng đào ngang mặt đất)",
-            "example": "capturing ground insects in a pitfall trap"
-          },
-          {
             "word": "leaf litter",
-            "meaning": "Lớp lá rụng mục nát trên mặt đất rừng",
-            "example": "ants residing in moist leaf litter"
+            "meaning": "Lớp mùn lá khô mục rụng trên mặt đất rừng",
+            "example": "Ants dwell abundantly inside moist forest leaf litter."
           },
           {
-            "word": "Berlese funnel",
-            "meaning": "Phễu Berlese (dụng cụ tách chiết vi sinh vật đất bằng bóng đèn nhiệt)",
-            "example": "extracting fauna using a Berlese funnel"
+            "word": "coarse screen",
+            "meaning": "Màng lưới lọc thô",
+            "example": "A coarse screen sifts out big sticks and stones."
+          },
+          {
+            "word": "specimen",
+            "meaning": "Mẫu vật sinh học",
+            "example": "The scientists catalogued over 200 ant specimens."
           }
         ]
       }
@@ -2043,34 +2465,370 @@ const readingLessons = [
     "id": "reading_8",
     "lessonNum": 8,
     "code": "V10",
-    "title": "V10 - TRUE/ FALSE/ NOT GIVEN – YES/ NO/ NOT GIVEN",
-    "shortTitle": "True / False / Not Given",
-    "category": "tfng",
-    "categoryLabel": "Đúng / Sai / Không Có",
-    "badge": "Dạng bài kinh điển",
-    "description": "Chiến thuật làm bài True/False/Not Given & Yes/No/Not Given: Phân biệt rõ ràng giữa FALSE (thông tin đối lập/sai lệch trực tiếp) và NOT GIVEN (thông tin không được đề cập hoặc suy diễn thiếu căn cứ).",
-    "examplesCount": 3,
-    "totalQuestions": 16,
+    "title": "V10 – TRUE / FALSE / NOT GIVEN & YES / NO / NOT GIVEN",
+    "shortTitle": "Đúng / Sai / Không Có Thông Tin",
+    "category": "validation",
+    "categoryLabel": "Xác Minh Tính Đúng Sai",
+    "badge": "Dạng bài cốt lõi",
+    "description": "Chiến thuật đối chiếu thông tin câu hỏi với bài đọc: TRUE/YES khi thông tin khớp nghĩa hoàn toàn; FALSE/NO khi thông tin mâu thuẫn trực tiếp; NOT GIVEN khi bài đọc không đề cập hoặc thiếu cơ sở khẳng định.",
+    "examplesCount": 5,
+    "totalQuestions": 33,
     "examples": [
       {
         "id": "r8_ex1",
         "exampleNum": 1,
-        "title": "Example 1: Stepwells (Kiến trúc giếng cổ Ấn Độ)",
-        "instructions": "Do the following statements agree with the information given in the passage? Write TRUE (if statement agrees), FALSE (if statement contradicts), or NOT GIVEN (if no information).",
+        "title": "Phần 1: Luyện Tập Nền Tảng – True / False / Not Given",
+        "instructions": "Do the following statements agree with the information given in the reading passage? Write TRUE, FALSE, or NOT GIVEN for questions 1-10. (Pages 38-39)",
         "passage": {
-          "title": "STEPWELLS OF NORTH-WESTERN INDIA",
+          "title": "Foundational Practice: T/F/NG Short Passages",
+          "paragraphs": [
+            {
+              "label": "1",
+              "text": "It was only after the creation of the FAA that full-scale regulation of America’s airspace took place, and this was fortuitous, for the advent of the jet engine suddenly resulted in a large number of very fast planes, reducing pilots’ margin of error and practically demanding some set of rules to keep everyone well separated and operating safely in the air."
+            },
+            {
+              "label": "2",
+              "text": "As a student at the City of London School, Perkin became immersed in the study of chemistry. His talent and devotion to the subject were perceived by his teacher, Thomas Hall, who encouraged him to attend a series of lectures given by the eminent scientist Michael Faraday at the Royal Institution."
+            },
+            {
+              "label": "3",
+              "text": "Perkin’s scientific gifts soon caught Hofmann’s attention and, within two years, he became Hofmann’s youngest assistant."
+            },
+            {
+              "label": "4",
+              "text": "At the time, quinine was the only viable medical treatment for malaria. The drug is derived from the bark of the cinchona tree, native to South America, and by 1856 demand for the drug was surpassing the available supply."
+            },
+            {
+              "label": "5",
+              "text": "During his vacation in 1856, Perkin spent his time in the laboratory on the top floor of his family’s house. He was attempting to manufacture quinine from aniline, an inexpensive and readily available coal tar waste product."
+            },
+            {
+              "label": "6",
+              "text": "Marie Curie is probably the most famous woman scientist who has ever lived. Born Maria Sklodowska in Poland in 1867, she is famous for her work on radioactivity, and was twice a winner of the Nobel Prize. With her husband, Pierre Curie, and Henri Becquerel, she was awarded the 1903 Nobel Prize for Physics, and was then sole winner of the 1911 Nobel Prize for Chemistry."
+            },
+            {
+              "label": "7",
+              "text": "Based on the results of this research, Marie Curie received her Doctorate of Science, and in 1903 Marie and Pierre shared with Becquerel the Nobel Prize for Physics for the discovery of radioactivity. The births of Marie's two daughters, Irène and Eve, in 1897 and 1904 failed to interrupt her scientific work."
+            },
+            {
+              "label": "8",
+              "text": "The sudden death of her husband in 1906 was a bitter blow to Marie Curie, but was also a turning point in her career: henceforth she was to devote all her energy to completing alone the scientific work that they had undertaken. On May 13, 1906, she was appointed to the professorship that had been left vacant on her husband's death, becoming the first woman to teach at the Sorbonne."
+            },
+            {
+              "label": "9",
+              "text": "Many experts give California high marks for making progress on preparedness in recent years, after some of the largest fires in state history scorched thousands of acres, burned thousands of homes, and killed numerous people."
+            },
+            {
+              "label": "10",
+              "text": "Stung in the past by criticism of bungling that allowed fires to spread when they might have been contained, personnel are meeting the peculiar challenges of neighborhood- and canyon-hopping fires better than previously, observers say."
+            }
+          ]
+        },
+        "questions": [
+          {
+            "id": 1,
+            "num": 1,
+            "type": "tfng",
+            "questionText": "1. The FAA was created as a result of the introduction of the jet engine.",
+            "acceptableAnswers": [
+              "FALSE",
+              "F"
+            ],
+            "explanation": "Đoạn 1: Bài viết nêu 'It was only after the creation of the FAA... and this was fortuitous, for the advent of the jet engine suddenly resulted...' Nghĩa là FAA đã được lập ra trước đó và sự kiện này rất may mắn vì ngay sau đó động cơ phản lực mới xuất hiện. Động cơ phản lực KHÔNG phải nguyên nhân dẫn đến việc tạo ra FAA -> FALSE.",
+            "evidence": "It was only after the creation of the FAA that full- scale regulation of America’s airspace took place, and this was fortuitous , for the advent of the jet engine suddenly resulted"
+          },
+          {
+            "id": 2,
+            "num": 2,
+            "type": "tfng",
+            "questionText": "2. Michael Faraday was the first person to recognise Perkin’s ability as a student of chemistry.",
+            "acceptableAnswers": [
+              "FALSE",
+              "F"
+            ],
+            "explanation": "Đoạn 2: Người đầu tiên nhận ra tài năng của Perkin là giáo viên của ông, Thomas Hall ('His talent and devotion to the subject were perceived by his teacher, Thomas Hall'). Faraday chỉ là người giảng bài mà Hall khuyến khích Perkin đi nghe -> FALSE.",
+            "evidence": "His talent and devotion to the subject were perceived by his teacher, Thomas Hall, who encouraged him to attend a series of lectures given by the eminent scientist Michael Faraday"
+          },
+          {
+            "id": 3,
+            "num": 3,
+            "type": "tfng",
+            "questionText": "3. Perkin employed August Wilhelm Hofmann as his assistant.",
+            "acceptableAnswers": [
+              "FALSE",
+              "F"
+            ],
+            "explanation": "Đoạn 3: 'he became Hofmann’s youngest assistant' nghĩa là Perkin là trợ lý cho Hofmann, chứ không phải Perkin thuê Hofmann làm trợ lý -> FALSE.",
+            "evidence": "Perkin’s scientific gifts soon caught Hofmann’s attention and, within two years, he became Hofmann’s youngest assistant"
+          },
+          {
+            "id": 4,
+            "num": 4,
+            "type": "tfng",
+            "questionText": "4. The trees from which quinine is derived grow only in South America.",
+            "acceptableAnswers": [
+              "NOT GIVEN",
+              "NG"
+            ],
+            "explanation": "Đoạn 4: Bài chỉ nêu cây cinchona 'native to South America' (có nguồn gốc bản địa từ Nam Mỹ), không có từ nào khẳng định loài cây này 'chỉ mọc duy nhất' ở Nam Mỹ -> NOT GIVEN.",
+            "evidence": "The drug is derived from the bark of the cinchona tree, native to South America, and by 1856 demand for the drug was surpassing the available supply."
+          },
+          {
+            "id": 5,
+            "num": 5,
+            "type": "tfng",
+            "questionText": "5. Perkin hoped to manufacture a drug from a coal tar waste product.",
+            "acceptableAnswers": [
+              "TRUE",
+              "T"
+            ],
+            "explanation": "Đoạn 5: 'He was attempting to manufacture quinine from aniline, an inexpensive and readily available coal tar waste product.' Quinine là thuốc chữa sốt rét (a drug), aniline là phế phẩm từ than đá -> TRUE.",
+            "evidence": "He was attempting to manufacture quinine from aniline, an inexpensive and readily available coal tar waste product ."
+          },
+          {
+            "id": 6,
+            "num": 6,
+            "type": "tfng",
+            "questionText": "6. Marie Curie’s husband was a joint winner of both Marie’s Nobel Prizes.",
+            "acceptableAnswers": [
+              "FALSE",
+              "F"
+            ],
+            "explanation": "Đoạn 6: Người chồng Pierre Curie chỉ đồng nhận giải năm 1903 (Vật lý), còn giải năm 1911 (Hóa học) Marie là 'sole winner' (người duy nhất nhận giải) -> FALSE.",
+            "evidence": "With her husband, Pierre Curie, and Henri Becquerel, she was awarded the 1903 Nobel Prize for Physics, and was then sole winner of the 1911 Nobel Prize for Chemistry ."
+          },
+          {
+            "id": 7,
+            "num": 7,
+            "type": "tfng",
+            "questionText": "7. Marie stopped doing research for several years when her children were born.",
+            "acceptableAnswers": [
+              "FALSE",
+              "F"
+            ],
+            "explanation": "Đoạn 7: 'The births of Marie's two daughters, Irène and Eve, in 1897 and 1904 failed to interrupt her scientific work.' (không hề làm gián đoạn công việc nghiên cứu) -> Mâu thuẫn với 'stopped doing research' -> FALSE.",
+            "evidence": "The births of Marie's two daughters, Irène and Eve, in 1897 and 1904 failed to interrupt her scientific work."
+          },
+          {
+            "id": 8,
+            "num": 8,
+            "type": "tfng",
+            "questionText": "8. Marie took over the teaching position her husband had held.",
+            "acceptableAnswers": [
+              "TRUE",
+              "T"
+            ],
+            "explanation": "Đoạn 8: 'appointed to the professorship that had been left vacant on her husband's death, becoming the first woman to teach at the Sorbonne.' -> Tiếp quản vị trí giảng dạy của chồng -> TRUE.",
+            "evidence": "she was appointed to the professorship that had been left vacant on her husband's death , becoming the first woman to teach at the Sorbonne."
+          },
+          {
+            "id": 9,
+            "num": 9,
+            "type": "tfng",
+            "questionText": "9. Many experts believe California has made little progress in readying itself to fight fires.",
+            "acceptableAnswers": [
+              "FALSE",
+              "F"
+            ],
+            "explanation": "Đoạn 9: 'Many experts give California high marks for making progress on preparedness in recent years' (chấm điểm cao vì tiến bộ vượt bậc), trái ngược với 'made little progress' -> FALSE.",
+            "evidence": "Many experts give California high marks for making progress on preparedness in recent years"
+          },
+          {
+            "id": 10,
+            "num": 10,
+            "type": "tfng",
+            "questionText": "10. Personnel in the past have been criticised for mishandling fire containment.",
+            "acceptableAnswers": [
+              "TRUE",
+              "T"
+            ],
+            "explanation": "Đoạn 10: 'Stung in the past by criticism of bungling that allowed fires to spread when they might have been contained' (bungling = sai sót lóng ngóng / xử lý vụng về = mishandling) -> TRUE.",
+            "evidence": "Stung in the past by criticism of bungling that allowed fires to spread when they might have been contained"
+          }
+        ],
+        "vocabulary": [
+          {
+            "word": "fortuitous",
+            "meaning": "May mắn, tình cờ đúng lúc",
+            "example": "The timing was fortuitous, arriving just before the storm hit."
+          },
+          {
+            "word": "bungling",
+            "meaning": "Sự tắc trách, làm ăn cẩu thả lóng ngóng",
+            "example": "Officials admitted the disastrous spread resulted from emergency bungling."
+          },
+          {
+            "word": "preparedness",
+            "meaning": "Tình trạng sẵn sàng ứng phó",
+            "example": "California invested millions in disaster preparedness."
+          }
+        ]
+      },
+      {
+        "id": "r8_ex2",
+        "exampleNum": 2,
+        "title": "Phần 2: Luyện Tập Nền Tảng – Yes / No / Not Given",
+        "instructions": "Do the following statements agree with the views/claims of the writer in the passage? Write YES, NO, or NOT GIVEN for questions 1-7. (Pages 40-41)",
+        "passage": {
+          "title": "Foundational Practice: Y/N/NG Passages",
+          "paragraphs": [
+            {
+              "label": "1",
+              "text": "It’s not important, then, if there’s a delay of a few years, or decades, while the human race debates the question of whether to reply, and perhaps carefully drafts a reply, if a signal from the universe is received."
+            },
+            {
+              "label": "2",
+              "text": "Bernstein says that Diels’s system is attracting lots of interest from the power companies. But they have not yet come up with the $5 million that EPRI says will be needed to develop a commercial system, by making the lasers yet smaller and cheaper."
+            },
+            {
+              "label": "3",
+              "text": "One glaring disadvantage of pesticides’ application is that, while destroying harmful pests, they also wipe out many useful non-targeted organisms, which keep the growth of the pest population in check. This results in what agro-ecologists call the ‘treadmill syndrome’. Because of their tremendous breeding potential and genetic diversity, many pests are known to withstand synthetic chemicals and bear offspring with a built-in resistance to pesticides."
+            },
+            {
+              "label": "4",
+              "text": "When handled by experts, bio-control is safe, non-polluting and self-dispersing."
+            },
+            {
+              "label": "5",
+              "text": "According to Wagner’s analysis of the Bachia family tree, the toed species re-evolved toes from toeless ancestors and, what is more, digit loss and gain has occurred on more than one occasion over tens of millions of years."
+            },
+            {
+              "label": "6",
+              "text": "More recently, however, examples have been reported that break the time limit, suggesting that silent genes may not be the whole story. In a paper published last year, biologist Gunter Wagner of Yale University reported some work on the evolutionary history of a group of South American lizards called Bachia."
+            },
+            {
+              "label": "7",
+              "text": "Nasa notes that a lot of time is spent wondering about and searching for proof of liquid water on Mars, which would be a signal of life. But the new pictures show that the planet itself was once far more alive than it is today – made up of flowing molten lava that spread across its surface."
+            }
+          ]
+        },
+        "questions": [
+          {
+            "id": 1,
+            "num": 1,
+            "type": "ynng",
+            "questionText": "1. If a signal from outer space is received, it will be important to respond promptly.",
+            "acceptableAnswers": [
+              "NO",
+              "N"
+            ],
+            "explanation": "Đoạn 1: Bài viết nêu 'It’s not important, then, if there’s a delay of a few years, or decades...'. Tác giả khẳng định việc trì hoãn không hề quan trọng, trái ngược hoàn toàn với nhận định 'it will be important to respond promptly' -> NO.",
+            "evidence": "It’s not important, then, if there’s a delay of a few years, or decades, while the human race debates the question of whether to reply"
+          },
+          {
+            "id": 2,
+            "num": 2,
+            "type": "ynng",
+            "questionText": "2. Power companies have given Diels enough money to develop his laser.",
+            "acceptableAnswers": [
+              "NO",
+              "N"
+            ],
+            "explanation": "Đoạn 2: 'they have not yet come up with the $5 million that EPRI says will be needed to develop a commercial system' -> Các công ty vẫn CHƯA chi trả số tiền 5 triệu đô cần thiết -> NO.",
+            "evidence": "But they have not yet come up with the $5 million that EPRI says will be needed to develop a commercial system"
+          },
+          {
+            "id": 3,
+            "num": 3,
+            "type": "ynng",
+            "questionText": "3. A number of pests are now born with an innate immunity to some pesticides.",
+            "acceptableAnswers": [
+              "YES",
+              "Y"
+            ],
+            "explanation": "Đoạn 3: 'bear offspring with a built-in resistance to pesticides' (sinh ra con non có khả năng kháng thuốc sẵn có = innate immunity) -> YES.",
+            "evidence": "many pests are known to withstand synthetic chemicals and bear offspring with a built-in resistance to pesticides ."
+          },
+          {
+            "id": 4,
+            "num": 4,
+            "type": "ynng",
+            "questionText": "4. Bio-control is free from danger under certain circumstances.",
+            "acceptableAnswers": [
+              "YES",
+              "Y"
+            ],
+            "explanation": "Đoạn 4: 'When handled by experts, bio-control is safe, non-polluting and self-dispersing.' Safe = free from danger; When handled by experts = under certain circumstances -> YES.",
+            "evidence": "When handled by experts, bio-control is safe, non-polluting and self-dispersing."
+          },
+          {
+            "id": 5,
+            "num": 5,
+            "type": "ynng",
+            "questionText": "5. Wagner believes that Bachia lizards with toes had toeless ancestors.",
+            "acceptableAnswers": [
+              "YES",
+              "Y"
+            ],
+            "explanation": "Đoạn 5: 'According to Wagner’s analysis of the Bachia family tree, the toed species re-evolved toes from toeless ancestors' -> Khớp hoàn toàn -> YES.",
+            "evidence": "According to Wagner’s analysis of the Bachia family tree, the toed species re-evolved toes from toeless ancestors"
+          },
+          {
+            "id": 6,
+            "num": 6,
+            "type": "ynng",
+            "questionText": "6. Wagner was the first person to do research on South American lizards.",
+            "acceptableAnswers": [
+              "NOT GIVEN",
+              "NG"
+            ],
+            "explanation": "Đoạn 6: Đoạn văn chỉ nói Wagner 'reported some work on the evolutionary history of a group of South American lizards', không hề khẳng định ông là 'người đầu tiên' (the first person) -> NOT GIVEN.",
+            "evidence": "In a paper published last year, biologist Gunter Wagner of Yale University reported some work on the evolutionary history of a group of South American lizards called Bachia."
+          },
+          {
+            "id": 7,
+            "num": 7,
+            "type": "ynng",
+            "questionText": "7. The photos show that the surface of Mars is more active than ever.",
+            "acceptableAnswers": [
+              "NO",
+              "N"
+            ],
+            "explanation": "Đoạn 7: 'the new pictures show that the planet itself was once far more alive than it is today' (trong quá khứ Sao Hỏa sống động hơn ngày nay rất nhiều). Điều này mâu thuẫn với nhận định bề mặt Sao Hỏa 'more active than ever' (hoạt động mạnh mẽ hơn bao giờ hết) -> NO.",
+            "evidence": "the new pictures show that the planet itself was once far more alive than it is today – made up of flowing molten lava that spread across its surface."
+          }
+        ],
+        "vocabulary": [
+          {
+            "word": "innate immunity",
+            "meaning": "Khả năng miễn dịch bẩm sinh",
+            "example": "Some organisms develop innate immunity against poisons."
+          },
+          {
+            "word": "bio-control",
+            "meaning": "Biện pháp kiểm soát sinh học (dùng thiên địch)",
+            "example": "Bio-control avoids harmful agricultural chemical residues."
+          },
+          {
+            "word": "re-evolve",
+            "meaning": "Tiến hóa tái xuất hiện một tính trạng đã mất",
+            "example": "Traits may occasionally re-evolve after millions of years."
+          }
+        ]
+      },
+      {
+        "id": "r8_ex3",
+        "exampleNum": 3,
+        "title": "Example 1: Stepwells (Kiến trúc giếng cổ bậc thang)",
+        "instructions": "Do the following statements agree with the information given in Reading Passage 1? Write TRUE, FALSE, or NOT GIVEN for questions 1-5. (Pages 42-43)",
+        "passage": {
+          "title": "Stepwells: Monuments of Ancient India",
           "paragraphs": [
             {
               "label": "A",
-              "text": "A millennium ago, stepwells were fundamental to life in the driest parts of India. Unique to this region of South Asia, they are monumental subterranean waterworks engineered to cope with the extreme seasonal cycles of monsoon downpours followed by prolonged drought."
+              "text": "A millennium ago, stepwells were fundamental to life in the driest parts of India. Although many have been neglected, recent restoration has returned them to their former glory. Richard Cox travelled to north-western India to document these spectacular monuments from a bygone era."
             },
             {
               "label": "B",
-              "text": "Beyond their practical utility as reservoirs and communal water collection points, stepwells served as vibrant social gathering hubs and places of cool respite during blistering summer heat. Furthermore, because water held divine significance in Hinduism, many stepwells were consecrated as temples, featuring richly sculpted shrines honoring deities."
+              "text": "During the sixth and seventh centuries, the inhabitants of the modern-day states of Gujarat and Rajasthan in North-western India developed a method of gaining access to clean, fresh groundwater during the dry season for drinking, bathing, watering animals and irrigation. However, the significance of this invention – the stepwell – goes beyond its utilitarian application."
             },
             {
               "label": "C",
-              "text": "During the eleventh to fourteenth centuries, under the patronage of regional dynasties in Gujarat and Rajasthan, stepwell architecture reached its artistic zenith. The famous Rani ki Vav in Patan, built in the late eleventh century, features over five hundred major relief sculptures celebrating Vishnu."
+              "text": "Unique to the region, stepwells are often architecturally complex and vary widely in size and shape. During their heyday, they were places of gathering, of leisure, of relaxation and of worship for villagers of all but the lowest castes. Most stepwells are found dotted around the desert areas of Gujarat (where they are called vav) and Rajasthan (where they are known as baori), while a few also survive in Delhi. Some were located in or near villages as public spaces for the community; others were positioned beside roads as resting places for travellers."
+            },
+            {
+              "label": "D",
+              "text": "As their name suggests, stepwells comprise a series of stone steps descending from ground level to the water source (normally an underground aquifer) as it recedes following the rains. When the water level was high, the user needed only to descend a few steps to reach it; when it was low, several levels would have to be negotiated."
             }
           ]
         },
@@ -2084,95 +2842,103 @@ const readingLessons = [
               "FALSE",
               "F"
             ],
-            "explanation": "Đoạn A khẳng định: 'Unique to this region of South Asia' (Chỉ có duy nhất ở khu vực Nam Á này). Do đó, việc tìm thấy trên khắp thế giới là FALSE.",
-            "evidence": "Unique to this region of South Asia"
+            "explanation": "Đoạn C: Bài viết khẳng định giếng bậc thang là 'Unique to the region' (chỉ có ở vùng này - Tây Bắc Ấn Độ), không phải có ở khắp nơi trên thế giới -> FALSE.",
+            "evidence": "Unique to the region, stepwells are often architecturally complex and vary widely in size and shape."
           },
           {
             "id": 2,
             "num": 2,
             "type": "tfng",
-            "questionText": "2. Stepwells had a range of functions, in addition to tracking water levels and storage.",
+            "questionText": "2. Stepwells had a range of functions, in addition to those related to water collection.",
             "acceptableAnswers": [
               "TRUE",
               "T"
             ],
-            "explanation": "Đoạn B nêu rõ: 'Beyond their practical utility... served as vibrant social gathering hubs and places of cool respite... consecrated as temples'. Có nhiều công dụng xã hội và tôn giáo -> TRUE.",
-            "evidence": "Beyond their practical utility... served as vibrant social gathering hubs and places of cool respite"
+            "explanation": "Đoạn B & C: 'significance... goes beyond its utilitarian application... they were places of gathering, of leisure, of relaxation and of worship' -> Phục vụ nhiều mục đích ngoài việc lấy nước -> TRUE.",
+            "evidence": "During their heyday, they were places of gathering, of leisure, of relaxation and of worship for villagers"
           },
           {
             "id": 3,
             "num": 3,
             "type": "tfng",
-            "questionText": "3. The few existing stepwells in Delhi are considered more attractive than those in Rajasthan.",
+            "questionText": "3. The few existing stepwells in Delhi are more attractive than those found elsewhere.",
             "acceptableAnswers": [
               "NOT GIVEN",
               "NG"
             ],
-            "explanation": "Bài đọc nhắc đến Gujarat và Rajasthan, nhưng không hề so sánh mức độ thẩm mỹ của giếng ở Delhi so với giếng ở Rajasthan -> NOT GIVEN.",
-            "evidence": "No mention or comparison regarding stepwells in Delhi."
+            "explanation": "Đoạn C: Chỉ nói 'while a few also survive in Delhi', không hề so sánh mức độ thu hút / đẹp hơn với các nơi khác -> NOT GIVEN.",
+            "evidence": "while a few also survive in Delhi ."
           },
           {
             "id": 4,
             "num": 4,
             "type": "tfng",
-            "questionText": "4. Construction of the Rani ki Vav took place in the late eleventh century.",
+            "questionText": "4. It took workers many years to build the stone steps characteristic of stepwells.",
             "acceptableAnswers": [
-              "TRUE",
-              "T"
+              "NOT GIVEN",
+              "NG"
             ],
-            "explanation": "Đoạn C có câu: 'The famous Rani ki Vav in Patan, built in the late eleventh century...'. Hoàn toàn trùng khớp -> TRUE.",
-            "evidence": "The famous Rani ki Vav in Patan, built in the late eleventh century"
+            "explanation": "Đoạn D miêu tả cấu tạo bậc đá nhưng hoàn toàn không đề cập đến việc thợ xây mất bao nhiêu năm để hoàn thành -> NOT GIVEN.",
+            "evidence": "stepwells comprise a series of stone steps descending from ground level to the water source"
           },
           {
             "id": 5,
             "num": 5,
             "type": "tfng",
-            "questionText": "5. The state of Gujarat is known for producing the finest sandstone in South Asia.",
+            "questionText": "5. The number of steps above the water level in a stepwell altered during the course of a year.",
             "acceptableAnswers": [
-              "NOT GIVEN",
-              "NG"
+              "TRUE",
+              "T"
             ],
-            "explanation": "Bài đọc có nhắc Gujarat là nơi xây dựng nhiều giếng bậc thang, nhưng không hề nói rằng Gujarat nổi tiếng vì sản xuất loại đá sa thạch tốt nhất -> NOT GIVEN.",
-            "evidence": "Gujarat mentioned as a location, but sandstone quality not evaluated."
+            "explanation": "Đoạn D: Khi mực nước cao (mùa mưa), người dùng chỉ cần bước vài bậc; khi mực nước rút xuống thấp vào mùa khô, người ta phải bước xuống nhiều tầng bậc đá -> số bậc nằm trên mặt nước thay đổi theo các mùa trong năm -> TRUE.",
+            "evidence": "When the water level was high, the user needed only to descend a few steps to reach it; when it was low, several levels would have to be negotiated."
           }
         ],
         "vocabulary": [
           {
-            "word": "unique to",
-            "meaning": "Chỉ có duy nhất ở",
-            "example": "unique to this region"
+            "word": "aquifer",
+            "meaning": "Tầng ngậm nước ngầm",
+            "example": "Stepwells tapped into deep underground aquifers."
           },
           {
-            "word": "respite",
-            "meaning": "Sự nghỉ ngơi, thư giãn xua tan mệt mỏi",
-            "example": "cool respite from the summer heat"
+            "word": "heyday",
+            "meaning": "Thời kỳ hoàng kim, cực thịnh",
+            "example": "During their heyday, stepwells were vibrant social centers."
           },
           {
-            "word": "zenith",
-            "meaning": "Đỉnh cao, cực thịnh",
-            "example": "reached its artistic zenith"
+            "word": "utilitarian",
+            "meaning": "Thực dụng, thuần túy vì chức năng",
+            "example": "Their design was artistic rather than merely utilitarian."
           }
         ]
       },
       {
-        "id": "r8_ex2",
-        "exampleNum": 2,
+        "id": "r8_ex4",
+        "exampleNum": 4,
         "title": "Example 2: European Transport Systems 1990-2010",
-        "instructions": "Do the following statements agree with the information given in the passage? Write TRUE, FALSE, or NOT GIVEN.",
+        "instructions": "Do the following statements agree with the information given in Reading Passage 2? Write TRUE, FALSE, or NOT GIVEN for questions 22-26. (Pages 44-45)",
         "passage": {
-          "title": "EUROPEAN TRANSPORT SYSTEMS 1990-2010",
+          "title": "European Transport Systems 1990–2010",
           "paragraphs": [
             {
               "label": "A",
-              "text": "It is difficult to conceive of vigorous economic growth without an efficient transport system. Although modern information technologies can reduce the demand for physical transport by facilitating teleworking and teleservices, the requirement for transport continues to increase worldwide."
+              "text": "It is difficult to conceive of vigorous economic growth without an efficient transport system. Although modern information technologies can reduce the demand for physical transport by facilitating teleworking and teleservices, the requirement for transport continues to increase. There are two key factors behind this trend. For passenger transport, the determining factor is the spectacular growth in car use. The number of cars on European Union (EU) roads saw an increase of three million cars each year from 1990 to 2010, and in the next decade the EU will see a further substantial increase in its fleet."
             },
             {
               "label": "B",
-              "text": "Between 1990 and 1998, road freight transport expanded dramatically across the European Union, growing by over 19%. During the same decade, rail freight saw its market share decline from 21% to a meager 8%."
+              "text": "As far as goods transport is concerned, growth is due to a large extent to changes in the European economy and its system of production. In the last 20 years, as internal frontiers have been abolished, the EU has moved from a 'stock' economy to a 'flow' economy. This phenomenon has been emphasised by the relocation of some industries, particularly those which are labour intensive, to reduce production costs, even though the production site is hundreds or even thousands of kilometres away from the final assembly plant or away from users."
             },
             {
               "label": "C",
-              "text": "If nothing is done to shift modal share, transport-related CO2 emissions are projected to rise by up to 50% by 2010. Therefore, the European Community proposes ambitious policies to revitalize rail transport and coastal shipping."
+              "text": "The strong economic growth expected in countries which are candidates for entry to the EU will also increase transport flows, in particular road haulage traffic. In 1998, some of these countries already exported more than twice their 1990 volumes and imported more than five times their 1990 volumes. And although many candidate countries inherited a transport system which encourages rail, the distribution between modes has tipped sharply in favour of road transport since the 1990s. Between 1990 and 1998, road haulage increased by 19.4%, while during the same period rail haulage decreased by 43.5%."
+            },
+            {
+              "label": "D",
+              "text": "However, a new imperative-sustainable development – offers an opportunity for adapting the EU's common transport policy. This objective, agreed by the Gothenburg European Council, has to be achieved by integrating environmental considerations into Community policies, and shifting the balance between modes of transport lies at the heart of its strategy. The ambitious objective can only be fully achieved by 2020, but proposed measures are nonetheless a first essential step towards a sustainable transport system which will ideally be in place in 30 years' time, that is by 2040."
+            },
+            {
+              "label": "E",
+              "text": "In 1998, energy consumption in the transport sector was to blame for 28% of emissions of CO2, the leading greenhouse gas. According to the latest estimates, if nothing is done to reverse the traffic growth trend, CO2 emissions from transport can be expected to increase by around 50% to 1,113 billion tonnes by 2020, compared with the 739 billion tonnes recorded in 1990. Once again, road transport is the main culprit since it alone accounts for 84% of the CO2 emissions attributable to transport."
             }
           ]
         },
@@ -2181,100 +2947,104 @@ const readingLessons = [
             "id": 22,
             "num": 22,
             "type": "tfng",
-            "questionText": "22. The demand for physical transport has declined rapidly owing to internet technology.",
+            "questionText": "22. The need for transport is growing, despite technological developments.",
             "acceptableAnswers": [
-              "FALSE",
-              "F"
+              "TRUE",
+              "T"
             ],
-            "explanation": "Đoạn A nêu: 'the requirement for transport continues to increase worldwide'. Trái ngược với khẳng định 'has declined' -> FALSE.",
-            "evidence": "the requirement for transport continues to increase worldwide"
+            "explanation": "Đoạn A: 'Although modern information technologies can reduce the demand for physical transport... the requirement for transport continues to increase.' -> Khớp hoàn toàn -> TRUE.",
+            "evidence": "Although modern information technologies can reduce the demand for physical transport by facilitating teleworking and teleservices, the requirement for transport continues to increase ."
           },
           {
             "id": 23,
             "num": 23,
             "type": "tfng",
-            "questionText": "23. Road freight transport expanded significantly between 1990 and 1998 in Europe.",
+            "questionText": "23. To reduce production costs, some industries have been moved closer to their relevant consumers.",
             "acceptableAnswers": [
-              "TRUE",
-              "T"
+              "FALSE",
+              "F"
             ],
-            "explanation": "Đoạn B: 'road freight transport expanded dramatically across the European Union, growing by over 19%'. 'Dramatically' tương đồng với 'significantly' -> TRUE.",
-            "evidence": "road freight transport expanded dramatically across the European Union, growing by over 19%"
+            "explanation": "Đoạn B: 'to reduce production costs, even though the production site is hundreds or even thousands of kilometres away from the final assembly plant or away from users' -> Di dời ra xa hàng ngàn km, chứ KHÔNG phải chuyển lại gần người tiêu dùng (closer) -> FALSE.",
+            "evidence": "particularly those which are labour intensive, to reduce production costs, even though the production site is hundreds or even thousands of kilometres away from the final assembly plant or away from users"
           },
           {
             "id": 24,
             "num": 24,
             "type": "tfng",
-            "questionText": "24. Carbon dioxide emissions from transport will experience a surge by 2010 if existing trends persist.",
+            "questionText": "24. Cars are prohibitively expensive in some EU candidate countries.",
             "acceptableAnswers": [
-              "TRUE",
-              "T"
+              "NOT GIVEN",
+              "NG"
             ],
-            "explanation": "Đoạn C: 'If nothing is done... CO2 emissions are projected to rise by up to 50% by 2010'. Trùng khớp -> TRUE.",
-            "evidence": "If nothing is done to shift modal share, transport-related CO2 emissions are projected to rise by up to 50%"
+            "explanation": "Đoạn C đề cập đến lưu lượng xe tải đường bộ và thương mại xuất nhập khẩu của các nước ứng viên EU, nhưng không hề nhắc đến giá xe hơi đắt đỏ -> NOT GIVEN.",
+            "evidence": "The strong economic growth expected in countries which are candidates for entry to the EU will also increase transport flows"
           },
           {
             "id": 25,
             "num": 25,
             "type": "tfng",
-            "questionText": "25. Rail transport in Europe is considered safer and more punctual than highway shipping.",
+            "questionText": "25. The Gothenburg European Council was set up 30 years ago.",
             "acceptableAnswers": [
               "NOT GIVEN",
               "NG"
             ],
-            "explanation": "Đoạn B chỉ nói về thị phần đường sắt giảm từ 21% xuống 8%, không so sánh độ an toàn hay đúng giờ của tàu hỏa so với đường bộ -> NOT GIVEN.",
-            "evidence": "No comparison of safety or punctuality."
+            "explanation": "Đoạn D nêu mục tiêu 'ideally be in place in 30 years' time' (sẽ hoàn thiện trong 30 năm tới), không hề nói hội đồng Gothenburg được thành lập từ 30 năm trước -> NOT GIVEN.",
+            "evidence": "This objective, agreed by the Gothenburg European Council... a sustainable transport system which will ideally be in place in 30 years' time"
           },
           {
             "id": 26,
             "num": 26,
             "type": "tfng",
-            "questionText": "26. The European Community aims to revive rail infrastructure to counteract environmental deterioration.",
+            "questionText": "26. By the end of this decade, CO2 emissions from transport are predicted to reach 739 billion tonnes.",
             "acceptableAnswers": [
-              "TRUE",
-              "T"
+              "FALSE",
+              "F"
             ],
-            "explanation": "Đoạn C: 'the European Community proposes ambitious policies to revitalize rail transport'. Trùng khớp -> TRUE.",
-            "evidence": "the European Community proposes ambitious policies to revitalize rail transport"
+            "explanation": "Đoạn E: '739 billion tonnes recorded in 1990' (đây là số liệu năm 1990). Đến năm 2020 lượng khí thải dự kiến tăng lên 1,113 tỷ tấn, chứ không phải 739 tỷ tấn -> FALSE.",
+            "evidence": "increase by around 50% to 1,113 billion tonnes by 2020，compared with the 739 billion tonnes recorded in 1990 ."
           }
         ],
         "vocabulary": [
           {
-            "word": "teleworking",
-            "meaning": "Làm việc từ xa (qua mạng internet)",
-            "example": "teleworking reduces the need to commute"
+            "word": "haulage",
+            "meaning": "Vận tải hàng hóa bằng đường bộ",
+            "evidence": "Road haulage accounted for the vast majority of goods transport."
           },
           {
-            "word": "freight",
-            "meaning": "Hàng hóa vận chuyển (đường bộ, đường sắt, tàu biển)",
-            "example": "road freight transport"
+            "word": "culprit",
+            "meaning": "Thủ phạm, nguyên nhân chính gây hại",
+            "example": "Road transport is the chief culprit for carbon emissions."
           },
           {
-            "word": "revitalize",
-            "meaning": "Hồi sinh, đem lại sức sống mới",
-            "example": "revitalize the railway sector"
+            "word": "fleet",
+            "meaning": "Đội xe, toàn bộ lượng phương tiện",
+            "example": "The EU passenger car fleet expanded by millions each year."
           }
         ]
       },
       {
-        "id": "r8_ex3",
-        "exampleNum": 3,
-        "title": "Example 3: Tea and the Industrial Revolution (Trà và Cách mạng công nghiệp)",
-        "instructions": "Do the following statements agree with the information given in the passage? Write TRUE, FALSE, or NOT GIVEN.",
+        "id": "r8_ex5",
+        "exampleNum": 5,
+        "title": "Example 3: Tea and the Industrial Revolution",
+        "instructions": "Do the following statements agree with the information given in Reading Passage 1? Write TRUE, FALSE, or NOT GIVEN for questions 8-13. (Pages 46-47)",
         "passage": {
-          "title": "TEA AND THE INDUSTRIAL REVOLUTION",
+          "title": "Tea and the Industrial Revolution",
           "paragraphs": [
             {
               "label": "A",
-              "text": "Alan Macfarlane compares the emergence of the Industrial Revolution to a combination lock. Over twenty necessary factors had to coincide simultaneously. Great Britain was the pioneer nation where coal energy, technological inventions, and a market economy came together."
+              "text": "Macfarlane compares the puzzle to a combination lock. ‘There are about 20 different factors and all of them need to be present before the revolution can happen,’ he says. For industry to take off, there needs to be the technology and power to drive factories, large urban populations to provide cheap labour, easy transport to move goods around, an affluent middle-class willing to buy mass-produced objects, a market-driven economy and a political system that allows this to happen. While this was the case for England, other nations, such as Japan, the Netherlands and France also met some of these criteria but were not industrialising. ‘After all, Holland had everything except coal while China also had many of these factors. Most historians are convinced there are one or two missing factors that you need to open the lock.’"
             },
             {
               "label": "B",
-              "text": "Yet historians had long puzzled over another mystery: between 1740 and 1780, infant mortality rates in Britain plummeted dramatically, despite overcrowded, filthy slums. Macfarlane discovered that the sudden national obsession with drinking boiled tea, which contains natural antibacterial tannins, purified drinking water and decimated water-borne diseases."
+              "text": "The missing factors, he proposes, are to be found in almost every kitchen cupboard. Tea and beer, two of the nation’s favourite drinks, fuelled the revolution. The antiseptic properties of tannin, the active ingredient in tea, and of hops in beer – plus the fact that both are made with boiled water – allowed urban communities to flourish at close quarters without succumbing to water-borne diseases such as dysentery. The theory sounds eccentric but once he starts to explain the detective work that went into his deduction, the scepticism gives way to wary admiration. Macfarlane's case has been strengthened by support from notable quarters – Roy Porter, the distinguished medical historian, recently wrote a favourable appraisal of his research."
             },
             {
               "label": "C",
-              "text": "At the time, British citizens were completely oblivious to the antiseptic qualities of tea; they simply drank it because they enjoyed the taste and the mild caffeine stimulation."
+              "text": "Macfarlane had wondered for a long time how the Industrial Revolution came about. Historians had alighted on one interesting factor around the mid-18th century that required explanation. Between about 1650 and 1740, the population in Britain was static. But then there was a burst in population growth. Macfarlane says: ‘The infant mortality rate halved in the space of 20 years, and this happened in both rural areas and cities, and across all classes. Efforts to explain this sudden reduction in child deaths appeared to draw a blank.’"
+            },
+            {
+              "label": "D",
+              "text": "This population burst seemed to happen at just the right time to provide labour for the Industrial Revolution. ‘When you start moving towards an industrial revolution, it is economically efficient to have people living close together,’ says Macfarlane. ‘But then you get disease, particularly from human waste.’ Some digging around in historical records revealed that there was a change in the incidence of water-borne disease at that time, especially dysentery. Macfarlane deduced that whatever the British were drinking must have been important in regulating disease. He says, ‘We drank beer. For a long time, the English were protected by the strong antibacterial agent in hops, which were added to help preserve the beer. But in the late 17th century a tax was introduced on malt, the basic ingredient of beer. The poor turned to water and gin and in the 1720s the mortality rate began to rise again. Then it suddenly dropped again. What caused this?’"
             }
           ]
         },
@@ -2283,90 +3053,90 @@ const readingLessons = [
             "id": 8,
             "num": 8,
             "type": "tfng",
-            "questionText": "8. Industrialization occurred in Britain prior to other European nations.",
+            "questionText": "8. China’s transport system was not suitable for industry in the 18th century.",
             "acceptableAnswers": [
-              "TRUE",
-              "T"
+              "NOT GIVEN",
+              "NG"
             ],
-            "explanation": "Đoạn A nêu: 'Great Britain was the pioneer nation'. 'Pioneer' = đi đầu tiên -> TRUE.",
-            "evidence": "Great Britain was the pioneer nation where coal energy, technological inventions... came together"
+            "explanation": "Đoạn A: Bài viết chỉ nêu 'China also had many of these factors', hoàn toàn không đề cập cụ thể hệ thống giao thông của Trung Quốc có phù hợp cho công nghiệp hay không -> NOT GIVEN.",
+            "evidence": "while China also had many of these factors. Most historians are convinced there are one or two missing factors"
           },
           {
             "id": 9,
             "num": 9,
             "type": "tfng",
-            "questionText": "9. Britain’s overall population in 1700 was substantially smaller than France’s.",
+            "questionText": "9. Tea and beer both helped to prevent dysentery in Britain.",
             "acceptableAnswers": [
-              "NOT GIVEN",
-              "NG"
+              "TRUE",
+              "T"
             ],
-            "explanation": "Đoạn văn không đưa ra dữ liệu so sánh dân số giữa Anh và Pháp vào năm 1700 -> NOT GIVEN.",
-            "evidence": "No population comparison between Britain and France."
+            "explanation": "Đoạn B: 'The antiseptic properties of tannin, the active ingredient in tea, and of hops in beer... allowed urban communities to flourish at close quarters without succumbing to water-borne diseases such as dysentery' -> Cả hai loại đồ uống đều giúp ngăn ngừa bệnh kiết lỵ -> TRUE.",
+            "evidence": "The antiseptic properties of tannin, the active ingredient in tea, and of hops in beer... allowed urban communities to flourish at close quarters without succumbing to water-borne diseases such as dysentery ."
           },
           {
             "id": 10,
             "num": 10,
             "type": "tfng",
-            "questionText": "10. Britain was the only country possessing accessible coal deposits during the 18th century.",
+            "questionText": "10. Roy Porter disagrees with Professor Macfarlane’s findings.",
             "acceptableAnswers": [
               "FALSE",
               "F"
             ],
-            "explanation": "Đoạn A nói than đá là một yếu tố ở Anh, nhưng không hề nói Anh là nước duy nhất ('only country') có than đá. Trong thực tế lịch sử các nước khác cũng có than đá -> FALSE.",
-            "evidence": "coal energy mentioned as one of 20 factors in Britain, not exclusive globally."
+            "explanation": "Đoạn B: 'Roy Porter, the distinguished medical historian, recently wrote a favourable appraisal of his research' (đánh giá ủng hộ, thuận lợi), trái ngược hoàn toàn với 'disagrees' -> FALSE.",
+            "evidence": "Roy Porter, the distinguished medical historian, recently wrote a favourable appraisal of his research ."
           },
           {
             "id": 11,
             "num": 11,
             "type": "tfng",
-            "questionText": "11. British consumers in the 18th century were unaware that tea possessed antiseptic health benefits.",
+            "questionText": "11. After 1740, there was a reduction in population in Britain.",
             "acceptableAnswers": [
-              "TRUE",
-              "T"
+              "FALSE",
+              "F"
             ],
-            "explanation": "Đoạn C khẳng định: 'British citizens were completely oblivious to the antiseptic qualities of tea'. 'Oblivious' = 'unaware' (không hề hay biết) -> TRUE.",
-            "evidence": "British citizens were completely oblivious to the antiseptic qualities of tea"
+            "explanation": "Đoạn C: 'Between about 1650 and 1740, the population in Britain was static. But then there was a burst in population growth.' (Sau 1740 dân số bùng nổ tăng vọt, không phải giảm sút) -> FALSE.",
+            "evidence": "Between about 1650 and 1740，the population in Britain was static. But then there was a burst in population growth ."
           },
           {
             "id": 12,
             "num": 12,
             "type": "tfng",
-            "questionText": "12. Infant mortality in British urban centers increased noticeably after 1740.",
+            "questionText": "12. People in Britain used to make beer at home.",
             "acceptableAnswers": [
-              "FALSE",
-              "F"
+              "NOT GIVEN",
+              "NG"
             ],
-            "explanation": "Đoạn B khẳng định: 'infant mortality rates in Britain plummeted dramatically' (tỷ lệ tử vong ở trẻ sơ sinh giảm mạnh). Câu hỏi nói 'increased' là hoàn toàn sai -> FALSE.",
-            "evidence": "infant mortality rates in Britain plummeted dramatically"
+            "explanation": "Đoạn D nói người Anh uống nhiều bia và thuế mạch nha được áp đặt, nhưng không hề đề cập đến việc người dân tự nấu bia tại nhà -> NOT GIVEN.",
+            "evidence": "We drank beer. For a long time, the English were protected by the strong antibacterial agent in hops"
           },
           {
             "id": 13,
             "num": 13,
             "type": "tfng",
-            "questionText": "13. Macfarlane’s conclusions have been unanimously endorsed by all British historians.",
+            "questionText": "13. The tax on malt indirectly caused a rise in the death rate.",
             "acceptableAnswers": [
-              "NOT GIVEN",
-              "NG"
+              "TRUE",
+              "T"
             ],
-            "explanation": "Bài đọc giới thiệu lý thuyết của Macfarlane nhưng không đề cập việc toàn bộ các sử gia có đồng thuận hoàn toàn hay không -> NOT GIVEN.",
-            "evidence": "Consensus among all historians is not stated."
+            "explanation": "Đoạn D: Thuế đánh vào mạch nha khiến người nghèo chuyển sang uống nước lã và rượu gin, dẫn đến tỷ lệ tử vong bắt đầu tăng trở lại vào những năm 1720 ('in the 1720s the mortality rate began to rise again') -> TRUE.",
+            "evidence": "tax was introduced on malt, the basic ingredient of beer. The poor turned to water and gin and in the 1720s the mortality rate began to rise again."
           }
         ],
         "vocabulary": [
           {
-            "word": "infant mortality",
-            "meaning": "Tỷ lệ tử vong ở trẻ sơ sinh",
-            "example": "infant mortality plummeted dramatically"
-          },
-          {
             "word": "antiseptic",
-            "meaning": "Có tính kháng khuẩn, khử trùng",
-            "example": "antiseptic properties of boiled tea"
+            "meaning": "Kháng khuẩn, khử trùng",
+            "example": "Tannin in tea acts as an effective natural antiseptic."
           },
           {
-            "word": "oblivious to",
-            "meaning": "Hoàn toàn không hay biết, lãng quên",
-            "example": "completely oblivious to the dangers"
+            "word": "dysentery",
+            "meaning": "Bệnh kiết lỵ (nhiễm trùng đường ruột)",
+            "example": "Dysentery was a major cause of infant mortality in crowded cities."
+          },
+          {
+            "word": "static",
+            "meaning": "Bất biến, đứng yên không đổi",
+            "example": "Population levels remained static for nearly a century."
           }
         ]
       }
@@ -2376,316 +3146,370 @@ const readingLessons = [
     "id": "reading_9",
     "lessonNum": 9,
     "code": "V11",
-    "title": "V11 - MATCHING FEATURES",
-    "shortTitle": "Matching Features",
+    "title": "V11 – MATCHING FEATURES",
+    "shortTitle": "Nối Đặc Điểm & Tác Giả",
     "category": "matching",
-    "categoryLabel": "Nối Thông Tin",
-    "badge": "Nối đặc điểm / Tên người",
-    "description": "Chiến thuật nối đặc điểm: Scan danh sách tên riêng/nhóm đối tượng trong bài đọc, đọc câu chứa quan điểm và nối với nhận định tương ứng.",
+    "categoryLabel": "Dạng Bài Nối Thông Tin",
+    "badge": "Chiến lược scan tên riêng",
+    "description": "Chiến thuật định vị danh sách đối tượng (tên nhà khoa học, tổ chức, thành phố) bằng cách scan Hard Keywords, đọc đoạn trích dẫn quan điểm và đối chiếu nhận định.",
     "examplesCount": 3,
-    "totalQuestions": 12,
+    "totalQuestions": 11,
     "examples": [
       {
         "id": "r9_ex1",
         "exampleNum": 1,
-        "title": "Example 1: Second Nature (Thay đổi tính cách)",
-        "instructions": "Match each statement with the correct psychologist/researcher (A-D). Write the correct letter.",
+        "title": "Example 1: Educating the Gifted (Matching People)",
+        "instructions": "Match each statement with the correct person or people, A-D. Write the correct letter, A-D, in boxes 18-21. (Questions 18-21, Pages 48-49)\n\nList of People:\nA Shore and Kanevsky | B Elshout | C Simonton | D Boekaerts",
         "passage": {
-          "title": "SECOND NATURE - Can Personality Be Altered?",
+          "title": "Educating the Gifted: Research and Perspectives",
           "paragraphs": [
             {
               "label": "A",
-              "text": "'The evidence is good that most personality traits can be altered,' says Christopher Peterson, professor of psychology at the University of Michigan. Inherently introverted, he realized early on that as an academic, shyness would prove disastrous in lecture halls. So he deliberately trained himself to be more extroverted and engaging."
+              "text": "Shore and Kanevsky's (1993) review of research on the thinking process of high achievers concludes that they demonstrate a great capacity to manage their own learning. However, exceptional ability is not only a matter of intellectual skills, but also involves personality factors like high motivation and independence."
             },
             {
               "label": "B",
-              "text": "Psychologist Martin Seligman points out that positive emotions and optimism are skills that can be cultivated through deliberate practice. His research at the University of Pennsylvania showed that people who practiced recording three good things each day experienced sustained increases in happiness."
+              "text": "Conversely, teachers often spend unnecessary time providing exercises for gifted students who already produce highly accurate work without needing further drill. Elshout (1995) noted that once children demonstrate mastery, further practice yields diminishing returns."
             },
             {
               "label": "C",
-              "text": "Meanwhile, Suzanne Segerstrom cautions that striving for drastic behavioral change requires significant mental effort, and that overexertion can lead to fatigue if people do not allow themselves adequate downtime to recharge."
+              "text": "Simonton (1988) investigated creative geniuses and concluded that self-reliance and the capacity to persist independently seemed to contribute more to reaching the highest levels of expertise than raw talent. He also showed that really successful individuals have acquired an immense body of knowledge about their discipline over thousands of hours of immersion."
+            },
+            {
+              "label": "D",
+              "text": "In Boekaerts' (1991) review of the learning of very high IQ and highly achieving children, she found emotional forces in harness. Positive emotions facilitate learning, whereas fear inhibits it. Gifted children often have a strong desire to channel their curiosity and feelings to improve their learning efficiency and increase their own learning resources."
             }
           ]
         },
         "questions": [
           {
-            "id": 1,
-            "num": 1,
+            "id": 18,
+            "num": 18,
             "type": "matching-features",
-            "questionText": "1. Used personal experience as an illustration of deliberate personality modification.",
             "options": [
-              {
-                "letter": "A",
-                "desc": "Christopher Peterson"
-              },
-              {
-                "letter": "B",
-                "desc": "Martin Seligman"
-              },
-              {
-                "letter": "C",
-                "desc": "Suzanne Segerstrom"
-              }
+              "A Shore and Kanevsky",
+              "B Elshout",
+              "C Simonton",
+              "D Boekaerts"
             ],
+            "questionText": "18. Less time can be spent on exercises with gifted pupils who produce accurate work.",
             "acceptableAnswers": [
-              "A"
+              "B",
+              "B Elshout",
+              "Elshout"
             ],
-            "explanation": "Đoạn A: Christopher Peterson 'cites himself as an example' khi tự rèn luyện tính cách hướng ngoại.",
-            "evidence": "Christopher Peterson... Inherently introverted, he realized early on... trained himself"
+            "explanation": "Đoạn B: 'Elshout (1995) noted that once children demonstrate mastery, further practice yields diminishing returns' -> B (Elshout).",
+            "evidence": "Elshout (1995) noted that once children demonstrate mastery, further practice yields diminishing returns."
           },
           {
-            "id": 2,
-            "num": 2,
+            "id": 19,
+            "num": 19,
             "type": "matching-features",
-            "questionText": "2. Demonstrated that simple daily gratitude exercises measurably elevate long-term optimism.",
             "options": [
-              {
-                "letter": "A",
-                "desc": "Christopher Peterson"
-              },
-              {
-                "letter": "B",
-                "desc": "Martin Seligman"
-              },
-              {
-                "letter": "C",
-                "desc": "Suzanne Segerstrom"
-              }
+              "A Shore and Kanevsky",
+              "B Elshout",
+              "C Simonton",
+              "D Boekaerts"
             ],
+            "questionText": "19. Self-reliance is a valuable tool that helps gifted students reach their goals.",
             "acceptableAnswers": [
-              "B"
+              "C",
+              "C Simonton",
+              "Simonton"
             ],
-            "explanation": "Đoạn B: Martin Seligman nghiên cứu bài tập 'recording three good things each day experienced sustained increases in happiness'.",
-            "evidence": "Martin Seligman points out that positive emotions and optimism are skills that can be cultivated"
+            "explanation": "Đoạn C: 'Simonton (1988) investigated creative geniuses and concluded that self-reliance and the capacity to persist independently seemed to contribute more to reaching the highest levels of expertise' -> C (Simonton).",
+            "evidence": "such as independence seemed to contribute more to reaching the highest levels of expertise than intellectual skills"
           },
           {
-            "id": 3,
-            "num": 3,
+            "id": 20,
+            "num": 20,
             "type": "matching-features",
-            "questionText": "3. Warned that excessive effort to modify habits may produce psychological exhaustion.",
             "options": [
-              {
-                "letter": "A",
-                "desc": "Christopher Peterson"
-              },
-              {
-                "letter": "B",
-                "desc": "Martin Seligman"
-              },
-              {
-                "letter": "C",
-                "desc": "Suzanne Segerstrom"
-              }
+              "A Shore and Kanevsky",
+              "B Elshout",
+              "C Simonton",
+              "D Boekaerts"
             ],
+            "questionText": "20. Gifted children know how to channel their feelings to assist their learning.",
             "acceptableAnswers": [
-              "C"
+              "D",
+              "D Boekaerts",
+              "Boekaerts"
             ],
-            "explanation": "Đoạn C: Suzanne Segerstrom cảnh báo 'overexertion can lead to fatigue'.",
-            "evidence": "Suzanne Segerstrom cautions that... overexertion can lead to fatigue"
+            "explanation": "Đoạn D: 'In Boekaerts’ (1991) review... she found emotional forces in harness... strong desire to control their environment, improve their learning efficiency' -> D (Boekaerts).",
+            "evidence": "In Boekaerts ’ (1991) review of emotion the learning of very high IQ and highly achieving children, she found emotional forces in harness."
+          },
+          {
+            "id": 21,
+            "num": 21,
+            "type": "matching-features",
+            "options": [
+              "A Shore and Kanevsky",
+              "B Elshout",
+              "C Simonton",
+              "D Boekaerts"
+            ],
+            "questionText": "21. Really successful students have learnt a considerable amount about their subject.",
+            "acceptableAnswers": [
+              "C",
+              "C Simonton",
+              "Simonton"
+            ],
+            "explanation": "Đoạn C: Simonton khẳng định 'great demands of effort and time needed for learning and practice' dẫn đến việc tích lũy lượng kiến thức khổng lồ về chuyên ngành -> C (Simonton).",
+            "evidence": "due to the great demands of effort and time needed for learning and practice. Creativity in all forms can be seen as expertise"
           }
         ],
         "vocabulary": [
           {
-            "word": "personality trait",
-            "meaning": "Nét tính cách",
-            "example": "altering personality traits"
+            "word": "self-reliance",
+            "meaning": "Sự tự lực, tự chủ",
+            "example": "Self-reliance allows gifted learners to explore complex problems alone."
           },
           {
-            "word": "introverted",
-            "meaning": "Hướng nội, rụt rè",
-            "example": "an inherently introverted academic"
+            "word": "diminishing returns",
+            "meaning": "Hiệu suất giảm dần theo quy luật biên",
+            "example": "Excessive repetitive drills produce diminishing returns."
           },
           {
-            "word": "overexertion",
-            "meaning": "Sự gắng sức quá mức dẫn đến kiệt sức",
-            "example": "overexertion can cause burnout"
+            "word": "in harness",
+            "meaning": "Được kiểm soát và đưa vào sử dụng hiệu quả",
+            "example": "Emotional energy was put in harness to fuel academic drive."
           }
         ]
       },
       {
         "id": "r9_ex2",
         "exampleNum": 2,
-        "title": "Example 2: Gifted Children and Academic Excellence",
-        "instructions": "Match each finding with the correct researcher group (A-C).",
+        "title": "Example 2: Second Nature (Personality Transformation)",
+        "instructions": "Match each statement with the correct person, A-G. Write the correct letter, A-G, in boxes 19-22. (Questions 19-22, Pages 50-51)\n\nList of People:\nA Christopher Peterson | B David Fajgenbaum | C Suzanne Segerstrom | D Tanya Streeter | E Todd Kashdan | F Kenneth Pedeleose | G Cynthia Pury",
         "passage": {
-          "title": "RESEARCH ON GIFTED LEARNERS",
+          "title": "Second Nature: Can Personality Be Changed?",
           "paragraphs": [
             {
               "label": "A",
-              "text": "Freeman (2001) observed that gifted children whose parents provided rich intellectual stimulation at home displayed remarkable cognitive transfer when tackling unfamiliar school problems."
+              "text": "Psychologists have discovered that deliberate practice can reshape habitual personality traits. Todd Kashdan, an expert on human curiosity at George Mason University, stresses that developing an open mind requires accepting initial discomfort: 'People must accept that they do not know much when first trying something new,' he observes."
             },
             {
               "label": "B",
-              "text": "Shore and Kanevsky (1993) reported that high achievers naturally employ self-regulatory metacognitive strategies, spending more time planning their approach before executing tasks compared to average peers."
+              "text": "Optimism can also be cultivated. Christopher Peterson, a professor at the University of Michigan, suggests that training oneself to actively notice and document positive everyday events produces measurable long-term enhancements in emotional resilience and optimism."
             },
             {
               "label": "C",
-              "text": "Simonton (1999) argued that exceptional talent requires years of deliberate domain-specific practice rather than purely innate genetic genius."
+              "text": "Courage is another trait that can be developed. Cynthia Pury, a psychologist at Clemson University, found that courage is rarely reckless bravado; rather, courage can be learned once people understand its roots in personal duty and a sense of responsibility towards others."
+            },
+            {
+              "label": "D",
+              "text": "Overcoming chronic fear is possible through behavioral exposure. Kenneth Pedeleose, an aerospace engineer who suffered from acute public-speaking dread, successfully retrained his nervous system by treating speaking engagements as technical challenges, showing that it is possible to conquer crippling shyness."
             }
           ]
         },
         "questions": [
           {
-            "id": 4,
-            "num": 4,
+            "id": 19,
+            "num": 19,
             "type": "matching-features",
-            "questionText": "4. Emphasized the critical role of self-regulatory metacognition and upfront planning.",
             "options": [
-              {
-                "letter": "A",
-                "desc": "Freeman"
-              },
-              {
-                "letter": "B",
-                "desc": "Shore and Kanevsky"
-              },
-              {
-                "letter": "C",
-                "desc": "Simonton"
-              }
+              "A Christopher Peterson",
+              "B David Fajgenbaum",
+              "C Suzanne Segerstrom",
+              "D Tanya Streeter",
+              "E Todd Kashdan",
+              "F Kenneth Pedeleose",
+              "G Cynthia Pury"
             ],
+            "questionText": "19. People must accept that they do not know much when first trying something new.",
             "acceptableAnswers": [
-              "B"
+              "E",
+              "E Todd Kashdan",
+              "Todd Kashdan"
             ],
-            "explanation": "Đoạn B nêu rõ Shore and Kanevsky nghiên cứu về self-regulatory metacognitive strategies và planning.",
-            "evidence": "Shore and Kanevsky (1993) reported that high achievers naturally employ self-regulatory metacognitive strategies"
+            "explanation": "Đoạn A: Todd Kashdan nêu rõ 'People must accept that they do not know much when first trying something new' -> E.",
+            "evidence": "Todd Kashdan, an expert on human curiosity... 'People must accept that they do not know much when first trying something new'"
           },
           {
-            "id": 5,
-            "num": 5,
+            "id": 20,
+            "num": 20,
             "type": "matching-features",
-            "questionText": "5. Highlighted the influence of parental intellectual stimulation at home.",
             "options": [
-              {
-                "letter": "A",
-                "desc": "Freeman"
-              },
-              {
-                "letter": "B",
-                "desc": "Shore and Kanevsky"
-              },
-              {
-                "letter": "C",
-                "desc": "Simonton"
-              }
+              "A Christopher Peterson",
+              "B David Fajgenbaum",
+              "C Suzanne Segerstrom",
+              "D Tanya Streeter",
+              "E Todd Kashdan",
+              "F Kenneth Pedeleose",
+              "G Cynthia Pury"
             ],
+            "questionText": "20. It is important for people to actively notice when good things happen.",
             "acceptableAnswers": [
-              "A"
+              "A",
+              "A Christopher Peterson",
+              "Christopher Peterson"
             ],
-            "explanation": "Đoạn A: Freeman (2001) nghiên cứu về sự hỗ trợ và môi trường học tập tại gia đình của phụ huynh.",
-            "evidence": "Freeman (2001) observed that gifted children whose parents provided rich intellectual stimulation"
+            "explanation": "Đoạn B: Christopher Peterson đề xuất 'actively notice and document positive everyday events' -> A.",
+            "evidence": "Christopher Peterson... suggests that training oneself to actively notice and document positive everyday events"
           },
           {
-            "id": 6,
-            "num": 6,
+            "id": 21,
+            "num": 21,
             "type": "matching-features",
-            "questionText": "6. Asserted that sustained practice outweighs raw genetic giftedness.",
             "options": [
-              {
-                "letter": "A",
-                "desc": "Freeman"
-              },
-              {
-                "letter": "B",
-                "desc": "Shore and Kanevsky"
-              },
-              {
-                "letter": "C",
-                "desc": "Simonton"
-              }
+              "A Christopher Peterson",
+              "B David Fajgenbaum",
+              "C Suzanne Segerstrom",
+              "D Tanya Streeter",
+              "E Todd Kashdan",
+              "F Kenneth Pedeleose",
+              "G Cynthia Pury"
             ],
+            "questionText": "21. Courage can be learned once its origins in a sense of responsibility are understood.",
             "acceptableAnswers": [
-              "C"
+              "G",
+              "G Cynthia Pury",
+              "Cynthia Pury"
             ],
-            "explanation": "Đoạn C: Simonton khẳng định tài năng vượt trội đòi hỏi sự rèn luyện miệt mài ('deliberate practice') hơn là gen bẩm sinh.",
-            "evidence": "Simonton (1999) argued that exceptional talent requires years of deliberate practice"
+            "explanation": "Đoạn C: Cynthia Pury phát hiện 'courage can be learned once people understand its roots in personal duty and a sense of responsibility towards others' -> G.",
+            "evidence": "Cynthia Pury... found that... courage can be learned once people understand its roots in personal duty and a sense of responsibility"
+          },
+          {
+            "id": 22,
+            "num": 22,
+            "type": "matching-features",
+            "options": [
+              "A Christopher Peterson",
+              "B David Fajgenbaum",
+              "C Suzanne Segerstrom",
+              "D Tanya Streeter",
+              "E Todd Kashdan",
+              "F Kenneth Pedeleose",
+              "G Cynthia Pury"
+            ],
+            "questionText": "22. It is possible to overcome shyness when faced with the need to speak in public.",
+            "acceptableAnswers": [
+              "F",
+              "F Kenneth Pedeleose",
+              "Kenneth Pedeleose"
+            ],
+            "explanation": "Đoạn D: Kenneth Pedeleose vượt qua nỗi sợ nói trước công chúng, chứng minh 'it is possible to conquer crippling shyness' -> F.",
+            "evidence": "Kenneth Pedeleose, an aerospace engineer who suffered from acute public-speaking dread... conquer crippling shyness."
           }
         ],
         "vocabulary": [
           {
-            "word": "metacognition",
-            "meaning": "Siêu nhận thức (nhận thức về quá trình tư duy của bản thân)",
-            "example": "metacognitive strategies"
+            "word": "bravado",
+            "meaning": "Sự làm bộ can đảm, liều lĩnh mù quáng",
+            "example": "True courage is grounded in responsibility, not reckless bravado."
           },
           {
-            "word": "deliberate practice",
-            "meaning": "Luyện tập có chủ đích và kỷ luật",
-            "example": "deliberate practice yields mastery"
+            "word": "resilience",
+            "meaning": "Khả năng kiên cường phục hồi tinh thần",
+            "example": "Noticing daily positives builds emotional resilience."
+          },
+          {
+            "word": "crippling shyness",
+            "meaning": "Sự nhút nhát tê liệt, nghiêm trọng",
+            "example": "Exposure therapy helped him overcome crippling shyness."
           }
         ]
       },
       {
         "id": "r9_ex3",
         "exampleNum": 3,
-        "title": "Example 3: Urban Transportation Study",
-        "instructions": "Match each city or group with the corresponding finding (A-C).",
+        "title": "Example 3: Advantages of Public Transport (Matching Cities)",
+        "instructions": "Look at the following cities (Questions 11-13) and the list of descriptions below. Match each city with the correct description, A-F. (Questions 11-13, Pages 52-53)\n\nList of Descriptions:\nA successfully uses a light rail transport system in hilly environment\nB successful public transport system despite cold winters\nC profitably moved from road to light rail transport system\nD hilly and inappropriate for rail transport system\nE heavily dependent on cars despite widespread poverty\nF inefficient due to a limited public transport system",
         "passage": {
-          "title": "GLOBAL URBAN TRANSPORT EFFICIENCY",
+          "title": "Urban Transit: Comparing World Cities",
           "paragraphs": [
             {
               "label": "A",
-              "text": "The study by Murdoch University compared thirty-seven global cities. European cities like Zurich and Copenhagen invested heavily in integrated rail networks, achieving high transit ridership while expending less than 6% of regional GDP on transport."
+              "text": "Some urban planners argue that geography or climate dictate transport choices. For instance, in hilly Auckland, officials claimed the steep terrain made rail impractical, leaving the city heavily dependent on roads and buses (Description D)."
             },
             {
               "label": "B",
-              "text": "By contrast, sprawling North American cities like Houston and Phoenix committed overwhelmingly to private highways, resulting in traffic congestion and transport expenditures exceeding 12% of economic wealth."
+              "text": "Meanwhile, Australian cities like Perth invested predominantly in highway networks and sprawling freeways, creating an inefficient, car-dependent urban layout with minimal public transit options (Description F)."
+            },
+            {
+              "label": "C",
+              "text": "In sharp contrast, Portland, Oregon, redirected highway expansion funding into an integrated light rail transit network. The move stimulated immense downtown development, proved highly lucrative, and dramatically cut inner-city congestion (Description C)."
             }
           ]
         },
         "questions": [
           {
-            "id": 7,
-            "num": 7,
+            "id": 11,
+            "num": 11,
             "type": "matching-features",
-            "questionText": "7. Dedicated massive funds to highway systems resulting in economic waste.",
             "options": [
-              {
-                "letter": "A",
-                "desc": "European cities (Zurich/Copenhagen)"
-              },
-              {
-                "letter": "B",
-                "desc": "North American cities (Houston/Phoenix)"
-              }
+              "A successfully uses a light rail in hilly environment",
+              "B successful system despite cold winters",
+              "C profitably moved from road to light rail",
+              "D hilly and inappropriate for rail",
+              "E heavily dependent on cars despite poverty",
+              "F inefficient due to a limited public transport system"
             ],
+            "questionText": "11. Perth",
             "acceptableAnswers": [
-              "B"
+              "F",
+              "F inefficient due to a limited public transport system"
             ],
-            "explanation": "Đoạn B chỉ ra các thành phố Bắc Mỹ chi hơn 12% GDP vì ưu tiên đường cao tốc tư nhân.",
-            "evidence": "North American cities like Houston and Phoenix committed overwhelmingly to private highways"
+            "explanation": "Đoạn B: Perth đầu tư vào xa lộ cao tốc, tạo ra hệ thống giao thông kém hiệu quả do phương tiện công cộng quá hạn chế -> F.",
+            "evidence": "invested predominantly in highway networks... creating an inefficient, car-dependent urban layout with minimal public transit options"
           },
           {
-            "id": 8,
-            "num": 8,
+            "id": 12,
+            "num": 12,
             "type": "matching-features",
-            "questionText": "8. Integrated rail systems that minimized municipal transportation expenditure.",
             "options": [
-              {
-                "letter": "A",
-                "desc": "European cities (Zurich/Copenhagen)"
-              },
-              {
-                "letter": "B",
-                "desc": "North American cities (Houston/Phoenix)"
-              }
+              "A successfully uses a light rail in hilly environment",
+              "B successful system despite cold winters",
+              "C profitably moved from road to light rail",
+              "D hilly and inappropriate for rail",
+              "E heavily dependent on cars despite poverty",
+              "F inefficient due to a limited public transport system"
             ],
+            "questionText": "12. Auckland",
             "acceptableAnswers": [
-              "A"
+              "D",
+              "D hilly and inappropriate for rail transport system"
             ],
-            "explanation": "Đoạn A nêu các thành phố châu Âu chi dưới 6% GDP nhờ mạng lưới tàu hỏa thông suốt.",
-            "evidence": "European cities like Zurich and Copenhagen invested heavily in integrated rail networks"
+            "explanation": "Đoạn A: Địa hình đồi dốc của Auckland khiến người ta cho rằng đường sắt không phù hợp -> D.",
+            "evidence": "hilly Auckland, officials claimed the steep terrain made rail impractical"
+          },
+          {
+            "id": 13,
+            "num": 13,
+            "type": "matching-features",
+            "options": [
+              "A successfully uses a light rail in hilly environment",
+              "B successful system despite cold winters",
+              "C profitably moved from road to light rail",
+              "D hilly and inappropriate for rail",
+              "E heavily dependent on cars despite poverty",
+              "F inefficient due to a limited public transport system"
+            ],
+            "questionText": "13. Portland",
+            "acceptableAnswers": [
+              "C",
+              "C profitably moved from road to light rail transport system"
+            ],
+            "explanation": "Đoạn C: Portland chuyển tiền từ đường bộ sang đường sắt nhẹ một cách sinh lời và thành công rực rỡ -> C.",
+            "evidence": "Portland, Oregon, redirected highway expansion funding into an integrated light rail transit network... proved highly lucrative"
           }
         ],
         "vocabulary": [
           {
-            "word": "transit ridership",
-            "meaning": "Lượng hành khách đi phương tiện công cộng",
-            "example": "high transit ridership"
+            "word": "light rail",
+            "meaning": "Hệ thống đường sắt nhẹ / tàu điện nội đô",
+            "example": "Light rail reduced highway traffic and carbon emissions."
           },
           {
-            "word": "sprawling",
-            "meaning": "Đô thị mở rộng ngổn ngang, phân tán",
-            "example": "sprawling metropolitan areas"
+            "word": "terrain",
+            "meaning": "Địa hình địa thế",
+            "example": "Rugged terrain complicates transportation infrastructure."
+          },
+          {
+            "word": "lucrative",
+            "meaning": "Sinh lời cao, mang lại nhiều lợi nhuận",
+            "example": "Urban transit investments proved commercially lucrative."
           }
         ]
       }
@@ -2695,220 +3519,423 @@ const readingLessons = [
     "id": "reading_10",
     "lessonNum": 10,
     "code": "V12",
-    "title": "V12 - MATCHING SENTENCE ENDINGS",
-    "shortTitle": "Matching Sentence Endings",
+    "title": "V12 – MATCHING SENTENCE ENDINGS",
+    "shortTitle": "Nối Nửa Câu Hoàn Chỉnh",
     "category": "matching",
-    "categoryLabel": "Nối Thông Tin",
-    "badge": "Nối vế câu",
-    "description": "Chiến thuật nối đuôi câu: Đọc nửa câu đầu để xác định ngữ pháp và ý nghĩa, quét định vị trong bài đọc, rồi chọn vế đuôi phù hợp logic nhất.",
+    "categoryLabel": "Dạng Bài Nối Thông Tin",
+    "badge": "Ngữ pháp & Logic",
+    "description": "Chiến thuật ghép vế đầu với phần kết thúc phù hợp (A-G): kết hợp quy tắc ngữ pháp (chia động từ, liên từ) và ý nghĩa logic mạch lạc.",
     "examplesCount": 3,
-    "totalQuestions": 10,
+    "totalQuestions": 13,
     "examples": [
       {
         "id": "r10_ex1",
         "exampleNum": 1,
-        "title": "Example 1: What’s So Funny? (Bản chất sinh học của tiếng cười)",
-        "instructions": "Complete each sentence with the correct ending (A-E) from the box below.",
+        "title": "Example 1: What’s So Funny? (The Science of Humour)",
+        "instructions": "Complete each sentence with the correct ending, A-G, below. Write the correct letter, A-G, in boxes 24-27. (Questions 24-27, Pages 54-55)\n\nEndings:\nA react to their own thoughts.\nB helped create language in humans.\nC respond instantly to whatever is happening.\nD may provide valuable information about the operation of the brain.\nE cope with difficult situations.\nF relate to a person’s subjective views.\nG led our ancestors to smile and then laugh.",
         "passage": {
-          "title": "WHAT'S SO FUNNY? - The Psychology of Humour",
+          "title": "What’s So Funny? Research on Humour",
           "paragraphs": [
             {
               "label": "A",
-              "text": "Making a rapid emotional assessment of ongoing events is a demanding task for the human brain. Abrupt changes in environment prompt rapid shifts in neurotransmitter levels. Neuroscientists believe that laughter evolved as an auditory safety signal to notify others that an apparent danger was actually harmless."
+              "text": "Making a rapid emotional assessment of the events of the moment is an extremely demanding job for the brain, animal or human. Energy and arousal levels may need to be retuned in the blink of an eye. These abrupt changes will produce either positive or negative feelings. The orbital cortex, the region that becomes active in Goel's experiment, seems the best candidate for the site that feeds such feelings into higher-level thought processes."
             },
             {
               "label": "B",
-              "text": "Furthermore, humor involves cognitive incongruity: when an expected pattern is playfully broken, the prefrontal cortex resolves the puzzle, triggering a burst of dopamine that creates the sensation of amusement."
+              "text": "All warm-blooded animals make constant tiny adjustments in arousal in response to external events, but humans, who have developed a much more complicated internal life as a result of language, respond emotionally not only to their surroundings, but to their own thoughts. Whenever a sought-for answer snaps into place, there is a shudder of pleased recognition. Creative discovery being pleasurable, humans have learned to find ways of milking this natural response. The fact that jokes tap into our general evaluative machinery explains why the line between funny and disgusting, or funny and frightening, can be so fine. Whether a joke gives pleasure or pain depends on a person's outlook."
+            },
+            {
+              "label": "C",
+              "text": "Humour may be a luxury, but the mechanism behind it is no evolutionary accident. As Peter Derks, a psychologist at William and Mary College in Virginia, says: 'I like to think of humour as the distorted mirror of the mind. It's creative, perceptual, analytical and lingual.'"
             }
           ]
         },
         "questions": [
           {
-            "id": 1,
-            "num": 1,
-            "type": "sentence-endings",
-            "questionText": "1. The human brain makes rapid emotional assessments _______",
+            "id": 24,
+            "num": 24,
+            "type": "matching-endings",
             "options": [
-              {
-                "letter": "A",
-                "desc": "to alert fellow group members that a potential threat is benign."
-              },
-              {
-                "letter": "B",
-                "desc": "to handle abrupt fluctuations in sensory stimuli."
-              },
-              {
-                "letter": "C",
-                "desc": "when unexpected mental patterns are successfully decoded."
-              }
+              "A react to their own thoughts.",
+              "B helped create language in humans.",
+              "C respond instantly to whatever is happening.",
+              "D may provide valuable information about the brain.",
+              "E cope with difficult situations.",
+              "F relate to a person’s subjective views.",
+              "G led our ancestors to smile and laugh."
             ],
+            "questionText": "24. One of the brain’s most difficult tasks is to",
             "acceptableAnswers": [
-              "B"
+              "C",
+              "C respond instantly to whatever is happening."
             ],
-            "explanation": "Đoạn A: 'demanding job for the brain... Abrupt changes in environment prompt rapid shifts'. Nối với B.",
-            "evidence": "Making a rapid emotional assessment of ongoing events... Abrupt changes"
+            "explanation": "Đoạn A: 'Making a rapid emotional assessment of the events of the moment is an extremely demanding job for the brain... retuned in the blink of an eye' -> respond instantly to whatever is happening -> C.",
+            "evidence": "Making a rapid emotional assessment of the events of the moment is an extremely demanding job for the brain"
           },
           {
-            "id": 2,
-            "num": 2,
-            "type": "sentence-endings",
-            "questionText": "2. Laughter originally functioned in early humans _______",
+            "id": 25,
+            "num": 25,
+            "type": "matching-endings",
             "options": [
-              {
-                "letter": "A",
-                "desc": "to alert fellow group members that a potential threat is benign."
-              },
-              {
-                "letter": "B",
-                "desc": "to handle abrupt fluctuations in sensory stimuli."
-              },
-              {
-                "letter": "C",
-                "desc": "when unexpected mental patterns are successfully decoded."
-              }
+              "A react to their own thoughts.",
+              "B helped create language in humans.",
+              "C respond instantly to whatever is happening.",
+              "D may provide valuable information about the brain.",
+              "E cope with difficult situations.",
+              "F relate to a person’s subjective views.",
+              "G led our ancestors to smile and laugh."
             ],
+            "questionText": "25. Because of the language they have developed, humans",
             "acceptableAnswers": [
-              "A"
+              "A",
+              "A react to their own thoughts."
             ],
-            "explanation": "Đoạn A: 'safety signal to notify others that an apparent danger was actually harmless'. Nối với A.",
-            "evidence": "laughter evolved as an auditory safety signal to notify others that an apparent danger was actually harmless"
+            "explanation": "Đoạn B: 'humans, who have developed a much more complicated internal life as a result of language, respond emotionally not only to their surroundings, but to their own thoughts.' -> A.",
+            "evidence": "humans, who have developed a much more complicated internal life as a result of language, respond emotionally not only to their surroundings, but to their own thoughts."
           },
           {
-            "id": 3,
-            "num": 3,
-            "type": "sentence-endings",
-            "questionText": "3. The feeling of amusement is triggered _______",
+            "id": 26,
+            "num": 26,
+            "type": "matching-endings",
             "options": [
-              {
-                "letter": "A",
-                "desc": "to alert fellow group members that a potential threat is benign."
-              },
-              {
-                "letter": "B",
-                "desc": "to handle abrupt fluctuations in sensory stimuli."
-              },
-              {
-                "letter": "C",
-                "desc": "when unexpected mental patterns are successfully decoded."
-              }
+              "A react to their own thoughts.",
+              "B helped create language in humans.",
+              "C respond instantly to whatever is happening.",
+              "D may provide valuable information about the brain.",
+              "E cope with difficult situations.",
+              "F relate to a person’s subjective views.",
+              "G led our ancestors to smile and laugh."
             ],
+            "questionText": "26. Individual responses to humour",
             "acceptableAnswers": [
-              "C"
+              "F",
+              "F relate to a person’s subjective views."
             ],
-            "explanation": "Đoạn B: 'when an expected pattern is playfully broken, the prefrontal cortex resolves the puzzle... burst of dopamine'. Nối với C.",
-            "evidence": "when an expected pattern is playfully broken, the prefrontal cortex resolves the puzzle"
+            "explanation": "Đoạn B: 'Whether a joke gives pleasure or pain depends on a person's outlook.' (outlook = subjective views) -> F.",
+            "evidence": "Whether a joke gives pleasure or pain depends on a person's outlook."
+          },
+          {
+            "id": 27,
+            "num": 27,
+            "type": "matching-endings",
+            "options": [
+              "A react to their own thoughts.",
+              "B helped create language in humans.",
+              "C respond instantly to whatever is happening.",
+              "D may provide valuable information about the brain.",
+              "E cope with difficult situations.",
+              "F relate to a person’s subjective views.",
+              "G led our ancestors to smile and laugh."
+            ],
+            "questionText": "27. Peter Derks believes that humour",
+            "acceptableAnswers": [
+              "D",
+              "D may provide valuable information about the operation of the brain."
+            ],
+            "explanation": "Đoạn C: Derks coi khiếu hài hước như 'distorted mirror of the mind' phản ánh các cơ chế tư duy sáng tạo, phân tích ngôn ngữ của não bộ -> D.",
+            "evidence": "I like to think of humour as the distorted mirror of the mind. It's creative, perceptual, analytical and lingual."
           }
         ],
         "vocabulary": [
           {
-            "word": "cognitive incongruity",
-            "meaning": "Sự bất hòa nhận thức (yếu tố bất ngờ gây cười)",
-            "example": "humor relies on cognitive incongruity"
+            "word": "arousal",
+            "meaning": "Mức độ kích thích, cảnh giác sinh học",
+            "example": "Tiny shifts in arousal prepare animals for flight or fight."
           },
           {
-            "word": "benign",
-            "meaning": "Lành tính, vô hại",
-            "example": "a benign threat"
+            "word": "outlook",
+            "meaning": "Nhãn quan, cái nhìn chủ quan của mỗi người",
+            "example": "Humour interpretation depends heavily on personal outlook."
+          },
+          {
+            "word": "distorted mirror",
+            "meaning": "Tấm gương phản chiếu méo mó nhưng chân thực",
+            "example": "Humour acts as a distorted mirror of human cognitive quirks."
           }
         ]
       },
       {
         "id": "r10_ex2",
         "exampleNum": 2,
-        "title": "Example 2: Greying Population Stays in the Pink (Sức khỏe người cao tuổi)",
-        "instructions": "Complete each sentence with the correct ending (A-D).",
+        "title": "Example 2: The Greying Population (Exercise and Ageing)",
+        "instructions": "Complete each sentence with the correct ending, A-H, below. Write the correct letter, A-H, in boxes 23-26. (Questions 23-26, Pages 56-57)\n\nEndings:\nA may cause heart disease.\nB can be helped by hormone treatment.\nC may cause rises in levels of stress hormones.\nD have cost the United States government more than $200 billion.\nE may help prevent mental decline.\nF may get stronger at night.\nG allow old people to be more independent.\nH can reduce stress in difficult situations.",
         "passage": {
-          "title": "GREYING POPULATION STAYS IN THE PINK",
+          "title": "The Greying Population Stays Active",
           "paragraphs": [
             {
               "label": "A",
-              "text": "The increasing self-reliance of elderly citizens in western nations is directly connected to the widespread adoption of simple home medical aids. Assistive devices like bath seats and raised toilet seats have reduced domestic falls by more than half, enabling older individuals to remain in their homes rather than moving into nursing institutions."
+              "text": "Simple technological innovations and home medical aids – from walking frames to raised toilet seats – have dramatically transformed geriatric care, allowing old people to manage their daily routines without constant institutional reliance (Endings G)."
+            },
+            {
+              "label": "B",
+              "text": "Physical activity also yields profound neurological dividends. Laboratory experiments demonstrate that regular aerobic exercise elevates levels of brain-derived neurotrophic factor, fostering synaptic plasticity and guarding against cognitive and mental decline in later life (Endings E)."
+            },
+            {
+              "label": "C",
+              "text": "Furthermore, psychological autonomy is essential. Elderly people who retain feelings of control over their living environment demonstrate lower blood pressure and reduced stress when confronted with demanding situations (Endings H)."
+            },
+            {
+              "label": "D",
+              "text": "In contrast, loneliness poses acute biological hazards. Epidemiologist Teresa Seeman found that elderly individuals suffering from social and emotional isolation exhibit significantly elevated levels of circulating stress hormones, even during sleep (Endings C)."
             }
           ]
         },
         "questions": [
           {
-            "id": 4,
-            "num": 4,
-            "type": "sentence-endings",
-            "questionText": "4. Senior citizens maintain greater daily independence _______",
+            "id": 23,
+            "num": 23,
+            "type": "matching-endings",
             "options": [
-              {
-                "letter": "A",
-                "desc": "by using straightforward domestic adaptive equipment."
-              },
-              {
-                "letter": "B",
-                "desc": "by moving into assisted living communities."
-              }
+              "A may cause heart disease.",
+              "B can be helped by hormone treatment.",
+              "C may cause rises in levels of stress hormones.",
+              "D have cost US government billions.",
+              "E may help prevent mental decline.",
+              "F may get stronger at night.",
+              "G allow old people to be more independent.",
+              "H can reduce stress in difficult situations."
             ],
+            "questionText": "23. Home medical aids",
             "acceptableAnswers": [
-              "A"
+              "G",
+              "G allow old people to be more independent."
             ],
-            "explanation": "Đoạn A: 'increasing self-reliance... connected to the widespread adoption of simple home medical aids'. Nối với A.",
-            "evidence": "increasing self-reliance of elderly citizens... connected to the widespread adoption of simple home medical aids"
+            "explanation": "Đoạn A: Thiết bị y tế gia đình giúp người già tự chủ, độc lập hơn trong sinh hoạt hàng ngày -> G.",
+            "evidence": "allowing old people to manage their daily routines without constant institutional reliance"
+          },
+          {
+            "id": 24,
+            "num": 24,
+            "type": "matching-endings",
+            "options": [
+              "A may cause heart disease.",
+              "B can be helped by hormone treatment.",
+              "C may cause rises in levels of stress hormones.",
+              "D have cost US government billions.",
+              "E may help prevent mental decline.",
+              "F may get stronger at night.",
+              "G allow old people to be more independent.",
+              "H can reduce stress in difficult situations."
+            ],
+            "questionText": "24. Regular amounts of exercise",
+            "acceptableAnswers": [
+              "E",
+              "E may help prevent mental decline."
+            ],
+            "explanation": "Đoạn B: Tập thể dục thường xuyên kích thích yếu tố dinh dưỡng thần kinh não, ngăn ngừa suy giảm nhận thức / tinh thần -> E.",
+            "evidence": "fostering synaptic plasticity and guarding against cognitive and mental decline in later life"
+          },
+          {
+            "id": 25,
+            "num": 25,
+            "type": "matching-endings",
+            "options": [
+              "A may cause heart disease.",
+              "B can be helped by hormone treatment.",
+              "C may cause rises in levels of stress hormones.",
+              "D have cost US government billions.",
+              "E may help prevent mental decline.",
+              "F may get stronger at night.",
+              "G allow old people to be more independent.",
+              "H can reduce stress in difficult situations."
+            ],
+            "questionText": "25. Feelings of control over life",
+            "acceptableAnswers": [
+              "H",
+              "H can reduce stress in difficult situations."
+            ],
+            "explanation": "Đoạn C: Cảm giác làm chủ cuộc sống giúp giảm căng thẳng khi đối mặt với những hoàn cảnh khó khăn -> H.",
+            "evidence": "demonstrate lower blood pressure and reduced stress when confronted with demanding situations"
+          },
+          {
+            "id": 26,
+            "num": 26,
+            "type": "matching-endings",
+            "options": [
+              "A may cause heart disease.",
+              "B can be helped by hormone treatment.",
+              "C may cause rises in levels of stress hormones.",
+              "D have cost US government billions.",
+              "E may help prevent mental decline.",
+              "F may get stronger at night.",
+              "G allow old people to be more independent.",
+              "H can reduce stress in difficult situations."
+            ],
+            "questionText": "26. Feelings of loneliness",
+            "acceptableAnswers": [
+              "C",
+              "C may cause rises in levels of stress hormones."
+            ],
+            "explanation": "Đoạn D: Cảm giác cô đơn và cô lập xã hội khiến nồng độ hormone gây căng thẳng tăng cao, ngay cả khi ngủ -> C.",
+            "evidence": "elderly individuals suffering from social and emotional isolation exhibit significantly elevated levels of circulating stress hormones, even during sleep"
           }
         ],
         "vocabulary": [
           {
-            "word": "self-reliance",
-            "meaning": "Sự tự lực, độc lập tự lo được cho bản thân",
-            "example": "maintaining elderly self-reliance"
+            "word": "geriatric",
+            "meaning": "Thuộc về y khoa người cao tuổi",
+            "example": "Geriatric care increasingly emphasizes independent living."
           },
           {
-            "word": "in the pink",
-            "meaning": "Sức khỏe dồi dào, hồng hào (thành ngữ)",
-            "example": "staying in the pink"
+            "word": "neurotrophic",
+            "meaning": "Dinh dưỡng thần kinh",
+            "example": "Exercise releases neurotrophic factors that protect brain synapses."
+          },
+          {
+            "word": "autonomy",
+            "meaning": "Khả năng tự quyết, độc lập",
+            "example": "Preserving psychological autonomy enhances longevity."
           }
         ]
       },
       {
         "id": "r10_ex3",
         "exampleNum": 3,
-        "title": "Example 3: The Psychology of Innovation (Tâm lý học đổi mới)",
-        "instructions": "Complete each sentence with the correct ending (A-C).",
+        "title": "Example 3: The Psychology of Innovation",
+        "instructions": "Complete each sentence with the correct ending, A-G, below. Write the correct letter, A-G, in boxes 31-35. (Questions 31-35, Pages 58-59)\n\nEndings:\nA take chances.\nB share their ideas.\nC become competitive.\nD get promotion.\nE avoid risk.\nF ignore their duties.\nG remain in their jobs.",
         "passage": {
-          "title": "THE PSYCHOLOGY OF INNOVATION",
+          "title": "The Psychology of Innovation",
           "paragraphs": [
             {
               "label": "A",
-              "text": "For Robert Cialdini, corporate innovation begins with hiring policies. When recruitment selects for ideological conformity, teams suffer from groupthink. Breakthrough innovation flourishes when leaders actively encourage contrarian viewpoints and protect dissenters from social censure."
+              "text": "For Robert B. Cialdini, Professor of Psychology at Arizona State University, one reason that companies don’t succeed as often as they should is that innovation starts with recruitment. Research shows that the fit between an employee’s values and a company’s values makes a difference to what contribution they make and whether, two years after they join, they’re still at the company."
+            },
+            {
+              "label": "B",
+              "text": "The value fit matters, says Cialdini, because innovation is, in part, a process of change, and under that pressure we, as a species, behave differently: ‘When things change, we are hard-wired to play it safe.’ Managers should therefore adopt an approach that appears counterintuitive – they should explain what stands to be lost if the company fails to seize a particular opportunity. Studies show that we invariably take more gambles when threatened with a loss than when offered a reward."
+            },
+            {
+              "label": "C",
+              "text": "Authority doesn’t have to inhibit innovation but it often does. The wrong kind of leadership will lead to what Cialdini calls 'captainitis, the regrettable tendency of team members to opt out of team responsibilities that are properly theirs'. Crew members exhibit deadly passivity when an overbearing leader dominates."
+            },
+            {
+              "label": "D",
+              "text": "At the other end of the scale is the 1980s Memphis design collective, a group of young designers for whom 'the only rule was that there were no rules'. This environment encouraged a free interchange of ideas, which led to more creativity with form, function, colour and materials that revolutionised attitudes to furniture design."
             }
           ]
         },
         "questions": [
           {
-            "id": 5,
-            "num": 5,
-            "type": "sentence-endings",
-            "questionText": "5. Corporate breakthrough discovery thrives _______",
+            "id": 31,
+            "num": 31,
+            "type": "matching-endings",
             "options": [
-              {
-                "letter": "A",
-                "desc": "when managerial teams reward conventional thinking."
-              },
-              {
-                "letter": "B",
-                "desc": "when organizations welcome opposing viewpoints and intellectual diversity."
-              }
+              "A take chances.",
+              "B share their ideas.",
+              "C become competitive.",
+              "D get promotion.",
+              "E avoid risk.",
+              "F ignore their duties.",
+              "G remain in their jobs."
             ],
+            "questionText": "31. Employees whose values match those of their employers are more likely to",
             "acceptableAnswers": [
-              "B"
+              "G",
+              "G remain in their jobs."
             ],
-            "explanation": "Đoạn A: 'flourishes when leaders actively encourage contrarian viewpoints'. Nối với B.",
-            "evidence": "Breakthrough innovation flourishes when leaders actively encourage contrarian viewpoints"
+            "explanation": "Đoạn A: 'fit between an employee’s values and a company’s values makes a difference to... whether, two years after they join, they’re still at the company' -> G (remain in their jobs).",
+            "evidence": "whether, two years after they join, they’re still at the company"
+          },
+          {
+            "id": 32,
+            "num": 32,
+            "type": "matching-endings",
+            "options": [
+              "A take chances.",
+              "B share their ideas.",
+              "C become competitive.",
+              "D get promotion.",
+              "E avoid risk.",
+              "F ignore their duties.",
+              "G remain in their jobs."
+            ],
+            "questionText": "32. At times of change, people tend to",
+            "acceptableAnswers": [
+              "E",
+              "E avoid risk."
+            ],
+            "explanation": "Đoạn B: 'When things change, we are hard-wired to play it safe.' (play it safe = avoid risk) -> E.",
+            "evidence": "When things change, we are hard-wired to play it safe ."
+          },
+          {
+            "id": 33,
+            "num": 33,
+            "type": "matching-endings",
+            "options": [
+              "A take chances.",
+              "B share their ideas.",
+              "C become competitive.",
+              "D get promotion.",
+              "E avoid risk.",
+              "F ignore their duties.",
+              "G remain in their jobs."
+            ],
+            "questionText": "33. If people are aware of what they might lose, they will often",
+            "acceptableAnswers": [
+              "A",
+              "A take chances."
+            ],
+            "explanation": "Đoạn B: 'Studies show that we invariably take more gambles when threatened with a loss' (take more gambles = take chances) -> A.",
+            "evidence": "Studies show that we invariably take more gambles when threatened with a loss than when offered a reward."
+          },
+          {
+            "id": 34,
+            "num": 34,
+            "type": "matching-endings",
+            "options": [
+              "A take chances.",
+              "B share their ideas.",
+              "C become competitive.",
+              "D get promotion.",
+              "E avoid risk.",
+              "F ignore their duties.",
+              "G remain in their jobs."
+            ],
+            "questionText": "34. People working under a dominant boss are liable to",
+            "acceptableAnswers": [
+              "F",
+              "F ignore their duties."
+            ],
+            "explanation": "Đoạn C: 'captainitis, the regrettable tendency of team members to opt out of team responsibilities that are properly theirs' (opt out of responsibilities = ignore their duties) -> F.",
+            "evidence": "tendency of team members to opt out of team responsibilities that are properly their"
+          },
+          {
+            "id": 35,
+            "num": 35,
+            "type": "matching-endings",
+            "options": [
+              "A take chances.",
+              "B share their ideas.",
+              "C become competitive.",
+              "D get promotion.",
+              "E avoid risk.",
+              "F ignore their duties.",
+              "G remain in their jobs."
+            ],
+            "questionText": "35. Employees working in organisations with few rules are more likely to",
+            "acceptableAnswers": [
+              "B",
+              "B share their ideas."
+            ],
+            "explanation": "Đoạn D: 'there were no rules... This environment encouraged a free interchange of ideas' (free interchange of ideas = share their ideas) -> B.",
+            "evidence": "This environment encouraged a free interchange of ideas , which led to more creativity"
           }
         ],
         "vocabulary": [
           {
-            "word": "groupthink",
-            "meaning": "Tư duy bầy đàn, suy nghĩ rập khuôn theo số đông",
-            "example": "teams suffer from groupthink"
+            "word": "captainitis",
+            "meaning": "Hội chứng phục tùng mù quáng người lãnh đạo độc đoán",
+            "example": "Captainitis prevents crew members from questioning dangerous mistakes."
           },
           {
-            "word": "contrarian",
-            "meaning": "Ý kiến trái chiều, đi ngược lại đám đông",
-            "example": "contrarian viewpoints"
+            "word": "counterintuitive",
+            "meaning": "Đi ngược lại trực giác thông thường",
+            "example": "Focusing on potential losses sounds counterintuitive but works."
+          },
+          {
+            "word": "interchange",
+            "meaning": "Sự trao đổi qua lại tự do",
+            "example": "Open desks foster a dynamic interchange of creative solutions."
           }
         ]
       }
@@ -2918,42 +3945,50 @@ const readingLessons = [
     "id": "reading_11",
     "lessonNum": 11,
     "code": "V13",
-    "title": "V13 - MATCHING HEADINGS",
-    "shortTitle": "Matching Headings",
+    "title": "V13 – MATCHING HEADINGS",
+    "shortTitle": "Nối Tiêu Đề Đoạn Văn",
     "category": "matching",
-    "categoryLabel": "Nối Thông Tin",
-    "badge": "Chọn tiêu đề đoạn",
-    "description": "Chiến thuật nối tiêu đề đoạn văn: Đọc lướt câu chủ đề (topic sentence) ở đầu hoặc cuối đoạn, tóm tắt ý chính của đoạn và đối chiếu với danh sách Headings (i - x).",
+    "categoryLabel": "Dạng Bài Nối Thông Tin",
+    "badge": "Toàn cảnh đoạn văn",
+    "description": "Chiến thuật tìm ý chính (Main Idea) của đoạn văn, phân biệt giữa tiểu tiết (details/examples) và chủ đề cốt lõi (heading). 3 bài đọc Cambridge IELTS trọn vẹn.",
     "examplesCount": 3,
-    "totalQuestions": 15,
+    "totalQuestions": 19,
     "examples": [
       {
         "id": "r11_ex1",
         "exampleNum": 1,
-        "title": "Example 1: The Environmental Challenge (Cambridge Reading)",
-        "instructions": "Reading Passage has 5 paragraphs (A-E). Choose the correct heading for each paragraph from the list of headings (i-vii) below.",
+        "title": "Example 1: Tea and the Industrial Revolution (Headings i-ix)",
+        "instructions": "Reading Passage 1 has seven paragraphs, A-G. Choose the correct heading for each paragraph from the list of headings below. (Questions 1-7, Pages 60-63)\n\nList of Headings:\ni The search for the reasons for an increase in population\nii Industrialisation and the fear of unemployment\niii The development of cities in Japan\niv The time and place of the Industrial Revolution\nv The cases of Holland, France and China\nvi Changes in drinking habits in Britain\nvii Two keys to Britain’s industrial revolution\nviii Conditions required for industrialisation\nix Comparisons with Japan lead to the answer",
         "passage": {
-          "title": "ENVIRONMENTAL CHALLENGES IN THE 21ST CENTURY",
+          "title": "Tea and the Industrial Revolution",
           "paragraphs": [
             {
               "label": "A",
-              "text": "Over the past fifty years, humanity has altered global ecosystems more rapidly and extensively than in any comparable period in history. The primary driver has been the escalating demand for food, fresh water, timber, and fuel. While these transformations have yielded substantial net gains in human development, they have entailed growing costs in the form of ecosystem degradation."
+              "text": "Alan Macfarlane, professor of anthropological science at King’s College, Cambridge, has spent 15 years looking into the enigma of the Industrial Revolution. Why did this particular Big Bang – the world-changing event that heralded the modern era – occur in Britain, and why did it strike at the precise moment it did around the mid-18th century?"
             },
             {
               "label": "B",
-              "text": "The degradation of ecosystem services could grow significantly worse during the first half of this century. Projections suggest that freshwater withdrawals will double by 2050, putting severe strain on agricultural production in arid zones. If current consumption patterns continue unabated, irreversible tipping points may be crossed."
+              "text": "Macfarlane compares the puzzle to a combination lock. ‘There are about 20 different factors and all of them need to be present before the revolution can happen,’ he says. For industry to take off, there needs to be the technology and power to drive factories, large urban populations to provide cheap labour, easy transport to move goods around, an affluent middle-class willing to buy mass-produced objects, a market-driven economy and a political system that allows this to happen. All these factors must have been necessary but not sufficient to open the lock."
             },
             {
               "label": "C",
-              "text": "Crucially, the harmful impacts of ecosystem degradation are borne disproportionately by the poor. Vulnerable rural communities rely directly on forest resources and clean water for their subsistence. When regional watersheds dry up, it is impoverished populations who lack the financial capital to purchase alternatives."
+              "text": "The missing factors, he proposes, are to be found in almost every kitchen cupboard. Tea and beer, two of the nation’s favourite drinks, fuelled the revolution. The antiseptic properties of tannin, the active ingredient in tea, and of hops in beer – plus the fact that both are made with boiled water – allowed urban communities to flourish at close quarters without succumbing to water-borne diseases such as dysentery."
             },
             {
               "label": "D",
-              "text": "Traditional single-sector governance models have proven largely ineffective at stemming environmental decline. Historically, ministries of agriculture, water, and forestry operated in silos with conflicting targets. A holistic, cross-disciplinary framework is urgently required to balance conservation with economic development."
+              "text": "Macfarlane had wondered for a long time how the Industrial Revolution came about. Between about 1650 and 1740, the population in Britain was static. But then there was a burst in population growth: the infant mortality rate halved in the space of 20 years. Historians tried to explain this sudden surge: Was it medical science? No. Environmental sanitation? No. Better food? The statistics show food actually got worse. Efforts to explain this sudden reduction in child deaths appeared to draw a blank."
             },
             {
               "label": "E",
-              "text": "Promising market-based mechanisms have emerged to incentivize conservation. Programs that compensate landowners for preserving watershed vegetation, known as payments for ecosystem services (PES), have demonstrated remarkable success in nations like Costa Rica and Mexico."
+              "text": "This population burst provided labour for the Industrial Revolution. What the British were drinking was key. For a long time, the English were protected by the antibacterial agent in hops in beer. But in the late 17th century a tax was introduced on malt. The poor turned to water and gin, and in the 1720s mortality rose again. Then, in the late 1730s, tea arrived from China, becoming cheap and widely consumed, replacing gin and restoring health."
+            },
+            {
+              "label": "F",
+              "text": "Macfarlane looked to Japan for confirmation. Japan was also developing large cities and had high literacy and flourishing markets, but it did not have an industrial revolution. However, Japan also drank green tea extensively, which protected against water-borne disease even without keeping livestock or drinking milk. Comparing Britain to Japan helped solve the puzzle."
+            },
+            {
+              "label": "G",
+              "text": "Why then did Britain industrialise while Japan did not? Britain had plenty of labour and abandoned manual labour in favour of machines. Japan, which had a dense population and limited land, avoided labour-saving machinery because of a fear of unemployment, putting all its energy into intensive agriculture instead."
             }
           ]
         },
@@ -2962,191 +3997,598 @@ const readingLessons = [
             "id": 1,
             "num": 1,
             "type": "matching-headings",
-            "questionText": "Paragraph A",
             "options": [
-              {
-                "letter": "i",
-                "desc": "Unprecedented scale of global ecosystem transformation"
-              },
-              {
-                "letter": "ii",
-                "desc": "Worsening environmental projections for the future"
-              },
-              {
-                "letter": "iii",
-                "desc": "Disproportionate burden inflicted upon impoverished communities"
-              },
-              {
-                "letter": "iv",
-                "desc": "Failure of fragmented institutional management"
-              },
-              {
-                "letter": "v",
-                "desc": "Financial incentives promoting conservation"
-              },
-              {
-                "letter": "vi",
-                "desc": "Technological innovations in irrigation"
-              },
-              {
-                "letter": "vii",
-                "desc": "Urban migration and waste disposal"
-              }
+              "i The search for reasons for population increase",
+              "ii Industrialisation and the fear of unemployment",
+              "iii Development of cities in Japan",
+              "iv The time and place of the Industrial Revolution",
+              "v The cases of Holland, France and China",
+              "vi Changes in drinking habits in Britain",
+              "vii Two keys to Britain’s industrial revolution",
+              "viii Conditions required for industrialisation",
+              "ix Comparisons with Japan lead to the answer"
             ],
+            "questionText": "1. Paragraph A",
             "acceptableAnswers": [
-              "i"
+              "iv",
+              "Heading iv",
+              "iv The time and place of the Industrial Revolution"
             ],
-            "explanation": "Đoạn A nói về tốc độ biến đổi sinh thái nhanh nhất lịch sử nhân loại -> Heading i.",
-            "evidence": "humanity has altered global ecosystems more rapidly and extensively than in any comparable period"
+            "explanation": "Đoạn A đặt vấn đề tại sao Cách mạng Công nghiệp lại xảy ra ở Anh và đúng thời điểm giữa thế kỷ 18 -> Heading iv (The time and place of the Industrial Revolution).",
+            "evidence": "Why did this particular Big Bang... occur in Britain, and why did it strike at the precise moment it did"
           },
           {
             "id": 2,
             "num": 2,
             "type": "matching-headings",
-            "questionText": "Paragraph B",
             "options": [
-              {
-                "letter": "i",
-                "desc": "Unprecedented scale of global ecosystem transformation"
-              },
-              {
-                "letter": "ii",
-                "desc": "Worsening environmental projections for the future"
-              },
-              {
-                "letter": "iii",
-                "desc": "Disproportionate burden inflicted upon impoverished communities"
-              },
-              {
-                "letter": "iv",
-                "desc": "Failure of fragmented institutional management"
-              },
-              {
-                "letter": "v",
-                "desc": "Financial incentives promoting conservation"
-              }
+              "i The search for reasons for population increase",
+              "ii Industrialisation and the fear of unemployment",
+              "iii Development of cities in Japan",
+              "iv The time and place of the Industrial Revolution",
+              "v The cases of Holland, France and China",
+              "vi Changes in drinking habits in Britain",
+              "vii Two keys to Britain’s industrial revolution",
+              "viii Conditions required for industrialisation",
+              "ix Comparisons with Japan lead to the answer"
             ],
+            "questionText": "2. Paragraph B",
             "acceptableAnswers": [
-              "ii"
+              "viii",
+              "Heading viii",
+              "viii Conditions required for industrialisation"
             ],
-            "explanation": "Đoạn B đưa ra dự báo tiêu cực trong tương lai ('could grow significantly worse', 'by 2050') -> Heading ii.",
-            "evidence": "The degradation of ecosystem services could grow significantly worse during the first half of this century."
+            "explanation": "Đoạn B liệt kê 20 yếu tố và điều kiện tiên quyết cần thiết để công nghiệp hóa có thể cất cánh -> Heading viii (Conditions required for industrialisation).",
+            "evidence": "There are about 20 different factors and all of them need to be present before the revolution can happen"
           },
           {
             "id": 3,
             "num": 3,
             "type": "matching-headings",
-            "questionText": "Paragraph C",
             "options": [
-              {
-                "letter": "i",
-                "desc": "Unprecedented scale of global ecosystem transformation"
-              },
-              {
-                "letter": "ii",
-                "desc": "Worsening environmental projections for the future"
-              },
-              {
-                "letter": "iii",
-                "desc": "Disproportionate burden inflicted upon impoverished communities"
-              },
-              {
-                "letter": "iv",
-                "desc": "Failure of fragmented institutional management"
-              },
-              {
-                "letter": "v",
-                "desc": "Financial incentives promoting conservation"
-              }
+              "i The search for reasons for population increase",
+              "ii Industrialisation and the fear of unemployment",
+              "iii Development of cities in Japan",
+              "iv The time and place of the Industrial Revolution",
+              "v The cases of Holland, France and China",
+              "vi Changes in drinking habits in Britain",
+              "vii Two keys to Britain’s industrial revolution",
+              "viii Conditions required for industrialisation",
+              "ix Comparisons with Japan lead to the answer"
             ],
+            "questionText": "3. Paragraph C",
             "acceptableAnswers": [
-              "iii"
+              "vii",
+              "Heading vii",
+              "vii Two keys to Britain’s industrial revolution"
             ],
-            "explanation": "Đoạn C nhấn mạnh tác hại đè nặng lên người nghèo ('borne disproportionately by the poor') -> Heading iii.",
-            "evidence": "the harmful impacts of ecosystem degradation are borne disproportionately by the poor"
+            "explanation": "Đoạn C giới thiệu hai chìa khóa bất ngờ: trà và bia (hai thức uống hàng đầu giúp ngăn ngừa bệnh tật) -> Heading vii (Two keys to Britain’s industrial revolution).",
+            "evidence": "Tea and beer, two of the nation’s favourite drinks, fuelled the revolution ."
           },
           {
             "id": 4,
             "num": 4,
             "type": "matching-headings",
-            "questionText": "Paragraph D",
             "options": [
-              {
-                "letter": "i",
-                "desc": "Unprecedented scale of global ecosystem transformation"
-              },
-              {
-                "letter": "ii",
-                "desc": "Worsening environmental projections for the future"
-              },
-              {
-                "letter": "iii",
-                "desc": "Disproportionate burden inflicted upon impoverished communities"
-              },
-              {
-                "letter": "iv",
-                "desc": "Failure of fragmented institutional management"
-              },
-              {
-                "letter": "v",
-                "desc": "Financial incentives promoting conservation"
-              }
+              "i The search for reasons for population increase",
+              "ii Industrialisation and the fear of unemployment",
+              "iii Development of cities in Japan",
+              "iv The time and place of the Industrial Revolution",
+              "v The cases of Holland, France and China",
+              "vi Changes in drinking habits in Britain",
+              "vii Two keys to Britain’s industrial revolution",
+              "viii Conditions required for industrialisation",
+              "ix Comparisons with Japan lead to the answer"
             ],
+            "questionText": "4. Paragraph D",
             "acceptableAnswers": [
-              "iv"
+              "i",
+              "Heading i",
+              "i The search for the reasons for an increase in population"
             ],
-            "explanation": "Đoạn D nói về sự bất cập của các cơ quan quản lý đơn lẻ ('operated in silos', 'ineffective') -> Heading iv.",
-            "evidence": "Traditional single-sector governance models have proven largely ineffective"
+            "explanation": "Đoạn D mô tả nỗ lực của các nhà sử học trong việc đi tìm lý do cho sự bùng nổ dân số và giảm tỷ lệ tử vong ở trẻ sơ sinh -> Heading i (The search for the reasons for an increase in population).",
+            "evidence": "Efforts to explain this sudden reduction in child deaths appeared to draw a blank ."
           },
           {
             "id": 5,
             "num": 5,
             "type": "matching-headings",
-            "questionText": "Paragraph E",
             "options": [
-              {
-                "letter": "i",
-                "desc": "Unprecedented scale of global ecosystem transformation"
-              },
-              {
-                "letter": "ii",
-                "desc": "Worsening environmental projections for the future"
-              },
-              {
-                "letter": "iii",
-                "desc": "Disproportionate burden inflicted upon impoverished communities"
-              },
-              {
-                "letter": "iv",
-                "desc": "Failure of fragmented institutional management"
-              },
-              {
-                "letter": "v",
-                "desc": "Financial incentives promoting conservation"
-              }
+              "i The search for reasons for population increase",
+              "ii Industrialisation and the fear of unemployment",
+              "iii Development of cities in Japan",
+              "iv The time and place of the Industrial Revolution",
+              "v The cases of Holland, France and China",
+              "vi Changes in drinking habits in Britain",
+              "vii Two keys to Britain’s industrial revolution",
+              "viii Conditions required for industrialisation",
+              "ix Comparisons with Japan lead to the answer"
             ],
+            "questionText": "5. Paragraph E",
             "acceptableAnswers": [
-              "v"
+              "vi",
+              "Heading vi",
+              "vi Changes in drinking habits in Britain"
             ],
-            "explanation": "Đoạn E nói về cơ chế thị trường chi trả tiền cho chủ đất bảo vệ rừng ('payments for ecosystem services') -> Heading v.",
-            "evidence": "Promising market-based mechanisms have emerged to incentivize conservation"
+            "explanation": "Đoạn E phân tích sự thay đổi thói quen uống của người Anh từ bia sang nước/rượu gin rồi sang trà -> Heading vi (Changes in drinking habits in Britain).",
+            "evidence": "The poor turned to water and gin... Then it suddenly dropped again. What caused this?"
+          },
+          {
+            "id": 6,
+            "num": 6,
+            "type": "matching-headings",
+            "options": [
+              "i The search for reasons for population increase",
+              "ii Industrialisation and the fear of unemployment",
+              "iii Development of cities in Japan",
+              "iv The time and place of the Industrial Revolution",
+              "v The cases of Holland, France and China",
+              "vi Changes in drinking habits in Britain",
+              "vii Two keys to Britain’s industrial revolution",
+              "viii Conditions required for industrialisation",
+              "ix Comparisons with Japan lead to the answer"
+            ],
+            "questionText": "6. Paragraph F",
+            "acceptableAnswers": [
+              "ix",
+              "Heading ix",
+              "ix Comparisons with Japan lead to the answer"
+            ],
+            "explanation": "Đoạn F so sánh nước Anh với trường hợp của Nhật Bản để khẳng định vai trò của trà -> Heading ix (Comparisons with Japan lead to the answer).",
+            "evidence": "Macfarlane looked to Japan for confirmation... Comparing Britain to Japan helped solve the puzzle."
+          },
+          {
+            "id": 7,
+            "num": 7,
+            "type": "matching-headings",
+            "options": [
+              "i The search for reasons for population increase",
+              "ii Industrialisation and the fear of unemployment",
+              "iii Development of cities in Japan",
+              "iv The time and place of the Industrial Revolution",
+              "v The cases of Holland, France and China",
+              "vi Changes in drinking habits in Britain",
+              "vii Two keys to Britain’s industrial revolution",
+              "viii Conditions required for industrialisation",
+              "ix Comparisons with Japan lead to the answer"
+            ],
+            "questionText": "7. Paragraph G",
+            "acceptableAnswers": [
+              "ii",
+              "Heading ii",
+              "ii Industrialisation and the fear of unemployment"
+            ],
+            "explanation": "Đoạn G giải thích Nhật Bản tránh dùng máy móc vì lo ngại thất nghiệp của người dân -> Heading ii (Industrialisation and the fear of unemployment).",
+            "evidence": "avoided labour-saving machinery because of a fear of unemployment"
           }
         ],
         "vocabulary": [
           {
-            "word": "ecosystem degradation",
-            "meaning": "Sự suy thoái hệ sinh thái",
-            "example": "stemming ecosystem degradation"
+            "word": "herald",
+            "meaning": "Báo hiệu sự mở đầu của một kỷ nguyên mới",
+            "example": "The steam engine heralded the modern industrial era."
           },
           {
-            "word": "disproportionately",
-            "meaning": "Một cách không tương xứng, nặng nề hơn hẳn",
-            "example": "borne disproportionately by the poor"
+            "word": "combination lock",
+            "meaning": "Khóa số nhiều tầng bảo mật",
+            "example": "History is like a combination lock where all wheels must align."
           },
           {
-            "word": "operate in silos",
-            "meaning": "Hoạt động cục bộ, chia rẽ thiếu liên kết",
-            "example": "government departments operating in silos"
+            "word": "mortality rate",
+            "meaning": "Tỷ lệ tử vong",
+            "example": "Boiled beverages halved the infant mortality rate."
+          }
+        ]
+      },
+      {
+        "id": "r11_ex2",
+        "exampleNum": 2,
+        "title": "Example 2: The Context, Meaning and Scope of Tourism (Headings i-viii)",
+        "instructions": "Choose the correct heading for paragraphs B-E from the list of headings below. (Questions 1-4, Pages 64-67)\n(Paragraph A is Example: heading viii 'The history of travel')\n\nList of Headings:\ni Economic and social significance of tourism\nii The development of mass tourism\niii Travel for the wealthy\niv Earning foreign exchange through tourism\nv Difficulty in recognising the economic effects of tourism\nvi The contribution of air travel to tourism\nvii The world impact of tourism\nviii The history of travel",
+        "passage": {
+          "title": "The Context, Meaning and Scope of Tourism",
+          "paragraphs": [
+            {
+              "label": "A",
+              "text": "Travel has existed since the earliest human civilisations. In ancient Greece and Rome, people traveled for trade, religious pilgrimages, or health cures at mineral spas. During the Middle Ages, religious pilgrimages became the dominant form of journeying, while the Grand Tour of the 17th and 18th centuries provided an aristocratic education for the wealthy young elite."
+            },
+            {
+              "label": "B",
+              "text": "However, the advent of the industrial revolution, railway networks, and later commercial aviation completely transformed leisure travel from an elite luxury into a mass global phenomenon. Packaged holidays, pioneered by Thomas Cook in the mid-19th century, made travel affordable and accessible to millions of middle- and working-class families across Europe and America."
+            },
+            {
+              "label": "C",
+              "text": "Today, tourism has become one of the world's greatest economic juggernauts. It produces over 6 percent of global gross domestic product, generates millions of jobs, and represents the foremost export earner for dozens of developing nations. Its footprint spans every continent, influencing global infrastructure, communication, and international diplomacy."
+            },
+            {
+              "label": "D",
+              "text": "Yet measuring tourism's true macroeconomic impact is notoriously challenging. Because tourists spend money across multiple fragmented sectors – from taxicabs and grocery stores to hotels and souvenir stalls – official statistics often fail to capture the full ripple effect of tourism expenditures throughout an economy."
+            },
+            {
+              "label": "E",
+              "text": "Beyond pure economics, tourism exerts profound socio-cultural consequences. It promotes cross-cultural understanding, revives traditional folk crafts, and justifies the preservation of natural wilderness areas. Conversely, unchecked overtourism can strain municipal resources, commodify heritage, and displace local residents."
+            }
+          ]
+        },
+        "questions": [
+          {
+            "id": 1,
+            "num": 1,
+            "type": "matching-headings",
+            "options": [
+              "i Economic and social significance of tourism",
+              "ii The development of mass tourism",
+              "iii Travel for the wealthy",
+              "iv Earning foreign exchange through tourism",
+              "v Difficulty in recognising economic effects",
+              "vi Contribution of air travel",
+              "vii The world impact of tourism",
+              "viii The history of travel"
+            ],
+            "questionText": "1. Paragraph B",
+            "acceptableAnswers": [
+              "ii",
+              "Heading ii",
+              "ii The development of mass tourism"
+            ],
+            "explanation": "Đoạn B mô tả sự chuyển biến từ du lịch quý tộc sang du lịch đại chúng cho hàng triệu người nhờ đường sắt và Thomas Cook -> Heading ii (The development of mass tourism).",
+            "evidence": "transformed leisure travel from an elite luxury into a mass global phenomenon. Packaged holidays... made travel affordable and accessible to millions"
+          },
+          {
+            "id": 2,
+            "num": 2,
+            "type": "matching-headings",
+            "options": [
+              "i Economic and social significance of tourism",
+              "ii The development of mass tourism",
+              "iii Travel for the wealthy",
+              "iv Earning foreign exchange through tourism",
+              "v Difficulty in recognising economic effects",
+              "vi Contribution of air travel",
+              "vii The world impact of tourism",
+              "viii The history of travel"
+            ],
+            "questionText": "2. Paragraph C",
+            "acceptableAnswers": [
+              "vii",
+              "Heading vii",
+              "vii The world impact of tourism"
+            ],
+            "explanation": "Đoạn C trình bày quy mô và tác động to lớn của ngành du lịch trên phạm vi toàn thế giới (chiếm hơn 6% GDP toàn cầu) -> Heading vii (The world impact of tourism).",
+            "evidence": "tourism has become one of the world's greatest economic juggernauts. It produces over 6 percent of global gross domestic product"
+          },
+          {
+            "id": 3,
+            "num": 3,
+            "type": "matching-headings",
+            "options": [
+              "i Economic and social significance of tourism",
+              "ii The development of mass tourism",
+              "iii Travel for the wealthy",
+              "iv Earning foreign exchange through tourism",
+              "v Difficulty in recognising economic effects",
+              "vi Contribution of air travel",
+              "vii The world impact of tourism",
+              "viii The history of travel"
+            ],
+            "questionText": "3. Paragraph D",
+            "acceptableAnswers": [
+              "v",
+              "Heading v",
+              "v Difficulty in recognising the economic effects of tourism"
+            ],
+            "explanation": "Đoạn D giải thích sự khó khăn trong việc đo lường và nhận diện chính xác các tác động kinh tế của du lịch -> Heading v (Difficulty in recognising the economic effects of tourism).",
+            "evidence": "measuring tourism's true macroeconomic impact is notoriously challenging... official statistics often fail to capture"
+          },
+          {
+            "id": 4,
+            "num": 4,
+            "type": "matching-headings",
+            "options": [
+              "i Economic and social significance of tourism",
+              "ii The development of mass tourism",
+              "iii Travel for the wealthy",
+              "iv Earning foreign exchange through tourism",
+              "v Difficulty in recognising economic effects",
+              "vi Contribution of air travel",
+              "vii The world impact of tourism",
+              "viii The history of travel"
+            ],
+            "questionText": "4. Paragraph E",
+            "acceptableAnswers": [
+              "i",
+              "Heading i",
+              "i Economic and social significance of tourism"
+            ],
+            "explanation": "Đoạn E phân tích ý nghĩa văn hóa - xã hội sâu rộng của du lịch ngoài khía cạnh kinh tế thuần túy -> Heading i (Economic and social significance of tourism).",
+            "evidence": "Beyond pure economics, tourism exerts profound socio-cultural consequences. It promotes cross-cultural understanding"
+          }
+        ],
+        "vocabulary": [
+          {
+            "word": "juggernaut",
+            "meaning": "Thế lực khổng lồ, lực lượng không thể ngăn cản",
+            "example": "Global tourism has evolved into an economic juggernaut."
+          },
+          {
+            "word": "fragmented",
+            "meaning": "Rời rạc, phân mảnh thành nhiều mảng nhỏ",
+            "example": "Tourist expenditures flow through fragmented service businesses."
+          },
+          {
+            "word": "commodify",
+            "meaning": "Thương mại hóa, biến văn hóa thành hàng hóa",
+            "example": "Overtourism can commodify sacred cultural rituals."
+          }
+        ]
+      },
+      {
+        "id": "r11_ex3",
+        "exampleNum": 3,
+        "title": "Example 3: European Transport Systems 1990–2010 (Headings i-xi)",
+        "instructions": "Reading Passage 2 has nine paragraphs, A-I. Choose the correct heading for paragraphs A-E and G-I from the list of headings below. (Questions 14-21, Pages 68-71)\n\nList of Headings:\ni A fresh and important long-term goal\nii Charging for roads and improving other transport methods\niii Changes affecting the distances goods may be transported\niv Taking all the steps necessary to change transport patterns\nv The environmental costs of road transport\nvi The escalating cost of rail transport\nvii The need to achieve transport rebalance\nviii The rapid growth of private transport\nix Plans to develop major road networks\nx Restricting road use through charging policies alone\nxi Transport trends in countries awaiting EU admission",
+        "passage": {
+          "title": "European Transport Systems 1990–2010",
+          "paragraphs": [
+            {
+              "label": "A",
+              "text": "It is difficult to conceive of vigorous economic growth without an efficient transport system. Although modern information technologies can reduce the demand for physical transport, passenger car usage has seen spectacular expansion. The number of cars on EU roads surged by 3 million each year between 1990 and 2010."
+            },
+            {
+              "label": "B",
+              "text": "For goods transport, growth is largely due to shifts to a 'flow' economy and the relocation of manufacturing. Labour-intensive factories have moved to distant regions to trim production costs, increasing the distances components and finished goods must travel to assembly plants and consumers."
+            },
+            {
+              "label": "C",
+              "text": "Strong economic expansion in countries applying for EU candidate status is rapidly altering transport patterns. While these nations inherited freight networks historically oriented toward rail, road haulage has surged by 19.4% while rail dropped 43.5% between 1990 and 1998."
+            },
+            {
+              "label": "D",
+              "text": "Sustainable development has prompted a complete rethinking of EU transport policy. The Gothenburg European Council set ambitious environmental objectives to achieve a durable, balanced transport model across member states looking forward to 2020 and 2040."
+            },
+            {
+              "label": "E",
+              "text": "Transport energy use accounts for 28% of EU greenhouse gas emissions. If trends persist, CO2 output will rise 50% to over 1.1 billion tonnes by 2020, with road transport accounting for an overwhelming 84% of transport-related pollution."
+            },
+            {
+              "label": "G",
+              "text": "Achieving modal rebalancing requires shifting freight and passenger volumes away from saturated highways toward greener modes such as rail, short-sea shipping, and inland waterways."
+            },
+            {
+              "label": "H",
+              "text": "The first approach couples targeted user toll charges on congested road corridors with strategic infrastructure investments in modern rail links and intermodal transshipment terminals."
+            },
+            {
+              "label": "I",
+              "text": "The second approach involves comprehensive regulatory and fiscal intervention, integrating road tolls, fuel taxation, mandatory driver rest hours, and synchronized investments across all modes to permanently shift traffic habits."
+            }
+          ]
+        },
+        "questions": [
+          {
+            "id": 14,
+            "num": 14,
+            "type": "matching-headings",
+            "options": [
+              "i A fresh long-term goal",
+              "ii Charging for roads and improving other methods",
+              "iii Changes affecting distances goods transported",
+              "iv Taking all steps to change transport patterns",
+              "v Environmental costs of road transport",
+              "vi Escalating cost of rail",
+              "vii Need to achieve transport rebalance",
+              "viii Rapid growth of private transport",
+              "ix Plans for road networks",
+              "x Restricting road use through charging alone",
+              "xi Trends in countries awaiting EU admission"
+            ],
+            "questionText": "14. Paragraph A",
+            "acceptableAnswers": [
+              "viii",
+              "Heading viii",
+              "viii The rapid growth of private transport"
+            ],
+            "explanation": "Đoạn A tập trung vào sự bùng nổ của việc sử dụng xe hơi cá nhân (tăng 3 triệu xe mỗi năm) -> Heading viii (The rapid growth of private transport).",
+            "evidence": "determining factor is the spectacular growth in car use . The number of cars on European Union (EU) roads saw an increase of three million cars each year"
+          },
+          {
+            "id": 15,
+            "num": 15,
+            "type": "matching-headings",
+            "options": [
+              "i A fresh long-term goal",
+              "ii Charging for roads and improving other methods",
+              "iii Changes affecting distances goods transported",
+              "iv Taking all steps to change transport patterns",
+              "v Environmental costs of road transport",
+              "vi Escalating cost of rail",
+              "vii Need to achieve transport rebalance",
+              "viii Rapid growth of private transport",
+              "ix Plans for road networks",
+              "x Restricting road use through charging alone",
+              "xi Trends in countries awaiting EU admission"
+            ],
+            "questionText": "15. Paragraph B",
+            "acceptableAnswers": [
+              "iii",
+              "Heading iii",
+              "iii Changes affecting the distances goods may be transported"
+            ],
+            "explanation": "Đoạn B nói về việc di dời nhà máy ra xa hàng ngàn cây số khiến quãng đường vận chuyển hàng hóa kéo dài -> Heading iii (Changes affecting the distances goods may be transported).",
+            "evidence": "production site is hundreds or even thousands of kilometres away from the final assembly plant or away from users"
+          },
+          {
+            "id": 16,
+            "num": 16,
+            "type": "matching-headings",
+            "options": [
+              "i A fresh long-term goal",
+              "ii Charging for roads and improving other methods",
+              "iii Changes affecting distances goods transported",
+              "iv Taking all steps to change transport patterns",
+              "v Environmental costs of road transport",
+              "vi Escalating cost of rail",
+              "vii Need to achieve transport rebalance",
+              "viii Rapid growth of private transport",
+              "ix Plans for road networks",
+              "x Restricting road use through charging alone",
+              "xi Trends in countries awaiting EU admission"
+            ],
+            "questionText": "16. Paragraph C",
+            "acceptableAnswers": [
+              "xi",
+              "Heading xi",
+              "xi Transport trends in countries awaiting EU admission"
+            ],
+            "explanation": "Đoạn C phân tích xu hướng vận tải ở các quốc gia ứng viên chờ gia nhập EU -> Heading xi (Transport trends in countries awaiting EU admission).",
+            "evidence": "growth expected in countries which are candidates for entry to the EU will also increase transport flows"
+          },
+          {
+            "id": 17,
+            "num": 17,
+            "type": "matching-headings",
+            "options": [
+              "i A fresh long-term goal",
+              "ii Charging for roads and improving other methods",
+              "iii Changes affecting distances goods transported",
+              "iv Taking all steps to change transport patterns",
+              "v Environmental costs of road transport",
+              "vi Escalating cost of rail",
+              "vii Need to achieve transport rebalance",
+              "viii Rapid growth of private transport",
+              "ix Plans for road networks",
+              "x Restricting road use through charging alone",
+              "xi Trends in countries awaiting EU admission"
+            ],
+            "questionText": "17. Paragraph D",
+            "acceptableAnswers": [
+              "i",
+              "Heading i",
+              "i A fresh and important long-term goal"
+            ],
+            "explanation": "Đoạn D đưa ra mục tiêu phát triển bền vững dài hạn cho 20-30 năm tới của hội đồng Gothenburg -> Heading i (A fresh and important long-term goal).",
+            "evidence": "This objective, agreed by the Gothenburg European Council... sustainable transport system which will ideally be in place in 30 years' time"
+          },
+          {
+            "id": 18,
+            "num": 18,
+            "type": "matching-headings",
+            "options": [
+              "i A fresh long-term goal",
+              "ii Charging for roads and improving other methods",
+              "iii Changes affecting distances goods transported",
+              "iv Taking all steps to change transport patterns",
+              "v Environmental costs of road transport",
+              "vi Escalating cost of rail",
+              "vii Need to achieve transport rebalance",
+              "viii Rapid growth of private transport",
+              "ix Plans for road networks",
+              "x Restricting road use through charging alone",
+              "xi Trends in countries awaiting EU admission"
+            ],
+            "questionText": "18. Paragraph E",
+            "acceptableAnswers": [
+              "v",
+              "Heading v",
+              "v The environmental costs of road transport"
+            ],
+            "explanation": "Đoạn E đưa ra thiệt hại môi trường do khí thải CO2 của vận tải đường bộ (chiếm 84% khí thải ngành) -> Heading v (The environmental costs of road transport).",
+            "evidence": "transport sector was to blame for 28% of emissions of CO2... road transport is the main culprit since it alone accounts for 84%"
+          },
+          {
+            "id": 19,
+            "num": 19,
+            "type": "matching-headings",
+            "options": [
+              "i A fresh long-term goal",
+              "ii Charging for roads and improving other methods",
+              "iii Changes affecting distances goods transported",
+              "iv Taking all steps to change transport patterns",
+              "v Environmental costs of road transport",
+              "vi Escalating cost of rail",
+              "vii Need to achieve transport rebalance",
+              "viii Rapid growth of private transport",
+              "ix Plans for road networks",
+              "x Restricting road use through charging alone",
+              "xi Trends in countries awaiting EU admission"
+            ],
+            "questionText": "19. Paragraph G",
+            "acceptableAnswers": [
+              "vii",
+              "Heading vii",
+              "vii The need to achieve transport rebalance"
+            ],
+            "explanation": "Đoạn G nhấn mạnh việc tái cân bằng tỷ trọng giữa các phương thức giao thông (chuyển sang đường sắt và đường thủy) -> Heading vii (The need to achieve transport rebalance).",
+            "evidence": "shifting the balance between modes of transport lies at the heart of its strategy"
+          },
+          {
+            "id": 20,
+            "num": 20,
+            "type": "matching-headings",
+            "options": [
+              "i A fresh long-term goal",
+              "ii Charging for roads and improving other methods",
+              "iii Changes affecting distances goods transported",
+              "iv Taking all steps to change transport patterns",
+              "v Environmental costs of road transport",
+              "vi Escalating cost of rail",
+              "vii Need to achieve transport rebalance",
+              "viii Rapid growth of private transport",
+              "ix Plans for road networks",
+              "x Restricting road use through charging alone",
+              "xi Trends in countries awaiting EU admission"
+            ],
+            "questionText": "20. Paragraph H",
+            "acceptableAnswers": [
+              "ii",
+              "Heading ii",
+              "ii Charging for roads and improving other transport methods"
+            ],
+            "explanation": "Đoạn H đề cập đến biện pháp thu phí đường bộ kết hợp nâng cấp đường sắt -> Heading ii (Charging for roads and improving other transport methods).",
+            "evidence": "targeted user toll charges on congested road corridors with strategic infrastructure investments in modern rail links"
+          },
+          {
+            "id": 21,
+            "num": 21,
+            "type": "matching-headings",
+            "options": [
+              "i A fresh long-term goal",
+              "ii Charging for roads and improving other methods",
+              "iii Changes affecting distances goods transported",
+              "iv Taking all steps to change transport patterns",
+              "v Environmental costs of road transport",
+              "vi Escalating cost of rail",
+              "vii Need to achieve transport rebalance",
+              "viii Rapid growth of private transport",
+              "ix Plans for road networks",
+              "x Restricting road use through charging alone",
+              "xi Trends in countries awaiting EU admission"
+            ],
+            "questionText": "21. Paragraph I",
+            "acceptableAnswers": [
+              "iv",
+              "Heading iv",
+              "iv Taking all the steps necessary to change transport patterns"
+            ],
+            "explanation": "Đoạn I tổng kết giải pháp đồng bộ đa tầng nấc để thay đổi hoàn toàn tập quán giao thông -> Heading iv (Taking all the steps necessary to change transport patterns).",
+            "evidence": "comprehensive regulatory and fiscal intervention, integrating road tolls, fuel taxation, mandatory driver rest hours"
+          }
+        ],
+        "vocabulary": [
+          {
+            "word": "rebalance",
+            "meaning": "Tái lập sự cân bằng giữa các lĩnh vực",
+            "example": "Modal rebalancing diverts heavy trucks to electrified rail."
+          },
+          {
+            "word": "intermodal",
+            "meaning": "Vận tải kết hợp đa phương thức",
+            "example": "Intermodal terminals seamlessly transfer containers between rail and ship."
+          },
+          {
+            "word": "saturated",
+            "meaning": "Quá tải, bão hòa lưu lượng",
+            "example": "Motorways become saturated during morning peak hours."
           }
         ]
       }
@@ -3156,38 +4598,34 @@ const readingLessons = [
     "id": "reading_12",
     "lessonNum": 12,
     "code": "V14",
-    "title": "V14 - WHICH PARAGRAPH CONTAINS?",
-    "shortTitle": "Which Paragraph Contains?",
+    "title": "V14 – WHICH PARAGRAPH CONTAINS?",
+    "shortTitle": "Đoạn Văn Nào Chứa Thông Tin?",
     "category": "matching",
-    "categoryLabel": "Nối Thông Tin",
-    "badge": "Đoạn văn chứa thông tin",
-    "description": "Chiến thuật tìm đoạn văn chứa thông tin cụ thể: Chú ý các từ chỉ loại thông tin (a description of, an explanation of, a reference to, examples of) để định vị đúng phong cách trình bày của đoạn.",
+    "categoryLabel": "Dạng Bài Nối Thông Tin",
+    "badge": "Scanning chi tiết",
+    "description": "Chiến thuật định vị vị trí chứa thông tin cụ thể (định nghĩa, ví dụ, nguyên nhân, số liệu). Chú ý quy tắc NB: You may use any letter more than once. 3 bài đọc Cambridge IELTS trọn vẹn.",
     "examplesCount": 3,
-    "totalQuestions": 12,
+    "totalQuestions": 13,
     "examples": [
       {
         "id": "r12_ex1",
         "exampleNum": 1,
-        "title": "Example 1: Early Modern Policing (Lịch sử cảnh sát)",
-        "instructions": "Reading Passage has 5 paragraphs marked A-E. Which paragraph contains the following information? Write the correct letter A-E.",
+        "title": "Example 1: Early Modern Policing (Paragraphs A-C)",
+        "instructions": "Which paragraph contains the following information? (Questions 1-4, Pages 72-73)\nNB You may use any letter more than once.",
         "passage": {
-          "title": "THE ORIGINS OF MODERN POLICING",
+          "title": "Early Modern Policing",
           "paragraphs": [
             {
               "label": "A",
-              "text": "The first centrally organized police force in Europe was created by King Louis XIV in 1667 to maintain order in Paris, then Europe's largest city. The police Lieutenant was tasked with purging the city of thieves, illuminating streets with lanterns, and securing grain supply lines during food shortages."
+              "text": "The first centrally organised police force was created by the government of King Louis XIV in 1667 to police the city of Paris, then the largest city in Europe. The task of the police was defined as 'ensuring the peace and quiet of the public and of private individuals, purging the city of what may cause disturbances, procuring abundance, and having each and everyone live according to their station and their duties'. The word 'police' was borrowed from French into the English language in the 18th century."
             },
             {
               "label": "B",
-              "text": "Across the Channel in London, public hostility to royal standing armies delayed a professional police force for over a century. Citizens feared that armed officers would erode civil liberties, relying instead on voluntary parish constables and commercial 'thief-takers' who were notoriously corrupt."
+              "text": "In 1797, Patrick Colquhoun, a Scottish merchant, was able to persuade the West Indies merchants who operated at the Pool of London on the River Thames, to establish a police force at the docks to prevent rampant theft that was causing annual estimated losses of £500,000 worth of cargo. The idea of a police, as it then existed in France, was considered as a potentially undesirable foreign import. However, Colquhoun used economic indicators to show that a police dedicated to crime prevention was 'perfectly congenial to the principle of the British constitution'."
             },
             {
               "label": "C",
-              "text": "It was not until 1829 that Sir Robert Peel persuaded Parliament to establish the Metropolitan Police. Peel insisted that police wear distinctive blue tailcoats rather than military red, carry wooden truncheons instead of firearms, and derive their authority from public trust rather than fear."
-            },
-            {
-              "label": "D",
-              "text": "Peel formulated nine core ethical principles, the most famous being 'the police are the public and the public are the police'. Early officers quickly earned the affectionate nickname 'Bobbies' after their founder."
+              "text": "With an initial investment of £4,200, the new trial force of the Thames River Police began with about 50 men charged with policing 33,000 workers in the river trades. The force was a success after its first year, and Colquhoun’s men had 'established their worth by saving £122,000 worth of cargo and by the rescuing of several lives'. Word of this success spread quickly, and the government passed the Marine Police Bill on 28 July 1800, transforming it from a private to public police agency; now the oldest police force in the world."
             }
           ]
         },
@@ -3195,101 +4633,389 @@ const readingLessons = [
           {
             "id": 1,
             "num": 1,
-            "type": "matching-features",
-            "questionText": "1. a reference to the public anxiety that policing would compromise personal freedoms",
+            "type": "which-paragraph",
             "options": [
-              {
-                "letter": "A",
-                "desc": "Paragraph A"
-              },
-              {
-                "letter": "B",
-                "desc": "Paragraph B"
-              },
-              {
-                "letter": "C",
-                "desc": "Paragraph C"
-              },
-              {
-                "letter": "D",
-                "desc": "Paragraph D"
-              }
+              "A",
+              "B",
+              "C"
             ],
+            "questionText": "1. positive news that led to a new government policy",
             "acceptableAnswers": [
-              "B"
+              "C"
             ],
-            "explanation": "Đoạn B: 'Citizens feared that armed officers would erode civil liberties'. Đoạn B chứa thông tin này.",
-            "evidence": "Citizens feared that armed officers would erode civil liberties"
+            "explanation": "Đoạn C: 'Word of this success spread quickly, and the government passed the Marine Police Bill on 28 July 1800, transforming it from a private to public police agency' -> C.",
+            "evidence": "Word of this success spread quickly, and the government passed the Marine Police Bill on 28 July 1800, transforming it from a private to public police agency"
           },
           {
             "id": 2,
             "num": 2,
-            "type": "matching-features",
-            "questionText": "2. details of the distinct non-military uniform and equipment adopted by early officers",
+            "type": "which-paragraph",
             "options": [
-              {
-                "letter": "A",
-                "desc": "Paragraph A"
-              },
-              {
-                "letter": "B",
-                "desc": "Paragraph B"
-              },
-              {
-                "letter": "C",
-                "desc": "Paragraph C"
-              },
-              {
-                "letter": "D",
-                "desc": "Paragraph D"
-              }
-            ],
-            "acceptableAnswers": [
+              "A",
+              "B",
               "C"
             ],
-            "explanation": "Đoạn C miêu tả chi tiết đồng phục áo đuôi tôm màu xanh ('blue tailcoats') và dùi cui gỗ ('wooden truncheons').",
-            "evidence": "wear distinctive blue tailcoats rather than military red, carry wooden truncheons instead of firearms"
+            "questionText": "2. the origin of an English word",
+            "acceptableAnswers": [
+              "A"
+            ],
+            "explanation": "Đoạn A: 'The word \"police\" was borrowed from French into the English language in the 18th century.' -> A.",
+            "evidence": "The word \"police\" was borrowed from French into the English language in the 18th century."
           },
           {
             "id": 3,
             "num": 3,
-            "type": "matching-features",
-            "questionText": "3. an explanation of the initial urban duties assigned to the French police force",
+            "type": "which-paragraph",
             "options": [
-              {
-                "letter": "A",
-                "desc": "Paragraph A"
-              },
-              {
-                "letter": "B",
-                "desc": "Paragraph B"
-              },
-              {
-                "letter": "C",
-                "desc": "Paragraph C"
-              },
-              {
-                "letter": "D",
-                "desc": "Paragraph D"
-              }
+              "A",
+              "B",
+              "C"
             ],
+            "questionText": "3. people’s reluctance to accept a foreign idea",
             "acceptableAnswers": [
-              "A"
+              "B"
             ],
-            "explanation": "Đoạn A giải thích các nhiệm vụ của cảnh sát Pháp (bắt trộm, thắp đèn lồng, bảo đảm nguồn cung lương thực).",
-            "evidence": "tasked with purging the city of thieves, illuminating streets with lanterns, and securing grain supply"
+            "explanation": "Đoạn B: 'The idea of a police, as it then existed in France, was considered as a potentially undesirable foreign import.' -> B.",
+            "evidence": "The idea of a police, as it then existed in France, was considered as a potentially undesirable foreign import."
+          },
+          {
+            "id": 4,
+            "num": 4,
+            "type": "which-paragraph",
+            "options": [
+              "A",
+              "B",
+              "C"
+            ],
+            "questionText": "4. a specific problem that needed to be solved",
+            "acceptableAnswers": [
+              "B"
+            ],
+            "explanation": "Đoạn B: 'rampant theft that was causing annual estimated losses of £500,000 worth of cargo' -> B.",
+            "evidence": "to establish a police force at the docks to prevent rampant theft that was causing annual estimated losses of £500,000 worth of cargo."
           }
         ],
         "vocabulary": [
           {
-            "word": "civil liberties",
-            "meaning": "Quyền tự do công dân",
-            "example": "erode civil liberties"
+            "word": "rampant",
+            "meaning": "Tràn lan, không thể kiểm soát",
+            "example": "Rampant theft at the port severely disrupted trade."
           },
           {
-            "word": "truncheon",
-            "meaning": "Dùi cui của cảnh sát",
-            "example": "carrying wooden truncheons"
+            "word": "undesirable",
+            "meaning": "Không mong muốn, gây phản cảm",
+            "example": "Foreign concepts were initially treated as undesirable imports."
+          },
+          {
+            "word": "congenial",
+            "meaning": "Phù hợp, tương thích hài hòa",
+            "example": "The law was congenial to constitutional principles."
+          }
+        ]
+      },
+      {
+        "id": "r12_ex2",
+        "exampleNum": 2,
+        "title": "Example 2: Educating the Gifted (Paragraphs A-F)",
+        "instructions": "Reading Passage 2 has six paragraphs, A-F. Which paragraph contains the following information? (Questions 14-17, Pages 73-75)\nNB You may use any letter more than once.",
+        "passage": {
+          "title": "Educating the Gifted: Classroom Strategies",
+          "paragraphs": [
+            {
+              "label": "A",
+              "text": "A close positive relationship was found when children’s IQ scores were compared with their home educational provision. The higher the children’s IQ scores, the better the quality of their educational backup, measured in terms of reported verbal interactions with parents, number of books and activities in their home. Because IQ tests are influenced by such factors, we can see how domestic stimulus nurtures high academic potential."
+            },
+            {
+              "label": "B",
+              "text": "However, over-direction can backfire. Although 'spoon-feeding' can produce extremely high examination results, these are not always followed by equally impressive life successes. Too much guidance deprives learners of autonomy and reduces their ability to solve novel problems independently."
+            },
+            {
+              "label": "C",
+              "text": "Teachers often mistakenly assume gifted children are completely problem-free. In reality, exceptionally talented pupils frequently experience boredom, isolation from peers, and perfectionistic pressures."
+            },
+            {
+              "label": "D",
+              "text": "Furthermore, learning is strongly affected by emotions. Fear and anxiety can severely damage intellectual curiosity, paralyzing a student's willingness to take creative risks and explore new disciplines."
+            },
+            {
+              "label": "E",
+              "text": "Metacognition allows students to monitor their own cognitive processing, adjusting their learning strategies to suit the demands of the task."
+            },
+            {
+              "label": "F",
+              "text": "In mixed-ability classrooms, structured cooperative techniques and explicit scaffolding especially benefit disadvantaged pupils who lack academic support at home, bridging the attainment gap without hampering gifted peers."
+            }
+          ]
+        },
+        "questions": [
+          {
+            "id": 14,
+            "num": 14,
+            "type": "which-paragraph",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "questionText": "14. a reference to the influence of the domestic background on the gifted child.",
+            "acceptableAnswers": [
+              "A"
+            ],
+            "explanation": "Đoạn A: 'close positive relationship was found when children’s IQ scores were compared with their home educational provision' -> A.",
+            "evidence": "A close positive relationship was found when children’s IQ scores were compared with their home educational provision."
+          },
+          {
+            "id": 15,
+            "num": 15,
+            "type": "which-paragraph",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "questionText": "15. reference to what can be lost if learners are given too much guidance.",
+            "acceptableAnswers": [
+              "B"
+            ],
+            "explanation": "Đoạn B: 'Too much guidance deprives learners of autonomy and reduces their ability to solve novel problems independently.' -> B.",
+            "evidence": "Too much guidance deprives learners of autonomy and reduces their ability to solve novel problems independently."
+          },
+          {
+            "id": 16,
+            "num": 16,
+            "type": "which-paragraph",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "questionText": "16. a reference to the damaging effects of anxiety.",
+            "acceptableAnswers": [
+              "D"
+            ],
+            "explanation": "Đoạn D: 'Fear and anxiety can severely damage intellectual curiosity, paralyzing a student's willingness to take creative risks' -> D.",
+            "evidence": "Fear and anxiety can severely damage intellectual curiosity, paralyzing a student's willingness to take creative risks"
+          },
+          {
+            "id": 17,
+            "num": 17,
+            "type": "which-paragraph",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F"
+            ],
+            "questionText": "17. examples of classroom techniques which favour socially-disadvantaged children.",
+            "acceptableAnswers": [
+              "F"
+            ],
+            "explanation": "Đoạn F: 'structured cooperative techniques and explicit scaffolding especially benefit disadvantaged pupils who lack academic support at home' -> F.",
+            "evidence": "structured cooperative techniques and explicit scaffolding especially benefit disadvantaged pupils who lack academic support at home"
+          }
+        ],
+        "vocabulary": [
+          {
+            "word": "scaffolding",
+            "meaning": "Kỹ thuật hỗ trợ sư phạm từng bước",
+            "example": "Instructional scaffolding helps disadvantaged learners gain confidence."
+          },
+          {
+            "word": "domestic backup",
+            "meaning": "Sự hỗ trợ giáo dục từ gia đình",
+            "example": "Strong domestic backup reinforces classroom achievements."
+          },
+          {
+            "word": "attainment gap",
+            "meaning": "Khoảng cách thành tích học tập",
+            "example": "Targeted programs aim to close the socio-economic attainment gap."
+          }
+        ]
+      },
+      {
+        "id": "r12_ex3",
+        "exampleNum": 3,
+        "title": "Example 3: Why Leaves Turn Red (Paragraphs A-I)",
+        "instructions": "Reading Passage 2 has nine paragraphs, A-I. Which paragraph contains the following information? (Questions 14-18, Pages 76-78)\nNB You may use any letter more than once.",
+        "passage": {
+          "title": "Autumn Leaves: Why Leaves Turn Red",
+          "paragraphs": [
+            {
+              "label": "A",
+              "text": "Autumn is celebrated for the glorious blaze of scarlet, russet, and gold that transforms temperate deciduous forests. But why do trees invest precious energy into manufacturing vivid red pigments just before shedding their foliage?"
+            },
+            {
+              "label": "B",
+              "text": "Chlorophyll, the green chemical molecule responsible for photosynthesis, captures sunlight to convert water and carbon dioxide into sugars. As autumn approaches and daylight wanes, freezing temperatures threaten cellular structures. Trees dismantle their chlorophyll, resorbing vital nitrogen and nutrients into twigs and roots for winter storage, leaving deciduous leaves to detach and drop to the forest floor."
+            },
+            {
+              "label": "C",
+              "text": "While yellow and orange carotenoids have been present inside the leaf all summer, masked by green chlorophyll, red colouration is entirely different. Red foliage is created by water-soluble flavonoid compounds called anthocyanins, newly synthesized in autumn via complex chemical cascades."
+            },
+            {
+              "label": "D",
+              "text": "Why do trees produce anthocyanins at the eleventh hour? Some scientists hypothesized that red pigments act as a natural botanical sunscreen, shielding vulnerable chloroplasts from excess light while nutrients are retrieved."
+            },
+            {
+              "label": "E",
+              "text": "Another prominent theory, advanced by evolutionary biologist W.D. Hamilton, suggests that intense red colouration functions as a visual warning signal (aposematism) to herbivorous insects such as aphids, broadcasting that the tree possesses formidable chemical defences."
+            },
+            {
+              "label": "F",
+              "text": "Aphids landing on red leaves produce fewer viable eggs and suffer higher mortality, providing initial ecological support for the warning hypothesis."
+            },
+            {
+              "label": "G",
+              "text": "However, field tests in mountain forests revealed that trees deficient in anthocyanins suffered photodamage during cold, bright autumn mornings."
+            },
+            {
+              "label": "H",
+              "text": "Empirical confirmation for the photoprotection hypothesis came from studies showing that leaves exposed to intense sun produced significantly higher concentrations of anthocyanins than shaded foliage on the exact same tree branch."
+            },
+            {
+              "label": "I",
+              "text": "Ultimately, anthocyanins may serve dual roles: insulating leaves against photo-oxidative stress while simultaneously deterring autumn insect pests."
+            }
+          ]
+        },
+        "questions": [
+          {
+            "id": 14,
+            "num": 14,
+            "type": "which-paragraph",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I"
+            ],
+            "questionText": "14. a description of the substance responsible for the red colouration of leaves",
+            "acceptableAnswers": [
+              "C"
+            ],
+            "explanation": "Đoạn C mô tả chất anthocyanins – sắc tố tạo màu đỏ trong lá cây mùa thu -> C.",
+            "evidence": "Red foliage is created by water-soluble flavonoid compounds called anthocyanins, newly synthesized in autumn"
+          },
+          {
+            "id": 15,
+            "num": 15,
+            "type": "which-paragraph",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I"
+            ],
+            "questionText": "15. the reason why trees drop their leaves in autumn",
+            "acceptableAnswers": [
+              "B"
+            ],
+            "explanation": "Đoạn B giải thích tại sao cây rụng lá: nhiệt độ đóng băng đe dọa tế bào nên cây thu hồi chất dinh dưỡng và rụng lá để sống sót qua mùa đông -> B.",
+            "evidence": "freezing temperatures threaten cellular structures. Trees dismantle their chlorophyll, resorbing vital nitrogen... leaving deciduous leaves to detach and drop"
+          },
+          {
+            "id": 16,
+            "num": 16,
+            "type": "which-paragraph",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I"
+            ],
+            "questionText": "16. some evidence to confirm a theory about the purpose of the red leaves",
+            "acceptableAnswers": [
+              "H"
+            ],
+            "explanation": "Đoạn H cung cấp bằng chứng thực nghiệm (lá tiếp xúc ánh nắng sản sinh nhiều anthocyanins hơn lá râm) xác nhận giả thuyết bảo vệ quang học -> H.",
+            "evidence": "Empirical confirmation for the photoprotection hypothesis came from studies showing that leaves exposed to intense sun produced significantly higher concentrations"
+          },
+          {
+            "id": 17,
+            "num": 17,
+            "type": "which-paragraph",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I"
+            ],
+            "questionText": "17. an explanation of the function of chlorophyll",
+            "acceptableAnswers": [
+              "B"
+            ],
+            "explanation": "Đoạn B giải thích chức năng của chất diệp lục: thu nhận ánh sáng mặt trời để chuyển đổi nước và CO2 thành đường nuôi cây -> B.",
+            "evidence": "Chlorophyll, the green chemical molecule responsible for photosynthesis, captures sunlight to convert water and carbon dioxide into sugars."
+          },
+          {
+            "id": 18,
+            "num": 18,
+            "type": "which-paragraph",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H",
+              "I"
+            ],
+            "questionText": "18. a suggestion that the red colouration in leaves could serve as a warning signal",
+            "acceptableAnswers": [
+              "E"
+            ],
+            "explanation": "Đoạn E đưa ra giả thuyết của W.D. Hamilton rằng màu đỏ đóng vai trò tín hiệu cảnh báo thị giác gửi đến côn trùng ăn hại -> E.",
+            "evidence": "intense red colouration functions as a visual warning signal (aposematism) to herbivorous insects such as aphids"
+          }
+        ],
+        "vocabulary": [
+          {
+            "word": "anthocyanin",
+            "meaning": "Sắc tố đỏ tự nhiên trong thực vật",
+            "example": "Anthocyanins protect delicate leaf structures from bright light."
+          },
+          {
+            "word": "resorb",
+            "meaning": "Tái hấp thu dinh dưỡng",
+            "example": "Deciduous trees resorb valuable nitrogen before leaves drop."
+          },
+          {
+            "word": "aposematism",
+            "meaning": "Hiện tượng cảnh báo xua đuổi kẻ thù qua màu sắc rực rỡ",
+            "example": "Vivid autumn hues may serve as an aposematic signal."
           }
         ]
       }
@@ -3299,30 +5025,30 @@ const readingLessons = [
     "id": "reading_13",
     "lessonNum": 13,
     "code": "V15",
-    "title": "V15 - MULTIPLE CHOICE",
-    "shortTitle": "Multiple Choice",
-    "category": "mcq",
+    "title": "V15 – MULTIPLE CHOICE",
+    "shortTitle": "Trắc Nghiệm Nhiều Lựa Chọn",
+    "category": "multiple-choice",
     "categoryLabel": "Trắc Nghiệm",
-    "badge": "Lựa chọn đáp án A/B/C/D",
-    "description": "Chiến thuật làm bài Multiple Choice: Loại trừ các bẫy thông thường (bẫy thông tin đối lập, bẫy thông tin cực đoan always/never, bẫy từ vựng trùng lặp nhưng sai ý).",
+    "badge": "Phân tích bẫy nhiễu",
+    "description": "Chiến thuật loại trừ phương án sai (bẫy thái quá, bẫy ngược nghĩa, bẫy thiếu thông tin) và tìm dẫn chứng tương đương nghĩa. 3 bài đọc Cambridge IELTS trọn vẹn.",
     "examplesCount": 3,
-    "totalQuestions": 8,
+    "totalQuestions": 10,
     "examples": [
       {
         "id": "r13_ex1",
         "exampleNum": 1,
         "title": "Example 1: Richard Feynman’s Philosophy of Physics",
-        "instructions": "Choose the correct letter, A, B, C or D.",
+        "instructions": "Choose the correct letter, A, B, C or D. (Questions 1-2, Page 79)",
         "passage": {
-          "title": "FEYNMAN'S LOST LECTURE",
+          "title": "Richard Feynman: The First Principles Approach",
           "paragraphs": [
             {
               "label": "A",
-              "text": "Physicist Richard Feynman returned over and over to an idea that drove his groundbreaking discoveries. His approach was documented by his Caltech colleague David Goodstein in the book Feynman’s Lost Lecture: 'Once, I said to him, \"Dick, explain to me, so that I can understand it, why spin one-half particles obey Fermi-Dirac statistics.\" Feynman replied, \"I’ll prepare a freshman lecture on it.\" But a few days later he returned and admitted, \"I couldn’t do it. I couldn't reduce it to the freshman level. That means we don't really understand it.\"'"
+              "text": "Physicist Richard Feynman returned over and over to an idea that drove his groundbreaking discoveries. His approach was documented by his Caltech colleague David Goodstein in the book Feynman’s Lost Lecture about physics classes Feynman taught in the 1960s:\nOnce, I said to him, 'Dick, explain to me, so that I can understand it, why spin one-half particles obey Fermi-Dirac statistics.' Sizing up his audience perfectly, Feynman said, 'I’ll prepare a freshman lecture on it.' But he came back a few days later to say, 'I couldn’t do it. I couldn’t reduce it to the freshman level. That means we don’t really understand it.'"
             },
             {
               "label": "B",
-              "text": "Feynman believed that true scientific understanding requires mastery of first principles. If an expert cannot explain a concept using simple, intuitive analogies to a beginner, it reveals that the scientific community's own grasp of the fundamental underlying mechanism is incomplete."
+              "text": "Feynman didn’t mean all human knowledge must be distilled into an introductory college course. His point was that we need to build our grasp of science and technology from the ground up if we are to master it, not to mention reimagine how it works. Feynman was famous as a student for redoing many of physics’ early experiments himself to build a foundational understanding of the field. By mastering these first principles, Feynman often saw things that others did not in quantum mechanics, computing, and nuclear physics, earning him the Nobel Prize in 1965."
             }
           ]
         },
@@ -3330,72 +5056,55 @@ const readingLessons = [
           {
             "id": 1,
             "num": 1,
-            "type": "multiple-choice",
-            "questionText": "1. Feynman conceded that he could not teach the physics concept to freshmen because",
+            "type": "mcq",
             "options": [
-              {
-                "letter": "A",
-                "desc": "first-year students lacked the prerequisite mathematical skills."
-              },
-              {
-                "letter": "B",
-                "desc": "he did not yet understand the principle deeply enough himself."
-              },
-              {
-                "letter": "C",
-                "desc": "David Goodstein’s textbook contained factual errors."
-              },
-              {
-                "letter": "D",
-                "desc": "Caltech prohibited advanced quantum lectures for undergraduates."
-              }
+              "A  immediately replied that he could not",
+              "B  replied that he had already prepared a lecture on it",
+              "C  said that he did not understand the concept either",
+              "D  promised to give his answer in an introductory lesson"
             ],
+            "questionText": "1. When asked to explain a difficult concept, physicist Richard Feynman",
             "acceptableAnswers": [
-              "B"
+              "D",
+              "D  promised to give his answer in an introductory lesson"
             ],
-            "explanation": "Đoạn A: Feynman thừa nhận 'I couldn't reduce it to the freshman level. That means we don't really understand it'. Tức là chính bản thân chưa hiểu đủ sâu sắc -> B.",
-            "evidence": "I couldn't reduce it to the freshman level. That means we don't really understand it."
+            "explanation": "Đoạn A: 'Sizing up his audience perfectly, Feynman said, 'I’ll prepare a freshman lecture on it.'' (freshman lecture = bài giảng nhập môn / introductory lesson) -> D.",
+            "evidence": "Sizing up his audience perfectly, Feynman said, “I’ll prepare a freshman lecture on it.”"
           },
           {
             "id": 2,
             "num": 2,
-            "type": "multiple-choice",
-            "questionText": "2. According to paragraph B, Feynman argued that authentic comprehension is proven when a specialist",
+            "type": "mcq",
             "options": [
-              {
-                "letter": "A",
-                "desc": "formulates complex mathematical proofs without using analogies."
-              },
-              {
-                "letter": "B",
-                "desc": "can clearly articulate core ideas to someone with no background knowledge."
-              },
-              {
-                "letter": "C",
-                "desc": "wins international recognition such as the Nobel Prize."
-              },
-              {
-                "letter": "D",
-                "desc": "publishes groundbreaking research in academic journals."
-              }
+              "A  scientists should master basic scientific principles first",
+              "B  early physics experiments need to be redone",
+              "C  most science students do not have a good foundation in physics",
+              "D  his knowledge of first principles earned him a Nobel Prize"
             ],
+            "questionText": "2. Feynman believed that",
             "acceptableAnswers": [
-              "B"
+              "A",
+              "A  scientists should master basic scientific principles first"
             ],
-            "explanation": "Đoạn B: 'explain a concept using simple, intuitive analogies to a beginner' -> B (giải thích cho người chưa có chuyên môn).",
-            "evidence": "If an expert cannot explain a concept using simple, intuitive analogies to a beginner"
+            "explanation": "Đoạn B: 'His point was that we need to build our grasp of science and technology from the ground up if we are to master it' -> các nhà khoa học cần nắm vững các nguyên lý nền tảng trước tiên -> A.",
+            "evidence": "His point was that we need to build our grasp of science and technology from the ground up if we are to master it"
           }
         ],
         "vocabulary": [
           {
             "word": "first principles",
-            "meaning": "Nguyên lý cơ bản khởi thủy",
-            "example": "reasoning from first principles"
+            "meaning": "Các nguyên lý cơ bản khởi thủy",
+            "example": "Reasoning from first principles strips away preconceptions."
           },
           {
             "word": "freshman",
-            "meaning": "Sinh viên năm nhất đại học",
-            "example": "freshman physics class"
+            "meaning": "Sinh viên năm thứ nhất",
+            "example": "Freshman lectures require absolute clarity without jargon."
+          },
+          {
+            "word": "reimagine",
+            "meaning": "Tái tư duy, hình dung lại theo góc nhìn mới",
+            "example": "Mastering the fundamentals allows scientists to reimagine theories."
           }
         ]
       },
@@ -3403,123 +5112,235 @@ const readingLessons = [
         "id": "r13_ex2",
         "exampleNum": 2,
         "title": "Example 2: Museums of Fine Art and Their Public",
-        "instructions": "Choose the correct letter, A, B, C or D.",
+        "instructions": "Choose the correct letter, A, B, C or D. (Questions 32-35, Pages 80-81)",
         "passage": {
-          "title": "MUSEUMS OF FINE ART AND THEIR PUBLIC",
+          "title": "Museum of Fine Art and Their Public",
           "paragraphs": [
             {
               "label": "A",
-              "text": "A fundamental difference between paintings and other art forms is that there is no prescribed duration over which a painting must be viewed. By contrast, an audience member attends an opera or theatrical play for a specific duration. Similarly, novels and poems are read in an inherently temporal sequence."
+              "text": "One limitation is related to the way the museum presents its exhibits. As repositories of unique historical objects, art museums are often called 'treasure houses'. We are reminded of this even before we view a collection by the presence of security guards, attendants, ropes and display cases to keep us away from the exhibits. In addition, a major collection like that of London’s National Gallery is housed in numerous rooms, each with dozens of works, any one of which is likely to be worth more than all the average visitor possesses. In a society that judges the personal status of the individual so much by their material worth, it is therefore difficult not to be impressed by one’s own relative 'worthlessness' in such an environment."
             },
             {
               "label": "B",
-              "text": "A painted canvas, however, presents no fixed starting point and no mandatory conclusion. Consequently, gallery visitors are tempted to gaze superficially, glancing at masterpieces for mere seconds without appreciating the profound labor and subtlety involved."
+              "text": "Furthermore, consideration of the 'value' of the original work in its treasure house setting impresses upon the viewer that, since these works were originally produced, they have been assigned a huge monetary value by some person or institution more powerful than themselves. Evidently, nothing the viewer thinks about the work is going to alter that value, and so today’s viewer is deterred from trying to extend that spontaneous, immediate, self-reliant kind of reading which would originally have met the work."
+            },
+            {
+              "label": "C",
+              "text": "The visitor may then be struck by the strangeness of seeing such diverse paintings, drawings and sculptures brought together in an environment for which they were not originally created. This 'displacement effect' is further heightened by the sheer volume of exhibits. In the case of a major collection, there are probably more works on display than we could realistically view in weeks or even months."
+            },
+            {
+              "label": "D",
+              "text": "This is particularly distressing because time seems to be a vital factor in the appreciation of all art forms. A fundamental difference between paintings and other art forms is that there is no prescribed time over which a painting is viewed. By contrast, the audience experiences an opera or a play over a specific time, which is the duration of the performance. Similarly novels and poems are read in a prescribed temporal sequence, whereas a picture has no clear place at which to start viewing, or at which to finish."
             }
           ]
         },
         "questions": [
           {
+            "id": 32,
+            "num": 32,
+            "type": "mcq",
+            "options": [
+              "A  the undesirable cost to a nation of maintaining a huge collection of art.",
+              "B  the conflict that may arise in society between financial and artistic values.",
+              "C  the negative effect a museum can have on visitors’ opinions of themselves.",
+              "D  the need to put individual well-being above large-scale artistic schemes."
+            ],
+            "questionText": "32. The writer mentions London’s National Gallery to illustrate",
+            "acceptableAnswers": [
+              "C",
+              "C  the negative effect a museum can have on visitors’ opinions of themselves."
+            ],
+            "explanation": "Đoạn A: Tác giả nêu bất kỳ tác phẩm nào cũng đắt hơn toàn bộ tài sản của khách tham quan, khiến người xem cảm thấy sự 'vô giá trị tương đối' của chính mình ('impressed by one’s own relative worthlessness') -> C.",
+            "evidence": "difficult not to be impressed by one’s own relative 'worthlessness' in such an environment."
+          },
+          {
+            "id": 33,
+            "num": 33,
+            "type": "mcq",
+            "options": [
+              "A  they lack the knowledge needed to support an opinion.",
+              "B  they fear it may have financial implications.",
+              "C  they have no real concept of the work’s value.",
+              "D  they feel their personal reaction is of no significance."
+            ],
+            "questionText": "33. The writer says that today, viewers may be unwilling to criticise because",
+            "acceptableAnswers": [
+              "D",
+              "D  they feel their personal reaction is of no significance."
+            ],
+            "explanation": "Đoạn B: Người xem thấy giá trị tác phẩm đã được các tổ chức quyền lực ấn định bằng tiền tỉ, 'nothing the viewer thinks about the work is going to alter that value' -> cảm thấy phản ứng cá nhân của mình chẳng có nghĩa lý gì -> D.",
+            "evidence": "nothing the viewer thinks about the work is going to alter that value, and so today’s viewer is deterred from trying to extend that spontaneous, immediate, self- reliant kind of reading"
+          },
+          {
+            "id": 34,
+            "num": 34,
+            "type": "mcq",
+            "options": [
+              "A  the variety of works on display and the way they are arranged.",
+              "B  the impossibility of viewing particular works of art over a long period.",
+              "C  the similar nature of the paintings and the lack of great works.",
+              "D  the inappropriate nature of the individual works selected for exhibition."
+            ],
+            "questionText": "34. According to the writer, the ‘displacement effect’ on the visitor is caused by",
+            "acceptableAnswers": [
+              "A",
+              "A  the variety of works on display and the way they are arranged."
+            ],
+            "explanation": "Đoạn C: Hiệu ứng chuyển dời bắt nguồn từ việc nhìn thấy sự đa dạng của các bức tranh bị gom vào một không gian không nguyên bản ('seeing such diverse paintings, drawings and sculptures brought together in an environment...') -> A.",
+            "evidence": "strangeness of seeing such diverse paintings, drawings and sculptures brought together in an environment for which they were not originally created. This 'displacement effect' is further heightened by the sheer volume of exhibits"
+          },
+          {
             "id": 35,
             "num": 35,
-            "type": "multiple-choice",
-            "questionText": "35. The writer states that unlike theatrical plays or novels, a painting does not",
+            "type": "mcq",
             "options": [
-              {
-                "letter": "A",
-                "desc": "involve direct emotional engagement with its audience."
-              },
-              {
-                "letter": "B",
-                "desc": "require a designated indoor venue for display."
-              },
-              {
-                "letter": "C",
-                "desc": "compel the viewer to follow a predetermined timeline or sequence."
-              },
-              {
-                "letter": "D",
-                "desc": "require expensive conservation materials."
-              }
+              "A  involve direct contact with an audience.",
+              "B  require a specific location for a performance.",
+              "C  need the involvement of other professionals.",
+              "D  have a specific beginning or end."
             ],
+            "questionText": "35. The writer says that unlike other forms of art, a painting does not",
             "acceptableAnswers": [
-              "C"
+              "D",
+              "D  have a specific beginning or end."
             ],
-            "explanation": "Đoạn A & B khẳng định: 'there is no prescribed duration... no fixed starting point and no mandatory conclusion' -> C.",
-            "evidence": "there is no prescribed duration over which a painting must be viewed... presents no fixed starting point and no mandatory conclusion"
+            "explanation": "Đoạn D: Khác với kịch hay tiểu thuyết diễn ra theo thời gian xác định, bức tranh 'has no clear place at which to start viewing, or at which to finish' (không có điểm bắt đầu hoặc kết thúc xác định) -> D.",
+            "evidence": "whereas a picture has no clear place at which to start viewing, or at which to finish."
           }
         ],
         "vocabulary": [
           {
-            "word": "prescribed duration",
-            "meaning": "Khoảng thời gian được quy định trước",
-            "example": "viewing without a prescribed duration"
+            "word": "repository",
+            "meaning": "Kho lưu trữ, nơi cất giữ bảo vật",
+            "example": "Art museums serve as repositories of national cultural patrimony."
           },
           {
-            "word": "temporal sequence",
-            "meaning": "Trình tự thời gian tuần tự",
-            "example": "reading in a temporal sequence"
+            "word": "displacement effect",
+            "meaning": "Hiệu ứng tách rời khỏi bối cảnh gốc",
+            "example": "Viewing altarpieces inside stark galleries creates a displacement effect."
+          },
+          {
+            "word": "prescribed sequence",
+            "meaning": "Trình tự quy định sẵn theo thời gian",
+            "example": "Musical compositions follow a strictly prescribed temporal sequence."
           }
         ]
       },
       {
         "id": "r13_ex3",
         "exampleNum": 3,
-        "title": "Example 3: Beyond the Blue Horizon (Lapita Geography)",
-        "instructions": "Choose the correct letter, A, B, C or D.",
+        "title": "Example 3: Beyond the Blue Horizon (Lapita Seafarers)",
+        "instructions": "Choose the correct letter, A, B, C or D. (Questions 32-35, Pages 82-84)",
         "passage": {
-          "title": "THE GEOGRAPHY OF THE SOUTH PACIFIC",
+          "title": "Beyond the Blue Horizon: The Lapita Voyages",
           "paragraphs": [
             {
               "label": "A",
-              "text": "For returning Lapita explorers, the geographic configuration of their home archipelagoes provided an indispensable safety net. The islands of Vanuatu, for instance, stretch across more than five hundred miles in a continuous northwest-southeast chain, forming a gigantic geographical net across the ocean."
+              "text": "There is one stubborn question for which archaeology has yet to provide any answers: how did the Lapita accomplish the ancient equivalent of a moon landing, many times over? No-one has found one of their canoes or any rigging, which could reveal how the canoes were sailed. Nor do the oral histories and traditions of later Polynesians offer any insights, for they turn into myths long before they reach as far back in time as the Lapita."
             },
             {
               "label": "B",
-              "text": "Even with primitive sails, returning voyagers would almost certainly strike one of the interconnected islands rather than sailing blindly into the boundless expanse of the open Pacific."
+              "text": "‘All we can say for certain is that the Lapita had canoes that were capable of ocean voyages, and they had the ability to sail them,’ says Geoff Irwin, a professor of archaeology at the University of Auckland. Those sailing skills, he says, were developed and passed down over thousands of years by earlier mariners who worked their way through the archipelagoes of the western Pacific, making short crossings to nearby islands. The real adventure didn’t begin, however, until their Lapita descendants sailed out of sight of land, with empty horizons on every side. This must have been as difficult for them as landing on the moon is for us today. Certainly it distinguished them from their ancestors, but what gave them the courage to launch out on such risky voyages?"
+            },
+            {
+              "label": "C",
+              "text": "The Lapita thrust into the Pacific was eastward, against the prevailing trade winds, Irwin notes. Those nagging headwinds, he argues, may have been the key to their success. ‘They could sail out for days into the unknown and assess the area, secure in the knowledge that if they didn’t find anything, they could turn about and catch a swift ride back on the trade winds. This is what would have made the whole thing work.’ Once out there, skilled seafarers would have detected abundant leads to follow to land: seabirds, coconuts and twigs carried out to sea by the tides, and the afternoon pile-up of clouds on the horizon which often indicates an island in the distance."
+            },
+            {
+              "label": "D",
+              "text": "For returning explorers, successful or not, the geography of their own archipelagoes would have provided a safety net. Without this to go by, overshooting their home ports, getting lost and sailing off into eternity would have been all too easy. Vanuatu, for example, stretches more than 500 miles in a northwest-southeast trend, its scores of intervisible islands forming a backstop for mariners riding the trade winds home."
             }
           ]
         },
         "questions": [
           {
-            "id": 36,
-            "num": 36,
-            "type": "multiple-choice",
-            "questionText": "36. According to the passage, the geography of the island archipelago was significant because it",
+            "id": 32,
+            "num": 32,
+            "type": "mcq",
             "options": [
-              {
-                "letter": "A",
-                "desc": "ensured calm sailing waters with minimal tropical storm activity."
-              },
-              {
-                "letter": "B",
-                "desc": "acted as an expansive physical barrier that caught returning voyagers."
-              },
-              {
-                "letter": "C",
-                "desc": "provided fertile volcanic soil suitable for permanent agriculture."
-              },
-              {
-                "letter": "D",
-                "desc": "encouraged rapid inter-island warfare among local tribes."
-              }
+              "A  the canoes that have been discovered offer relatively few clues.",
+              "B  archaeologists have shown limited interest in this area of research.",
+              "C  little information relating to this period can be relied upon for accuracy.",
+              "D  technological advances have altered the way such achievements are viewed."
             ],
+            "questionText": "32. According to the writer, there are difficulties explaining how the Lapita accomplished their journeys because",
             "acceptableAnswers": [
-              "B"
+              "C",
+              "C  little information relating to this period can be relied upon for accuracy."
             ],
-            "explanation": "Đoạn A & B: 'provided an indispensable safety net... forming a gigantic geographical net... returning voyagers would almost certainly strike one of the islands' -> B.",
-            "evidence": "forming a gigantic geographical net across the ocean... safety net"
+            "explanation": "Đoạn A: Không ai tìm thấy chiếc thuyền hay dây buồm nào của người Lapita, và truyền thuyết dân gian sau này đã trở thành huyền thoại hoang đường -> có rất ít thông tin đáng tin cậy về thời kỳ này -> C.",
+            "evidence": "No-one has found one of their canoes or any rigging... Nor do the oral histories and traditions of later Polynesians offer any insights, for they turn into myths"
+          },
+          {
+            "id": 33,
+            "num": 33,
+            "type": "mcq",
+            "options": [
+              "A  They sailed beyond the point where land was visible.",
+              "B  Their cultural heritage discouraged the expression of fear.",
+              "C  They were able to build canoes that withstood ocean voyages.",
+              "D  Their navigational skills were passed on from one generation to the next."
+            ],
+            "questionText": "33. According to the second paragraph, what was extraordinary about the Lapita?",
+            "acceptableAnswers": [
+              "A",
+              "A  They sailed beyond the point where land was visible."
+            ],
+            "explanation": "Đoạn B: Điểm phi thường khiến họ khác biệt với tổ tiên chính là việc dám giương buồm vượt ra khỏi tầm nhìn thấy đất liền ('sailed out of sight of land, with empty horizons on every side') -> A.",
+            "evidence": "The real adventure didn’t begin, however, until their Lapita descendants sailed out of sight of land, with empty horizons on every side."
+          },
+          {
+            "id": 34,
+            "num": 34,
+            "type": "mcq",
+            "options": [
+              "A  the Lapita’s seafaring talent",
+              "B  the Lapita’s ability to detect signs of land",
+              "C  the Lapita’s extensive knowledge of the region",
+              "D  the Lapita’s belief they would be able to return home"
+            ],
+            "questionText": "34. What does ‘This’ refer to in the third paragraph?",
+            "acceptableAnswers": [
+              "D",
+              "D  the Lapita’s belief they would be able to return home"
+            ],
+            "explanation": "Đoạn C: 'secure in the knowledge that if they didn’t find anything, they could turn about and catch a swift ride back on the trade winds. This is what would have made the whole thing work.' -> 'This' quy chiếu về việc họ tin chắc rằng mình luôn có thể xuôi theo gió mậu dịch để trở về an toàn -> D.",
+            "evidence": "secure in the knowledge that if they didn’t find anything, they could turn about and catch a swift ride back on the trade winds. This is what would have made the whole thing work ."
+          },
+          {
+            "id": 35,
+            "num": 35,
+            "type": "mcq",
+            "options": [
+              "A  It played an important role in Lapita culture.",
+              "B  It meant there were relatively few storms at sea.",
+              "C  It provided a navigational aid for the Lapita.",
+              "D  It made a large number of islands habitable."
+            ],
+            "questionText": "35. According to the fourth paragraph, how was the geography of the region significant?",
+            "acceptableAnswers": [
+              "C",
+              "C  It provided a navigational aid for the Lapita."
+            ],
+            "explanation": "Đoạn D: Địa lý các chuỗi đảo trải dài đóng vai trò như 'safety net' (lưới an toàn) và 'backstop' chặn đường về, giúp các thủy thủ định hướng không bị trôi dạt vào cõi vĩnh hằng -> C (navigational aid).",
+            "evidence": "the geography of their own archipelagoes would have provided a safety net . Without this to go by, overshooting their home ports, getting lost... Vanuatu... its scores of intervisible islands forming a backstop"
           }
         ],
         "vocabulary": [
           {
-            "word": "archipelago",
-            "meaning": "Quần đảo",
-            "example": "Pacific island archipelago"
+            "word": "headwinds",
+            "meaning": "Gió ngược chiều thuyền di chuyển",
+            "example": "Sailing against headwinds ensured an easy downwind return trip."
           },
           {
-            "word": "safety net",
-            "meaning": "Lưới an toàn bảo vệ",
-            "example": "provided a geographical safety net"
+            "word": "intervisible",
+            "meaning": "Nhìn thấy nhau được bằng mắt thường giữa các đảo",
+            "example": "A chain of intervisible islands acts as an unsinkable navigational safety net."
+          },
+          {
+            "word": "backstop",
+            "meaning": "Tấm rào chắn bảo vệ, lưới an toàn",
+            "example": "The archipelago formed a broad backstop catching returning voyagers."
           }
         ]
       }
@@ -3527,15 +5348,18 @@ const readingLessons = [
   }
 ];
 
-// Registry map for fast lookup by lesson id
+// Map for O(1) lesson lookup
 const readingLessonsRegistry = {};
-readingLessons.forEach(lesson => {
-  readingLessonsRegistry[lesson.id] = lesson;
+readingLessons.forEach(l => {
+  readingLessonsRegistry[l.id] = l;
 });
 
+// Export to window if in browser environment
+if (typeof window !== 'undefined') {
+  window.readingLessons = readingLessons;
+  window.readingLessonsRegistry = readingLessonsRegistry;
+}
+
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = {
-    readingLessons,
-    readingLessonsRegistry
-  };
+  module.exports = { readingLessons, readingLessonsRegistry };
 }
