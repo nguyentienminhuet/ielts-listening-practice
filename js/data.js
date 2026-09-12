@@ -1444,8 +1444,8 @@ const unit2Data = [
     "id": "track14",
     "trackNum": 14,
     "title": "Track 14: Self-Drive Tours in the USA",
-    "instructions": "Complete the notes below. Write ONE WORD for each answer.",
-    "type": "note",
+    "instructions": "Questions 1-4. Complete the notes below. Write ONE WORD for each answer.",
+    "type": "notes",
     "exerciseTitle": "SELF-DRIVE TOURS IN THE USA",
     "audioSrc": "audio/track14.mp3",
     "audioFallbackSrc": "Audio Listening/Bản sao của Track 14.mp3",
@@ -1455,7 +1455,7 @@ const unit2Data = [
         "label": "Address: 24 [1] ________ Road",
         "acceptableAnswers": [
           "ardleigh",
-          "24 ardleigh"
+          "Ardleigh"
         ]
       },
       {
@@ -1463,16 +1463,21 @@ const unit2Data = [
         "label": "Postcode: [2] ________",
         "acceptableAnswers": [
           "bh5 20p",
-          "bh520p"
+          "bh520p",
+          "BH5 20P",
+          "BH520P",
+          "bh5 2op",
+          "BH5 2OP"
         ]
       },
       {
         "id": 3,
         "label": "Phone: (mobile) [3] ________",
         "acceptableAnswers": [
-          "077 86 643 091",
           "07786643091",
-          "07786 643 091"
+          "07786 643 091",
+          "077 86 643 091",
+          "07786 643091"
         ]
       },
       {
@@ -1484,26 +1489,7 @@ const unit2Data = [
         ]
       }
     ],
-    "layoutHtml": "\n            <div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Self-Drive Tours in the USA</h3>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"p-3 bg-amber-50 border border-amber-200 rounded-lg text-amber-900 text-sm flex items-center justify-between\">\n                        <span class=\"font-semibold\">Example:</span>\n                        <span>Name: <strong class=\"underline\">Andrea Brown</strong></span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[120px]\">Address:</span>\n                        <span>24</span>\n                        {{input_1}}\n                        <span>Road</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[120px]\">Postcode:</span>\n                        {{input_2}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[120px]\">Phone:</span>\n                        <span>(mobile)</span>\n                        {{input_3}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[120px]\">Heard about company from:</span>\n                        {{input_4}}\n                    </div>\n                </div>\n            </div>\n        ",
-    "audioscript": "A. Good morning, World Tours. My name is Jamie. How can I help you?\n\nB. Good morning. I want some information on self-drive tours in the USA. Could you send me a brochure?\n\nA. Of course. Could I have your name please?\n\nB. Andrea Brown.\n\nA. Thank you. And your address?\n\nB. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"1\">[1] 24 Ardleigh Road.</span>\n\nA. Can you spell that?\n\nB. A-R-D-L-E-l-G-H Road.\n\nA. Postcode?\n\nB. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"2\">[2] BH520P</span>\n\nA. Thanks. And can I have your phone number?\n\nB. Is a mobile alright?\n\nA. Fine.\n\nB. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"3\">[3] It's 07786643091.</span>\n\nA. Thank you. And can I ask you where you heard about World Tours? From a friend? Or did you see an advert somewhere?\n\nB. No. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"4\">[4] I read about you in the newspaper.</span>",
-    "translation": "A. Chào buổi sáng, Du lịch thế giới. Tên tôi là Jamie. Tôi có thể giúp gì cho bạn?\n\nB. Chào buổi sáng. Tôi muốn có một số thông tin về chuyến du lịch tự lái xe ở Mỹ. Bạn có thể gửi cho tôi một cuốn tài liệu nhỏ không?\n\nA. Tất nhiên. Tên của bạn là gì?\n\nB. Andrea Brown.\n\nA. Cảm ơn bạn. Địa chỉ của bạn là gì?\n\nB. (1) 24 Đường Ardleigh.\n\nA. Bạn có thể đánh vần nó được không?\n\nB. Đường A-R-D-L-E-L-G-H.\n\nA. Mã bưu điện?\n\nB. (2) BH520P\n\nA. Cảm ơn. Tôi có thể có số điện thoại của bạn không?\n\nB. Điện thoại di động được chứ?\n\nA. OK.\n\nB. (3) Đó là 07786643091.\n\nA. Cảm ơn. Không biết bạn đã nghe về Du lịch Thế giới từ đâu? Từ một người bạn? Hoặc bạn đã thấy một quảng cáo ở đâu đó chăng?\n\nB. Không. (4) Tôi đã đọc về công ty bạn trên báo.",
-    "vocabulary": [
-      {
-        "word": "self-drive tours",
-        "type": "n",
-        "meaning": "chuyến đi tự thuê xe và tự lái xe đi du lịch."
-      },
-      {
-        "word": "brochure",
-        "type": "n",
-        "meaning": "một dạng ấn phẩm quảng cáo"
-      },
-      {
-        "word": "advert",
-        "type": "n",
-        "meaning": "mẩu quảng cáo."
-      }
-    ]
+    "layoutHtml": "<div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Self-Drive Tours in the USA</h3>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"p-3 bg-amber-50 border border-amber-200 rounded-lg text-amber-900 text-sm flex items-center justify-between\">\n                        <span class=\"font-semibold\">Example:</span>\n                        <span>Name: <strong class=\"underline\">Andrea Brown</strong></span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[130px]\">Address:</span>\n                        <span>24</span>\n                        {{input_1}}\n                        <span>Road</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[130px]\">Postcode:</span>\n                        {{input_2}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[130px]\">Phone:</span>\n                        <span>(mobile)</span>\n                        {{input_3}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[130px]\">Heard about company from:</span>\n                        {{input_4}}\n                    </div>\n                </div>\n            </div>"
   },
   {
     "id": "track15",
@@ -1511,7 +1497,7 @@ const unit2Data = [
     "title": "Track 15: Taxi for You",
     "instructions": "Write NO MORE THAN ONE WORD AND/OR A NUMBER for each answer.",
     "type": "form",
-    "exerciseTitle": "TAXI FOR YOU - BOOKING FORM",
+    "exerciseTitle": "TAXI FOR YOU",
     "audioSrc": "audio/track15.mp3",
     "audioFallbackSrc": "Audio Listening/Bản sao của Track 15.mp3",
     "questions": [
@@ -1529,7 +1515,7 @@ const unit2Data = [
       },
       {
         "id": 2,
-        "label": "Pick-up point: No.&street: [2] ________ Willowside bank",
+        "label": "No.&street: [2] ________ Willowside bank",
         "acceptableAnswers": [
           "60",
           "sixty"
@@ -1539,7 +1525,8 @@ const unit2Data = [
         "id": 3,
         "label": "Town: [3] ________",
         "acceptableAnswers": [
-          "abingdon"
+          "abingdon",
+          "Abingdon"
         ]
       },
       {
@@ -1547,7 +1534,9 @@ const unit2Data = [
         "label": "Postcode: [4] ________",
         "acceptableAnswers": [
           "ox14 3hb",
-          "ox143hb"
+          "ox143hb",
+          "OX14 3HB",
+          "OX143HB"
         ]
       },
       {
@@ -1560,41 +1549,7 @@ const unit2Data = [
         ]
       }
     ],
-    "layoutHtml": "\n            <div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Taxi For You</h3>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 bg-white p-4 rounded-lg border border-slate-200\">\n                        <div><span class=\"text-xs font-semibold text-slate-500 uppercase tracking-wider block\">Pick-up Date</span> <span class=\"font-medium\">Wed 6th July</span></div>\n                        <div><span class=\"text-xs font-semibold text-slate-500 uppercase tracking-wider block\">Passenger Name</span> <span class=\"font-medium\">Sam Williams</span></div>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[130px]\">Date and time:</span>\n                        {{input_1}}\n                    </div>\n                    <div class=\"font-semibold text-slate-900 pt-2 border-t border-slate-200\">Pick-up point:</div>\n                    <div class=\"pl-4 space-y-3\">\n                        <div class=\"flex flex-wrap items-center gap-2\">\n                            <span class=\"font-medium min-w-[130px]\">No.&street:</span>\n                            {{input_2}}\n                            <span>Willowside bank</span>\n                        </div>\n                        <div class=\"flex flex-wrap items-center gap-2\">\n                            <span class=\"font-medium min-w-[130px]\">Town:</span>\n                            {{input_3}}\n                        </div>\n                        <div class=\"flex flex-wrap items-center gap-2\">\n                            <span class=\"font-medium min-w-[130px]\">Postcode:</span>\n                            {{input_4}}\n                        </div>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1 pt-2 border-t border-slate-200\">\n                        <span class=\"font-medium min-w-[130px]\">Mobile contact:</span>\n                        {{input_5}}\n                    </div>\n                    <div class=\"flex items-center gap-2 text-slate-600 text-sm bg-slate-100 p-3 rounded-lg\">\n                        <span class=\"font-medium\">Destination:</span> Heathrow – terminal 5\n                    </div>\n                </div>\n            </div>\n        ",
-    "audioscript": "Receptionist: Good morning. Taxi 4U. How can I help you?\n\nSam: Oh, good morning. I’d like to book a taxi to the airport, please.\n\nReceptionist: Right…and which airport is that?\n\nSam: London Heathrow.\n\nReceptionist: That’s fine. And when do you need the taxi for?\n\nSam: My flight leaves from terminal 5 at 7.20 on Wednesday the 6th of July, next week.\n\nReceptionist: Wednesday the 6th at 7.20 a.m. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"1\">[1] So you’ll need the taxi at 3.30.</span> OK. Can I have your name please?\n\nSam: Sam Williams.\n\nReceptionist: And your address?\n\nSam: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"2\">[2] 60, Willowside Bank, Abingdon.</span> <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"3\">[3] That’s A-B- I-N-G-D-O-N.</span>\n\nReceptionist: Thank you. And the postcode is?\n\nSam: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"4\">[4] OX14 3HB</span>\n\nReceptionist: OX14 3HB. And can I have a contact number for you?\n\nSam: Yes, of course. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"5\">[5] My mobile is 07789 612 744</span>\n\nReceptionist: Thank you. 07789 612 744. Now we’ll be picking you up at 3.30. Is that OK?\n\nSam: Yes, that’s fine.",
-    "translation": "Nhân viên lễ tân: Chào buổi sáng. Taxi 4U. Tôi có thể giúp gì cho bạn?\n\nSam: Oh, chào buổi sáng. Tôi muốn đặt một chiếc taxi đến sân bay.\n\nNhân viên lễ tân: Được ... Đó là sân bay nào ạ?\n\nSam: London Heathrow.\n\nNhân viên lễ tân: Được rồi. Khi nào bạn cần xe taxi ạ?\n\nSam: Chuyến bay của tôi rời khỏi ga số 5 vào lúc 7h20 vào thứ Tư ngày 6 tháng 7, tuần tới.\n\nNhân viên lễ tân: Thứ Tư ngày 6 lúc 7 giờ 20 phút. (1) Vì vậy, bạn sẽ cần taxi vào lúc 3.30 OK. Có thể cho tôi biết tên bạn không?\n\nSam: Sam Williams.\n\nNhân viên lễ tân: Địa chỉ của bạn là gì?\n\nSam: (2) 60, Ngân hàng Willowside, Abingdon. (3) A-B- I-N-G-D-O-N.\n\nNhân viên lễ tân: Cảm ơn bạn. Mã bưu chính là gì?\n\nSam: (4) OX14 3HB\n\nNgười viên lễ tân: OX14 3HB. Vui lòng cho tôi số điện thoại của bạn?\n\nSam: Vâng, dĩ nhiên. (5) Điện thoại di động của tôi là 07789 612 744\n\nNhân viên lễ tân: Cảm ơn bạn. 07789 612 744. Chúng tôi sẽ đón bạn lúc 3.30. Được chứ?\n\nSam: Vâng, được ạ.",
-    "vocabulary": [
-      {
-        "word": "book a taxi",
-        "type": "",
-        "meaning": "đặt trước xe taxi"
-      },
-      {
-        "word": "flight",
-        "type": "n",
-        "meaning": "chuyến bay"
-      },
-      {
-        "word": "leave",
-        "type": "v",
-        "meaning": "rời đi"
-      },
-      {
-        "word": "terminal",
-        "type": "n",
-        "meaning": "Một tòa nhà ở sân bay nơi hành khách được tập trung lại để chuyển lên hoặc xuống máy bay."
-      },
-      {
-        "word": "postcode",
-        "type": "n",
-        "meaning": "mã bưu chính"
-      },
-      {
-        "word": "pick somebody up",
-        "type": "",
-        "meaning": "đón ai đó"
-      }
-    ]
+    "layoutHtml": "<div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Taxi For You</h3>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"flex items-center gap-2 text-slate-600\">\n                        <span class=\"font-medium min-w-[150px]\">Pick-up:</span>\n                        <span>Wed 6th July</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[150px]\">Date and time:</span>\n                        {{input_1}}\n                    </div>\n                    <div class=\"flex items-center gap-2 text-slate-600\">\n                        <span class=\"font-medium min-w-[150px]\">Name of passenger:</span>\n                        <span>Sam William</span>\n                    </div>\n                    <div class=\"font-semibold text-slate-900 pt-2 border-t border-slate-200\">Pick-up point</div>\n                    <div class=\"pl-4 space-y-3\">\n                        <div class=\"flex flex-wrap items-center gap-2\">\n                            <span class=\"font-medium min-w-[130px]\">No.&street:</span>\n                            {{input_2}}\n                            <span>Willowside bank</span>\n                        </div>\n                        <div class=\"flex flex-wrap items-center gap-2\">\n                            <span class=\"font-medium min-w-[130px]\">Town:</span>\n                            {{input_3}}\n                        </div>\n                        <div class=\"flex flex-wrap items-center gap-2\">\n                            <span class=\"font-medium min-w-[130px]\">Postcode:</span>\n                            {{input_4}}\n                        </div>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1 pt-2 border-t border-slate-200\">\n                        <span class=\"font-medium min-w-[150px]\">Mobile contact:</span>\n                        {{input_5}}\n                    </div>\n                    <div class=\"flex items-center gap-2 text-slate-600\">\n                        <span class=\"font-medium min-w-[150px]\">Destination:</span>\n                        <span>Heathrow – terminal 5</span>\n                    </div>\n                </div>\n            </div>"
   },
   {
     "id": "track16",
@@ -1602,7 +1557,7 @@ const unit2Data = [
     "title": "Track 16: Silver Tulip Hotel",
     "instructions": "Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
     "type": "form",
-    "exerciseTitle": "SILVER TULIP HOTEL RESERVATION",
+    "exerciseTitle": "SILVER TULIP HOTEL",
     "audioSrc": "audio/track16.mp3",
     "audioFallbackSrc": "Audio Listening/Bản sao của Track 16.mp3",
     "questions": [
@@ -1611,14 +1566,17 @@ const unit2Data = [
         "label": "Number of nights: [1] ________",
         "acceptableAnswers": [
           "1",
-          "one"
+          "one",
+          "1 night",
+          "one night"
         ]
       },
       {
         "id": 2,
         "label": "Name: Edward [2] ________",
         "acceptableAnswers": [
-          "francis"
+          "francis",
+          "Francis"
         ]
       },
       {
@@ -1626,7 +1584,9 @@ const unit2Data = [
         "label": "Home address: [3] ________ Avenue, Cambridge",
         "acceptableAnswers": [
           "23 cypress",
-          "23 cypress avenue"
+          "23 Cypress",
+          "23 cypress avenue",
+          "23 Cypress Avenue"
         ]
       },
       {
@@ -1634,7 +1594,9 @@ const unit2Data = [
         "label": "Postcode: [4] ________",
         "acceptableAnswers": [
           "cb3 9nf",
-          "cb39nf"
+          "cb39nf",
+          "CB3 9NF",
+          "CB39NF"
         ]
       },
       {
@@ -1661,64 +1623,28 @@ const unit2Data = [
           "16 april",
           "april 16th",
           "friday april 16th",
-          "friday 16 april"
+          "friday 16 april",
+          "16th April",
+          "16 April",
+          "Friday 16th April"
         ]
       }
     ],
-    "layoutHtml": "\n            <div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Silver Tulip Hotel</h3>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Number of nights:</span>\n                        {{input_1}}\n                    </div>\n                    <div class=\"text-sm text-slate-600 bg-slate-100 p-2.5 rounded-lg\">\n                        <span class=\"font-semibold\">Type of room:</span> double – king-sized bed\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Name:</span>\n                        <span>Edward</span>\n                        {{input_2}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Home address:</span>\n                        {{input_3}}\n                        <span>Avenue, Cambridge</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Postcode:</span>\n                        {{input_4}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Transport:</span>\n                        {{input_5}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Meals:</span>\n                        {{input_6}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Date of arrival:</span>\n                        {{input_7}}\n                    </div>\n                </div>\n            </div>\n        ",
-    "audioscript": "Receptionist: Silver Tulip Hotel. Good afternoon. How can I help you?\n\nEdward: Ah, yes. Good afternoon. I’d like to book a room for next Friday.\n\nReceptionist: Certainly, sir. How many nights will you be staying?\n\nEdward: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"1\">[1] Just one, please.</span>\n\nReceptionist: And would you like a single or double room?\n\nEdward: A double room, please.\n\nReceptionist: A double room. And would you like twin beds or a king-sized bed?\n\nEdward: A king-sized bed, please.\n\nReceptionist: Let me see. Yes, we do have a double room available for next Friday. Would you like me to book it for you?\n\nEdward: Yes, please.\n\nReceptionist: Could I have your name, please?\n\nEdward: Yes, it’s Edward Francis.\n\nReceptionist: Is that F-R-A-N-C-E-S?\n\nEdward: No. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"2\">[2] It’s F-R-A-N-C-I-S.</span>\n\nReceptionist: F-R-A-N-C-I-S?\n\nEdward: Yes, that’s right.\n\nReceptionist: And your home address please, sir.\n\nEdward: Yes, it’s 23 Cypress Avenue, Cambridge.\n\nReceptionist: Is that C-Y-P-R-U-S?\n\nEdward: No. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"3\">[3] C-Y-P-R-E-S-S.</span> Like the tree.\n\nReceptionist: Oh, I see. And your postcode is?\n\nEdward: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"4\">[4] CB3 9NF</span>\n\nReceptionist: And it’s for just one night?\n\nEdward: Yes, that’s right.\n\nReceptionist: We can reserve a parking space for you. Are you coming by car?\n\nEdward: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"5\">[5] Actually, I’ll be taking a taxi from the station.</span>\n\nReceptionist: That’s fine. And one last question: would you like dinner and breakfast?\n\nEdward: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"6\">[6] No dinner, thank you.</span> But I’d like breakfast.\n\nReceptionist: Just breakfast. So, to confirm, <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"7\">[7] you’re arriving on Friday the 16th of April and leaving on Saturday the 17th.</span> That’s one night in a double room with a king-sized bed with breakfast.\n\nEdward: That’s right. Thank you very much.",
-    "translation": "Nhân viên lễ tân: Khách sạn Silver Tulip. Chào buổi chiều. Tôi có thể giúp gì cho bạn?\n\nEdward: Ah, vâng. Chào buổi chiều. Tôi muốn đặt phòng cho thứ sáu tới.\n\nNhân viên lễ tân: Chắc chắn, thưa bạn. Bạn sẽ ở lại bao nhiêu đêm?\n\nEdward: (1) Chỉ một đêm.\n\nNhân viên lễ tân: Bạn muốn đặt phòng đơn hay đôi?\n\nEdward: Một phòng đôi.\n\nNhân viên lễ tân: Một phòng đôi. Bạn muốn giường đôi hay giường cỡ King ạ?\n\nEdward: Một giường cỡ king.\n\nReceptionist: Để tôi xem. Vâng, chúng tôi có sẵn một phòng đôi cho thứ sáu tới. Bạn có muốn tôi đặt nó cho bạn?\n\nEdward: Vâng, làm ơn.\n\nNhân viên lễ tân: Tên bạn là gì ạ?\n\nEdward: Vâng, Edward Francis.\n\nNhân viên lễ tân: Có phải đó là F-R-A-N-C-E-S?\n\nEdward: Không. (2) Đó là F-R-A-N-C-I-S.\n\nNhân viên tiếp tân: F-R-A-N-C-I-S?\n\nEdward: Vâng, đúng rồi.\n\nNhân viên lễ tân: Vui lòng cho tôi địa chỉ nhà của bạn.\n\nEdward: Vâng, 23 đại lộ Cypress, Cambridge.\n\nNhân viên lễ tân: Có phải là C-Y-P-R-U-S?\n\nEdward: Không (3) C-Y-P-R-E-S-S. Giống cái cây.\n\nNhân viên lễ tân: Ồ, tôi hiểu. Và mã bưu chính của bạn là?\n\nEdward: (4) CB3 9NF\n\nNhân viên lễ tân: Bạn chỉ ở một đêm?\n\nEdward: Vâng, đúng rồi.\n\nNhân viên lễ tân: Chúng tôi có thể đặt chỗ đậu xe cho bạn. Bạn đi bằng xe hơi phải không?\n\nEdward: (5) Thực ra, tôi sẽ đi taxi từ trạm.\n\nNhân viên lễ tân: Vâng. Và một câu hỏi cuối cùng: bạn có muốn ăn tối và ăn sáng không?\n\nEdward: (6) Không ăn tối, cảm ơn. Nhưng tôi muốn ăn sáng.\n\nNhân viên lễ tân: chỉ cần bữa sáng. Vì vậy, để xác nhận. (7) Bạn sẽ đến vào thứ sáu ngày 16 tháng 4 và rời khỏi vào thứ bảy ngày 17. Bạn ở một đêm trong một phòng đôi với một giường cỡ king với bữa sáng.\n\nEdward: Đúng rồi. Cảm ơn nhiều.",
-    "vocabulary": [
-      {
-        "word": "Single room",
-        "type": "",
-        "meaning": "phòng đơn"
-      },
-      {
-        "word": "double room",
-        "type": "",
-        "meaning": "phòng đôi"
-      },
-      {
-        "word": "twin beds",
-        "type": "",
-        "meaning": "2 giường đơn cho 2 người"
-      },
-      {
-        "word": "king-sized bed",
-        "type": "",
-        "meaning": "1 giường cỡ lớn"
-      },
-      {
-        "word": "available",
-        "type": "adj",
-        "meaning": "có sẵn, còn trống"
-      },
-      {
-        "word": "parking space",
-        "type": "",
-        "meaning": "chỗ đậu xe"
-      },
-      {
-        "word": "confirm",
-        "type": "v",
-        "meaning": "xác nhận"
-      }
-    ]
+    "layoutHtml": "<div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Silver Tulip Hotel</h3>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[150px]\">Number of nights:</span>\n                        {{input_1}}\n                    </div>\n                    <div class=\"flex items-center gap-2 text-slate-600\">\n                        <span class=\"font-medium min-w-[150px]\">Type of nights:</span>\n                        <span>double – king-sized bed</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[150px]\">Name:</span>\n                        <span>Edward</span>\n                        {{input_2}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[150px]\">Home address:</span>\n                        {{input_3}}\n                        <span>Avenue, Cambridge</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[150px]\">Postcode:</span>\n                        {{input_4}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[150px]\">Transport:</span>\n                        {{input_5}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[150px]\">Meals:</span>\n                        {{input_6}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[150px]\">Date of arrival:</span>\n                        {{input_7}}\n                    </div>\n                </div>\n            </div>"
   },
   {
     "id": "track17",
     "trackNum": 17,
     "title": "Track 17: Working on a Farm",
     "instructions": "Complete the notes. Write NO MORE THAN TWO WORDS for each answer.",
-    "type": "note",
-    "exerciseTitle": "FARM WORK NOTES",
+    "type": "notes",
+    "exerciseTitle": "WORKING ON A FARM",
     "audioSrc": "audio/track17.mp3",
     "audioFallbackSrc": "Audio Listening/Bản sao của Track 17.mp3",
     "questions": [
       {
         "id": 1,
-        "label": "Alice works on: [1] ________",
+        "label": "Alice works on [1] ________",
         "acceptableAnswers": [
           "a farm",
           "farm"
@@ -1726,14 +1652,14 @@ const unit2Data = [
       },
       {
         "id": 2,
-        "label": "- grows: [2] ________",
+        "label": "- grows [2] ________",
         "acceptableAnswers": [
           "fruit"
         ]
       },
       {
         "id": 3,
-        "label": "- keeps: [3] ________, ducks and cows",
+        "label": "- keeps [3] ________, ducks and cows",
         "acceptableAnswers": [
           "chickens",
           "chicken"
@@ -1772,85 +1698,21 @@ const unit2Data = [
       },
       {
         "id": 8,
-        "label": "- sells directly to [8] ________ in farm shop",
+        "label": "- sells directly to [8] ________ in farm shop.",
         "acceptableAnswers": [
           "the public",
           "public"
         ]
       }
     ],
-    "layoutHtml": "\n            <div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Working on a Farm</h3>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"flex flex-wrap items-center gap-2 py-1 font-semibold text-slate-800\">\n                        <span>Alice works on</span>\n                        {{input_1}}\n                    </div>\n                    <ul class=\"space-y-3 pl-2\">\n                        <li class=\"flex flex-wrap items-center gap-2\">\n                            <span>• grows</span>\n                            {{input_2}}\n                        </li>\n                        <li class=\"flex flex-wrap items-center gap-2\">\n                            <span>• keeps</span>\n                            {{input_3}}\n                            <span>, ducks and cows</span>\n                        </li>\n                        <li class=\"flex flex-wrap items-center gap-2\">\n                            <span>• worst part of job: going out in winter to feed</span>\n                            {{input_4}}\n                        </li>\n                        <li class=\"flex flex-wrap items-center gap-2\">\n                            <span>• likes working outdoors in the</span>\n                            {{input_5}}\n                        </li>\n                        <li class=\"flex flex-wrap items-center gap-2\">\n                            <span>• trucks deliver to</span>\n                            {{input_6}}\n                        </li>\n                        <li class=\"flex flex-wrap items-center gap-2\">\n                            <span>• supplies</span>\n                            {{input_7}}\n                            <span>with milk, eggs, cheese</span>\n                        </li>\n                        <li class=\"flex flex-wrap items-center gap-2\">\n                            <span>• sells directly to</span>\n                            {{input_8}}\n                            <span>in farm shop</span>\n                        </li>\n                    </ul>\n                </div>\n            </div>\n        ",
-    "audioscript": "My name’s Alice and <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"1\">[1] I work on a farm in the south east of England.</span> <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"2\">[2] Mostly, we grow fruit,</span> <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"3\">[3] but we also keep chickens, ducks and dairy cows.</span> So, we have to work outside quite a lot, even in the winter, when it’s cold and dark. That’s the worst part of the job, really. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"4\">[4] You know, having to go out in the rain and snow to feed the animals.</span> <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"5\">[5] But the summer’s totally different.</span> I really enjoy being outdoors, helping the fruit pickers and loading the trucks. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"6\">[6] We deliver most of our fruit to supermarkets.</span> <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"7\">[7] But we also supply local shops with our milk, eggs and cheese.</span> In fact, we produce so much cheese and fruit that <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"8\">[8] we even sell them directly to the public in our farm shop.</span>",
-    "translation": "Tên tôi là Alice và (1) tôi làm việc ở một nông trại ở phía đông nam nước Anh. (2) Chúng tôi trồng phần lớn là trái cây, (3) nhưng chúng tôi cũng nuôi gà, vịt và bò sữa. Vì vậy, chúng tôi phải làm việc bên ngoài khá nhiều, ngay cả trong mùa đông, khi trời lạnh và tối. Đó là phần tồi tệ nhất của công việc, thực sự là vậy. (4) Bạn biết đấy, phải đi ra ngoài trong mưa và tuyết để cho động động vật ăn. (5) Nhưng mùa hè thì hoàn toàn khác. Tôi thực sự thích ở ngoài trời, giúp đỡ những người hái trái cây và bốc hàng lên xe tải. (6) Chúng tôi cung cấp hầu hết trái cây cho siêu thị. (7) Chúng tôi cũng cung cấp cho các cửa hàng địa phương sữa, trứng và pho mát. Thực tế thì chúng tôi sản xuất nhiều phô mai và trái cây đến nỗi (8) chúng tôi thậm chí bán trực tiếp cho người dân trong cửa hàng nông trại của chúng tôi.",
-    "vocabulary": [
-      {
-        "word": "farm",
-        "type": "n",
-        "meaning": "nông trại"
-      },
-      {
-        "word": "grow fruit",
-        "type": "",
-        "meaning": "trồng trái cây"
-      },
-      {
-        "word": "keep + con vật",
-        "type": "",
-        "meaning": "nuôi con gì"
-      },
-      {
-        "word": "dark",
-        "type": "adj",
-        "meaning": "tối"
-      },
-      {
-        "word": "the worst part of",
-        "type": "",
-        "meaning": "phần tệ nhất của …"
-      },
-      {
-        "word": "feed",
-        "type": "v",
-        "meaning": "cho ăn"
-      },
-      {
-        "word": "fruit pickers",
-        "type": "",
-        "meaning": "những người hái trái cây"
-      },
-      {
-        "word": "loading the trucks",
-        "type": "",
-        "meaning": "bốc hàng lên xe tải"
-      },
-      {
-        "word": "supply somebody with something",
-        "type": "",
-        "meaning": "cung cấp cho ai đó cái gì"
-      },
-      {
-        "word": "cheese",
-        "type": "n",
-        "meaning": "phô mai"
-      },
-      {
-        "word": "directly",
-        "type": "adj",
-        "meaning": "một cách trực tiếp"
-      },
-      {
-        "word": "the public",
-        "type": "n",
-        "meaning": "cộng đồng"
-      }
-    ]
+    "layoutHtml": "<div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Working on a Farm</h3>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"flex flex-wrap items-center gap-2 py-1 font-semibold text-slate-800\">\n                        <span>Alice works on</span>\n                        {{input_1}}\n                    </div>\n                    <ul class=\"space-y-3 pl-2\">\n                        <li class=\"flex flex-wrap items-center gap-2\">\n                            <span>• grows</span>\n                            {{input_2}}\n                        </li>\n                        <li class=\"flex flex-wrap items-center gap-2\">\n                            <span>• keeps</span>\n                            {{input_3}}\n                            <span>, ducks and cows</span>\n                        </li>\n                        <li class=\"flex flex-wrap items-center gap-2\">\n                            <span>• worst part of job: going out in winter to feed</span>\n                            {{input_4}}\n                        </li>\n                        <li class=\"flex flex-wrap items-center gap-2\">\n                            <span>• likes working outdoors in the</span>\n                            {{input_5}}\n                        </li>\n                        <li class=\"flex flex-wrap items-center gap-2\">\n                            <span>• trucks deliver to</span>\n                            {{input_6}}\n                        </li>\n                        <li class=\"flex flex-wrap items-center gap-2\">\n                            <span>• supplies</span>\n                            {{input_7}}\n                            <span>with milk, eggs, cheese</span>\n                        </li>\n                        <li class=\"flex flex-wrap items-center gap-2\">\n                            <span>• sells directly to</span>\n                            {{input_8}}\n                            <span>in farm shop.</span>\n                        </li>\n                    </ul>\n                </div>\n            </div>"
   },
   {
     "id": "track18",
     "trackNum": 18,
     "title": "Track 18: Thorndyke’s Builders",
     "instructions": "Questions 1-5. Complete the notes below. Write ONE WORD ONLY for each answer.",
-    "type": "note",
+    "type": "notes",
     "exerciseTitle": "THORNDYKE’S BUILDERS",
     "audioSrc": "audio/track18.mp3",
     "audioFallbackSrc": "Audio Listening/Bản sao của Track 18.mp3",
@@ -1859,21 +1721,24 @@ const unit2Data = [
         "id": 1,
         "label": "Name: Edith [1] ________",
         "acceptableAnswers": [
-          "pargetter"
+          "pargetter",
+          "Pargetter"
         ]
       },
       {
         "id": 2,
         "label": "Address: Flat 4, [2] ________ Park Flats",
         "acceptableAnswers": [
-          "east"
+          "east",
+          "East"
         ]
       },
       {
         "id": 3,
         "label": "(Behind the [3] ________)",
         "acceptableAnswers": [
-          "library"
+          "library",
+          "the library"
         ]
       },
       {
@@ -1893,91 +1758,7 @@ const unit2Data = [
         ]
       }
     ],
-    "layoutHtml": "\n            <div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Thorndyke’s Builders</h3>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"p-3 bg-amber-50 border border-amber-200 rounded-lg text-amber-900 text-sm\">\n                        <span class=\"font-semibold\">Example:</span> Customer heard about Thorndyke’s from a <strong class=\"underline\">friend</strong>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Name:</span>\n                        <span>Edith</span>\n                        {{input_1}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Address:</span>\n                        <span>Flat 4,</span>\n                        {{input_2}}\n                        <span>Park Flats</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 pl-4 text-slate-600\">\n                        <span>(Behind the</span>\n                        {{input_3}}\n                        <span>)</span>\n                    </div>\n                    <div class=\"flex items-center gap-2 py-1 text-slate-600\">\n                        <span class=\"font-medium min-w-[140px]\">Phone number:</span>\n                        <span>875934</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Best time to contact:</span>\n                        <span>during the</span>\n                        {{input_4}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Where to park:</span>\n                        <span>opposite entrance next to the</span>\n                        {{input_5}}\n                    </div>\n                </div>\n            </div>\n        ",
-    "audioscript": "A. Thorndyke’s.\n\nB. Good morning. Is that Mr Thorndyke?\n\nA. Speaking. How can I help?\n\nB. I’ve got quite a few things which need painting and fixing in the flat and I wonder whether you'd be able to do the work.\n\nA. I’m sure I’d be able to help but let me take down a few details.\n\nB. Yes, of course.\n\nA. Well, firstly, how did you hear about us?\n\nB. It was my friend May Hampton ... you did some excellent work for her a couple of years ago. Do you remember?\n\nA. Oh, yes, that was in West Park Flats, lovely lady.\n\nB. Yes, she is.\n\nA. And what’s your name, please?\n\nB. It's Edith Pargetter.\n\nA. Edith ... can you spell your surname, please?\n\nB. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"1\">[1] It's P-A-R-G-E-double T-E-R.</span>\n\nA. Double T, right. And do you live in West Park Flats as well?\n\nB. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"2\">[2] No, actually it’s East Park, Flat 4.</span>\n\nA. Oh, right, that’s over the road, I seem to remember - quite difficult to get to.\n\nB. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"3\">[3] Yes, it’s at the back of the library.</span>\n\nA. Right, I know. And what’s your phone number?\n\nB. 875934 but I’m out a great deal in the afternoons and evenings.\n\nA. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"4\">[4] So would the best time to ring you be in the morning?</span>\n\nB. Yes.\n\nA. Fine. I've made a note of that. Can I just ask, I'll be in a van and I know parking’s rather difficult round your flats. Where would you recommend?\n\nB. Well, <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"5\">[5] I always tell people in larger vehicles to park by the postbox on the other side of the road from the entrance.</span>",
-    "translation": "A. Thorndyke's.\n\nB. Chào buổi sáng. Có phải ông Thorndyke không ạ?\n\nA. Đúng vậy. Tôi có thể giúp gì cho bạn?\n\nB. Tôi có khá nhiều thứ cần sơn và sửa chữa trong căn hộ và tôi tự hỏi liệu ông có thể làm công việc đó không.\n\nA. Tôi chắc rằng tôi có thể giúp đỡ nhưng để tôi ghi chú xuống 1 vài thông tin.\n\nB. Vâng.\n\nA. Được rồi, trước tiên, bạn đã nghe về chúng tôi như thế nào?\n\nB. Đó là bạn của tôi May Hampton ... ông đã làm một số công việc tuyệt vời cho cô ấy một vài năm trước đây. Ông có nhớ không?\n\nA. Ồ, vâng, đó là ở ở West Park Flats, cô gái đáng yêu.\n\nB. Vâng, cô ấy đấy.\n\nA. Tên của bạn là gì nhỉ?\n\nB. Edith Pargetter.\n\nA. Edith ... bạn có thể đánh vần họ của bạn không?\n\nB. (1) P-A-R-G-E-2 âm T-E-R.\n\nA. Double T, phải. Và bạn sống ở West Park Flats phải không?\n\nB. (2) Không, thực ra đó là East Park, Flat 4.\n\nA. Ồ, phải, bên kia đường, tôi có vẻ nhớ ra - khá khó khăn để tới đó.\n\nB. (3) Vâng, nó ở phía sau lưng của thư viện.\n\nA. Phải, tôi biết. Số điện thoại của bạn là gì?\n\nB. 875934 nhưng tôi ra ngoài rất nhiều vào buổi trưa và buổi tối.\n\nA. (4) Vậy thời điểm tốt nhất để gọi cho bạn là vào buổi sáng?\n\nB. Vâng.\n\nA. Tốt. Tôi đã ghi chú điều đó. Tôi có thể hỏi, tôi sẽ đi tới bằng một chiếc xe tải và tôi biết việc đậu xe khá khó khăn quanh căn hộ của bạn. Bạn có thể giới thiệu ở đâu để đậu xe không?\n\nB. Vâng, (5) tôi luôn nói với mọi người trong những chiếc xe lớn nên đậu xe ở cạnh hộp thư, phía bên kia đường từ lối vào.",
-    "vocabulary": [
-      {
-        "word": "quite a few",
-        "type": "",
-        "meaning": "khá nhiều"
-      },
-      {
-        "word": "painting",
-        "type": "",
-        "meaning": "sơn"
-      },
-      {
-        "word": "fixing",
-        "type": "",
-        "meaning": "sửa"
-      },
-      {
-        "word": "take down a few details",
-        "type": "",
-        "meaning": "ghi chú xuống 1 vài thông tin"
-      },
-      {
-        "word": "over the road",
-        "type": "",
-        "meaning": "bên kia đường"
-      },
-      {
-        "word": "at the back of",
-        "type": "",
-        "meaning": "behind: phía sau"
-      },
-      {
-        "word": "a great deal",
-        "type": "",
-        "meaning": "a lot: nhiều"
-      },
-      {
-        "word": "ring somebody",
-        "type": "",
-        "meaning": "gọi điện cho ai đó"
-      },
-      {
-        "word": "make a note of…",
-        "type": "",
-        "meaning": "ghi chú điều gì đó"
-      },
-      {
-        "word": "van",
-        "type": "n",
-        "meaning": "xe (kích cỡ trung bình)"
-      },
-      {
-        "word": "parking",
-        "type": "n",
-        "meaning": "việc đậu xe"
-      },
-      {
-        "word": "recommend",
-        "type": "v",
-        "meaning": "giới thiệu"
-      },
-      {
-        "word": "vehicle",
-        "type": "n",
-        "meaning": "xe cộ"
-      },
-      {
-        "word": "postbox",
-        "type": "n",
-        "meaning": "hộp thư"
-      },
-      {
-        "word": "on the other side of the road",
-        "type": "",
-        "meaning": "phía bên kia đường"
-      },
-      {
-        "word": "entrance",
-        "type": "n",
-        "meaning": "lối vào"
-      }
-    ]
+    "layoutHtml": "<div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Thorndyke’s Builders</h3>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"p-3 bg-amber-50 border border-amber-200 rounded-lg text-amber-900 text-sm\">\n                        <span class=\"font-semibold\">Example:</span> Customer heard about Thorndyke’s from a <strong class=\"underline\">friend</strong>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Name:</span>\n                        <span>Edith</span>\n                        {{input_1}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Address:</span>\n                        <span>Flat 4,</span>\n                        {{input_2}}\n                        <span>Park Flats</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 pl-4 text-slate-600\">\n                        <span>(Behind the</span>\n                        {{input_3}}\n                        <span>)</span>\n                    </div>\n                    <div class=\"flex items-center gap-2 py-1 text-slate-600\">\n                        <span class=\"font-medium min-w-[140px]\">Phone number:</span>\n                        <span>875934</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Best time to contact customer:</span>\n                        <span>during the</span>\n                        {{input_4}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Where to park:</span>\n                        <span>opposite entrance next to the</span>\n                        {{input_5}}\n                    </div>\n                </div>\n            </div>"
   },
   {
     "id": "track19",
@@ -1985,7 +1766,7 @@ const unit2Data = [
     "title": "Track 19: Early Learning Childcare Centre",
     "instructions": "Questions 1-4. Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
     "type": "form",
-    "exerciseTitle": "EARLY LEARNING CHILDCARE CENTRE ENROLMENT FORM",
+    "exerciseTitle": "Early Learning Childcare Centre Enrolment Form",
     "audioSrc": "audio/track19.mp3",
     "audioFallbackSrc": "Audio Listening/Bản sao của Track 19.mp3",
     "questions": [
@@ -1994,78 +1775,39 @@ const unit2Data = [
         "label": "Age: [1] ________",
         "acceptableAnswers": [
           "4",
-          "four"
+          "four",
+          "4 years",
+          "four years",
+          "4 years old"
         ]
       },
       {
         "id": 2,
         "label": "Address: [2] ________ Road, Woodside, 4032",
         "acceptableAnswers": [
-          "46 wombat",
-          "46 wombat road"
+          "hayes",
+          "Hayes"
         ]
       },
       {
         "id": 3,
         "label": "Phone: [3] ________",
         "acceptableAnswers": [
-          "3345 9865",
-          "33459865"
+          "0418 976 543",
+          "0418976543",
+          "0418 976543"
         ]
       },
       {
         "id": 4,
         "label": "Days enrolled for: Monday and [4] ________",
         "acceptableAnswers": [
-          "thursday"
+          "wednesday",
+          "Wednesday"
         ]
       }
     ],
-    "layoutHtml": "\n            <div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Early Learning Childcare Centre</h3>\n                    <p class=\"text-sm text-slate-500 text-center\">Enrolment Form</p>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"p-3 bg-amber-50 border border-amber-200 rounded-lg text-amber-900 text-sm\">\n                        <span class=\"font-semibold\">Example:</span> Parent or guardian: <strong class=\"underline\">Carol Smith</strong>\n                    </div>\n                    <div class=\"font-semibold text-slate-900 border-b border-slate-200 pb-1\">Personal Details</div>\n                    <div class=\"pl-3 space-y-3\">\n                        <div class=\"flex items-center gap-2\">\n                            <span class=\"font-medium min-w-[110px]\">Child’s name:</span>\n                            <span>Kate</span>\n                        </div>\n                        <div class=\"flex flex-wrap items-center gap-2\">\n                            <span class=\"font-medium min-w-[110px]\">Age:</span>\n                            {{input_1}}\n                        </div>\n                        <div class=\"flex flex-wrap items-center gap-2\">\n                            <span class=\"font-medium min-w-[110px]\">Address:</span>\n                            {{input_2}}\n                            <span>Road, Woodside, 4032</span>\n                        </div>\n                        <div class=\"flex flex-wrap items-center gap-2\">\n                            <span class=\"font-medium min-w-[110px]\">Phone:</span>\n                            {{input_3}}\n                        </div>\n                    </div>\n                    <div class=\"font-semibold text-slate-900 border-b border-slate-200 pb-1 pt-2\">Childcare Information</div>\n                    <div class=\"pl-3\">\n                        <div class=\"flex flex-wrap items-center gap-2\">\n                            <span class=\"font-medium\">Days enrolled for:</span>\n                            <span>Monday and</span>\n                            {{input_4}}\n                        </div>\n                    </div>\n                </div>\n            </div>\n        ",
-    "audioscript": "A. Good morning. Welcome to the Early Learning Childcare Centre. How may I help you?\n\nB. Hi. I spoke to you last week about enrolling my daughter for next year.\n\nA. Oh, yes. I’ll just get some details from you. So, you're her mother?\n\nB. That’s right.\n\nA. And, can I have your name?\n\nB. It’s Carol, Carol Smith.\n\nA. And your daughter’s name?\n\nB. It's Kate.\n\nA. Now, we have several groups at the centre and we cater for children from three to five years old. How old is your daughter?\n\nB. She’s three now but she turns four next month.\n\nA. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"1\">[1] I’ll put four down because that's how old she'll be when she starts.</span>\n\nB. Fine, she’s so excited about her birthday and coming to the centre.\n\nA. That’s good to hear. And what's your address?\n\nB. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"2\">[2] It’s 46 Wombat Road, that's W-O-M-B-A-T.</span> Woodside 4032.\n\nA. And what’s the phone number?\n\nB. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"3\">[3] Oh.</span>.. it’s ... 3345 9865.\n\nA. So, have you decided on the days you’d like to bring your daughter here?\n\nB. I’d prefer Monday and Wednesday if possible.\n\nA. Mmm. I'll check, Monday’s fine, but I think the centre is already full for Wednesday. Erm. Yes. Sorry. It seems to be a very popular day. We can offer you a Thursday or a Friday as well.\n\nB. Oh dear. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"4\">[4] I suppose Thursday would be all right because she has swimming on Friday.</span>\n\nA. OK, got that.",
-    "translation": "A. Chào buổi sáng. Chào mừng đến với Trung tâm Chăm sóc Trẻ. Tôi có thể giúp gì cho chị?\n\nB. Xin chào. Tôi đã nói với bạn tuần trước về việc đăng ký con gái tôi vào năm tới.\n\nA. Ồ, vâng. Tôi sẽ cần một vài thông tin từ chị. Chị là mẹ cháu ấy?\n\nB. Đúng rồi.\n\nA. Tên của chị là gì nhỉ?\n\nB. Carol, Carol Smith.\n\nA. Còn tên con gái của chị?\n\nB. Kate.\n\nA. Bây giờ, chúng tôi có một số nhóm tại trung tâm và chúng tôi phục vụ cho trẻ em từ ba đến năm tuổi. Tuổi của con gái chị là bao nhiêu?\n\nB. Bé ba tuổi nhưng bé sẽ chuyển sang bốn tuổi vào tháng tới.\n\nA. (1) Tôi sẽ ghi chú bốn xuống bởi vì đó là tuổi của bé khi bé bắt đầu học.\n\nB. Vâng, con bé rất phấn khởi về ngày sinh nhật của nó tại trung tâm.\n\nA. Thật tuyệt khi nghe điều đó. Và địa chỉ của chị là?\n\nB. (2) 46 Wombat Road, đó là W-O-M-B-A-T. Woodside 4032.\n\nA. Số điện thoại của chị?\n\nB. 3345 9865.\n\nA. Vậy, chị đã quyết định những ngày nào chị muốn đưa con gái của chị tới đây chưa?\n\nB. Tôi thích thứ hai và thứ tư nếu có thể.\n\nA. Mmm. Tôi sẽ kiểm tra, thứ hai thì ok, nhưng tôi nghĩ rằng trung tâm đã đủ học viên cho thứ tư. Erm. Tôi rất tiếc. Nó có vẻ là một ngày rất phổ biến. Chúng tôi cũng có thể gợi ý cho chị thứ Năm hoặc thứ Sáu.\n\nB. Oh. (4) Tôi cho rằng Thứ Năm sẽ ổn vì con bé đi bơi vào thứ Sáu.\n\nA. OK. Tôi đã ghi chú.",
-    "vocabulary": [
-      {
-        "word": "enrol",
-        "type": "v",
-        "meaning": "ghi danh"
-      },
-      {
-        "word": "daughter",
-        "type": "n",
-        "meaning": "con gái"
-      },
-      {
-        "word": "cater for",
-        "type": "",
-        "meaning": "chăm sóc…"
-      },
-      {
-        "word": "turn",
-        "type": "v",
-        "meaning": "chuyển sang"
-      },
-      {
-        "word": "excited",
-        "type": "adj",
-        "meaning": "phấn khởi"
-      },
-      {
-        "word": "bring",
-        "type": "v",
-        "meaning": "mang, đưa"
-      },
-      {
-        "word": "already full",
-        "type": "",
-        "meaning": "đã đầy rồi, đã đủ rồi"
-      },
-      {
-        "word": "suppose",
-        "type": "v",
-        "meaning": "cho rằng"
-      }
-    ]
+    "layoutHtml": "<div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Early Learning Childcare Centre</h3>\n                    <p class=\"text-sm text-slate-500 text-center\">Enrolment Form</p>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"p-3 bg-amber-50 border border-amber-200 rounded-lg text-amber-900 text-sm\">\n                        <span class=\"font-semibold\">Example:</span> Parent or guardian: <strong class=\"underline\">Carol Smith</strong>\n                    </div>\n                    <div class=\"font-semibold text-slate-900 border-b border-slate-200 pb-1\">Personal Details</div>\n                    <div class=\"space-y-3 pl-3\">\n                        <div class=\"flex items-center gap-2\">\n                            <span class=\"font-medium min-w-[110px]\">Child’s name:</span>\n                            <span>Kate</span>\n                        </div>\n                        <div class=\"flex flex-wrap items-center gap-2\">\n                            <span class=\"font-medium min-w-[110px]\">Age:</span>\n                            {{input_1}}\n                        </div>\n                        <div class=\"flex flex-wrap items-center gap-2\">\n                            <span class=\"font-medium min-w-[110px]\">Address:</span>\n                            {{input_2}}\n                            <span>Road, Woodside, 4032</span>\n                        </div>\n                        <div class=\"flex flex-wrap items-center gap-2\">\n                            <span class=\"font-medium min-w-[110px]\">Phone:</span>\n                            {{input_3}}\n                        </div>\n                    </div>\n                    <div class=\"font-semibold text-slate-900 border-b border-slate-200 pb-1 pt-2\">Childcare Information</div>\n                    <div class=\"pl-3\">\n                        <div class=\"flex flex-wrap items-center gap-2\">\n                            <span class=\"font-medium\">Days enrolled for:</span>\n                            <span>Monday and</span>\n                            {{input_4}}\n                        </div>\n                    </div>\n                </div>\n            </div>"
   },
   {
     "id": "track20",
@@ -2073,7 +1815,7 @@ const unit2Data = [
     "title": "Track 20: Police Registration Form",
     "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
     "type": "form",
-    "exerciseTitle": "POLICE REGISTRATION FORM - REPORTING A CRIME",
+    "exerciseTitle": "Registration form",
     "audioSrc": "audio/track20.mp3",
     "audioFallbackSrc": "Audio Listening/Bản sao của Track 20.mp3",
     "questions": [
@@ -2081,7 +1823,8 @@ const unit2Data = [
         "id": 1,
         "label": "Name: Anna [1] ________",
         "acceptableAnswers": [
-          "grieg"
+          "grieg",
+          "Grieg"
         ]
       },
       {
@@ -2091,15 +1834,21 @@ const unit2Data = [
           "15th march",
           "march 15th",
           "15 march",
-          "march 15"
+          "march 15",
+          "15th March",
+          "15 March",
+          "March 15th",
+          "March 15"
         ]
       },
       {
         "id": 3,
-        "label": "Address: 4 [3] ________",
+        "label": "Address: [3] ________ Street",
         "acceptableAnswers": [
+          "4 ellendale",
+          "4 Ellendale",
           "ellendale",
-          "ellendale street"
+          "Ellendale"
         ]
       },
       {
@@ -2107,78 +1856,21 @@ const unit2Data = [
         "label": "Postcode: [4] ________",
         "acceptableAnswers": [
           "w5 2at",
-          "w52at"
+          "w52at",
+          "W5 2AT",
+          "W52AT"
         ]
       }
     ],
-    "layoutHtml": "\n            <div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Registration Form</h3>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"p-3 bg-amber-50 border border-amber-200 rounded-lg text-amber-900 text-sm flex items-center justify-between\">\n                        <span class=\"font-semibold\">Example:</span>\n                        <span>Type of crime reported: <strong class=\"underline\">robbery</strong></span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[130px]\">Name:</span>\n                        <span>Anna</span>\n                        {{input_1}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[130px]\">Date of birth:</span>\n                        {{input_2}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[130px]\">Address:</span>\n                        <span>4</span>\n                        {{input_3}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[130px]\">Postcode:</span>\n                        {{input_4}}\n                    </div>\n                </div>\n            </div>\n        ",
-    "audioscript": "đề chỉ cho 1 số - lưu ý kỹ giới hạn từ và số cho phép)\n\nPolice: Hello, London Police Department.\n\nAnna: Yes, I would like to report a robbery.\n\nPolice: Alright, just a minute while I pull up the form. OK, could you give your first name and last name?\n\nAnna: Anna Grieg.\n\nPolice: Anna, Greg? G-R-E-G?\n\nAnna: No, Grieg. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"1\">[1] G-R-I-E-G.</span>\n\nPolice: Got it. Alright moving on: gender – female. Date of birth?\n\nAnna: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"2\">[2] 15th of March, 1980.</span>\n\nPolice: Alright, thanks. Just a few more personal information questions and then we can address your claim.\n\nAnna: Alright.\n\nPolice: What is the address?\n\nAnna: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"3\">[3] 4 Ellendale Street.</span> That’s E-L-L-E-N-D-A-L-E.\n\nPolice: Oh right, Ellendale Street. Yeah we’ve had a lot of break-ins in that area lately. And the postal code?\n\nAnna: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"4\">[4] W5 2AT</span>\n\nPolice: And are you a citizen of the UK?\n\nAnna: No\n\nPolice: Ok, what type of citizenship do you have?\n\nAnna: Well, I lived in the United States for most of my life, but I am actually of Grenadian nationality.\n\nPolice: Okay, so is that the country that issued your passport?\n\nAnna: Yes.\n\nPolice: Alright.",
-    "translation": "3. 4 Ellendale 4. W52AT\n\nCảnh sát: Xin chào, Sở Cảnh sát London.\n\nAnna: Vâng, cháu muốn báo cáo một vụ cướp.\n\nCảnh sát: Được rồi, chờ một phút để tôi lấy tờ đơn. OK, bạn có thể cho biết tên và họ của bạn?\n\nAnna: Anna Grieg.\n\nCảnh sát: Anna, Greg? G-R-E-G?\n\nAnna: Không, Grieg. (1) G-R-I-E-G.\n\nCảnh sát: Được. Tiếp tục nào: giới tính - nữ. Ngày sinh của bạn là ngày mấy?\n\nAnna: (2) Ngày 15 tháng 3 năm 1980.\n\nCảnh sát: Được rồi, cảm ơn. Chỉ cần thêm một vài câu hỏi về thông tin cá nhân và sau đó chúng tôi có thể giải quyết khiếu nại của bạn.\n\nAnna: Được rồi.\n\nCảnh sát: Địa chỉ của bạn là ở đâu?\n\nAnna: Số 4 Đường Ellendale. (3) E-L-L-E-N-D-A-L-E.\n\nCảnh sát: Oh, Đường Ellendale. Vâng, chúng tôi đã có rất nhiều vụ đột nhập trong khu vực đó gần đây. Mã bưu chính của bạn?\n\nAnna: (4) W5 2AT\n\nCảnh sát: Bạn là công dân Vương quốc Anh phải không?\n\nAnna: Dạ không\n\nCảnh sát: Ok, vậy bạn quốc tịch nào?\n\nAnna: Cháu đã sống ở Hoa Kỳ phần lớn cuộc đời của cháu, nhưng cháu thực sự có quốc tịch Grenadian.\n\nCảnh sát: Được rồi, vậy đó là quốc gia đã cấp hộ chiếu của bạn?\n\nAnna: Vâng.\n\nCảnh sát: Được rồi.",
-    "vocabulary": [
-      {
-        "word": "report",
-        "type": "v",
-        "meaning": "báo cáo"
-      },
-      {
-        "word": "robbery",
-        "type": "n",
-        "meaning": "vụ cướp"
-      },
-      {
-        "word": "pull up the form",
-        "type": "",
-        "meaning": "lấy tờ đơn"
-      },
-      {
-        "word": "gender",
-        "type": "n",
-        "meaning": "giới tính"
-      },
-      {
-        "word": "female",
-        "type": "",
-        "meaning": "nữ"
-      },
-      {
-        "word": "address your claim",
-        "type": "",
-        "meaning": "giải quyết khiếu nại của bạn"
-      },
-      {
-        "word": "break-ins",
-        "type": "n",
-        "meaning": "những vụ đột nhập"
-      },
-      {
-        "word": "lately",
-        "type": "adv",
-        "meaning": "gần đây"
-      },
-      {
-        "word": "citizen",
-        "type": "n",
-        "meaning": "công dân"
-      },
-      {
-        "word": "citizenship",
-        "type": "n",
-        "meaning": "quốc tịch"
-      },
-      {
-        "word": "issue",
-        "type": "v",
-        "meaning": "cấp cái gì"
-      }
-    ]
+    "layoutHtml": "<div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Registration Form</h3>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"p-3 bg-amber-50 border border-amber-200 rounded-lg text-amber-900 text-sm flex items-center justify-between\">\n                        <span class=\"font-semibold\">Example:</span>\n                        <span>Type of crime reported: <strong class=\"underline\">robbery</strong></span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[130px]\">Name:</span>\n                        <span>Anna</span>\n                        {{input_1}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[130px]\">Date of birth:</span>\n                        {{input_2}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[130px]\">Address:</span>\n                        {{input_3}}\n                        <span>Street</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[130px]\">Postcode:</span>\n                        {{input_4}}\n                    </div>\n                    <div class=\"flex items-center gap-2 text-slate-600\">\n                        <span class=\"font-medium min-w-[130px]\">Nationality:</span>\n                        <span>Grenadian</span>\n                    </div>\n                </div>\n            </div>"
   },
   {
     "id": "track21",
     "trackNum": 21,
     "title": "Track 21: Italianbreaks",
     "instructions": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
-    "type": "note",
-    "exerciseTitle": "ITALIANBREAKS HOLIDAY BOOKING",
+    "type": "notes",
+    "exerciseTitle": "ITALIANBREAKS",
     "audioSrc": "audio/track21.mp3",
     "audioFallbackSrc": "Audio Listening/Bản sao của Track 21.mp3",
     "questions": [
@@ -2186,7 +1878,8 @@ const unit2Data = [
         "id": 1,
         "label": "Name: John [1] ________",
         "acceptableAnswers": [
-          "framlington"
+          "framlington",
+          "Framlington"
         ]
       },
       {
@@ -2222,70 +1915,16 @@ const unit2Data = [
       },
       {
         "id": 5,
-        "label": "Hotel: [5] ________ stars",
+        "label": "Hotel Scotland: [5] ________ star",
         "acceptableAnswers": [
           "4",
           "four",
-          "4 stars",
-          "four stars"
+          "4 star",
+          "four star"
         ]
       }
     ],
-    "layoutHtml": "\n            <div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Italianbreaks</h3>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"p-3 bg-amber-50 border border-amber-200 rounded-lg text-amber-900 text-sm flex items-center justify-between\">\n                        <span class=\"font-semibold\">Example:</span>\n                        <span>Destination: <strong class=\"underline\">Venice</strong></span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Name:</span>\n                        <span>John</span>\n                        {{input_1}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Mobile number:</span>\n                        {{input_2}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Number of people:</span>\n                        {{input_3}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Holiday length:</span>\n                        {{input_4}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Hotel:</span>\n                        {{input_5}}\n                        <span>stars</span>\n                    </div>\n                </div>\n            </div>\n        ",
-    "audioscript": "Receptionist: Good afternoon, Italianbreaks. My name’s Margaret. How can I help you?\n\nJohn: Hi, I’d like to book a short break in Italy – hotel and flights combined.\n\nReceptionist: Anywhere in particular?\n\nJohn: Yes. Venice, if possible. We’ve been looking at some of your brochures and I want to check if you have any special deals.\n\nReceptionist: Right. Let’s have a look and see what we’ve got. Right, mmm. Okay. I’ve got the screen up. Can you just give me a few personal details?\n\nJohn: Sure.\n\nReceptionist: First, can I just take your name please and a contact telephone number?\n\nJohn: Certainly. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"1\">[1] It’s John Framlington.</span> That’s F-R-A- M-L-I-N-G-T-O-N and I’ll give you my mobile number. I can’t always remember it. Yes, here it is. It’s <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"2\">[2] 07987 44 11 92.</span>\n\nReceptionist: 44 11 92\n\nJohn: That’s it.\n\nReceptionist: And how many people is it for?\n\nJohn: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"3\">[3] Just two adults.</span>\n\nReceptionist: Okay. Any particular price range?\n\nJohn: It’s our first wedding anniversary and…\n\nReceptionist: Congratulation!\n\nJohn: Thank you. So we wanted somewhere nice, but not too expensive. We would like to make it something to remember. Maybe, in the medium price range.\n\nReceptionist: Okay. How many nights do you plan to stay?\n\nJohn: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"4\">[4] Five nights only.</span> That gives us plenty of time to do sight-seeing and to relax.\n\nReceptionist: Right, that’s five nights only. And what type of hotel?\n\nJohn: We initially thought of going for a five star, that might be too expensive. So we’ve been looking at four star hotels.\n\nReceptionist: We’ve got quite a few in our brochure, <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"5\">[5] but the one I would recommend is the Hotel Scotland.</span> It’s four star and I know there are rooms available because I have just made a booking for another client there.\n\nJohn: I didn’t notice that one. I don’t know how I didn’t see it.\n\nReceptionist: It’s easy to miss them. I’ve also stayed there myself as we sometimes have to go and check out the hotels and of all the ones I visited this was my favourite.\n\nJohn: oh, right.",
-    "translation": "Nhân viên tiếp tân: Chào buổi chiều, Italianbreaks. Tên tôi là Margaret. Tôi có thể giúp gì cho ông?\n\nJohn: Xin chào, tôi muốn đặt một kỳ nghỉ ngắn ở Ý - khách sạn và chuyến bay kết hợp.\n\nNhân viên tiếp tân: Ông có nghĩ tới nơi nào đặc biệt chưa ạ?\n\nJohn: Vâng. Venice, nếu có thể. Chúng tôi đã xem xét một số tài liệu quảng cáo của bạn và tôi muốn kiểm tra nếu bạn có bất kỳ khuyến mãi đặc biệt nào.\n\nNhân viên tiếp tân: Vâng. Hãy cùng nhìn và xem chúng tôi đang có những gì. Phải, mmm. Màn hình lên rồi. Ông có thể cho tôi một vài thông tin cá nhân không?\n\nJohn: Chắc chắn rồi.\n\nNhân viên tiếp tân: Trước tiên, tôi có thể cần tên của ông và một số điện thoại liên lạc?\n\nJohn: Được. (1) John Framlington. F-R-A-M-L-I-N-G-T- O-N và tôi sẽ cung cấp cho bạn số điện thoại di động của tôi. Tôi không thể luôn luôn nhớ nó. Vâng nó đây. (2) 07987 44 11 92.\n\nNhân viên lễ tân: 44 11 92\n\nJohn: Đúng thế.\n\nNhân viên tiếp tân: Có bao nhiêu người ạ?\n\nJohn: (3) Chỉ có hai người lớn.\n\nNhân viên lễ tân: Được rồi. Ông muốn mức giá cụ thể nào ạ?\n\nJohn: Đó là kỷ niệm cưới đầu tiên của chúng tôi và…\n\nNhân viên lễ tân: Chúc mừng!\n\nJohn: Cảm ơn. Vì vậy, chúng tôi muốn một nơi nào đó đẹp, nhưng không quá đắt. Chúng tôi muốn làm một cái gì đó đáng nhớ. Có thể, trong mức giá trung bình.\n\nNhân viên lễ tân: Được rồi. Ông định ở lại bao nhiêu đêm?\n\nJohn: (4) Chỉ năm đêm. Điều đó cho chúng tôi nhiều thời gian để ngắm cảnh và thư giãn.\n\nNhân viên lễ tân: OK, 5 đêm. Loại khách sạn nào ạ?\n\nJohn: Ban đầu chúng tôi đã nghĩ đến khách sạn năm sao, nhưng nó có thể quá đắt. Vì vậy, chúng tôi đang xem xét các khách sạn bốn sao.\n\nNhân viên tiếp tân: Chúng tôi đã có một vài khách sạn trong tài liệu quảng cáo, (5) nhưng tôi nghĩ ông nên chọn Khách sạn Scotland. Nó bốn sao và tôi biết có những phòng có sẵn bởi vì tôi vừa đặt phòng cho khách hàng khác ở đó.\n\nJohn: Tôi không để ý đến nó. Tôi không biết làm thế nào tôi không nhìn thấy nó.\n\nNhân viên tiếp tân: Thật dễ dàng bỏ lỡ nó. Tôi cũng đã ở đó vì đôi khi chúng tôi phải đi và kiểm tra các khách sạn và trong tất cả những nơi tôi viếng thăm, thì đây là khách sạn yêu thích của tôi.\n\nJohn: Oh, vâng.",
-    "vocabulary": [
-      {
-        "word": "break",
-        "type": "n",
-        "meaning": "kỳ nghỉ"
-      },
-      {
-        "word": "special deals",
-        "type": "n",
-        "meaning": "những khuyến mãi đặc biệt"
-      },
-      {
-        "word": "particular price range",
-        "type": "",
-        "meaning": "mức giá cụ thể"
-      },
-      {
-        "word": "wedding anniversary",
-        "type": "",
-        "meaning": "kỷ niệm ngày cưới"
-      },
-      {
-        "word": "medium price range",
-        "type": "",
-        "meaning": "mức giá trung bình"
-      },
-      {
-        "word": "plenty of",
-        "type": "",
-        "meaning": "a lot of: nhiều"
-      },
-      {
-        "word": "do sight-seeing",
-        "type": "",
-        "meaning": "đi tham quan"
-      },
-      {
-        "word": "client",
-        "type": "n",
-        "meaning": "khách hàng"
-      },
-      {
-        "word": "notice",
-        "type": "v",
-        "meaning": "chú ý"
-      },
-      {
-        "word": "miss",
-        "type": "v",
-        "meaning": "lỡ, không thấy."
-      }
-    ]
+    "layoutHtml": "<div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Italianbreaks</h3>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"p-3 bg-amber-50 border border-amber-200 rounded-lg text-amber-900 text-sm flex items-center justify-between\">\n                        <span class=\"font-semibold\">Example:</span>\n                        <span>Destination: <strong class=\"underline\">Venice</strong></span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Name:</span>\n                        <span>John</span>\n                        {{input_1}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Mobile number:</span>\n                        {{input_2}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Number of people:</span>\n                        {{input_3}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Holiday length:</span>\n                        {{input_4}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Hotel Scotland:</span>\n                        {{input_5}}\n                        <span>star</span>\n                    </div>\n                </div>\n            </div>"
   },
   {
     "id": "track22",
@@ -2293,7 +1932,7 @@ const unit2Data = [
     "title": "Track 22: Car Insurance",
     "instructions": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
     "type": "form",
-    "exerciseTitle": "CAR INSURANCE CLAIM FORM",
+    "exerciseTitle": "CAR INSURANCE",
     "audioSrc": "audio/track22.mp3",
     "audioFallbackSrc": "Audio Listening/Bản sao của Track 22.mp3",
     "questions": [
@@ -2302,7 +1941,9 @@ const unit2Data = [
         "label": "Address: [1] ________ Greendale",
         "acceptableAnswers": [
           "27 bank road",
-          "27 bank rd"
+          "27 Bank Road",
+          "27 bank rd",
+          "27 Bank Rd"
         ]
       },
       {
@@ -2330,71 +1971,28 @@ const unit2Data = [
       },
       {
         "id": 5,
-        "label": "Model name: [5] ________",
+        "label": "Model: [5] ________",
         "acceptableAnswers": [
-          "sable"
+          "sable",
+          "Sable"
         ]
       },
       {
         "id": 6,
-        "label": "Year of manufacturer: [6] ________",
+        "label": "Year: [6] ________",
         "acceptableAnswers": [
           "1997"
         ]
       },
       {
         "id": 7,
-        "label": "Previous claim: car was [7] ________",
+        "label": "If yes, give brief details: Car was [7] ________ in 1999.",
         "acceptableAnswers": [
           "stolen"
         ]
       }
     ],
-    "layoutHtml": "\n            <div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Car Insurance</h3>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"p-3 bg-amber-50 border border-amber-200 rounded-lg text-amber-900 text-sm flex items-center justify-between\">\n                        <span class=\"font-semibold\">Example:</span>\n                        <span>Name: <strong class=\"underline\">Patrick Jones</strong></span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[150px]\">Address:</span>\n                        {{input_1}}\n                        <span>Greendale</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[150px]\">Contact number:</span>\n                        {{input_2}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[150px]\">Occupation:</span>\n                        {{input_3}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[150px]\">Size of car engine:</span>\n                        {{input_4}}\n                        <span>cc</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[150px]\">Manufacturer:</span>\n                        <span>Hewton</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[150px]\">Model name:</span>\n                        {{input_5}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[150px]\">Year of manufacturer:</span>\n                        {{input_6}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[150px]\">Previous claim:</span>\n                        <span>car was</span>\n                        {{input_7}}\n                    </div>\n                </div>\n            </div>\n        ",
-    "audioscript": "Woman: Hello, motor insurance department\n\nMan: Oh hello, I’d like to ask about insurance for my car.\n\nWoman: Yes, of course. I’ll just take a few details. What’s your name?\n\nMan: Patrick Jones.\n\nWoman: And your address?\n\nMan: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"1\">[1] It’s 27 Bank Road.</span>\n\nWoman: 27 Bank Road. Is that in Greendale?\n\nMan: Yes.\n\nWoman: And what’s your daytime phone number?\n\nMan: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"2\">[2] My work number is 730453</span>\n\nWoman: And could I ask what your occupation is?\n\nMan: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"3\">[3] dentist</span>\n\nWoman: OK, now a few details about your car. What size of the engine?\n\nMan: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"4\">[4] it’s 1200 ccs</span>\n\nWoman: Thank you. And the make and model?\n\nMan: It’s a Hewton Sable.\n\nWoman: Could you spell the model name please?\n\nMan: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"5\">[5] Yes, S-A-B-L-E</span>\n\nWoman: Ah yes. Thanks. And when was it made?\n\nMan: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"6\">[6] 1997</span>\n\nWoman: Lovely. Right. I presume you’ve had a previous insurer?\n\nMan: Yes.\n\nWoman: Right. We need to know the name of the company.\n\nMan: Yes, it was Northern Star.\n\nWoman: Thank you, and have you made any insurance claims in the last five years?\n\nMan: Yes, one in 1999.\n\nWoman: And what was the problem?\n\nMan: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"7\">[7] It was stolen, but…</span>\n\nWoman: That’s fine, Mr Jones. That’s all we need to know at the moment…",
-    "translation": "Người phụ nữ: Phòng bảo hiểm xe cơ giới xin chào\n\nNgười đàn ông: Oh xin chào, tôi muốn hỏi về bảo hiểm cho chiếc xe của tôi.\n\nNgười phụ nữ: Tất nhiên rồi ạ. Tôi sẽ ghi chú vài thông tin. Tên bạn là gì?\n\nNgười đàn ông: Patrick Jones.\n\nNgười phụ nữ: Địa chỉ của bạn?\n\nNgười đàn ông: n: (1) 27 Bank Road.\n\nNgười phụ nữ: 27 Bank Road. Nó ở Greendale phải không ạ?\n\nNgười đàn ông:: Vâng.\n\nNgười phụ nữ: Số điện thoại ban ngày của bạn là gì?\n\nNgười đàn ông:: (2) Số điện thoại làm việc của tôi là 730453\n\nNgười phụ nữ: Nghề nghiệp của bạn là gì?\n\nNgười đàn ông: (3) nha sĩ\n\nNgười phụ nữ: OK, bây giờ là một vài thông tin về chiếc xe của bạn. Kích thước của động cơ?\n\nNgười đàn ông: (4) 1200 cc\n\nNgười phụ nữ: Cảm ơn bạn. Và nhà sản xuất và kiểu mẫu?\n\nNgười đàn ông: Hewton Sable.\n\nNgười phụ nữ: Bạn có thể đánh vần tên kiểu mẫu không?\n\nNgười đàn ông: (5) Vâng, S-A-B-L-E\n\nNgười phụ nữ: Cảm ơn. Nó được sản xuất khi nào ạ?\n\nNgười đàn ông: (6) 1997\n\nNgười phụ nữ: Ok. Được rồi. Tôi đoán rằng bạn đã có một công ty bảo hiểm trước đây?\n\nNgười đàn ông: Vâng.\n\nNgười phụ nữ: Chúng tôi cần phải biết tên của công ty.\n\nNgười đàn ông: Vâng, đó là Northern Star.\n\nNgười phụ nữ: Cảm ơn bạn, bạn đã thực hiện bất kỳ sự bồi thường bảo hiểm nào trong năm năm qua?\n\nNgười đàn ông: Vâng, một lần vào năm 1999.\n\nNgười phụ nữ: Vấn đề là gì?\n\nNgười đàn ông: (7) Nó đã bị đánh cắp, nhưng ...\n\nNgười phụ nữ: Vậy được rồi ạ. Đó là tất cả những gì chúng tôi cần biết vào lúc này ...",
-    "vocabulary": [
-      {
-        "word": "insurance department",
-        "type": "n",
-        "meaning": "phòng bảo hiểm"
-      },
-      {
-        "word": "occupation",
-        "type": "n",
-        "meaning": "nghề nghiệp"
-      },
-      {
-        "word": "engine",
-        "type": "n",
-        "meaning": "động cơ"
-      },
-      {
-        "word": "presume",
-        "type": "v",
-        "meaning": "nghĩ rằng, đoán rằng"
-      },
-      {
-        "word": "previous",
-        "type": "adj",
-        "meaning": "trước đó"
-      },
-      {
-        "word": "insurer",
-        "type": "n",
-        "meaning": "công ty bảo hiểm"
-      },
-      {
-        "word": "insurance claims",
-        "type": "n",
-        "meaning": "sự bồi thường bảo hiểm"
-      },
-      {
-        "word": "stolen",
-        "type": "",
-        "meaning": "bị ăn trộm (steal – stole – stolen)"
-      }
-    ]
+    "layoutHtml": "<div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Car Insurance</h3>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"p-3 bg-amber-50 border border-amber-200 rounded-lg text-amber-900 text-sm flex items-center justify-between\">\n                        <span class=\"font-semibold\">Example:</span>\n                        <span>Name: <strong class=\"underline\">Patrick Jones</strong></span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[200px]\">Address:</span>\n                        {{input_1}}\n                        <span>Greendale</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[200px]\">Contact number:</span>\n                        {{input_2}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[200px]\">Occupation:</span>\n                        {{input_3}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[200px]\">Size of car engine:</span>\n                        {{input_4}}\n                        <span>cc</span>\n                    </div>\n                    <div class=\"flex items-center gap-2 text-slate-600\">\n                        <span class=\"font-medium min-w-[200px]\">Manufacturer:</span>\n                        <span>Hewton</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[200px]\">Model:</span>\n                        {{input_5}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[200px]\">Year:</span>\n                        {{input_6}}\n                    </div>\n                    <div class=\"flex items-center gap-2 text-slate-600\">\n                        <span class=\"font-medium min-w-[200px]\">Previous insurance company:</span>\n                        <span>Northern Star</span>\n                    </div>\n                    <div class=\"text-slate-600 pt-1\">\n                        <span>Any insurance claims in the last five years? Yes.</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium\">If yes, give brief details: Car was</span>\n                        {{input_7}}\n                        <span>in 1999.</span>\n                    </div>\n                </div>\n            </div>"
   },
   {
     "id": "track23",
@@ -2402,7 +2000,7 @@ const unit2Data = [
     "title": "Track 23: Homestay Application",
     "instructions": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
     "type": "form",
-    "exerciseTitle": "HOMESTAY APPLICATION FORM",
+    "exerciseTitle": "HOMESTAY APPLICATION",
     "audioSrc": "audio/track23.mp3",
     "audioFallbackSrc": "Audio Listening/Bản sao của Track 23.mp3",
     "questions": [
@@ -2410,14 +2008,16 @@ const unit2Data = [
         "id": 1,
         "label": "First name: [1] ________",
         "acceptableAnswers": [
-          "keiko"
+          "keiko",
+          "Keiko"
         ]
       },
       {
         "id": 2,
         "label": "Nationality: [2] ________",
         "acceptableAnswers": [
-          "japanese"
+          "japanese",
+          "Japanese"
         ]
       },
       {
@@ -2425,20 +2025,24 @@ const unit2Data = [
         "label": "Passport number: [3] ________",
         "acceptableAnswers": [
           "jo6337",
-          "jo 6337"
+          "jo 6337",
+          "JO6337",
+          "JO 6337"
         ]
       },
       {
         "id": 4,
-        "label": "Room type: [4] ________",
+        "label": "Present address: Room [4] ________, Willow College",
         "acceptableAnswers": [
           "21c",
-          "21 c"
+          "21C",
+          "21 c",
+          "21 C"
         ]
       },
       {
         "id": 5,
-        "label": "Length of stay: [5] ________",
+        "label": "Length of homestay: approx [5] ________",
         "acceptableAnswers": [
           "4 months",
           "four months",
@@ -2451,40 +2055,12 @@ const unit2Data = [
         "label": "Course enrolled in: [6] ________",
         "acceptableAnswers": [
           "advanced english studies",
-          "advanced english"
+          "advanced english",
+          "Advanced English Studies"
         ]
       }
     ],
-    "layoutHtml": "\n            <div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Homestay Application</h3>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"p-3 bg-amber-50 border border-amber-200 rounded-lg text-amber-900 text-sm flex items-center justify-between\">\n                        <span class=\"font-semibold\">Example:</span>\n                        <span>Surname: <strong class=\"underline\">Yuichini</strong></span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">First name:</span>\n                        {{input_1}}\n                    </div>\n                    <div class=\"flex items-center gap-2 text-slate-600\">\n                        <span class=\"font-medium min-w-[140px]\">Sex:</span>\n                        <span>female</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Nationality:</span>\n                        {{input_2}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Passport number:</span>\n                        {{input_3}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Room type:</span>\n                        {{input_4}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Length of stay:</span>\n                        {{input_5}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[140px]\">Course enrolled:</span>\n                        {{input_6}}\n                    </div>\n                </div>\n            </div>\n        ",
-    "audioscript": "Officer: Yes, what can I do for you?\n\nStudent: My friend is in homestay, and she really enjoys it, so I’d like to join a family as well.\n\nOfficer: Okay, so let me get some details. What’s your name?\n\nStudent: My name is Keiko Yuichini.\n\nOfficer: Could you spell your family name for me?\n\nStudent: It’s Yuichini, that’s Y-U-I-C-H-I-N-I\n\nOfficer: And your first name?\n\nStudent: It’s Keiko. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"1\">[1] K-E-I-K-O</span>\n\nOfficer: That’s Keiko Yuichini. OK. And you’re female. And your nationality?\n\nStudent: I’m <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"2\">[2] Japanese.</span>\n\nOfficer: Right and could I see your passport, please?\n\nStudent: Here it is.\n\nOfficer: OK, your passport number is <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"3\">[3] JO 6337.</span> And you’re how old?\n\nStudent: I’m 28 years old.\n\nOfficer: Now, you live at one of the colleges, which one?\n\nStudent: Willow College, umm, room <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"4\">[4] 21C</span>\n\nOfficer: Right, 21C Willow College, and how long are you planning on staying with homestay?\n\nStudent: About <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"5\">[5] four months, longer if I like it.</span>\n\nOfficer: And what course are you enrolled in?\n\nStudent: Well, I’ve enrolled for twenty weeks in the..um..<span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"6\">[6] Advanced English Studies because I need help with my writing, and I’m nearly at the end of my first five-week course.</span>",
-    "translation": "Cán bộ: Vâng, tôi có thể làm gì cho em?\n\nSinh viên: Bạn em ở với người dân địa phương, và cô ấy thực sự rất thích nó, vì vậy em cũng muốn ở cùng một gia đình nào đó.\n\nCán bộ:: Được rồi, vậy hãy cho tôi biết một số thông tin.  Tên em là gì?\n\nSinh viên: Em tên là Keiko Yuichini.\n\nCán bộ: Em có thể đánh vần họ của em cho tôi không?\n\nSinh viên: Yuichini, Y-U-I-C-H-I-N-I\n\nCán bộ: Tên của em?\n\nSinh viên: Keiko. (1) K-E-I-K-O\n\nCán bộ: Keiko Yuichini. Được rồi. Em là nữ. Quốc tịch của em là gì?\n\nSinh viên: (2) Dạ Nhật Bản.\n\nCán bộ: Tôi có thể xem hộ chiếu của em không?\n\nSinh viên: Dạ đây.\n\nCán bộ: OK, số hộ chiếu của em là (3) JO 6337. Em bao nhiêu tuổi rồi?\n\nSinh viên: Em 28 tuổi.\n\nCán bộ: Bây giờ, em sống tại 1 trong số các trường đại học của chúng tôi, trường nào vậy?\n\nSinh viên: Willow College, umm, phòng (4) 21C\n\nCán bộ: 21C Willow College, em định ở với người dân địa phương bao lâu?\n\nSinh viên: Khoảng (5) bốn tháng, lâu hơn nếu em thích nó.\n\nCán bộ: Em đang theo học khóa học nào?\n\nSinh viên: Vâng, em đã ghi danh 20 tuần trong lớp (6) Tiếng Anh nâng cao vì em cần giúp đỡ với kỹ năng viết, và em gần như kết thúc khóa học 5 tuần đầu tiên của em.",
-    "vocabulary": [
-      {
-        "word": "homestay",
-        "type": "n",
-        "meaning": "ở với người dân địa phương"
-      },
-      {
-        "word": "join",
-        "type": "v",
-        "meaning": "tham gia vào"
-      },
-      {
-        "word": "nationality",
-        "type": "n",
-        "meaning": "quốc tịch"
-      },
-      {
-        "word": "advanced",
-        "type": "adj",
-        "meaning": "nâng cao"
-      },
-      {
-        "word": "course",
-        "type": "n",
-        "meaning": "khóa học"
-      }
-    ]
+    "layoutHtml": "<div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Homestay Application</h3>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"p-3 bg-amber-50 border border-amber-200 rounded-lg text-amber-900 text-sm flex items-center justify-between\">\n                        <span class=\"font-semibold\">Example:</span>\n                        <span>Surname: <strong class=\"underline\">Yuichini</strong></span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[160px]\">First name:</span>\n                        {{input_1}}\n                    </div>\n                    <div class=\"flex items-center gap-2 text-slate-600\">\n                        <span class=\"font-medium min-w-[160px]\">Sex:</span>\n                        <span>female</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[160px]\">Nationality:</span>\n                        {{input_2}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[160px]\">Passport number:</span>\n                        {{input_3}}\n                    </div>\n                    <div class=\"flex items-center gap-2 text-slate-600\">\n                        <span class=\"font-medium min-w-[160px]\">Age:</span>\n                        <span>28 years</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[160px]\">Present address:</span>\n                        <span>Room</span>\n                        {{input_4}}\n                        <span>, Willow College</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[160px]\">Length of homestay:</span>\n                        <span>approx</span>\n                        {{input_5}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[160px]\">Course enrolled in:</span>\n                        {{input_6}}\n                    </div>\n                </div>\n            </div>"
   },
   {
     "id": "track24",
@@ -2498,174 +2074,60 @@ const unit2Data = [
     "questions": [
       {
         "id": 1,
-        "label": "Venue: The [1] ________ School",
+        "label": "Venue: The [1] ________ school",
         "acceptableAnswers": [
-          "secondary"
+          "secondary",
+          "Secondary"
         ]
       },
       {
         "id": 2,
-        "label": "Notes: Also includes [2] ________ and piano",
+        "label": "Notes: Also appearing: Carolyn Hart (plays the [2] ________ )",
         "acceptableAnswers": [
           "flute"
         ]
       },
       {
         "id": 3,
-        "label": "Venue: The [3] ________",
+        "label": "Venue: Start behind the [3] ________",
         "acceptableAnswers": [
-          "cinema"
+          "cinema",
+          "the cinema"
         ]
       },
       {
         "id": 4,
-        "label": "Event: [4] ________",
+        "label": "Notes: Prize: tickets for [4] ________ held at the end of the festival",
         "acceptableAnswers": [
-          "concert"
+          "concert",
+          "the concert"
         ]
       },
       {
         "id": 5,
-        "label": "Venue: Town [5] ________",
+        "label": "Notes: Ducks can be bought in the [5] ________",
         "acceptableAnswers": [
-          "market"
+          "market",
+          "the market"
         ]
       },
       {
         "id": 6,
-        "label": "Venue: [6] ________ restaurant",
+        "label": "Venue: [6] ________ Hall",
         "acceptableAnswers": [
-          "bythwaite"
+          "bythwaite",
+          "Bythwaite"
         ]
       },
       {
         "id": 7,
-        "label": "Notes: A leading [7] ________ will appear",
+        "label": "Notes: Prizes presented at 5 pm by a well-known [7] ________",
         "acceptableAnswers": [
           "actor"
         ]
       }
     ],
-    "layoutHtml": "\n            <div class=\"overflow-x-auto rounded-xl border border-slate-200\">\n                <table class=\"w-full text-left border-collapse text-sm\">\n                    <thead>\n                        <tr class=\"bg-slate-100 text-slate-800 font-bold border-b border-slate-200\">\n                            <th class=\"p-3\">Event</th>\n                            <th class=\"p-3\">Cost</th>\n                            <th class=\"p-3\">Venue</th>\n                            <th class=\"p-3\">Notes</th>\n                        </tr>\n                    </thead>\n                    <tbody class=\"divide-y divide-slate-200 bg-white\">\n                        <tr>\n                            <td class=\"p-3 font-medium\">Jazz band</td>\n                            <td class=\"p-3\">Tickets available for £15</td>\n                            <td class=\"p-3\">The {{input_1}} School</td>\n                            <td class=\"p-3\">Also includes {{input_2}} and piano</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-medium\">Duck races</td>\n                            <td class=\"p-3\">£1 per duck</td>\n                            <td class=\"p-3\">Start behind the {{input_3}}</td>\n                            <td class=\"p-3\">Prize: £500</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-medium\">Flower show</td>\n                            <td class=\"p-3\">Free</td>\n                            <td class=\"p-3\">Town {{input_5}}</td>\n                            <td class=\"p-3\">Open from 9 a.m. to 4 p.m.</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-medium\">{{input_4}}</td>\n                            <td class=\"p-3\">Tickets £10</td>\n                            <td class=\"p-3\">{{input_6}} restaurant</td>\n                            <td class=\"p-3\">A leading {{input_7}} will appear</td>\n                        </tr>\n                    </tbody>\n                </table>\n            </div>\n        ",
-    "audioscript": "ROB: Good morning. Stretton Festival box office. How can I help you?\n\nMELANIE: Oh, hello. My family and I are on holiday in the area, and we’ve seen some posters about the festival this week. Could you tell me about some of the events, please?\n\nROB: Of course.\n\nMELANIE: First of all, are there still tickets available for the jazz band on Saturday?\n\nROB: There are, but only 15 pounds . The 12-pound seats have all been sold.\n\nMELANIE:OK. And the venue is the school, isn't it?\n\nROB: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"1\">[1] Yes.</span> That’s right, the secondary school. Make sure you don’t go to the primary school by mistake! And there’s an additional performer who isn't mentioned on the posters - Carolyn Hart is going to play with the band.\n\nMELANIE:Oh, I think I’ve heard her on the radio. Doesn’t she play the oboe, or flute or something?\n\nROB: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"2\">[2] Yes.</span> the flute . She usually plays with symphony orchestras, and apparently this is her first time with a jazz band.\n\nMELANIE:Well, I’d certainly like to hear her. Then the next thing I want to ask about is the duck races - I saw a poster beside a river. What are they, exactly?\n\nROB: Well, you buy a yellow plastic duck - or as many as you like - they’re a pound each. And you write your name on each one. There’ll be several races, depending on the number of ducks taking part. And John Stevens, a champion swimmer who lives locally is going to start the races. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"3\">[3] All the ducks will be launched into the river at the back of the cinema , then they’ll float along the river for 500 metres, as far as the railway bridge.</span>\n\nMELANIE:And are there any prizes?\n\nROB: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"4\">[4] Yes, the first duck in each race to arrive at the finishing line wins its owner free tickets for the concert on the last night of the festival.</span>\n\nMELANIE: You said you can buy a duck? I’m sure my children will both want one.\n\nROB: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"5\">[5] They’re on sale at a stall in the market.</span> You can’t miss it - it’s got an enormous sign showing a couple of ducks.\n\nMELANIE: OK. I’ll go there this afternoon. I remember walking past there yesterday. Now could you tell me something about the flower show, please?\n\nROB: Well, admission is free, and the show is being held in Bythwaite Hall.\n\nMELANIE: Sorry, how do you spell that?\n\nROB: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"6\">[6] B-Y-T-H-W-A-l-T-E.</span> Bythwaite.\n\nMELANIE: Is it easy to find? I’m not very familiar with the town yet.\n\nROB: Oh, you won’t have any problem. It’s right in the centre of Stretton. It’s the only old building in the town, so it’s easy to recognise.\n\nMELANIE: I know it. I presume it’s open all day.\n\nROB: Yes, but if you’d like to see the prizes being awarded for the best flowers, you’ll need to be there at 5 o’clock. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"7\">[7] The prizes are being given by a famous actor, Kevin Shapless.</span> He lives nearby and gets involved in a lot of community events.\n\nMELANIE: Gosh, I’ve seen him on TV. I’ll definitely go to the prize-giving.\n\nROB: Right.",
-    "translation": "ROB: Chào buổi sáng. Văn phòng Liên hoan Stretton. Tôi có thể giúp gì cho bạn?\n\nMELANIE: Oh, chào. Gia đình tôi và tôi đang đi nghỉ mát trong khu vực, và chúng tôi đã thấy một số áp phích về lễ hội trong tuần này. Bạn có thể cho tôi biết về một số sự kiện không?\n\nROB: Tất nhiên rồi ạ.\n\nMELANIE: Trước hết, vẫn còn vé cho ban nhạc jazz vào thứ 7 chứ ạ?\n\nROB: Còn ạ, nhưng chỉ còn vé 15 bảng. Vé 12 bảng đã được bán hết rồi ạ.\n\nMELANIE: OK. Địa điểm là trường học  phải không ạ?\n\nROB: (1) Vâng, đúng vậy, trường trung học. Đảm bảo bạn không đi nhầm đến trường tiểu học nhé! Và có một nghệ sĩ khác không được đề cập trong poster - Carolyn Hart sẽ chơi với ban nhạc.\n\nMELANIE: Ồ, tôi nghĩ tôi đã nghe cô ấy trên radio. Không phải là cô ấy chơi oboe, hay sáo hay cái gì đó phải không?\n\nROB: (2) Vâng. Là sáo . Cô ấy thường chơi với các dàn nhạc giao hưởng, và rõ ràng đây là lần đầu tiên cô tham gia ban nhạc jazz.\n\nMELANIE: Vâng, tôi chắc chắn muốn nghe cô ấy. Sau đó điều tiếp theo tôi muốn hỏi là cuộc đua vịt - tôi thấy một quảng cáo bên cạnh một con sông. Chúng chính xác là gì ạ?\n\nROB: Vâng, bạn mua một con vịt bằng nhựa màu vàng - hoặc nhiều nếu bạn muốn -  mỗi con 1 bảng. Bạn viết tên của bạn trên mỗi con. Sẽ có một vài cuộc đua, tùy thuộc vào số lượng vịt tham gia. Và John Stevens, một vận động viên vô địch bơi lội sống tại địa phương sẽ bắt đầu các cuộc đua. (3) Tất cả các con vịt sẽ được thả xuống sông ở phía sau của rạp chiếu phim, sau đó chúng sẽ trôi nổi dọc theo con sông trong 500 mét, cho tới cây cầu đường sắt.\n\nMELANIE: Có bất kỳ giải thưởng nào không ạ?\n\nROB: (4) Vâng, con vịt đầu tiên trong mỗi cuộc đua đến đích cuối cùng sẽ thắng vé miễn phí cho chủ sở hữu của nó, giải thưởng là buổi hòa nhạc vào đêm cuối cùng của lễ hội.\n\nMELANIE: Bạn nói bạn có thể mua vịt? Tôi chắc chắn rằng con của tôi sẽ muốn mua.\n\nROB: (5) Chúng đang khuyến mãi giảm giá tại gian hàng trên chợ. Bạn không thể bỏ lỡ nó - nó có một cái bảng hiệu rất lớn cho thấy một vài con vịt.\n\nMELANIE: OK. Tôi sẽ đến đó vào chiều nay. Tôi nhớ đã đi qua đó ngày hôm qua. Bây giờ bạn có thể cho tôi biết về chương trình hoa không?\n\nROB: Vâng, tham gia miễn phí, chương trình đang được tổ chức tại Bythwaite Hall.\n\nMELANIE: Xin lỗi, Bạn đánh vần thế nào?\n\nROB: (6) B-Y-T-H-W-A-l-T-E. Bythwaite.\n\nMELANIE: Có dễ tìm không ạ? Tôi không quen thuộc với thị trấn này lắm.\n\nROB: Ồ, bạn sẽ không gặp vấn đề gì cả đâu. Nó nằm ngay trung tâm Stretton. Đó là tòa nhà cũ duy nhất ở thị trấn, vì vậy bạn sẽ dễ dàng nhận ra nó.\n\nMELANIE: Tôi biết. Tôi cho rằng nó mở cả ngày.\n\nROB: Vâng, nhưng nếu bạn muốn xem các giải thưởng được trao cho loài hoa tốt nhất, bạn sẽ cần phải có mặt lúc 5 giờ. (7) Các giải thưởng được trao thưởng bởi một diễn viên nổi tiếng, Kevin Shapless. Anh ta sống gần đó và tham gia vào rất nhiều sự kiện cộng đồng.\n\nMELANIE: Trời ạ, tôi đã nhìn thấy anh ấy trên TV. Tôi chắc chắn sẽ đến buổi trao giải.\n\nROB: Vâng.",
-    "vocabulary": [
-      {
-        "word": "box office",
-        "type": "n",
-        "meaning": "quầy bán vé"
-      },
-      {
-        "word": "on holiday",
-        "type": "",
-        "meaning": "đi nghỉ mát"
-      },
-      {
-        "word": "poster",
-        "type": "n",
-        "meaning": "tờ poster quảng cáo sản phẩm hay dịch vụ gì đó"
-      },
-      {
-        "word": "festival",
-        "type": "n",
-        "meaning": "lễ hội"
-      },
-      {
-        "word": "ticket",
-        "type": "n",
-        "meaning": "vé"
-      },
-      {
-        "word": "seat",
-        "type": "n",
-        "meaning": "chỗ ngồi"
-      },
-      {
-        "word": "venue",
-        "type": "n",
-        "meaning": "địa điểm"
-      },
-      {
-        "word": "by mistake",
-        "type": "",
-        "meaning": "nhầm lẫn"
-      },
-      {
-        "word": "additional performer",
-        "type": "",
-        "meaning": "người trình diễn thêm"
-      },
-      {
-        "word": "mention",
-        "type": "v",
-        "meaning": "đề cập"
-      },
-      {
-        "word": "oboe",
-        "type": "n",
-        "meaning": "1 loại kèn"
-      },
-      {
-        "word": "flute",
-        "type": "n",
-        "meaning": "sáo (nhạc cụ)"
-      },
-      {
-        "word": "symphony orchestra",
-        "type": "",
-        "meaning": "dàn nhạc giao hưởng"
-      },
-      {
-        "word": "duck race",
-        "type": "n",
-        "meaning": "cuộc đua vịt"
-      },
-      {
-        "word": "plastic",
-        "type": "adj",
-        "meaning": "nhựa"
-      },
-      {
-        "word": "launched into the river",
-        "type": "",
-        "meaning": "được thả xuống sông"
-      },
-      {
-        "word": "prize",
-        "type": "n",
-        "meaning": "giải thưởng"
-      },
-      {
-        "word": "the finishing line",
-        "type": "",
-        "meaning": "vạch đích"
-      },
-      {
-        "word": "on sale",
-        "type": "",
-        "meaning": "đang khuyến mãi giảm giá"
-      },
-      {
-        "word": "recognise",
-        "type": "v",
-        "meaning": "nhận ra"
-      },
-      {
-        "word": "to be warded",
-        "type": "",
-        "meaning": "được trao thưởng"
-      },
-      {
-        "word": "live nearby",
-        "type": "",
-        "meaning": "sống gần đó"
-      },
-      {
-        "word": "get involved in",
-        "type": "",
-        "meaning": "tham gia vào"
-      }
-    ]
+    "layoutHtml": "<div class=\"overflow-x-auto rounded-xl border border-slate-200\">\n                <table class=\"w-full text-left border-collapse text-sm\">\n                    <thead>\n                        <tr class=\"bg-slate-100 text-slate-800 font-bold border-b border-slate-200\">\n                            <th class=\"p-3\">Event</th>\n                            <th class=\"p-3\">Cost</th>\n                            <th class=\"p-3\">Venue</th>\n                            <th class=\"p-3\">Notes</th>\n                        </tr>\n                    </thead>\n                    <tbody class=\"divide-y divide-slate-200 bg-white\">\n                        <tr>\n                            <td class=\"p-3 font-medium\">Jazz band</td>\n                            <td class=\"p-3\"><span class=\"text-xs bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded font-semibold mr-1\">Example</span> Tickets available for £15</td>\n                            <td class=\"p-3\">The {{input_1}} school</td>\n                            <td class=\"p-3\">Also appearing: Carolyn Hart (plays the {{input_2}} )</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-medium\">Duck races</td>\n                            <td class=\"p-3\">£1 per duck</td>\n                            <td class=\"p-3\">Start behind the {{input_3}}</td>\n                            <td class=\"p-3\">Prize: tickets for {{input_4}} held at the end of the festival.<br>Ducks can be bought in the {{input_5}}</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-medium\">Flower show</td>\n                            <td class=\"p-3\">Free</td>\n                            <td class=\"p-3\">{{input_6}} Hall</td>\n                            <td class=\"p-3\">Prizes presented at 5 pm by a well-known {{input_7}}</td>\n                        </tr>\n                    </tbody>\n                </table>\n            </div>"
   },
   {
     "id": "track25",
@@ -2673,7 +2135,7 @@ const unit2Data = [
     "title": "Track 25: Self-Drive Tours Distance & Price",
     "instructions": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
     "type": "table",
-    "exerciseTitle": "SELF-DRIVE TOURS COMPARISON TABLE",
+    "exerciseTitle": "SELF-DRIVE TOURS",
     "audioSrc": "audio/track25.mp3",
     "audioFallbackSrc": "Audio Listening/Bản sao của Track 25.mp3",
     "questions": [
@@ -2687,61 +2149,27 @@ const unit2Data = [
       },
       {
         "id": 2,
-        "label": "Trip Two Includes: accommodation, car, [2] ________",
+        "label": "Trip One Includes: one [2] ________",
         "acceptableAnswers": [
           "flight"
         ]
       },
       {
         "id": 3,
-        "label": "Trip Three Price: £ [3] ________",
+        "label": "Trip Two Price (per person): £ [3] ________",
         "acceptableAnswers": [
           "429"
         ]
       },
       {
         "id": 4,
-        "label": "Trip Three Includes: accommodation, car, [4] ________",
+        "label": "Trip Two Includes: [4] ________",
         "acceptableAnswers": [
           "dinner"
         ]
       }
     ],
-    "layoutHtml": "\n            <div class=\"overflow-x-auto rounded-xl border border-slate-200\">\n                <table class=\"w-full text-left border-collapse text-sm\">\n                    <thead>\n                        <tr class=\"bg-slate-100 text-slate-800 font-bold border-b border-slate-200\">\n                            <th class=\"p-3\">Tour Name</th>\n                            <th class=\"p-3\">Number of days</th>\n                            <th class=\"p-3\">Total distance</th>\n                            <th class=\"p-3\">Price (per person)</th>\n                            <th class=\"p-3\">Includes</th>\n                        </tr>\n                    </thead>\n                    <tbody class=\"divide-y divide-slate-200 bg-white\">\n                        <tr>\n                            <td class=\"p-3 font-medium\">Trip One</td>\n                            <td class=\"p-3\">12 days</td>\n                            <td class=\"p-3\">{{input_1}} km</td>\n                            <td class=\"p-3\">£525</td>\n                            <td class=\"p-3\">• accommodation<br>• car</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-medium\">Trip Two</td>\n                            <td class=\"p-3\">9 days</td>\n                            <td class=\"p-3\">980 km</td>\n                            <td class=\"p-3\">£980</td>\n                            <td class=\"p-3\">• accommodation<br>• car<br>• {{input_2}}</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-medium\">Trip Three</td>\n                            <td class=\"p-3\">7 days</td>\n                            <td class=\"p-3\">640 km</td>\n                            <td class=\"p-3\">£ {{input_3}}</td>\n                            <td class=\"p-3\">• accommodation<br>• car<br>• {{input_4}}</td>\n                        </tr>\n                    </tbody>\n                </table>\n            </div>\n        ",
-    "audioscript": "A. So how many days are the trips and how much do they cost?\n\nB. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"1\">[1] The first one I told you about is a self-drive tour through California which lasts twelve days and covers 2020 kilometres.</span> The shortest journey is 206 kilometres and the longest is 632 kilometres. The cost is 525 pounds per person. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"2\">[2] That includes accommodation, car rental and a flight but no meals.</span>\n\nA. And the other trip?\n\nB. That lasts nine days but you spend only three days on the road. You cover about 980 kilometres altogether.\n\nA. So is that cheaper then?\n\nB. Yes, it's almost a hundred pounds cheaper. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"3\">[3] It’s 429 pounds per person, which is  a good deal.</span>\n\nA. So that covers accommodation and car hire. What about flights?\n\nB. They aren’t included. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"4\">[4] But these hotels offer dinner in the price.</span>\n\nA. Well, thank you very much. I'll be in touch when I’ve had a chance to look at the brochure.\n\nB. I’m pleased to help. Goodbye.\n\nA. Goodbye.",
-    "translation": "A. Các chuyến đi kéo dài bao lâu và chi phí bao nhiêu ạ?\n\nB. (1) Chuyến đầu tiên tôi nói với bạn là chuyến xe tự lái qua California kéo dài 12 ngày và dài 2020 km. Hành trình ngắn nhất là 206 km và dài nhất là 632 km. Chi phí là 525 bảng mỗi người.(2) Chi phí đó bao gồm chỗ ở, thuê xe hơi và chuyến bay nhưng không bao gồm ăn uống.\n\nA. Và chuyến đi còn lại?\n\nB. Nó kéo dài chín ngày nhưng bạn chỉ mất ba ngày trên đường. Nó dài khoảng 980 km.\n\nA. Vậy là rẻ hơn phải không ạ?\n\nB. Vâng, nó rẻ hơn gần một trăm bảng Anh. (3) 429 bảng Anh trên 1 người, đây là một cái giá tốt.\n\nA. Vậy nó bao gồm chỗ ở và thuê xe. Còn chuyến bay thì sao ạ?\n\nB. Chúng không được bao gồm. (4) Nhưng các khách sạn này cung cấp bữa tối miễn phí (đã bao gồm trong giá vé)\n\nA. Vâng, cảm ơn bạn rất nhiều. Tôi sẽ liên lạc với bạn sau khi tôi xem xét.\n\nB. Rất hân hạnh. Tạm biệt.\n\nA. Tạm biệt.",
-    "vocabulary": [
-      {
-        "word": "trip",
-        "type": "",
-        "meaning": "journey (n): cuộc hành trình, chuyến đi"
-      },
-      {
-        "word": "accommodation",
-        "type": "n",
-        "meaning": "chỗ ở"
-      },
-      {
-        "word": "car rental",
-        "type": "",
-        "meaning": "car hire: thuê xe"
-      },
-      {
-        "word": "offer",
-        "type": "v",
-        "meaning": "cung cấp"
-      },
-      {
-        "word": "be in touch",
-        "type": "",
-        "meaning": "giữ liên lạc"
-      },
-      {
-        "word": "have a chance to",
-        "type": "",
-        "meaning": "có cơ hội làm gì"
-      }
-    ]
+    "layoutHtml": "<div class=\"overflow-x-auto rounded-xl border border-slate-200\">\n                <table class=\"w-full text-left border-collapse text-sm\">\n                    <thead>\n                        <tr class=\"bg-slate-100 text-slate-800 font-bold border-b border-slate-200\">\n                            <th class=\"p-3\"></th>\n                            <th class=\"p-3\">Number of days</th>\n                            <th class=\"p-3\">Total distance</th>\n                            <th class=\"p-3\">Price (per person)</th>\n                            <th class=\"p-3\">Includes</th>\n                        </tr>\n                    </thead>\n                    <tbody class=\"divide-y divide-slate-200 bg-white\">\n                        <tr>\n                            <td class=\"p-3 font-medium\">Trip One</td>\n                            <td class=\"p-3\">12 days</td>\n                            <td class=\"p-3\">{{input_1}} km</td>\n                            <td class=\"p-3\">£525</td>\n                            <td class=\"p-3\">• accommodation<br>• car<br>• one {{input_2}}</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-medium\">Trip Two</td>\n                            <td class=\"p-3\">9 days</td>\n                            <td class=\"p-3\">980 km</td>\n                            <td class=\"p-3\">£{{input_3}}</td>\n                            <td class=\"p-3\">• accommodation<br>• car<br>• {{input_4}}</td>\n                        </tr>\n                    </tbody>\n                </table>\n            </div>"
   },
   {
     "id": "track26",
@@ -2749,7 +2177,7 @@ const unit2Data = [
     "title": "Track 26: House Maintenance & Repair",
     "instructions": "Write ONE WORD ONLY for each answer.",
     "type": "table",
-    "exerciseTitle": "MAINTENANCE SCHEDULE TABLE",
+    "exerciseTitle": "HOUSE MAINTENANCE & REPAIR",
     "audioSrc": "audio/track26.mp3",
     "audioFallbackSrc": "Audio Listening/Bản sao của Track 26.mp3",
     "questions": [
@@ -2769,84 +2197,20 @@ const unit2Data = [
       },
       {
         "id": 3,
-        "label": "Garden: Cut back the bush: take about a [3] ________",
+        "label": "Kitchen Notes: Strip paint and plaster approximately one [3] ________ in advance",
         "acceptableAnswers": [
           "week"
         ]
       },
       {
         "id": 4,
-        "label": "Garden: Repair the [4] ________",
+        "label": "Garden: One [4] ________ needs replacing (end of garden)",
         "acceptableAnswers": [
           "fence"
         ]
       }
     ],
-    "layoutHtml": "\n            <div class=\"overflow-x-auto rounded-xl border border-slate-200\">\n                <table class=\"w-full text-left border-collapse text-sm\">\n                    <thead>\n                        <tr class=\"bg-slate-100 text-slate-800 font-bold border-b border-slate-200\">\n                            <th class=\"p-3\">Area</th>\n                            <th class=\"p-3\">Work to be done</th>\n                            <th class=\"p-3\">Notes</th>\n                        </tr>\n                    </thead>\n                    <tbody class=\"divide-y divide-slate-200 bg-white\">\n                        <tr>\n                            <td class=\"p-3 font-semibold align-top\" rowspan=\"2\">Kitchen</td>\n                            <td class=\"p-3\">Replace the {{input_1}} in the door</td>\n                            <td class=\"p-3\">Fix tomorrow</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3\">Paint wall above the {{input_2}}</td>\n                            <td class=\"p-3\">Strip paint and plaster</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-semibold align-top\" rowspan=\"2\">Garden</td>\n                            <td class=\"p-3\">Cut back bush; take about a {{input_3}}</td>\n                            <td class=\"p-3\">Use electrical cutter</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3\">Repair the {{input_4}}</td>\n                            <td class=\"p-3\">Ask neighbour first</td>\n                        </tr>\n                    </tbody>\n                </table>\n            </div>\n        ",
-    "audioscript": "A. Now, what would you like me to do?\n\nB. Firstly and most urgently is in the kitchen. With all the weather damage, <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"1\">[1] the glass in the door has cracked and I’d need that fixing</span>\n\nA....I presume you mean replacing?\n\nB. Oh, yes. And as soon as possible ...\n\nA. What I'll do is come round tomorrow morning and do that immediately.\n\nB. Thank you so much. The other things aren’t so urgent but...\n\nA. Now, I'll make a note of everything you want doing.\n\nB. Well, in the kitchen I’d like some painting doing.\n\nA. All the kitchen walls?\n\nB. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"2\">[2] Just the area over the cooker.</span> It’s very greasy...\n\nA. Right... it does tend to get that way!\n\nB. Yes!\n\nA. Well, if you want a proper job done <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"3\">[3] what I’d need to do is strip the old paint and plaster it about a week before I paint it.</span>\n\nB. Of course. Now, May tells me you also do work in the garden.\n\nA. That’s right.\n\nB. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"4\">[4] Well, I’d like you to replace a fence.</span>\n\nA. Just One?\n\nB. Yes, at the far end.\n\nA. Fine. Shouldn’t be a problem.\n\nB. And that’s the lot.\n\nA. Fine. Yeah, as I say I can come round tomorrow morning to look over things with you.\n\nB. That’s great, thank you.\n\nA. So, I’ll look forward to seeing you tomorrow at...",
-    "translation": "A. Bây giờ bạn muốn tôi làm những gì?\n\nB. Đầu tiên,  khẩn cấp nhất là trong nhà bếp. Với tất cả các thiệt hại từ thời tiết, (1) miếng kiếng trong cửa đã nứt và tôi cần phải sửa chữa ...\n\nA. Tôi đoán là bạn phải thay thế?\n\nB. Ồ, vâng. Và càng sớm càng tốt ...\n\nA. Những gì tôi sẽ làm là đến vào buổi sáng ngày mai và làm điều đó ngay lập tức.\n\nB. Cảm ơn bạn rất nhiều. Những thứ khác không khẩn cấp như vậy nhưng ...\n\nA. Bây giờ, tôi sẽ ghi lại tất cả mọi thứ bạn muốn làm.\n\nB. Vâng, trong nhà bếp tôi muốn sơn vài thứ.\n\nA. Tất cả các bức tường nhà bếp?\n\nB. (2) Chỉ cần khu vực trên bếp. Nó dính nhiều dầu mỡ.\n\nA. Phải ... hồi nào khu vực này cũng thế.\n\nB. Vâng!\n\nA. Vâng, nếu bạn muốn vậy thì (3) những gì tôi cần làm là lột bỏ lớp sơn cũ và trát vữa khoảng một tuần trước khi tôi sơn nó.\n\nB. Vâng. May nói với tôi bạn cũng làm những công việc trong vườn.\n\nA. Đúng rồi.\n\nB. (4) Vâng, tôi muốn bạn thay thế một hàng rào.\n\nA. Chỉ một hàng rào?\n\nB. Vâng, ở cuối xa.\n\nA. Tốt thôi. Không vấn đề gì.\n\nB. Đó là tất cả những gì cần làm.\n\nA. Vâng, như tôi nói tôi có thể đi tới nhà bạn buổi sáng ngày mai để kiểm tra mọi thứ với bạn.\n\nB. Thật tuyệt vời, cảm ơn bạn.\n\nA. Vì vậy, tôi mong sẽ được gặp bạn vào ngày mai ...",
-    "vocabulary": [
-      {
-        "word": "urgently",
-        "type": "adv",
-        "meaning": "1 cách cấp bách, khẩn cấp"
-      },
-      {
-        "word": "crack",
-        "type": "v",
-        "meaning": "vỡ, nứt"
-      },
-      {
-        "word": "replace",
-        "type": "v",
-        "meaning": "thay thế"
-      },
-      {
-        "word": "come round",
-        "type": "",
-        "meaning": "đi tới"
-      },
-      {
-        "word": "immediately",
-        "type": "adv",
-        "meaning": "ngay lập tức"
-      },
-      {
-        "word": "wall",
-        "type": "n",
-        "meaning": "bức tường"
-      },
-      {
-        "word": "cooker",
-        "type": "n",
-        "meaning": "nồi cơm điện"
-      },
-      {
-        "word": "greasy",
-        "type": "adj",
-        "meaning": "dính dầu mỡ, bết dính"
-      },
-      {
-        "word": "strip",
-        "type": "v",
-        "meaning": "lột bỏ"
-      },
-      {
-        "word": "plaster",
-        "type": "v",
-        "meaning": "trát vữa"
-      },
-      {
-        "word": "fence",
-        "type": "n",
-        "meaning": "hàng rào"
-      },
-      {
-        "word": "look over",
-        "type": "",
-        "meaning": "kiểm tra"
-      }
-    ]
+    "layoutHtml": "<div class=\"overflow-x-auto rounded-xl border border-slate-200\">\n                <table class=\"w-full text-left border-collapse text-sm\">\n                    <thead>\n                        <tr class=\"bg-slate-100 text-slate-800 font-bold border-b border-slate-200\">\n                            <th class=\"p-3\">Area</th>\n                            <th class=\"p-3\">Work to be done</th>\n                            <th class=\"p-3\">Notes</th>\n                        </tr>\n                    </thead>\n                    <tbody class=\"divide-y divide-slate-200 bg-white\">\n                        <tr>\n                            <td class=\"p-3 font-semibold align-top\" rowspan=\"2\">Kitchen</td>\n                            <td class=\"p-3\">Replace the {{input_1}} in the door</td>\n                            <td class=\"p-3\">Fix tomorrow</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3\">Paint wall above the {{input_2}}</td>\n                            <td class=\"p-3\">Strip paint and plaster approximately one {{input_3}} in advance</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-semibold align-top\">Garden</td>\n                            <td class=\"p-3\">One {{input_4}} needs replacing (end of garden)</td>\n                            <td class=\"p-3\"></td>\n                        </tr>\n                    </tbody>\n                </table>\n            </div>"
   },
   {
     "id": "track27",
@@ -2854,7 +2218,7 @@ const unit2Data = [
     "title": "Track 27: Student Accommodation Form",
     "instructions": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
     "type": "form",
-    "exerciseTitle": "ACCOMMODATION FORM - STUDENT INFORMATION",
+    "exerciseTitle": "Accommodation Form - Student Information",
     "audioSrc": "audio/track27.mp3",
     "audioFallbackSrc": "Audio Listening/Bản sao của Track 27.mp3",
     "questions": [
@@ -2862,7 +2226,8 @@ const unit2Data = [
         "id": 1,
         "label": "Name: Anu [1] ________",
         "acceptableAnswers": [
-          "bhatt"
+          "bhatt",
+          "Bhatt"
         ]
       },
       {
@@ -2872,98 +2237,42 @@ const unit2Data = [
           "31st march",
           "march 31st",
           "31 march",
-          "march 31"
+          "march 31",
+          "31st march 1972",
+          "31 march 1972",
+          "31/3/1972",
+          "31/03/1972",
+          "31st March",
+          "31 March"
         ]
       },
       {
         "id": 3,
         "label": "Course of study: [3] ________",
         "acceptableAnswers": [
-          "nursing"
+          "nursing",
+          "Nursing"
         ]
       },
       {
         "id": 4,
-        "label": "Room type: [4] ________",
+        "label": "Number of years planned in hall: [4] ________",
         "acceptableAnswers": [
           "2",
           "two",
-          "number 2"
+          "2 years",
+          "two years"
         ]
       },
       {
         "id": 5,
-        "label": "Dietary requirements: does not eat [5] ________",
+        "label": "Special dietary requirements: no [5] ________ (red)",
         "acceptableAnswers": [
           "meat"
         ]
       }
     ],
-    "layoutHtml": "\n            <div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Accommodation Form</h3>\n                    <p class=\"text-sm text-slate-500 text-center\">Student Information</p>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"p-3 bg-amber-50 border border-amber-200 rounded-lg text-amber-900 text-sm\">\n                        <span class=\"font-semibold\">Example:</span> Type of accommodation: <strong class=\"underline\">Hall of residence</strong>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[150px]\">Name:</span>\n                        <span>Anu</span>\n                        {{input_1}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[150px]\">Date of birth:</span>\n                        {{input_2}}\n                    </div>\n                    <div class=\"flex items-center gap-2 text-slate-600\">\n                        <span class=\"font-medium min-w-[150px]\">Country of origin:</span>\n                        <span>India</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[150px]\">Course of study:</span>\n                        {{input_3}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[150px]\">Room type:</span>\n                        {{input_4}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[150px]\">Dietary requirements:</span>\n                        <span>does not eat</span>\n                        {{input_5}}\n                    </div>\n                </div>\n            </div>\n        ",
-    "audioscript": "MAN: Good morning. Can I help you?\n\nWOMAN: Yes. I’ve just been accepted on a course at the university and I’d like to try and arrange accommodation in the hall of residence .\n\nMAN: Yes, certainly. Please sit down. What I’ll do is fill in a form with you to find out a little more about your preferences and so forth.\n\nWOMAN: Thank you\n\nMAN: So first of all, can I take your name?\n\nWOMAN: It’s Anu Bhatt .\n\nMAN: Could you spell your name please?\n\nWOMAN: Yes. A-N-U ... <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"1\">[1] B-H-A double T.</span>\n\nMAN: Thanks, and could I ask your date of birth?\n\nWOMAN: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"2\">[2] the 31st of March 1972.</span>\n\nMAN: Thank you. And where are you from?\n\nWOMAN: India.\n\nMAN: Oh right. And what will you be studying?\n\nWOMAN: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"3\">[3] I’m doing a course in nursing.</span>\n\nMAN: Right, thank you. And how long would you want to stay in hall, do you think?\n\nWOMAN: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"4\">[4] Well, it’ll take three years but I’d only like to stay in hall for two.</span> I’d like to think about living outside for the third year.\n\nMAN: Fine. And what did you have in mind for catering? Do you want to cook for yourself or have all your meals provided, that’s full board? WOMAN Is there something in between?\n\nMAN: Yes. You can just have evening meal provided, which is half board.\n\nWOMAN: That’s what I’d prefer.\n\nMAN: Yes, a lot of students opt for that. Now, with that in mind, do you have any special diet, anything we should know about?\n\nWOMAN: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"5\">[5] Yes, I don’t take red meat.</span>\n\nMAN: No red meat.",
-    "translation": "MAN: Chào buổi sáng. Tôi có thể giúp gì cho em?\n\nWOMAN: Vâng. Em vừa được  nhận vào một khóa học tại trường đại học và em muốn thử và sắp xếp chỗ ở trong nơi ở của các sinh viên đại học.\n\nMAN: Vâng, chắc chắn rồi. Em ngồi đi. Điều tôi sẽ làm là cùng em điền vào mẫu đơn để tìm hiểu thêm về sở thích của em và vân vân.\n\nWOMAN: Cảm ơn\n\nMAN: Vậy trước tiên, tên của em là gì?\n\nWOMAN: Anu Bhatt.\n\nMAN: Em có thể đánh vần tên mình không?\n\nWOMAN: Vâng. A-N-U ... (1) B-H-A –T- T.\n\nMAN: Cảm ơn, Ngày  sinh của em?\n\nWOMAN: (2) 31 tháng 3 năm 1972.\n\nMAN: Cảm ơn. Em đến từ đâu?\n\nWOMAN: Dạ Ấn Độ.\n\nMAN: Oh . Em sẽ học gì?\n\nWOMAN: (3) Em dự định học một khóa về ngành y tá.\n\nMAN: Em muốn ở trong ký túc bao lâu?\n\nWOMAN: (4) Vâng, sẽ mất ba năm nhưng em chỉ muốn ở trong 2 năm. Em muốn  sống ở bên ngoài vào năm thứ ba.\n\nMAN: Tốt thôi. Em đã nghĩ gì về việc phục vụ ăn uống chưa? Em có muốn tự nấu ăn cho mình hoặc có tất cả các bữa ăn được cung cấp, đó là loại hình cung cấp đầy đủ?\n\nWOMAN: Có gì giữa không ạ??\n\nMAN: Em có thể chỉ cần cung cấp bữa tối, đó là loại hình cung cấp một nửa.\n\nWOMAN: Đó là điều em thích.\n\nMAN: uh, rất nhiều sinh viên chọn hình thức đó. Bây giờ, em có chế độ ăn uống đặc biệt nào không, bất cứ điều gì chúng tôi cần biết?\n\nWOMAN: (5) Vâng, em không ăn thịt đỏ.\n\nMAN: Không thịt đỏ.",
-    "vocabulary": [
-      {
-        "word": "to be accepted",
-        "type": "",
-        "meaning": "được nhận vào, được chấp nhận"
-      },
-      {
-        "word": "arrange",
-        "type": "v",
-        "meaning": "sắp xếp"
-      },
-      {
-        "word": "hall of residence",
-        "type": "",
-        "meaning": "nơi ở của các sinh viên đại học"
-      },
-      {
-        "word": "fill in a form",
-        "type": "",
-        "meaning": "điền vào 1 tờ đơn"
-      },
-      {
-        "word": "preference",
-        "type": "n",
-        "meaning": "sở thích"
-      },
-      {
-        "word": "so forth",
-        "type": "",
-        "meaning": "vân vân"
-      },
-      {
-        "word": "nursing",
-        "type": "n",
-        "meaning": "ngành y tá"
-      },
-      {
-        "word": "catering",
-        "type": "n",
-        "meaning": "việc phục vụ ăn uống"
-      },
-      {
-        "word": "full board",
-        "type": "",
-        "meaning": "loại hình chỗ ở bao gồm việc cung cấp đầy đủ các bữa ăn"
-      },
-      {
-        "word": "half board",
-        "type": "",
-        "meaning": "loại hình chỗ ở chỉ bao gồm việc cung cấp bữa sáng và tối"
-      },
-      {
-        "word": "opt for",
-        "type": "v",
-        "meaning": "lựa chọn"
-      },
-      {
-        "word": "diet",
-        "type": "n",
-        "meaning": "chế độ ăn"
-      }
-    ]
+    "layoutHtml": "<div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Accommodation Form</h3>\n                    <p class=\"text-sm text-slate-500 text-center\">Student Information</p>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"p-3 bg-amber-50 border border-amber-200 rounded-lg text-amber-900 text-sm\">\n                        <span class=\"font-semibold\">Example:</span> Type of accommodation: <strong class=\"underline\">Hall of residence</strong>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[240px]\">Name:</span>\n                        <span>Anu</span>\n                        {{input_1}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[240px]\">Date of birth:</span>\n                        {{input_2}}\n                    </div>\n                    <div class=\"flex items-center gap-2 text-slate-600\">\n                        <span class=\"font-medium min-w-[240px]\">Country of origin:</span>\n                        <span>India</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[240px]\">Course of study:</span>\n                        {{input_3}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[240px]\">Number of years planned in hall:</span>\n                        {{input_4}}\n                    </div>\n                    <div class=\"flex items-center gap-2 text-slate-600\">\n                        <span class=\"font-medium min-w-[240px]\">Preferred catering arrangement:</span>\n                        <span>half board</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[240px]\">Special dietary requirements:</span>\n                        <span>no</span>\n                        {{input_5}}\n                        <span>(red)</span>\n                    </div>\n                </div>\n            </div>"
   },
   {
     "id": "track28",
@@ -2971,34 +2280,35 @@ const unit2Data = [
     "title": "Track 28: Greek Apartments Comparison",
     "instructions": "Questions 1-5. Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
     "type": "table",
-    "exerciseTitle": "GREEK ISLAND APARTMENTS TABLE",
+    "exerciseTitle": "APARTMENTS COMPARISON",
     "audioSrc": "audio/track28.mp3",
     "audioFallbackSrc": "Audio Listening/Bản sao của Track 28.mp3",
     "questions": [
       {
         "id": 1,
-        "label": "Blue Sea: distance to beach: [1] ________ m",
+        "label": "Blue Bay Apartments: just [1] ________ metres from beach",
         "acceptableAnswers": [
           "300"
         ]
       },
       {
         "id": 2,
-        "label": "Apartments name: [2] ________",
+        "label": "[2] ________ Apartments",
         "acceptableAnswers": [
-          "sunshade"
+          "sunshade",
+          "Sunshade"
         ]
       },
       {
         "id": 3,
-        "label": "Sunshade facilities: large roof [3] ________",
+        "label": "The Grand Facilities: [3] ________",
         "acceptableAnswers": [
           "balcony"
         ]
       },
       {
         "id": 4,
-        "label": "Sunshade other info: walks in nearby [4] ________",
+        "label": "The Grand Other Information: overlooking [4] ________",
         "acceptableAnswers": [
           "forest",
           "forests"
@@ -3006,120 +2316,21 @@ const unit2Data = [
       },
       {
         "id": 5,
-        "label": "Sunshade cost: £ [5] ________",
+        "label": "The Grand Cost: £ [5] ________",
         "acceptableAnswers": [
           "319"
         ]
       }
     ],
-    "layoutHtml": "\n            <div class=\"overflow-x-auto rounded-xl border border-slate-200\">\n                <table class=\"w-full text-left border-collapse text-sm\">\n                    <thead>\n                        <tr class=\"bg-slate-100 text-slate-800 font-bold border-b border-slate-200\">\n                            <th class=\"p-3\">Apartments</th>\n                            <th class=\"p-3\">Facilities</th>\n                            <th class=\"p-3\">Other Information</th>\n                            <th class=\"p-3\">Cost</th>\n                        </tr>\n                    </thead>\n                    <tbody class=\"divide-y divide-slate-200 bg-white\">\n                        <tr>\n                            <td class=\"p-3 font-medium\">Rose Garden Apartments</td>\n                            <td class=\"p-3\">studio flat</td>\n                            <td class=\"p-3\">entertainment programme: Greek dancing</td>\n                            <td class=\"p-3\">£219</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-medium\">Blue Sea</td>\n                            <td class=\"p-3\">large studio flat</td>\n                            <td class=\"p-3\">• {{input_1}} m from beach<br>• water sports</td>\n                            <td class=\"p-3\">£275</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-medium\">{{input_2}}</td>\n                            <td class=\"p-3\">large roof {{input_3}}</td>\n                            <td class=\"p-3\">• walks in nearby {{input_4}}<br>• Greek singing & dancing</td>\n                            <td class=\"p-3\">£ {{input_5}}</td>\n                        </tr>\n                    </tbody>\n                </table>\n            </div>\n        ",
-    "audioscript": "MAN: Greek Island Holidays, can I help you?\n\nWOMAN: Yes, I hope so. I have a friend who’s just come back from Corfu and she’s recommended some apartments in Arilas. She thought they might be on your list.\n\nMAN: Arilas, Arilas, let me see. Can you give me the names?\n\nWOMAN: Yes, the first’s Rose Garden Apartments. I’d like to go with another friend in the last week of October.\n\nMAN: Well, we’ve got a lovely studio flat available at that time. I’m sure you’d enjoy the entertainment programme there too, with Greek dancing in the restaurant.\n\nWOMAN: And the cost for each of us?\n\nMAN: 219 pounds.\n\nWOMAN: That sounds very reasonable! I’m just jotting down some notes. Now the second one she mentioned was called Blue Bay.\n\nMAN: Blue Bay? Yes, in fact that’s very popular and it has some special features.\n\nWOMAN: Really?\n\nMAN: The main attraction is the large swimming pool with salt water.\n\nWOMAN: Much healthier, I understand.\n\nMAN: That’s right. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"1\">[1] And it isn’t far from the beach, either - only 300 metres , and only around half a kilometre to some shops, so you don’t have to be too energetic.</span>\n\nWOMAN: Is it much more expensive than the first one?\n\nMAN: Let me just check. I think at the time you want to go it’s around 260 pounds - no 275 pounds to be exact.\n\nWOMAN: Right, I’ve got that. Now there are just two more apartments to ask you about. Urm, I can’t read my own writing! Something to do with sun ... Sunshine, is it?\n\nMAN: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"2\">[2] I think you meant the Sunshade Apartments.</span> They’re on a mountainside.\n\nWOMAN: Any special features?\n\nMAN: Yes, each room has its own sun terrace and there are shared barbecue facilities.\n\nWOMAN: Sounds lovely!\n\nMAN: Yes, it is rather well-equipped. It also provides water sports - it has its own beach. There are facilities for water-skiing.\n\nWOMAN: Any kite-surfing? My friend’s quite keen.\n\nMAN: Not at the hotel but I’m sure you’ll find some in Arilas. There’s also satellite TV in the apartments.\n\nWOMAN: And how much is that one?\n\nMAN: 490 pounds with two sharing.\n\nWOMAN: You mean 245 pounds each?\n\nMAN: I’m afraid not! Each person has to pay that amount and there must be at least two in an apartment.\n\nWOMAN: I don’t think that would be within our budget, unfortunately. And the last one sounds a bit expensive too - the Grand!\n\nMAN: Actually it’s quite reasonable. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"3\">[3] It’s an older style house with Greek paintings in every room, and a balcony outside.</span>\n\nWOMAN: Sounds nice. What are the views like?\n\nMAN: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"4\">[4] Well, there are forests all round and they hide a supermarket just down the road, so that’s very useful for all your shopping needs.</span> There’s a disco in the area too.\n\nWOMAN: And the price?\n\nMAN: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"5\">[5] 319 pounds at that time , but if you leave it till November it goes down by 40 percent.</span>\n\nWOMAN: Too late, I’m afraid.\n\nMAN: Well, why don’t I send you a brochure with full details, Ms ... ?\n\nWOMAN: Nash. But don’t worry about that. I’m coming to Upminster soon and I’ll call and get one. I just wanted to get an idea first.\n\nMAN: Well, that’s fine. We’ve got plenty here when you come.",
-    "translation": "MAN: Greek Island Holidays, tôi có thể giúp gì cho bạn?\n\nWOMAN: Vâng, tôi hy vọng như vậy. Tôi có một người bạn vừa trở về từ Corfu và cô ấy giới thiệu một số căn hộ tại Arilas. Cô ấy nghĩ chúng có thể nằm trong danh sách của bạn.\n\nMAN: Arilas, Arilas, để tôi xem. Bạn có thể cho tôi tên của căn hộ không?\n\nWOMAN: Vâng, đầu tiên là Rose Garden Apartments. Tôi muốn đi với một người bạn khác trong tuần cuối cùng của tháng Mười.\n\nMAN: Vâng, chúng tôi có một căn hộ nhỏ đáng yêu có sẵn tại thời điểm đó. Tôi chắc rằng bạn cũng thích chương trình giải trí, với điệu nhảy Hy Lạp trong nhà hàng.\n\nWOMAN: Chi phí cho mỗi người là bao nhiêu ạ?\n\nMAN: 219 bảng.\n\nWOMAN: Nghe có vẻ rất hợp lý! Tôi chỉ cần ghi lại một số thông tin. Bây giờ cái thứ hai cô ấy đề cập là Blue Bay.\n\nMAN: Blue Bay? Vâng, trên thực tế nó rất phổ biến và nó có một số trang thiết bị đặc biệt.\n\nWOMAN: Thật sao?\n\nMAN: Điểm thu hút chính là bể bơi lớn với nước muối.\n\nWOMAN: Tôi hiểu, rất tốt cho sức khỏe.\n\nMAN: Đúng vậy. (1) Và cũng không xa bãi biển - chỉ 300 mét, và chỉ khoảng nửa cây số đến một số cửa hàng, vì vậy bạn không cần phải quá năng động.\n\nWOMAN: Nó có đắt hơn nhiều so với cái đầu tiên không?\n\nMAN: Để tôi kiểm tra. Tôi nghĩ rằng tại thời điểm bạn muốn đi nó là khoảng 260 bảng – không 275 bảng mới chính xác.\n\nWOMAN: Vâng. Bây giờ tôi có thêm hai căn hộ để hỏi bạn. Urm, tôi không thể đọc được cái mà tôi đã viết! Một cái gì đó với Sun ... Sunshine, phải không ạ?\n\nMAN: (2) Tôi nghĩ cái bạn muốn nói là Sunshade Apartments. Chúng nằm trên sườn núi.\n\nWOMAN: Chúng có bất kỳ trang thiết bị đặc biệt nào không ạ?\n\nMAN: Có, mỗi phòng đều có sân hiên tắm nắng riêng và có tiện nghi nướng thịt ngoài trời.\n\nWOMAN: Nghe thật tuyệt!\n\nMAN: Vâng, nó được trang bị khá tốt. Nó cũng cung cấp các môn thể thao dưới nước - nó có bãi biển riêng. Tại đây có các tiện nghi cho trượt nước.\n\nWOMAN: Có lướt ván diều nào không ạ? Bạn tôi khá thích.\n\nMAN: Không có ở khách sạn nhưng tôi chắc rằng bạn sẽ tìm thấy một số ở Arilas. Ngoài ra còn có truyền hình vệ tinh trong các căn hộ.\n\nWOMAN: Nó giá bao nhiêu ạ?\n\nMAN: 490 bảng cho 2 người.\n\nWOMAN :Có nghĩa là 245 bảng mỗi người?\n\nMAN: Tôi sợ không được ạ! Mỗi người phải trả số tiền đó và phải có ít nhất hai người trong căn hộ.\n\nWOMAN: Tôi không nghĩ rằng nó nằm trong ngân sách của chúng tôi, thật không may. Và nơi cuối cùng nghe có vẻ tốn kém một chút - Grand!\n\nMAN: Trên thực tế nó khá hợp lý. (3) Đây là một ngôi nhà kiểu cổ hơn với các bức tranh Hy Lạp trong mỗi phòng, và sân thượng  bên ngoài.\n\nWOMAN: Nghe hay đấy. Cảnh quang như thế nào ạ?\n\nMAN: (4) Vâng, có những khu rừng xung quanh và chúng ẩn sau một siêu thị ngay dưới đường, do đó rất hữu ích cho tất cả các nhu cầu mua sắm của bạn. Có cả một nơi nhảy disco trong khu vực.\n\nWOMAN: Giá cả sao nhỉ?\n\nMAN: (5) 319 bảng vào thời điểm đó, nhưng nếu bạn chờ cho đến tháng mười thì nó sẽ giảm 40%.\n\nWOMAN: Tôi e rằng quá trễ.\n\nMAN: Vậy thì tại sao tôi không gửi cho bạn một cuốn sách nhỏ với đầy đủ chi tiết, cô...?\n\nWOMAN: Nash. Đừng lo lắng về điều đó. Tôi sắp tới Upminster sớm và tôi sẽ gọi và chọn 1 căn. Tôi chỉ muốn suy nghĩ xíu.\n\nMAN: Vâng, tốt thôi. Chúng tôi có nhiều căn ở đây khi bạn đến.",
-    "vocabulary": [
-      {
-        "word": "apartment",
-        "type": "n",
-        "meaning": "căn hộ"
-      },
-      {
-        "word": "studio flat",
-        "type": "",
-        "meaning": "Căn hộ nhỏ ( (thường) có một phòng chính để sinh hoạt và ngủ, một cái bếp nhỏ và một phòng tắm)"
-      },
-      {
-        "word": "entertainment programme",
-        "type": "",
-        "meaning": "chương trình giải trí"
-      },
-      {
-        "word": "reasonable",
-        "type": "adj",
-        "meaning": "hợp lý"
-      },
-      {
-        "word": "jot down some notes",
-        "type": "",
-        "meaning": "viết xuống 1 vài ghi chú"
-      },
-      {
-        "word": "special features",
-        "type": "",
-        "meaning": "những đặc điểm đặc biệt"
-      },
-      {
-        "word": "attraction",
-        "type": "n",
-        "meaning": "sự thu hút"
-      },
-      {
-        "word": "energetic",
-        "type": "adj",
-        "meaning": "năng động"
-      },
-      {
-        "word": "mountainside",
-        "type": "n",
-        "meaning": "sườn núi"
-      },
-      {
-        "word": "terrace",
-        "type": "n",
-        "meaning": "sân thượng"
-      },
-      {
-        "word": "facilities",
-        "type": "n",
-        "meaning": "những trang thiết bị"
-      },
-      {
-        "word": "well-equipped",
-        "type": "adj",
-        "meaning": "được trang bị đầy đủ"
-      },
-      {
-        "word": "water-skiing",
-        "type": "n",
-        "meaning": "môn lướt ván nước"
-      },
-      {
-        "word": "kite-surfing",
-        "type": "n",
-        "meaning": "môn lướt ván diều"
-      },
-      {
-        "word": "keen",
-        "type": "adj",
-        "meaning": "yêu thích"
-      },
-      {
-        "word": "within our budget",
-        "type": "",
-        "meaning": "nằm trong ngân sách của chúng tôi"
-      },
-      {
-        "word": "unfortunately",
-        "type": "adv",
-        "meaning": "thật là không may mắn"
-      },
-      {
-        "word": "balcony",
-        "type": "n",
-        "meaning": "sân thượng"
-      },
-      {
-        "word": "disco",
-        "type": "n",
-        "meaning": "phòng nhảy disco"
-      }
-    ]
+    "layoutHtml": "<div class=\"overflow-x-auto rounded-xl border border-slate-200\">\n                <table class=\"w-full text-left border-collapse text-sm\">\n                    <thead>\n                        <tr class=\"bg-slate-100 text-slate-800 font-bold border-b border-slate-200\">\n                            <th class=\"p-3\">Apartments</th>\n                            <th class=\"p-3\">Facilities</th>\n                            <th class=\"p-3\">Other Information</th>\n                            <th class=\"p-3\">Cost</th>\n                        </tr>\n                    </thead>\n                    <tbody class=\"divide-y divide-slate-200 bg-white\">\n                        <tr>\n                            <td class=\"p-3 font-medium\">Rose Garden Apartments</td>\n                            <td class=\"p-3\">studio flat</td>\n                            <td class=\"p-3\"><span class=\"text-xs bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded font-semibold mr-1\">Example</span> entertainment programme: Greek dancing</td>\n                            <td class=\"p-3\">£219</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-medium\">Blue Bay Apartments</td>\n                            <td class=\"p-3\">large salt-water swimming pool</td>\n                            <td class=\"p-3\">• just {{input_1}} metres from beach<br>• near shops</td>\n                            <td class=\"p-3\">£275</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-medium\">{{input_2}} Apartments</td>\n                            <td class=\"p-3\">terrace</td>\n                            <td class=\"p-3\">watersports</td>\n                            <td class=\"p-3\">£490</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-medium\">The Grand</td>\n                            <td class=\"p-3\">• Greek paintings<br>• {{input_3}}</td>\n                            <td class=\"p-3\">• overlooking {{input_4}}<br>• near a supermarket and a disco</td>\n                            <td class=\"p-3\">£{{input_5}}</td>\n                        </tr>\n                    </tbody>\n                </table>\n            </div>"
   },
   {
     "id": "track29",
     "trackNum": 29,
     "title": "Track 29: Greek Island Holidays Insurance",
-    "instructions": "Questions 6-10. Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+    "instructions": "Write ONE WORD AND/OR A NUMBER for each answer.",
     "type": "table",
-    "exerciseTitle": "INSURANCE BENEFITS TABLE",
+    "exerciseTitle": "GREEK ISLAND HOLIDAYS",
     "audioSrc": "audio/track29.mp3",
     "audioFallbackSrc": "Audio Listening/Bản sao của Track 29.mp3",
     "questions": [
@@ -3129,114 +2340,42 @@ const unit2Data = [
         "acceptableAnswers": [
           "10,000",
           "10000",
-          "100000",
-          "10,0000"
+          "10,0000",
+          "100000"
         ]
       },
       {
         "id": 7,
-        "label": "Hospital: allows a [7] ________ to travel to resort",
+        "label": "Hospital: Additional benefit allows a [7] ________ to travel to resort",
         "acceptableAnswers": [
           "relative"
         ]
       },
       {
         "id": 8,
-        "label": "Missed departure: Up to £1000 if you [8] ________ due to heavy traffic",
+        "label": "[8] ________ departure: Up to £1000. Depends on reason.",
         "acceptableAnswers": [
-          "missed"
+          "missed",
+          "Missed"
         ]
       },
       {
         "id": 9,
-        "label": "Baggage: Up to £300 for any single [9] ________",
+        "label": "Personal belongings: Up to £3000; £500 for one [9] ________",
         "acceptableAnswers": [
           "item"
         ]
       },
       {
         "id": 10,
-        "label": "Contact: 24-hour helpline in [10] ________",
+        "label": "Name of Assistant Manager: Ben [10] ________",
         "acceptableAnswers": [
-          "ludlow"
+          "ludlow",
+          "Ludlow"
         ]
       }
     ],
-    "layoutHtml": "\n            <div class=\"overflow-x-auto rounded-xl border border-slate-200\">\n                <table class=\"w-full text-left border-collapse text-sm\">\n                    <thead>\n                        <tr class=\"bg-slate-100 text-slate-800 font-bold border-b border-slate-200\">\n                            <th class=\"p-3\">Insurance Benefits</th>\n                            <th class=\"p-3\">Maximum Amount</th>\n                            <th class=\"p-3\">Conditions / Notes</th>\n                        </tr>\n                    </thead>\n                    <tbody class=\"divide-y divide-slate-200 bg-white\">\n                        <tr>\n                            <td class=\"p-3 font-medium\">Cancellation</td>\n                            <td class=\"p-3\">£ {{input_6}}</td>\n                            <td class=\"p-3\">Refund if holiday canceled due to illness</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-medium\">Hospital</td>\n                            <td class=\"p-3\">£600</td>\n                            <td class=\"p-3\">Additional benefit allows a {{input_7}} to travel to resort</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-medium\">Missed departure</td>\n                            <td class=\"p-3\">Up to £1000</td>\n                            <td class=\"p-3\">If flight is {{input_8}} due to unforeseen heavy traffic</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-medium\">Baggage</td>\n                            <td class=\"p-3\">Up to £3000</td>\n                            <td class=\"p-3\">Up to £300 for any single {{input_9}}</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-medium\">Emergency helpline</td>\n                            <td class=\"p-3\">Included</td>\n                            <td class=\"p-3\">24-hour emergency centre in {{input_10}}</td>\n                        </tr>\n                    </tbody>\n                </table>\n            </div>\n        ",
-    "audioscript": "WOMAN: If you’ve got a minute, could I just check a couple of points about insurance? I got one policy through the post but I’d like to see if yours is better.\n\nMAN: Fine. What would you like to know?\n\nWOMAN: Well, the one I’ve got has benefits and then the maximum amount you can claim. Is that like yours?\n\nMAN: Yes, that’s how most of them are.\n\nWOMAN: Well, the first thing is cancellation. If the holiday’s cancelled on the policy I’ve got, you can claim 8,000 pounds.\n\nMAN: We can improve on that, Ms Nash. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"6\">[6] For Greek Island holidays, our maximum is 10.000 pounds.</span>\n\nWOMAN: That’s good - of course our holiday won’t even cost 1,000 pounds together!\n\nMAN: It’s still sensible to have good cover. Now, if you go to hospital, we allow 600 pounds.\n\nWOMAN: Yes, mine’s similar.\n\nMAN: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"7\">[7] And we also allow a relative to travel to your holiday resort.</span>\n\nWOMAN: My policy just says their representative will help you.\n\nMAN: You can see there’s another difference there. And what happens if you don’t get on the plane?\n\nWOMAN: Nothing, as far as I can see on this form.\n\nMAN: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"8\">[8] Don’t you have missed departure?</span>\n\nWOMAN: No, I’ll just jot that down.\n\nMAN: We pay up to 1,000 pounds for that, depending on the reason. And we’re particularly generous about loss of personal belongings - up to 3,000 pounds, <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"9\">[9] but not more than 500 pounds for a single item.</span>\n\nWOMAN: Then I’d better not take my laptop!\n\nMAN: Not unless you insure it separately.\n\nWOMAN: OK - thanks very much for your time - you’ve really been helpful. Can I get back to you? Your name is?\n\nMAN: Ben - Ludlow. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"10\">[10] That’s L-U-D-L-O-W.</span> I’m the Assistant Manager here. I’ll give you my number. It’s 081 260 543 216.\n\nWOMAN: But didn’t I phone 081 260 567 294? That’s what I’ve got on the paper.\n\nMAN: That’s the main switchboard. I’ve given you my direct line.\n\nWOMAN: Right, thank you very much for your time.",
-    "translation": "WOMAN : Nếu anh có một phút, tôi có thể kiểm tra một vài thông tin về bảo hiểm? Tôi có một chính sách bảo hiểm từ bưu điện nhưng tôi muốn xem bảo hiểm của anh có tốt hơn không.\n\nMAN: Vâng. Cô muốn biết điều gì ạ?\n\nWOMAN: Vâng, cái tờ bảo hiểm của tôi có 1 bên là các lợi ích và 1 bên là số tiền tối đa anh có thể yêu cầu bồi thường. Giống của anh không?\n\nMAN: Vâng, khoản này thì tất cả chúng đều như nhau.\n\nWOMAN : Vâng, điều đầu tiên là hủy bỏ. Nếu kỳ nghỉ bị huỷ bỏ theo chính sách mà tôi có, anh có thể đòi bồi thường 8,000 bảng Anh.\n\nMAN: Chúng tôi có thể cải thiện về điều đó, cô Nash. (1) Đối với các kỳ nghỉ Đảo Hy Lạp, mức tối đa của chúng tôi là 10.000 bảng Anh.\n\nWOMAN: Tốt quá -, kỳ nghỉ của chúng tôi sẽ không lên tới 1.000 bảng .\n\nMAN: Vẫn hợp lí để có được sự bảo hiểm tốt. Bây giờ, nếu cơ đến bệnh viện, chúng tôi cho phép bồi thường 600 bảng.\n\nWOMAN: Vâng, tôi cũng vậy.\n\nMAN: (2) Và chúng tôi cũng cho phép người thân di chuyển đến khu nghỉ mát của cô.\n\nWOMAN: Chính sách của tôi chỉ nói rằng người đại diện sẽ tới.\n\nMAN: Cô có thể thấy có một sự khác biệt ở đó. Và điều gì xảy ra nếu cô không lên được máy bay?\n\nWOMAN : Không có gì, theo như tôi có thể thấy trên mẫu đơn này.\n\nMAN: (3) Điều gì xảy xa nếu cô bị lỡ chuyến?\n\nWOMAN : Không có gì xảy ra, tôi sẽ ghi lại điều đó.\n\nMAN: Chúng tôi trả 1.000 bảng cho điều đó, tùy thuộc vào lý do. Và chúng tôi đặc biệt hào phóng về việc mất đồ dùng cá nhân - lên tới 3000 bảng, (4) nhưng không quá 500 bảng cho một mặt hàng.\n\nWOMAN:Vậy tôi không nên mang theo máy tính xách tay!\n\nMAN: Không, trừ khi cô bảo hiểm nó riêng biệt.\n\nWOMAN: OK - cảm ơn rất nhiều vì thời gian của anh - anh thực sự hữu ích. Tôi có thể liên lạc với anh sau được không? Tên anh là?\n\nMAN: Ben - Ludlow. (5) Đó là L-U-D-L-O-W. Tôi là Trợ lý  điều hành ở đây. Tôi sẽ cho cô số của tôi.  081260 543216.\n\nWOMAN: Nhưng không phải số 081260 567294 à? Đó là những gì tôi có trên giấy.\n\nMAN: Đó là tổng đài chính. Tôi đã đưa cho cô đường dây trực tiếp của tôi.\n\nWOMAN: OK, cảm ơn anh ...",
-    "vocabulary": [
-      {
-        "word": "policy",
-        "type": "n",
-        "meaning": "chính sách"
-      },
-      {
-        "word": "benefit",
-        "type": "n",
-        "meaning": "lợi ích"
-      },
-      {
-        "word": "the maximum amount",
-        "type": "",
-        "meaning": "số tiền tối đa"
-      },
-      {
-        "word": "cancellation",
-        "type": "n",
-        "meaning": "việc hủy chuyến"
-      },
-      {
-        "word": "sensible",
-        "type": "adj",
-        "meaning": "hợp lý"
-      },
-      {
-        "word": "have good cover",
-        "type": "",
-        "meaning": "có được sự bảo hiểm tốt"
-      },
-      {
-        "word": "relative",
-        "type": "n",
-        "meaning": "người thân"
-      },
-      {
-        "word": "representative",
-        "type": "n",
-        "meaning": "người đại diện"
-      },
-      {
-        "word": "get on the plane",
-        "type": "",
-        "meaning": "lên máy bay"
-      },
-      {
-        "word": "missed departure",
-        "type": "n",
-        "meaning": "chuyến khởi hành bị lỡ (lỡ chuyến)"
-      },
-      {
-        "word": "generous",
-        "type": "adj",
-        "meaning": "hào phóng"
-      },
-      {
-        "word": "loss of personal belongings",
-        "type": "",
-        "meaning": "việc mất mát đồ cá nhân"
-      },
-      {
-        "word": "Assistant Manager",
-        "type": "",
-        "meaning": "trợ lý điều hành"
-      },
-      {
-        "word": "switchboard",
-        "type": "n",
-        "meaning": "tổng đài"
-      }
-    ]
+    "layoutHtml": "<div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Greek Island Holidays</h3>\n                </div>\n                <div class=\"overflow-x-auto rounded-lg border border-slate-200 mb-4\">\n                    <table class=\"w-full text-left border-collapse text-sm\">\n                        <thead>\n                            <tr class=\"bg-slate-100 text-slate-800 font-bold border-b border-slate-200\">\n                                <th class=\"p-3\">Insurance Benefits</th>\n                                <th class=\"p-3\">Maximum Amount</th>\n                            </tr>\n                        </thead>\n                        <tbody class=\"divide-y divide-slate-200 bg-white\">\n                            <tr>\n                                <td class=\"p-3 font-medium\">Cancellation</td>\n                                <td class=\"p-3\">£{{input_6}}</td>\n                            </tr>\n                            <tr>\n                                <td class=\"p-3 font-medium\">Hospital</td>\n                                <td class=\"p-3\">£600. Additional benefit allows a {{input_7}} to travel to resort</td>\n                            </tr>\n                            <tr>\n                                <td class=\"p-3 font-medium\">{{input_8}} departure</td>\n                                <td class=\"p-3\">Up to £1000. Depends on reason.</td>\n                            </tr>\n                            <tr>\n                                <td class=\"p-3 font-medium\">Personal belongings</td>\n                                <td class=\"p-3\">Up to £3000; £500 for one {{input_9}}</td>\n                            </tr>\n                        </tbody>\n                    </table>\n                </div>\n                <div class=\"pt-2 border-t border-slate-200 space-y-2 text-slate-700\">\n                    <div class=\"flex flex-wrap items-center gap-2\">\n                        <span class=\"font-medium\">Name of Assistant Manager:</span>\n                        <span>Ben</span>\n                        {{input_10}}\n                    </div>\n                    <div class=\"flex items-center gap-2 text-slate-600\">\n                        <span class=\"font-medium\">Direct phone line:</span>\n                        <span>081260 543216</span>\n                    </div>\n                </div>\n            </div>"
   },
   {
     "id": "track30",
@@ -3244,7 +2383,7 @@ const unit2Data = [
     "title": "Track 30: Health Centres Comparison",
     "instructions": "Complete the table below. Write ONE WORD ONLY for each answer.",
     "type": "table",
-    "exerciseTitle": "HEALTH CENTRES TABLE",
+    "exerciseTitle": "HEALTH CENTRES",
     "audioSrc": "audio/track30.mp3",
     "audioFallbackSrc": "Audio Listening/Bản sao của Track 30.mp3",
     "questions": [
@@ -3259,64 +2398,27 @@ const unit2Data = [
         "id": 2,
         "label": "The [2] ________ Health Practice",
         "acceptableAnswers": [
-          "eshcol"
+          "eshcol",
+          "Eshcol"
         ]
       },
       {
         "id": 3,
-        "label": "Advantage: Offers [3] ________ appointments",
+        "label": "The Eshcol Health Practice: Offers [3] ________ appointments",
         "acceptableAnswers": [
           "evening"
         ]
       },
       {
         "id": 4,
-        "label": "Doctor’s name: Dr [4] ________",
+        "label": "The Shore Lane Health Centre: Dr [4] ________",
         "acceptableAnswers": [
-          "gormley"
+          "gormley",
+          "Gormley"
         ]
       }
     ],
-    "layoutHtml": "\n            <div class=\"overflow-x-auto rounded-xl border border-slate-200\">\n                <table class=\"w-full text-left border-collapse text-sm\">\n                    <thead>\n                        <tr class=\"bg-slate-100 text-slate-800 font-bold border-b border-slate-200\">\n                            <th class=\"p-3\">Name of centre</th>\n                            <th class=\"p-3\">Doctor’s name</th>\n                            <th class=\"p-3\">Advantage</th>\n                        </tr>\n                    </thead>\n                    <tbody class=\"divide-y divide-slate-200 bg-white\">\n                        <tr>\n                            <td class=\"p-3 font-medium\">The Harvey Clinic</td>\n                            <td class=\"p-3\">Dr Green</td>\n                            <td class=\"p-3\">especially good with {{input_1}}</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-medium\">The {{input_2}} Health Practice</td>\n                            <td class=\"p-3\">Dr Fuller</td>\n                            <td class=\"p-3\">Offers {{input_3}} appointments</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-medium\">Shore Lane Health Centre</td>\n                            <td class=\"p-3\">Dr {{input_4}}</td>\n                            <td class=\"p-3\">Focus on sports injuries & rehabilitation</td>\n                        </tr>\n                    </tbody>\n                </table>\n            </div>\n        ",
-    "audioscript": "WOMAN: Can I help you?\n\nMAN: Yes, I’ve just moved to this area with my wife and children and I’d like to know where we can all register with a doctor at a Health Centre.\n\nWOMAN: Okay. Well, there’s Doctor Green at The Harvey Clinic. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"1\">[1] We always recommend her for babies, because she’s very good with them and she runs a special clinic.</span>\n\nMAN: Oh ... actually my youngest child is five, so that wouldn’t be any good for us.\n\nWOMAN: Right.\n\nMAN: Is there anywhere else I could try?\n\nWOMAN: Yes, the Eshcol Health Practice is the next one on my list.\n\nMAN: How do you spell that?\n\nWOMAN: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"2\">[2] E-S-H-C-O-L.</span> And it’s Doctor Fuller, who has space on his list. The clinic only opened a year ago, so the facilities are all very modern.\n\nMAN: That sounds good.\n\nWOMAN: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"3\">[3] And it’s particularly good if you’re busy during the day, because they also do appointments in the evening.</span> They’re closed on Saturday, though. The only other place on the list is the Health Centre on Shore Lane. You can register with Doctor Gormley, <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"4\">[4] that’s G-O-R-M-L-E-Y.</span> He’s new there, but the centre has a very good reputation.\n\nMAN: Oh yes, I think I know the road. That would be the best one.",
-    "translation": "WOMAN: Tôi có thể giúp gì cho bạn?\n\nMAN: Vâng, tôi vừa chuyển đến khu vực này với vợ con tôi và tôi muốn biết chúng tôi có thể đăng ký với bác sĩ tại Trung tâm Y tế ở đâu?\n\nWOMAN : Vâng, có bác sĩ Green tại Phòng khám Đa khoa Harvey. (1) Chúng tôi luôn giới thiệu cô ấy cho trẻ sơ sinh, bởi vì cô ấy rất giỏi chữa cho chúng và cô ấy điều hành một phòng khám đặc biệt.\n\nMAN: Ồ ... thật ra đứa con út của tôi năm tuổi, vì thế sẽ không phù hợp cho chúng tôi.\n\nWOMAN: Đúng vậy.\n\nMAN: Tôi có thể thử bất cứ nơi nào khác không?\n\nWOMAN: Vâng, Trung tâm Y tế Eshcol là trung tâm kế tiếp trong danh sách của tôi.\n\nMAN: Bạn đánh vần nó như thế nào ạ?\n\nWOMAN: (2) E-S-H-C-O-L. Và đó là Bác sĩ Fuller, ông ấy có chỗ trống trong danh sách của ông ấy. Phòng khám chỉ mở cửa cách đây một năm, vì vậy cơ sở vật chất rất hiện đại.\n\nMAN: Điều đó nghe có vẻ tốt đó.\n\nWOMAN: (3) Và đặc biệt tốt nếu bạn bận rộn trong ngày, bởi vì họ cũng có các cuộc hẹn vào buổi tối. Tuy nhiên, họ vẫn đóng cửa vào thứ bảy. Nơi còn lại duy nhất trong danh sách là Trung tâm Y tế trên Shore Lane. Bạn có thể đăng ký với Bác sĩ Gormley, (4) G-O-R- M-L-E-Y. Ông ấy là bác sĩ mới ở đó, nhưng trung tâm có một danh tiếng rất tốt.\n\nMAN: Ồ vâng, tôi nghĩ mình biết đường. Đây có lẽ là trung tâm ok nhất.",
-    "vocabulary": [
-      {
-        "word": "wife",
-        "type": "n",
-        "meaning": "vợ"
-      },
-      {
-        "word": "register",
-        "type": "v",
-        "meaning": "đăng ký"
-      },
-      {
-        "word": "run",
-        "type": "v",
-        "meaning": "điều hành"
-      },
-      {
-        "word": "clinic",
-        "type": "n",
-        "meaning": "phòng khám"
-      },
-      {
-        "word": "space",
-        "type": "n",
-        "meaning": "chỗ trống"
-      },
-      {
-        "word": "appointment",
-        "type": "n",
-        "meaning": "cuộc hẹn"
-      },
-      {
-        "word": "reputation",
-        "type": "n",
-        "meaning": "danh tiếng"
-      }
-    ]
+    "layoutHtml": "<div class=\"overflow-x-auto rounded-xl border border-slate-200\">\n                <table class=\"w-full text-left border-collapse text-sm\">\n                    <thead>\n                        <tr class=\"bg-slate-100 text-slate-800 font-bold border-b border-slate-200\">\n                            <th class=\"p-3\">Name of centre</th>\n                            <th class=\"p-3\">Doctor’s name</th>\n                            <th class=\"p-3\">Advantage</th>\n                        </tr>\n                    </thead>\n                    <tbody class=\"divide-y divide-slate-200 bg-white\">\n                        <tr>\n                            <td class=\"p-3 font-medium\">The Harvey Clinic</td>\n                            <td class=\"p-3\"><span class=\"text-xs bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded font-semibold mr-1\">Example</span> Dr Green</td>\n                            <td class=\"p-3\">especially good with {{input_1}}</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-medium\">The {{input_2}} Health Practice</td>\n                            <td class=\"p-3\">Dr Fuller</td>\n                            <td class=\"p-3\">Offers {{input_3}} appointments</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-medium\">The Shore Lane Health Centre</td>\n                            <td class=\"p-3\">Dr {{input_4}}</td>\n                            <td class=\"p-3\"></td>\n                        </tr>\n                    </tbody>\n                </table>\n            </div>"
   },
   {
     "id": "track31",
@@ -3324,7 +2426,7 @@ const unit2Data = [
     "title": "Track 31: Talks for Patients at Shore Lane",
     "instructions": "Questions 7-10. Complete the table below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
     "type": "table",
-    "exerciseTitle": "TALKS FOR PATIENTS AT SHORE LANE HEALTH CENTRE",
+    "exerciseTitle": "Talks for patients at Shore Lane Health Centre",
     "audioSrc": "audio/track31.mp3",
     "audioFallbackSrc": "Audio Listening/Bản sao của Track 31.mp3",
     "questions": [
@@ -3337,90 +2439,42 @@ const unit2Data = [
       },
       {
         "id": 8,
-        "label": "Healthy eating: Location: Shore Lane [8] ________",
+        "label": "Healthy eating: Location: the [8] ________ (Shore Lane)",
         "acceptableAnswers": [
           "primary school",
-          "school"
+          "primary school on shore lane"
         ]
       },
       {
         "id": 9,
-        "label": "Healthy eating: Date/Time: 1st March at [9] ________",
+        "label": "Avoiding injuries during exercise: 9th March at [9] ________",
         "acceptableAnswers": [
           "4.30",
           "4:30",
           "4.30pm",
           "4:30pm",
           "4.30 pm",
-          "4:30 pm"
+          "4:30 pm",
+          "four thirty",
+          "four-thirty"
         ]
       },
       {
         "id": 10,
-        "label": "Healthy eating: Notes: anyone of all [10] ________ can attend",
+        "label": "Avoiding injuries during exercise: Notes: for all [10] ________",
         "acceptableAnswers": [
-          "ages",
-          "age"
+          "ages"
         ]
       }
     ],
-    "layoutHtml": "\n            <div class=\"overflow-x-auto rounded-xl border border-slate-200\">\n                <table class=\"w-full text-left border-collapse text-sm\">\n                    <thead>\n                        <tr class=\"bg-slate-100 text-slate-800 font-bold border-b border-slate-200\">\n                            <th class=\"p-3\">Subject of talk</th>\n                            <th class=\"p-3\">Date / Time</th>\n                            <th class=\"p-3\">Location</th>\n                            <th class=\"p-3\">Notes</th>\n                        </tr>\n                    </thead>\n                    <tbody class=\"divide-y divide-slate-200 bg-white\">\n                        <tr>\n                            <td class=\"p-3 font-medium\">Giving up smoking</td>\n                            <td class=\"p-3\">25th February at 7pm</td>\n                            <td class=\"p-3\">room 4</td>\n                            <td class=\"p-3\">useful for people with asthma or {{input_7}} problems</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-medium\">Healthy eating</td>\n                            <td class=\"p-3\">1st March at {{input_9}}</td>\n                            <td class=\"p-3\">Shore Lane {{input_8}}</td>\n                            <td class=\"p-3\">anyone of all {{input_10}} can attend</td>\n                        </tr>\n                    </tbody>\n                </table>\n            </div>\n        ",
-    "audioscript": "A. You might also be interested to know the Centre is running a pilot scheme of talks for patients. I’ve got the list here. Actually, they look very interesting.\n\nB. What sort of things?\n\nA. Well, the first one’s about giving up smoking. It’s next week, the twenty-fifth of February, at 7 pm, and that’s in Room 4. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"7\">[7] It says, the talk will stress the health benefits particularly for people with asthma or heart disease.</span>\n\nB. That sounds very interesting.\n\nA. There’s also a talk for families with children. It’s on Healthy Eating, and takes place on the first of March at five o’clock.\n\nB. Will that be at the Health Centre?\n\nA. Erm, <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"8\">[8] actually it’s at the primary school on Shore Lane.</span> I imagine they’re inviting the parents of pupils there - it says here ‘all welcome’.\n\nB. Mmm, I might go to that if I have time.\n\nA. There’s a couple of other talks - one giving advice about how to avoid injuries while doing exercise. It’s on the ninth of March. Oh, <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"9\">[9] it’s a late afternoon talk, at four thirty, and it’ll be in Room 6.</span> <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"10\">[10] It also says the talk is suitable for all ages.</span> And finally, there’s a talk called ‘Stress Management’ which is ...",
-    "translation": "A. Bạn cũng có thể muốn biết Trung tâm đang chạy 1 dự án nhỏ về các buổi nói chuyện với bệnh nhân. Tôi đã có danh sách ở đây. Trên thực tế, chúng rất thích thú.\n\nB. Có những buổi nào vậy ạ ?\n\nA. Vâng, buổi nói chuyện đầu tiên là về việc bỏ thuốc lá. Nó diễn ra vào tuần tới, ngày 25 tháng 2, lúc 7 giờ chiều, và nó ở Phòng 4. (1) Bài nói chuyện sẽ nhấn mạnh đến các lợi ích về sức khoẻ đặc biệt đối với những người bị hen suyễn hay bệnh tim.\n\nB. Có vẻ rất thú vị đấy.\n\nA. Ngoài ra còn có cuộc nói chuyện với các gia đình có con. Nó nói về việc ăn uống lành mạnh, và diễn ra vào đầu tháng 3 lúc 5 giờ.\n\nB. Liệu đó có phải là tại Trung tâm Y tế không ạ?\n\nA. (2) Thực ra nó là ở trường tiểu học ở Shore Lane. Tôi nghĩ rằng họ đang mời các bậc cha mẹ của học sinh ở đó - nó nói ở đây \" chào mừng  tất cả “\n\nB. Mmm, tôi có thể đi đến đó nếu tôi có thời gian.\n\nA. Có một vài cuộc nói chuyện khác - một lời khuyên về làm thế nào để tránh chấn thương trong khi tập thể dục. Đó là vào ngày 9 tháng 3. Oh, (3) đó là buổi nói chuyện buổi chiều muộn, 4 giờ 40, và nó sẽ ở Phòng 6. (4) Nó cũng nói rằng cuộc nói chuyện phù hợp với mọi lứa tuổi. Và cuối cùng, có một cuộc nói chuyện gọi là 'Quản lý Căng thẳng' đó là ...",
-    "vocabulary": [
-      {
-        "word": "a pilot scheme of talks",
-        "type": "",
-        "meaning": "1 dự án nhỏ về các buổi nói chuyện"
-      },
-      {
-        "word": "patient",
-        "type": "n",
-        "meaning": "bệnh nhân"
-      },
-      {
-        "word": "giving up smoking",
-        "type": "",
-        "meaning": "việc bỏ thuốc lá"
-      },
-      {
-        "word": "stress the health benefits",
-        "type": "",
-        "meaning": "nhấn mạnh những lợi ích cho sức khỏe"
-      },
-      {
-        "word": "asthma",
-        "type": "n",
-        "meaning": "bệnh hen suyễn"
-      },
-      {
-        "word": "take place",
-        "type": "v",
-        "meaning": "diễn ra"
-      },
-      {
-        "word": "pupils",
-        "type": "",
-        "meaning": "children (n): trẻ em"
-      },
-      {
-        "word": "give advice about",
-        "type": "",
-        "meaning": "đưa ra lời khuyên về vấn đề gì"
-      },
-      {
-        "word": "is suitable for",
-        "type": "",
-        "meaning": "phù hợp cho"
-      }
-    ]
+    "layoutHtml": "<div class=\"overflow-x-auto rounded-xl border border-slate-200\">\n                <table class=\"w-full text-left border-collapse text-sm\">\n                    <thead>\n                        <tr class=\"bg-slate-100 text-slate-800 font-bold border-b border-slate-200\">\n                            <th class=\"p-3\">Subject of talk</th>\n                            <th class=\"p-3\">Date/Time</th>\n                            <th class=\"p-3\">Location</th>\n                            <th class=\"p-3\">Notes</th>\n                        </tr>\n                    </thead>\n                    <tbody class=\"divide-y divide-slate-200 bg-white\">\n                        <tr>\n                            <td class=\"p-3 font-medium\">Giving up smoking</td>\n                            <td class=\"p-3\">25th February at 7pm</td>\n                            <td class=\"p-3\">room 4</td>\n                            <td class=\"p-3\">useful for people with asthma or {{input_7}} problems</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-medium\">Healthy eating</td>\n                            <td class=\"p-3\">1st March at 5pm</td>\n                            <td class=\"p-3\">the {{input_8}} (Shore Lane)</td>\n                            <td class=\"p-3\">anyone welcome</td>\n                        </tr>\n                        <tr>\n                            <td class=\"p-3 font-medium\">Avoiding injuries during exercise</td>\n                            <td class=\"p-3\">9th March at {{input_9}}</td>\n                            <td class=\"p-3\">room 6</td>\n                            <td class=\"p-3\">for all {{input_10}}</td>\n                        </tr>\n                    </tbody>\n                </table>\n            </div>"
   },
   {
     "id": "track32",
     "trackNum": 32,
     "title": "Track 32: Hiring a Public Room",
     "instructions": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
-    "type": "note",
+    "type": "notes",
     "exerciseTitle": "HIRING A PUBLIC ROOM",
     "audioSrc": "audio/track32.mp3",
     "audioFallbackSrc": "Audio Listening/Bản sao của Track 32.mp3",
@@ -3429,153 +2483,55 @@ const unit2Data = [
         "id": 1,
         "label": "the [1] ________ Room - seats 100",
         "acceptableAnswers": [
-          "charlton"
+          "charlton",
+          "Charlton"
         ]
       },
       {
         "id": 2,
-        "label": "Cost of Main Hall for evening: £ [2] ________",
+        "label": "Cost of Main Hall for Saturday evening: £ [2] ________",
         "acceptableAnswers": [
           "115"
         ]
       },
       {
         "id": 3,
-        "label": "Deposit: must be paid in [3] ________",
+        "label": "Deposit: [3] ________ payment is required",
         "acceptableAnswers": [
           "cash"
         ]
       },
       {
         "id": 4,
-        "label": "No charge for [4] ________",
+        "label": "Cost includes use of tables and chairs and also [4] ________",
         "acceptableAnswers": [
           "parking"
         ]
       },
       {
         "id": 5,
-        "label": "Need a licence if you have live [5] ________",
+        "label": "Will need a [5] ________ licence",
         "acceptableAnswers": [
           "music"
         ]
       },
       {
         "id": 6,
-        "label": "Must not contact [6] ________ for security reasons",
+        "label": "Need to contact caretaker (Mr Evans) in advance to arrange [6] ________",
         "acceptableAnswers": [
           "entry"
         ]
       }
     ],
-    "layoutHtml": "\n            <div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Hiring a Public Room</h3>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"p-3 bg-amber-50 border border-amber-200 rounded-lg text-amber-900 text-sm\">\n                        <span class=\"font-semibold\">Example:</span> the Main Hall - seats 200\n                    </div>\n                    <div class=\"font-semibold text-slate-900 border-b border-slate-200 pb-1\">Room and cost</div>\n                    <ul class=\"space-y-3 pl-3\">\n                        <li class=\"flex flex-wrap items-center gap-2\">\n                            <span>• the</span>\n                            {{input_1}}\n                            <span>Room - seats 100</span>\n                        </li>\n                        <li class=\"flex flex-wrap items-center gap-2\">\n                            <span>• Cost of Main Hall for evening: £</span>\n                            {{input_2}}\n                        </li>\n                        <li class=\"flex flex-wrap items-center gap-2\">\n                            <span>• Deposit: must be paid in</span>\n                            {{input_3}}\n                        </li>\n                        <li class=\"flex flex-wrap items-center gap-2\">\n                            <span>• No charge for</span>\n                            {{input_4}}\n                        </li>\n                    </ul>\n                    <div class=\"font-semibold text-slate-900 border-b border-slate-200 pb-1 pt-2\">Rules & Regulations</div>\n                    <ul class=\"space-y-3 pl-3\">\n                        <li class=\"flex flex-wrap items-center gap-2\">\n                            <span>• Need a licence if you have live</span>\n                            {{input_5}}\n                        </li>\n                        <li class=\"flex flex-wrap items-center gap-2\">\n                            <span>• Do not restrict any fire</span>\n                            {{input_6}}\n                        </li>\n                    </ul>\n                </div>\n            </div>\n        ",
-    "audioscript": "OFFICIAL: Hello?\n\nWOMAN: Oh, hello. I wanted to enquire about hiring a room in the Village Hall, for the evening of September the first.\n\nOFFICIAL: Let me just see ... Yes, we have both rooms available that evening. There’s our Main Hall - that’s got seating for 200 people. Or there’s the Charlton Room ...\n\nWOMAN: Sorry?\n\nOFFICIAL: The Charlton Room – <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"1\">[1] C-H-A-R L-T-O-N.</span> That’s got seating for up to one hundred.\n\nWOMAN: Well, we’re organising a dinner to raise money for a charity, and we’re hoping for at least 150 people, so I think we’ll go for the Main Hall. How much would that cost?\n\nOFFICIAL: Let's see. You wanted it for the evening of September the first?\n\nWOMAN: Yes, that’s a Saturday.\n\nOFFICIAL: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"2\">[2] So from six pm to midnight that'd be 115 pounds - that’s the weekend price, it’s 75 pounds on weekdays.</span>\n\nWOMAN: That’s all right.\n\nOFFICIAL: And I have to tell you there’s also a deposit of 250 pounds, which is returnable of course as Iong as there's no damage. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"3\">[3] But we do insist that this is paid in cash , we don't take cards for that.</span> You can pay the actual rent of the room however you like though - cash, credit card, cheque ...\n\nWOMAN: Oh, well I suppose that's OK. So does the charge include use of tables and chairs and so on?\n\nOFFICIAL: Oh, yes.\n\nWOMAN: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"4\">[4] And what about parking?</span>\n\nOFFICIAL: Yeah, that's all included. The only thing that isn't included is ... you said you were organising a dinner?\n\nWOMAN: Yeah.\n\nOFFICIAL: Well, you’ll have to pay extra for the kitchen if you want to use that, it’s 25 pounds. It’s got very good facilities - good quality cookers and fridges and so on.\n\nWOMAN: OK, well I suppose that’s all right. We can cover the cost in our entry charges.\n\nOFFICIAL: Right. So I’ll make a note of that. Now there are just one or two things you need to think about before the event. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"5\">[5] For example, you’ll have to see about getting a licence if you’re planning to have any music during the meal.</span>\n\nWOMAN: Oh, really?\n\nOFFICIAL: It’s quite straightforward, I’ll give you the details later on. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"6\">[6] And about a week or ten days before your event you’ll need to contact the caretaker, that’s Mr Evans, to make the arrangements for entry - he’ll sort that out with you.</span>\n\nWOMAN: And do I give him the payment as well?\n\nOFFICIAL: No, you do that directly with me.",
-    "translation": "OFFICIAL: Xin chào?\n\nWOMAN: Oh, xin chào. Tôi muốn hỏi về việc thuê một phòng tại Village Hall, cho buổi tối ngày 1 tháng Chín.\n\nOFFICIAL: Hãy để tôi xem ... Vâng, chúng tôi có cả hai phòng trống cho tối hôm đó. Phòng hội trường chính của chúng tôi - có chỗ ngồi cho 200 người. Hoặc phòng Charlton ...\n\nWOMAN: Xin lỗi?\n\nOFFICIAL: Phòng Charlton - (1) C-H-A-R L-T-O-N. Nơi đó có chỗ ngồi cho đến một trăm người.\n\nWOMAN: Vâng, chúng tôi tổ chức một bữa tiệc để quyên góp tiền để làm từ thiện, và chúng tôi hy vọng ít nhất 150 người, vì vậy tôi nghĩ chúng tôi sẽ đi đến Hội trường chính. Giá nó là bao nhiêu ạ?\n\nOFFICIAL: Để xem. Bạn muốn thuê nó vào tối ngày 1 tháng 9?\n\nWOMAN: Vâng, đó là thứ Bảy.\n\nOFFICIAL: (2) từ 6 giờ chiều đến nửa đêm giá sẽ là 115 bảng - đó là mức giá cuối tuần, 75 bảng vào các ngày trong tuần.\n\nWOMAN: OK.\n\nOFFICIAL: Và tôi phải nói với bạn rằng cũng có một khoản tiền đặt cọc là 250 bảng Anh, nó được hoàn trả nếu không có thiệt hại nào. (3) Nhưng chúng tôi nhấn mạnh rằng tiền cọc phải được trả bằng tiền mặt, chúng tôi không nhận thẻ cho khoản cọc này. Bạn có thể trả tiền thuê thực tế của căn phòng bằng cách bạn muốn - tiền mặt, thẻ tín dụng, ngân phiếu ...\n\nWOMAN: Ồ, tôi cho rằng điều đó là OK. Vậy chi phí này có bao gồm việc sử dụng bàn ghế, …?\n\nOFFICIAL: Ồ, vâng có.\n\nWOMAN: (4) Còn về đỗ xe thì sao ạ?\n\nOFFICIAL: Vâng, tất cả bao gồm trong đó rồi ạ. Điều duy nhất không được bao gồm là ... bạn nói bạn đang tổ chức một bữa ăn tối?\n\nWOMAN: Vâng.\n\nOFFICIAL: Vâng, bạn sẽ phải trả thêm tiền cho nhà bếp nếu bạn muốn sử dụng nó, 25 bảng. Nó có thiết bị rất tốt - bếp chất lượng tốt và tủ lạnh,….\n\nWOMAN: OK, tôi cũng đoán là không sao. Chúng tôi có thể trang trải chi phí đó trong chi phí vào cửa của chúng tôi.\n\nOFFICIAL: Đúng vậy. Vì vậy, tôi sẽ ghi chú một lưu ý về điều đó. Bây giờ chỉ có một hoặc hai điều bạn cần phải suy nghĩ trước sự kiện. (5) Ví dụ, bạn sẽ phải xem xét về việc có giấy phép nếu bạn đang có kế hoạch có bất kỳ âm nhạc nào trong bữa ăn.\n\nWOMAN: Ồ, thực sự vậy ư?\n\nOFFICIAL: Nó khá đơn giản, tôi sẽ cung cấp cho bạn các chi tiết sau này. (6) Khoảng một tuần hoặc mười ngày trước sự kiện của bạn, bạn sẽ cần liên lạc với người quản lý, đó là ông Evans, để sắp xếp việc ra vào - ông ấy sẽ giải thích với bạn.\n\nWOMAN: Vậy tôi đưa cho anh ấy tiền phí thuê phải không ạ?\n\nOFFICIAL: Không, bạn đưa trực tiếp cho tôi.",
-    "vocabulary": [
-      {
-        "word": "hiring a room",
-        "type": "",
-        "meaning": "thuê 1 căn phòng"
-      },
-      {
-        "word": "raise money for a charity",
-        "type": "",
-        "meaning": "quyên góp tiền cho 1 tổ chức từ thiện"
-      },
-      {
-        "word": "deposit",
-        "type": "n",
-        "meaning": "tiền cọc"
-      },
-      {
-        "word": "returnable",
-        "type": "adj",
-        "meaning": "được trả lại"
-      },
-      {
-        "word": "damage",
-        "type": "n",
-        "meaning": "thiệt hại"
-      },
-      {
-        "word": "insist",
-        "type": "v",
-        "meaning": "nhấn mạnh"
-      },
-      {
-        "word": "to be paid in cash",
-        "type": "",
-        "meaning": "được trả bằng tiền mặt"
-      },
-      {
-        "word": "card",
-        "type": "n",
-        "meaning": "thẻ (ATM)"
-      },
-      {
-        "word": "cheque",
-        "type": "n",
-        "meaning": "ngân phiếu"
-      },
-      {
-        "word": "pay extra for",
-        "type": "",
-        "meaning": "chi trả thêm cho cái gì"
-      },
-      {
-        "word": "fridge",
-        "type": "n",
-        "meaning": "tủ lạnh"
-      },
-      {
-        "word": "cover the cost",
-        "type": "",
-        "meaning": "bao quát chi phí"
-      },
-      {
-        "word": "entry",
-        "type": "n",
-        "meaning": "việc ra vào"
-      },
-      {
-        "word": "licence",
-        "type": "n",
-        "meaning": "bằng (cấp phép việc gì)"
-      },
-      {
-        "word": "straightforward",
-        "type": "adj",
-        "meaning": "đơn giản, dễ"
-      },
-      {
-        "word": "caretaker",
-        "type": "n",
-        "meaning": "người phụ trách, quản lý"
-      },
-      {
-        "word": "make the arrangements for",
-        "type": "",
-        "meaning": "sắp xếp việc gì"
-      },
-      {
-        "word": "sort something out",
-        "type": "",
-        "meaning": "nói rõ, phân rõ việc gì"
-      },
-      {
-        "word": "payment",
-        "type": "n",
-        "meaning": "tiền, chi phí"
-      }
-    ]
+    "layoutHtml": "<div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Hiring a Public Room</h3>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"p-3 bg-amber-50 border border-amber-200 rounded-lg text-amber-900 text-sm\">\n                        <span class=\"font-semibold\">Example:</span> • the Main Hall - seats 200\n                    </div>\n                    <div class=\"font-semibold text-slate-900 border-b border-slate-200 pb-1\">Room and cost</div>\n                    <ul class=\"space-y-3 pl-3\">\n                        <li class=\"flex flex-wrap items-center gap-2\">\n                            <span>• the</span>\n                            {{input_1}}\n                            <span>Room - seats 100</span>\n                        </li>\n                        <li class=\"flex flex-wrap items-center gap-2\">\n                            <span>• Cost of Main Hall for Saturday evening: £</span>\n                            {{input_2}}\n                            <span>+ £250 deposit (</span>\n                            {{input_3}}\n                            <span>payment is required)</span>\n                        </li>\n                        <li class=\"flex flex-wrap items-center gap-2\">\n                            <span>• Cost includes use of tables and chairs and also</span>\n                            {{input_4}}\n                        </li>\n                        <li class=\"flex items-center gap-2 text-slate-600\">\n                            <span>• Additional charge for use of the kitchen: £25</span>\n                        </li>\n                    </ul>\n                    <div class=\"font-semibold text-slate-900 border-b border-slate-200 pb-1 pt-2\">Before the event</div>\n                    <ul class=\"space-y-3 pl-3\">\n                        <li class=\"flex flex-wrap items-center gap-2\">\n                            <span>• Will need a</span>\n                            {{input_5}}\n                            <span>licence</span>\n                        </li>\n                        <li class=\"flex flex-wrap items-center gap-2\">\n                            <span>• Need to contact caretaker (Mr Evans) in advance to arrange</span>\n                            {{input_6}}\n                        </li>\n                    </ul>\n                </div>\n            </div>"
   },
   {
     "id": "track33",
     "trackNum": 33,
     "title": "Track 33: Youth Council Application",
     "instructions": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
-    "type": "note",
-    "exerciseTitle": "YOUTH COUNCIL APPLICATION NOTES",
+    "type": "notes",
+    "exerciseTitle": "Youth Council",
     "audioSrc": "audio/track33.mp3",
     "audioFallbackSrc": "Audio Listening/Bản sao của Track 33.mp3",
     "questions": [
@@ -3590,7 +2546,8 @@ const unit2Data = [
         "id": 2,
         "label": "Postal address: 17 [2] ________ Street, Stamford, Lines",
         "acceptableAnswers": [
-          "buckleigh"
+          "buckleigh",
+          "Buckleigh"
         ]
       },
       {
@@ -3598,7 +2555,8 @@ const unit2Data = [
         "label": "Postcode: [3] ________",
         "acceptableAnswers": [
           "pe9 7qt",
-          "pe97qt"
+          "pe97qt",
+          "PE9 7QT"
         ]
       },
       {
@@ -3610,102 +2568,13 @@ const unit2Data = [
       },
       {
         "id": 5,
-        "label": "Studying [5] ________ (major subject) and history",
+        "label": "Studying [5] ________ (major subject) and history (minor subject)",
         "acceptableAnswers": [
           "politics"
         ]
       }
     ],
-    "layoutHtml": "\n            <div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Youth Council</h3>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"p-3 bg-amber-50 border border-amber-200 rounded-lg text-amber-900 text-sm\">\n                        <span class=\"font-semibold\">Example:</span> Name: <strong class=\"underline\">Roger Brown</strong> (Age: 18)\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span>Currently staying in a</span>\n                        {{input_1}}\n                        <span>during the week</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[130px]\">Postal address:</span>\n                        <span>17</span>\n                        {{input_2}}\n                        <span>Street, Stamford, Lines</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[130px]\">Postcode:</span>\n                        {{input_3}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[130px]\">Occupation:</span>\n                        <span>student and part-time job as a</span>\n                        {{input_4}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[130px]\">Studying:</span>\n                        {{input_5}}\n                        <span>(major subject) and history (minor subject)</span>\n                    </div>\n                </div>\n            </div>\n        ",
-    "audioscript": "CAROLINE: Good Morning. Youth Council. Caroline speaking.\n\nROGER: Oh, hello, I’m interested in standing for election to the Youth Council, and I was told to give you a call.\n\nCAROLINE: That’s good. Could I have your name, please?\n\nROGER: Yes, it’s Roger Brown .\n\nCAROLINE: Thank you. I’m Caroline, the Youth Council administrator. So do you know much about what the Council does, Roger?\n\nROGER: I’ve talked to Stephanie - l think she’s the chair of the Council.\n\nCAROLINE: That's right.\n\nROGER: And she told me a lot about it. How it’s a way for young people to discuss local issues, for example, and make suggestions to the town council. That's what made me interested.\n\nCAROLINE: Fine. Well let me take down some of your details. First of all, how old are you/ You know the Council is for young people aged from 13 to 18?\n\nROGER: I’ve just turned 18.\n\nCAROLINE: And where do you live, Roger?\n\nROGER: Well, that’s a bit complicated. At the moment I’m looking for a flat to rent here, <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"1\">[1] so I’m in a hostel from Monday to Friday.</span> I go back to my parents’ place at the weekend.\n\nCAROLINE: OK so where’s the best place to send you some information about the Council.\n\nROGER: Oh to my parents’ address, please. <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"2\">[2] That's 17, Buckleigh Street - B-U-C-K-L-E-l-G-H Street, Stamford, Lincolnshire, though you don’t really need the county.</span>\n\nCAROLINE: Oh, I know Stamford - it’s a lovely town. And what’s the postcode?\n\nROGER: <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"3\">[3] PE9 7QT</span>\n\nCAROLINE: Right, thank you. So are you working here, or are you a student?\n\nROGER: I started studying at the university a couple of weeks ago, and I've got a part-time job for a few hours a week.\n\nCAROLINE: What do you do?\n\nROGER: Well, I’ve done several different things. I've just finished a short-term contract as a courier, and <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"4\">[4] now I’m working as a waiter in one of the big hotels.</span>\n\nCAROLINE: Uhuh. That can't leave you much time for studying!\n\nROGER: Oh, it’s not too bad. I manage to fit it all in.\n\nCAROLINE: What are you studying?\n\nROGER: My ambition is to go into parliament eventually, <span class=\"highlight-answer font-semibold text-amber-900 bg-amber-100 border border-amber-300 rounded px-1.5 py-0.5\" data-q=\"5\">[5] so my major subject is politics.</span> That’s partly why I think the Youth Council is important and want to be a part of it.\n\nCAROLINE: And I suppose you’re also taking a minor subject, aren’t you? I know a lot of people study economics too.\n\nROGER: I chose history. To be honest, I’m not finding it as interesting as I expected!",
-    "translation": "CAROLINE: Chào buổi sáng. Hội đồng Thanh thiếu niên. Caroline đang nói.\n\nROGER: Oh, xin chào, em quan tâm đến việc ứng cử vào Hội đồng Thanh niên, và em được yêu cầu gọi cho cô.\n\nCAROLINE: Thật tốt. Tên em là gì?\n\nROGER: Vâng, Roger Brown.\n\nCAROLINE: Cảm ơn em. Tôi là Caroline, quản lý của Hội đồng Thanh niên. Vậy em có biết nhiều về những gì Hội đồng làm, Roger?\n\nROGER: Em đã nói chuyện với Stephanie - em nghĩ cô ấy là chủ tịch Hội đồng.\n\nCAROLINE: Đúng rồi.\n\nROGER: Và cô ấy nói với em rất nhiều về nó. Ví dụ như đó là một cách để những người trẻ tuổi thảo luận về các vấn đề địa phương và đưa ra gợi ý với hội đồng thị trấn. Đó là điều khiến em quan tâm.\n\nCAROLINE: OK, hãy để tôi ghi lại một số thông tin của em. Trước tiên, em bao nhiêu tuổi? Em biết Hội đồng dành cho thanh thiếu niên từ 13 đến 18 tuổi?\n\nROGER: Em vừa mới bước sang tuổi 18.\n\nCAROLINE: Và em sống ở đâu, Roger?\n\nROGER: Vâng, có một chút phức tạp. Hiện tại em đang tìm kiếm một căn hộ để ở đây, (1) vì vậy em đang ở chỗ ở giá rẻ từ thứ Hai đến thứ Sáu. Em trở lại chỗ bố mẹ vào cuối tuần.\n\nCAROLINE: OK, vậy đâu là nơi tốt nhất để gửi cho em một số thông tin về Hội đồng.\n\nROGER: Oh xin vui lòng để địa chỉ cha mẹ em,. (2) Đó là 17, Phố Buckleigh - B-U-C-K-L-E-L-G-H Street, Stamford, Lincolnshire, mặc dù cô không thực sự cần địa chỉ quận.\n\nCAROLINE: Ồ, tôi biết Stamford - đó là một thị trấn đáng yêu. Mã bưu điện là gì?\n\nROGER: (3) PE9 7QT\n\nCAROLINE: Cám ơn. Vậy em đang làm việc ở đây, hay em là sinh viên?\n\nROGER: Em đã bắt đầu học ở trường đại học cách đây vài tuần, và em đã có một công việc bán thời gian một vài giờ một tuần.\n\nCAROLINE: Em làm gì?\n\nROGER: Ồ, em đã làm một số việc khác nhau. Em vừa hoàn thành một hợp đồng ngắn hạn với công việc chuyển phát nhanh, và (4) bây giờ em đang là một bồi bàn tại một trong những khách sạn lớn.\n\nCAROLINE: Uhuh. Điều đó không thể cho em nhiều thời gian để học tập!\n\nROGER: Ồ, không tệ lắm. Em cố gắng kiểm soát để phù hợp với tất cả.\n\nCAROLINE: Em đang học gì?\n\nROGER: Tham vọng của em là đi vào nghị viện, (5) nên môn học chính của em là chính trị. Đó là lý do tại sao em nghĩ rằng Hội đồng Thanh niên là quan trọng và muốn trở thành một phần của nó.\n\nCAROLINE: Và tôi cho rằng em cũng đang học một môn học phụ, phải không? Tôi cũng biết rất nhiều người học về kinh tế.\n\nROGER: Em đã chọn lịch sử. Thành thật mà nói, em không thấy nó thú vị như em mong đợi!",
-    "vocabulary": [
-      {
-        "word": "standing for election",
-        "type": "",
-        "meaning": "ứng cử cho 1 cuộc tranh cử nào"
-      },
-      {
-        "word": "administrator",
-        "type": "n",
-        "meaning": "người quản lý, quản trị"
-      },
-      {
-        "word": "discuss",
-        "type": "v",
-        "meaning": "thảo luận"
-      },
-      {
-        "word": "local issues",
-        "type": "",
-        "meaning": "những vấn đề địa phương"
-      },
-      {
-        "word": "make suggestions",
-        "type": "",
-        "meaning": "đưa ra những đề xuất"
-      },
-      {
-        "word": "complicated",
-        "type": "adj",
-        "meaning": "phức tạp"
-      },
-      {
-        "word": "hostel",
-        "type": "n",
-        "meaning": "1 loại hình chỗ ở rẻ"
-      },
-      {
-        "word": "county",
-        "type": "n",
-        "meaning": "quận hay hạt (là một cấp chính quyền địa phương nhỏ hơn một tiểu bang Hoa Kỳ)"
-      },
-      {
-        "word": "a short-term contract",
-        "type": "",
-        "meaning": "1 hợp đồng ngắn hạn"
-      },
-      {
-        "word": "waiter",
-        "type": "n",
-        "meaning": "phục vụ bàn"
-      },
-      {
-        "word": "leave you much time for…",
-        "type": "",
-        "meaning": "cho bạn nhiều thời gian để làm việc gì"
-      },
-      {
-        "word": "manage to fit it all in",
-        "type": "",
-        "meaning": "sắp xếp mọi việc ổn thỏa"
-      },
-      {
-        "word": "parliament",
-        "type": "n",
-        "meaning": "nghị viện"
-      },
-      {
-        "word": "eventually",
-        "type": "adv",
-        "meaning": "cuối cùng"
-      },
-      {
-        "word": "major subject",
-        "type": "",
-        "meaning": "môn học chính"
-      },
-      {
-        "word": "politics",
-        "type": "n",
-        "meaning": "môn chính trị"
-      },
-      {
-        "word": "minor subject",
-        "type": "n",
-        "meaning": "môn học phụ"
-      }
-    ]
+    "layoutHtml": "<div class=\"note-card bg-slate-50 border border-slate-200 rounded-xl p-6 font-sans\">\n                <div class=\"border-b border-slate-200 pb-3 mb-4\">\n                    <h3 class=\"text-xl font-bold text-slate-800 text-center uppercase tracking-wide\">Youth Council</h3>\n                </div>\n                <div class=\"space-y-4 text-slate-700 leading-relaxed text-base\">\n                    <div class=\"p-3 bg-amber-50 border border-amber-200 rounded-lg text-amber-900 text-sm\">\n                        <span class=\"font-semibold\">Example:</span> Name: <strong class=\"underline\">Roger Brown</strong> | Age: 18\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span>Currently staying in a</span>\n                        {{input_1}}\n                        <span>during the week</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[130px]\">Postal address:</span>\n                        <span>17</span>\n                        {{input_2}}\n                        <span>Street, Stamford, Lines</span>\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[130px]\">Postcode:</span>\n                        {{input_3}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[130px]\">Occupation:</span>\n                        <span>student and part-time job as a</span>\n                        {{input_4}}\n                    </div>\n                    <div class=\"flex flex-wrap items-center gap-2 py-1\">\n                        <span class=\"font-medium min-w-[130px]\">Studying</span>\n                        {{input_5}}\n                        <span>(major subject) and history (minor subject)</span>\n                    </div>\n                </div>\n            </div>"
   }
 ];
 
