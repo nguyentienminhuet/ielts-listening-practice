@@ -1450,6 +1450,37 @@ document.addEventListener('DOMContentLoaded', () => {
     const enScript = track.audioscript || 'Không có bản audioscript.';
     const viTranslation = track.translation || '';
 
+    // Segment audioscript and translation into dialogue turns / paragraphs
+    const enParas = enScript.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
+    const viParas = viTranslation ? viTranslation.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean) : [];
+
+    const plainTotal = enScript.replace(/<[^>]*>/g, '').length || 1;
+    let accumulatedChars = 0;
+    const enParasWithRatio = enParas.map((paraText, idx) => {
+      const paraPlain = paraText.replace(/<[^>]*>/g, '');
+      const startRatio = accumulatedChars / plainTotal;
+      accumulatedChars += paraPlain.length;
+      const endRatio = accumulatedChars / plainTotal;
+      return {
+        html: paraText,
+        startRatio,
+        endRatio,
+        index: idx
+      };
+    });
+
+    const enScriptHtml = enParasWithRatio.map(item => `
+      <div class="transcript-line" data-index="${item.index}" data-start="${item.startRatio.toFixed(3)}" data-end="${item.endRatio.toFixed(3)}">
+        ${item.html}
+      </div>
+    `).join('');
+
+    const viScriptHtml = viParas.map((paraText, idx) => `
+      <div class="transcript-line-vi" data-index="${idx}">
+        ${paraText}
+      </div>
+    `).join('');
+
     let contentHtml = '';
 
     if (state.bilingual && viTranslation) {
@@ -1466,8 +1497,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 Click vào phần bôi vàng để nghe đoạn đó
               </span>
             </div>
-            <div class="leading-relaxed text-slate-700 space-y-3 font-sans text-base whitespace-pre-line">
-              ${enScript}
+            <div class="leading-relaxed text-slate-700 space-y-2 font-sans text-base whitespace-pre-line">
+              ${enScriptHtml}
             </div>
           </div>
           <div class="bg-[#f8f5ed] p-5 sm:p-6 rounded-2xl border border-[#e2ddd3] shadow-sm">
@@ -1475,8 +1506,8 @@ document.addEventListener('DOMContentLoaded', () => {
               <span class="w-3 h-3 rounded-full bg-amber-500"></span>
               Bản Dịch Nghĩa Tiếng Việt
             </div>
-            <div class="leading-relaxed text-slate-700 space-y-3 font-sans text-base whitespace-pre-line">
-              ${viTranslation}
+            <div class="leading-relaxed text-slate-700 space-y-2 font-sans text-base whitespace-pre-line">
+              ${viScriptHtml}
             </div>
           </div>
         </div>
@@ -1494,8 +1525,8 @@ document.addEventListener('DOMContentLoaded', () => {
               Click vào phần bôi vàng để nghe đoạn đó
             </span>
           </div>
-          <div class="leading-relaxed text-slate-700 space-y-3 font-sans text-base whitespace-pre-line">
-            ${enScript}
+          <div class="leading-relaxed text-slate-700 space-y-2 font-sans text-base whitespace-pre-line">
+            ${enScriptHtml}
           </div>
         </div>
       `;
@@ -1517,6 +1548,69 @@ document.addEventListener('DOMContentLoaded', () => {
         seekAndPlayHighlight(h, track);
       });
     });
+
+    // Run initial transcript follower position if audio is already active
+    if (el.audioElement && !isNaN(el.audioElement.currentTime) && el.audioElement.currentTime > 0) {
+      updateTranscriptFollower(el.audioElement.currentTime, el.audioElement.duration || 0);
+    }
+  }
+
+  // Update transcript follower indicator based on current audio time
+  function updateTranscriptFollower(cur, dur) {
+    if (!el.transcriptContainer) return;
+    const lines = el.transcriptContainer.querySelectorAll('.transcript-line');
+    if (!lines.length || !dur || dur <= 0) return;
+
+    let tStart = 0;
+    let tEnd = dur;
+    if (dur < 45) {
+      tStart = Math.min(3, dur * 0.08);
+      tEnd = dur - 1;
+    } else if (dur < 120) {
+      tStart = Math.min(16, dur * 0.15);
+      tEnd = dur - 4;
+    } else {
+      tStart = Math.min(24, dur * 0.12);
+      tEnd = dur - 6;
+    }
+
+    const dialogueDuration = Math.max(5, tEnd - tStart);
+    const ratio = Math.max(0, Math.min(1, (cur - tStart) / dialogueDuration));
+
+    let activeLine = null;
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i];
+      const start = parseFloat(line.dataset.start || 0);
+      const end = parseFloat(line.dataset.end || 1);
+      if (ratio >= start && ratio <= end) {
+        activeLine = line;
+        break;
+      }
+    }
+    if (!activeLine) {
+      if (ratio < parseFloat(lines[0].dataset.start || 0)) {
+        activeLine = lines[0];
+      } else {
+        activeLine = lines[lines.length - 1];
+      }
+    }
+
+    if (activeLine && !activeLine.classList.contains('is-active')) {
+      lines.forEach(l => l.classList.remove('is-active'));
+      activeLine.classList.add('is-active');
+
+      const viLines = el.transcriptContainer.querySelectorAll('.transcript-line-vi');
+      if (viLines.length) {
+        const activeIdx = activeLine.dataset.index;
+        viLines.forEach(vl => {
+          if (vl.dataset.index === activeIdx) {
+            vl.classList.add('is-active');
+          } else {
+            vl.classList.remove('is-active');
+          }
+        });
+      }
+    }
   }
 
   // Render Vocabulary Tab
@@ -1672,6 +1766,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (el.audioProgress && dur > 0) {
         el.audioProgress.value = (cur / dur) * 100;
       }
+      updateTranscriptFollower(cur, dur);
     });
 
     el.audioElement.addEventListener('loadedmetadata', () => {
