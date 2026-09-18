@@ -214,12 +214,12 @@ code, kbd, samp, pre {
 
 /* Transcript Follower - Active Reading Indicator */
 .transcript-line {
-  padding: 0.5rem 0.625rem;
-  margin-left: -0.625rem;
-  margin-right: -0.625rem;
+  padding: 0.5rem 0.75rem;
   border-left: 3px solid transparent;
   border-radius: 0.5rem;
   transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  white-space: pre-line;
+  word-break: break-word;
 }
 
 .transcript-line.is-active {
@@ -230,12 +230,12 @@ code, kbd, samp, pre {
 }
 
 .transcript-line-vi {
-  padding: 0.5rem 0.625rem;
-  margin-left: -0.625rem;
-  margin-right: -0.625rem;
+  padding: 0.5rem 0.75rem;
   border-left: 3px solid transparent;
   border-radius: 0.5rem;
   transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  white-space: pre-line;
+  word-break: break-word;
 }
 
 .transcript-line-vi.is-active {
@@ -243,6 +243,15 @@ code, kbd, samp, pre {
   border-left-color: #d97706;
   color: #0f172a;
   box-shadow: 0 1px 3px rgba(217, 119, 6, 0.08);
+}
+
+.bilingual-row {
+  transition: background-color 0.15s ease;
+  border-radius: 0.5rem;
+}
+
+.bilingual-row:hover {
+  background-color: rgba(240, 235, 224, 0.4);
 }
 
 /* Custom Audio Range Slider */

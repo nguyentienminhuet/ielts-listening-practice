@@ -1458,64 +1458,95 @@ document.addEventListener('DOMContentLoaded', () => {
       };
     });
 
-    const enScriptHtml = enParasWithRatio.map(item => `
-      <div class="transcript-line" data-index="${item.index}" data-start="${item.startRatio.toFixed(3)}" data-end="${item.endRatio.toFixed(3)}">
-        ${item.html}
-      </div>
-    `).join('');
-
-    const viScriptHtml = viParas.map((paraText, idx) => `
-      <div class="transcript-line-vi" data-index="${idx}">
-        ${paraText}
-      </div>
-    `).join('');
-
     let contentHtml = '';
 
     if (state.bilingual && viTranslation) {
-      contentHtml = `
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <div class="bg-[#fdfbf7] p-5 sm:p-6 rounded-2xl border border-[#e2ddd3] shadow-sm">
-            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-[#e5dfd2]">
-              <div class="flex items-center gap-2 font-bold text-slate-800 text-base">
-                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
-                Audioscript (Tiếng Anh có Highlight Bằng Chứng)
+      const maxCount = Math.max(enParasWithRatio.length, viParas.length);
+      const bilingualRowsHtml = Array.from({ length: maxCount }, (_, idx) => {
+        const enItem = enParasWithRatio[idx];
+        const viText = viParas[idx] || '';
+
+        const enHtml = enItem
+          ? `<div class="transcript-line text-slate-800 leading-relaxed font-sans text-base" data-index="${enItem.index}" data-start="${enItem.startRatio.toFixed(3)}" data-end="${enItem.endRatio.toFixed(3)}">${enItem.html}</div>`
+          : '<div class="text-slate-400 italic text-sm py-2">---</div>';
+
+        const viHtml = viText
+          ? `<div class="transcript-line-vi text-slate-700 leading-relaxed font-sans text-base" data-index="${idx}">${viText}</div>`
+          : '<div class="text-slate-400 italic text-sm py-2">---</div>';
+
+        return `
+          <div class="bilingual-row grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-6 py-3 items-start">
+            <div class="w-full">
+              <div class="lg:hidden text-xs font-bold uppercase tracking-wider text-blue-700 mb-1 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+                Tiếng Anh
               </div>
-              <span class="text-xs font-semibold text-amber-800 bg-amber-50 border border-amber-300 rounded-full px-2.5 py-0.5 inline-flex items-center gap-1.5 shadow-xs">
-                <svg class="w-3.5 h-3.5 text-amber-600 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
-                Click vào phần bôi vàng để nghe đoạn đó
-              </span>
+              ${enHtml}
             </div>
-            <div class="leading-relaxed text-slate-700 space-y-2 font-sans text-base whitespace-pre-line">
-              ${enScriptHtml}
+            <div class="w-full">
+              <div class="lg:hidden text-xs font-bold uppercase tracking-wider text-amber-700 mb-1 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                Tiếng Việt
+              </div>
+              ${viHtml}
             </div>
           </div>
-          <div class="bg-[#f8f5ed] p-5 sm:p-6 rounded-2xl border border-[#e2ddd3] shadow-sm">
-            <div class="flex items-center gap-2 pb-3 mb-4 border-b border-[#e5dfd2] font-bold text-slate-800 text-base">
-              <span class="w-3 h-3 rounded-full bg-amber-500"></span>
-              Bản Dịch Nghĩa Tiếng Việt
+        `;
+      }).join('');
+
+      contentHtml = `
+        <div class="bg-[#fdfbf7] p-5 sm:p-7 rounded-2xl border border-[#e2ddd3] shadow-sm">
+          <!-- Top Header Bar -->
+          <div class="flex flex-wrap items-center justify-between gap-3 pb-3.5 mb-2 border-b border-[#e5dfd2]">
+            <div class="flex items-center gap-2 font-bold text-slate-800 text-base">
+              <span class="w-3 h-3 rounded-full bg-blue-600 shrink-0"></span>
+              <span>Audioscript Song Ngữ (Đối Chiếu Thẳng Hàng)</span>
             </div>
-            <div class="leading-relaxed text-slate-700 space-y-2 font-sans text-base whitespace-pre-line">
-              ${viScriptHtml}
+            <span class="text-xs font-semibold text-amber-800 bg-amber-50 border border-amber-300 rounded-full px-3 py-1 inline-flex items-center gap-1.5 shadow-xs">
+              <svg class="w-3.5 h-3.5 text-amber-600 animate-pulse shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+              Click vào phần bôi vàng để nghe đoạn đó
+            </span>
+          </div>
+
+          <!-- Column Headers on Desktop -->
+          <div class="hidden lg:grid lg:grid-cols-2 gap-6 pb-2.5 pt-1 border-b border-[#ece6d9] text-xs font-bold uppercase tracking-wider">
+            <div class="flex items-center gap-2 text-blue-700">
+              <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+              Tiếng Anh (Bản gốc &amp; Bằng chứng)
             </div>
+            <div class="flex items-center gap-2 text-amber-700">
+              <span class="w-2 h-2 rounded-full bg-amber-600"></span>
+              Tiếng Việt (Bản dịch nghĩa)
+            </div>
+          </div>
+
+          <!-- Paired Rows List -->
+          <div class="divide-y divide-[#ece6d9] font-sans">
+            ${bilingualRowsHtml}
           </div>
         </div>
       `;
     } else {
+      const singleRowsHtml = enParasWithRatio.map(item => `
+        <div class="py-2.5">
+          <div class="transcript-line text-slate-800 leading-relaxed font-sans text-base" data-index="${item.index}" data-start="${item.startRatio.toFixed(3)}" data-end="${item.endRatio.toFixed(3)}">${item.html}</div>
+        </div>
+      `).join('');
+
       contentHtml = `
         <div class="bg-[#fdfbf7] p-6 sm:p-8 rounded-2xl border border-[#e2ddd3] shadow-sm max-w-3xl mx-auto">
           <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-[#e5dfd2]">
             <div class="flex items-center gap-2 font-bold text-slate-800 text-base">
-              <span class="w-3 h-3 rounded-full bg-blue-600"></span>
-              Audioscript (Tiếng Anh)
+              <span class="w-3 h-3 rounded-full bg-blue-600 shrink-0"></span>
+              Audioscript (Tiếng Anh có Highlight Bằng Chứng)
             </div>
             <span class="text-xs font-semibold text-amber-800 bg-amber-50 border border-amber-300 rounded-full px-2.5 py-0.5 inline-flex items-center gap-1.5 shadow-xs">
-              <svg class="w-3.5 h-3.5 text-amber-600 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+              <svg class="w-3.5 h-3.5 text-amber-600 animate-pulse shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
               Click vào phần bôi vàng để nghe đoạn đó
             </span>
           </div>
-          <div class="leading-relaxed text-slate-700 space-y-2 font-sans text-base whitespace-pre-line">
-            ${enScriptHtml}
+          <div class="divide-y divide-[#ece6d9] font-sans">
+            ${singleRowsHtml}
           </div>
         </div>
       `;
