@@ -419,10 +419,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Header info
     if (rEl.headerSubtitle) rEl.headerSubtitle.textContent = `${lesson.title} – ${example.title}`;
-    if (rEl.readingWorkspaceBadge) rEl.readingWorkspaceBadge.textContent = `${lesson.code} • ${lesson.shortTitle}`;
+    if (rEl.readingWorkspaceBadge) rEl.readingWorkspaceBadge.textContent = `${lesson.code} • ${lesson.title}`;
     if (rEl.readingWorkspaceTitle) rEl.readingWorkspaceTitle.textContent = example.title;
     if (rEl.readingWorkspacePassageCount) {
-      rEl.readingWorkspacePassageCount.textContent = `${lesson.examples.length} phần luyện tập`;
+      rEl.readingWorkspacePassageCount.textContent = `(${lesson.examples.length} phần luyện tập)`;
     }
 
     // Render passage tabs
@@ -453,10 +453,15 @@ document.addEventListener('DOMContentLoaded', () => {
   function renderPassageTabs(lesson, currentIdx) {
     if (!rEl.readingPassageTabsContainer) return;
 
+    const wrapper = document.getElementById('readingPassageTabsWrapper');
+
     if (lesson.examples.length <= 1) {
       rEl.readingPassageTabsContainer.innerHTML = '';
+      if (wrapper) wrapper.classList.add('hidden');
       return;
     }
+
+    if (wrapper) wrapper.classList.remove('hidden');
 
     let tabsHtml = '';
     lesson.examples.forEach((ex, idx) => {
@@ -467,13 +472,14 @@ document.addEventListener('DOMContentLoaded', () => {
           type="button" 
           class="px-3 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer flex items-center gap-1.5 ${
             isCurrent 
-              ? 'bg-stone-800 text-white shadow-xs' 
+              ? 'bg-stone-800 text-white shadow-2xs' 
               : 'bg-white hover:bg-[#f6f3eb] text-stone-700 border border-[#ded7ca]'
           }"
           onclick="selectAndEnterReadingLesson('${lesson.id}', ${idx})"
+          title="${escapeHtml(ex.title)}"
         >
-          <span>Bài ${idx + 1}: ${escapeHtml(ex.title.substring(0, 18))}${ex.title.length > 18 ? '...' : ''}</span>
-          ${isDone ? '<span class="text-emerald-400 font-bold">✓</span>' : ''}
+          <span>Bài ${idx + 1}</span>
+          ${isDone ? '<span class="text-emerald-400 font-bold text-[11px]">✓</span>' : ''}
         </button>
       `;
     });
