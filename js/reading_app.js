@@ -245,6 +245,9 @@ document.addEventListener('DOMContentLoaded', () => {
     persistCurrentLesson();
 
     if (rEl.readingWorkspaceSection) rEl.readingWorkspaceSection.classList.add('hidden');
+    const passageTabsWrapper = document.getElementById('readingPassageTabsWrapper');
+    if (passageTabsWrapper) passageTabsWrapper.classList.add('hidden');
+
     if (rEl.readingHubSection) rEl.readingHubSection.classList.remove('hidden');
     if (rEl.headerSubtitle) rEl.headerSubtitle.textContent = 'Trọn bộ 13 dạng bài Reading cốt lõi (31 bài đọc • 137 câu hỏi)';
 
@@ -379,10 +382,15 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Make selectAndEnterReadingLesson globally callable
-  window.selectAndEnterReadingLesson = function(lessonId, exIdx = 0) {
+  window.selectAndEnterReadingLesson = function(lessonId, exIdx = 0, pushHistory = true) {
     readingState.currentLessonId = lessonId;
     readingState.currentExampleIdx = exIdx;
     persistCurrentLesson();
+    if (pushHistory) {
+      try {
+        history.pushState({ mode: 'reading', view: 'workspace', lessonId, exIdx }, '', '');
+      } catch (e) {}
+    }
     showReadingWorkspace();
   };
 
@@ -1171,4 +1179,96 @@ document.addEventListener('DOMContentLoaded', () => {
     // Keep listening as active mode
     window.switchSkillMode('listening');
   }
+
+  // =========================================================================
+  // MOUSE BACK BUTTON & BROWSER NAVIGATION HANDLER
+  // =========================================================================
+  window.triggerAppBack = function() {
+    // 1. If shortcuts modal is open, close it
+    const shortcutsModal = document.getElementById('shortcutsModal');
+    if (shortcutsModal && !shortcutsModal.classList.contains('hidden')) {
+      shortcutsModal.classList.add('hidden');
+      return true;
+    }
+
+    // 2. If mobile sidebar drawer in Listening is open, close it
+    const sidebarDrawer = document.getElementById('sidebarDrawer');
+    if (sidebarDrawer && !sidebarDrawer.classList.contains('hidden')) {
+      sidebarDrawer.classList.add('hidden');
+      return true;
+    }
+
+    // 3. If in Reading Workspace, navigate back to Reading Hub
+    const readingWs = document.getElementById('readingWorkspaceSection');
+    if (readingWs && !readingWs.classList.contains('hidden')) {
+      showReadingHub();
+      return true;
+    }
+
+    // 4. If in Listening Workspace, navigate back to Listening Hub
+    const listeningWs = document.getElementById('practiceWorkspaceSection');
+    if (listeningWs && !listeningWs.classList.contains('hidden')) {
+      const btn = document.getElementById('btnBackToMenu');
+      if (btn) {
+        btn.click();
+        return true;
+      }
+    }
+
+    return false;
+  };
+
+  // Handle Mouse Back Button (Button 3 / XButton1)
+  let lastBackTriggerTime = 0;
+  function handleMouseBack(e) {
+    if (e.button === 3) {
+      const now = Date.now();
+      if (now - lastBackTriggerTime < 250) return;
+      lastBackTriggerTime = now;
+
+      e.preventDefault();
+      e.stopPropagation();
+
+      const handled = window.triggerAppBack();
+      if (handled && window.history.state && window.history.state.view === 'workspace') {
+        try {
+          window.history.back();
+        } catch (err) {}
+      }
+    }
+  }
+
+  window.addEventListener('mouseup', handleMouseBack, true);
+  window.addEventListener('pointerdown', (e) => {
+    if (e.button === 3) {
+      e.preventDefault();
+    }
+  }, true);
+
+  // Keyboard Alt + ArrowLeft (common remapped mouse button)
+  window.addEventListener('keydown', (e) => {
+    if (e.altKey && e.key === 'ArrowLeft') {
+      const handled = window.triggerAppBack();
+      if (handled) {
+        e.preventDefault();
+      }
+    }
+  });
+
+  // Browser Popstate (fires when user clicks browser back or mouse back in browser)
+  window.addEventListener('popstate', (e) => {
+    const s = e.state;
+    if (s && s.view === 'workspace') {
+      if (s.mode === 'reading' && typeof window.selectAndEnterReadingLesson === 'function') {
+        window.selectAndEnterReadingLesson(s.lessonId, s.exIdx, false);
+        return;
+      }
+      if (s.mode === 'listening' && typeof window.selectAndEnterUnit === 'function') {
+        window.selectAndEnterUnit(s.unitId, false);
+        return;
+      }
+    }
+    // Return to Hub
+    window.triggerAppBack();
+  });
 });

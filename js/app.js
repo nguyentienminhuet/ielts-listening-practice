@@ -388,7 +388,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Choose a Unit from Hub and enter practice workspace
-  window.selectAndEnterUnit = function(unitId) {
+  window.selectAndEnterUnit = function(unitId, pushHistory = true) {
     if (!state.units[unitId]) return;
 
     if (unitId !== state.currentUnitId) {
@@ -396,6 +396,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     state.viewMode = 'workspace';
+    if (pushHistory) {
+      try {
+        history.pushState({ mode: 'listening', view: 'workspace', unitId }, '', '');
+      } catch (e) {}
+    }
     if (el.unitHubSection) el.unitHubSection.classList.add('hidden');
     if (el.practiceWorkspaceSection) el.practiceWorkspaceSection.classList.remove('hidden');
     if (el.stickyAudioBar) el.stickyAudioBar.classList.remove('hidden');
