@@ -14,6 +14,7 @@ const unit1Data = [
     "exerciseTitle": "THE ENGLISH ALPHABET & PRONUNCIATION",
     "audioSrc": "audio/track1.mp3",
     "audioFallbackSrc": "Audio Listening/Bản sao của Track 1.mp3",
+    "timestamps": { "1": 0.2, "2": 4.5, "3": 8.5, "4": 15.5, "5": 22.8 },
     "questions": [
       {
         "id": 1,
@@ -1449,6 +1450,7 @@ const unit2Data = [
     "exerciseTitle": "SELF-DRIVE TOURS IN THE USA",
     "audioSrc": "audio/track14.mp3",
     "audioFallbackSrc": "Audio Listening/Bản sao của Track 14.mp3",
+    "timestamps": { "1": 18.0, "2": 29.5, "3": 38.0, "4": 48.0 },
     "questions": [
       {
         "id": 1,
@@ -1613,6 +1615,7 @@ const unit2Data = [
     "exerciseTitle": "SILVER TULIP HOTEL",
     "audioSrc": "audio/track16.mp3",
     "audioFallbackSrc": "Audio Listening/Bản sao của Track 16.mp3",
+    "timestamps": { "1": 14.0, "2": 61.0, "3": 77.5, "4": 89.0, "5": 101.0, "6": 114.0, "7": 124.0 },
     "questions": [
       {
         "id": 1,
@@ -2216,6 +2219,7 @@ const unit2Data = [
     "exerciseTitle": "ITALIANBREAKS",
     "audioSrc": "audio/track21.mp3",
     "audioFallbackSrc": "Audio Listening/Bản sao của Track 21.mp3",
+    "timestamps": { "1": 18.0, "2": 28.0, "3": 48.0, "4": 72.0, "5": 97.0 },
     "questions": [
       {
         "id": 1,
@@ -2541,6 +2545,7 @@ const unit2Data = [
     "exerciseTitle": "EVENTS & VENUES TABLE",
     "audioSrc": "audio/track24.mp3",
     "audioFallbackSrc": "Audio Listening/Bản sao của Track 24.mp3",
+    "timestamps": { "1": 28.5, "2": 47.0, "3": 85.0, "4": 104.5, "5": 126.0, "6": 149.0, "7": 170.0 },
     "questions": [
       {
         "id": 1,
@@ -2727,6 +2732,7 @@ const unit2Data = [
     "exerciseTitle": "SELF-DRIVE TOURS",
     "audioSrc": "audio/track25.mp3",
     "audioFallbackSrc": "Audio Listening/Bản sao của Track 25.mp3",
+    "timestamps": { "1": 3.5, "2": 17.5, "3": 41.5, "4": 52.0 },
     "questions": [
       {
         "id": 1,

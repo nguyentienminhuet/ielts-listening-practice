@@ -1389,23 +1389,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const ratio = Math.max(0, Math.min(1, charIndex / plainTotal.length));
 
-    // Dynamic start preamble and outro buffer based on track duration
-    let tStart = 0;
-    let tEnd = duration;
-    if (duration < 45) {
-      tStart = Math.min(3, duration * 0.08);
-      tEnd = duration - 1;
-    } else if (duration < 120) {
-      tStart = Math.min(16, duration * 0.15);
-      tEnd = duration - 4;
-    } else {
-      tStart = Math.min(24, duration * 0.12);
-      tEnd = duration - 6;
-    }
-
-    const dialogueDuration = Math.max(5, tEnd - tStart);
-    // Pre-roll buffer: start ~2.2s before the answer word so the speaker's question/context is clearly heard
-    const estTime = Math.max(0, tStart + ratio * dialogueDuration - 2.2);
+    // Audio recordings in this dataset start dialogue directly from beginning (~0.3s - 1.5s)
+    const tStart = 0.5;
+    const tEnd = Math.max(duration - 0.5, tStart + 1);
+    const dialogueDuration = tEnd - tStart;
+    // Pre-roll buffer: start ~1.6s before the answer word so the question context is heard clearly
+    const estTime = Math.max(0, tStart + ratio * dialogueDuration - 1.6);
     return estTime;
   }
 
@@ -1561,20 +1550,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const lines = el.transcriptContainer.querySelectorAll('.transcript-line');
     if (!lines.length || !dur || dur <= 0) return;
 
-    let tStart = 0;
-    let tEnd = dur;
-    if (dur < 45) {
-      tStart = Math.min(3, dur * 0.08);
-      tEnd = dur - 1;
-    } else if (dur < 120) {
-      tStart = Math.min(16, dur * 0.15);
-      tEnd = dur - 4;
-    } else {
-      tStart = Math.min(24, dur * 0.12);
-      tEnd = dur - 6;
-    }
-
-    const dialogueDuration = Math.max(5, tEnd - tStart);
+    const tStart = 0.5;
+    const tEnd = Math.max(dur - 0.5, tStart + 1);
+    const dialogueDuration = tEnd - tStart;
     const ratio = Math.max(0, Math.min(1, (cur - tStart) / dialogueDuration));
 
     let activeLine = null;
