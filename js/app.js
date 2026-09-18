@@ -1289,51 +1289,51 @@ document.addEventListener('DOMContentLoaded', () => {
     const percent = Math.round((score / total) * 100);
 
     let bandText = 'Band 6.5+ (Xuất sắc)';
-    let bannerColor = 'bg-emerald-50 border-emerald-300 text-emerald-900';
+    let bannerColor = 'bg-[#f4faf6] border-[#a3d1b3] text-[#1e5235]';
     let iconSvg = `
-      <svg class="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg class="w-6 h-6 text-[#2d6a4f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
       </svg>
     `;
 
     if (percent < 50) {
       bandText = 'Cần luyện tập thêm (Dưới Band 5.0)';
-      bannerColor = 'bg-rose-50 border-rose-300 text-rose-900';
+      bannerColor = 'bg-[#fdf6f5] border-[#e8b0a9] text-[#782823]';
       iconSvg = `
-        <svg class="w-8 h-8 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="w-6 h-6 text-[#a83226]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
         </svg>
       `;
     } else if (percent < 75) {
       bandText = 'Đạt mục tiêu cơ bản (Band 5.0 - 6.0)';
-      bannerColor = 'bg-amber-50 border-amber-300 text-amber-900';
+      bannerColor = 'bg-[#faf7f0] border-[#ded3be] text-[#5c4419]';
       iconSvg = `
-        <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="w-6 h-6 text-[#854d0e]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
         </svg>
       `;
     }
 
-    el.scoreBanner.className = `rounded-2xl p-5 border shadow-sm mb-6 ${bannerColor}`;
+    el.scoreBanner.className = `rounded-xl p-4 sm:p-5 border shadow-2xs mb-5 ${bannerColor}`;
     el.scoreBanner.innerHTML = `
       <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div class="flex items-center gap-3.5 text-center sm:text-left">
-          <div class="p-2 bg-white rounded-xl shadow-xs shrink-0">
+        <div class="flex items-center gap-3 text-center sm:text-left">
+          <div class="p-2 bg-white rounded-lg shadow-2xs shrink-0 border border-stone-200/60">
             ${iconSvg}
           </div>
           <div>
-            <div class="text-xs font-bold uppercase tracking-wider opacity-75">Kết quả bài làm</div>
-            <div class="text-xl sm:text-2xl font-black">
+            <div class="text-[11px] font-bold uppercase tracking-wider opacity-70">Kết quả bài làm</div>
+            <div class="text-lg sm:text-xl font-bold">
               Đúng ${score} / ${total} câu (${percent}%)
             </div>
-            <div class="text-xs sm:text-sm font-semibold mt-0.5">${bandText}</div>
+            <div class="text-xs sm:text-sm font-medium mt-0.5 opacity-90">${bandText}</div>
           </div>
         </div>
         <div class="flex items-center gap-2">
           <button
             type="button"
             onclick="document.getElementById('tabReviewBtn').click()"
-            class="px-4 py-2 bg-white hover:bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-bold text-slate-800 shadow-xs transition"
+            class="px-4 py-2 bg-white hover:bg-[#f8f6f0] border border-stone-300/80 rounded-lg text-xs sm:text-sm font-semibold text-stone-800 shadow-2xs transition cursor-pointer"
           >
             Xem Giải Thích Chi Tiết ➔
           </button>

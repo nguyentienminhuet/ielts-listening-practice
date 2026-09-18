@@ -465,15 +465,15 @@ document.addEventListener('DOMContentLoaded', () => {
       tabsHtml += `
         <button 
           type="button" 
-          class="px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5 ${
+          class="px-3 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer flex items-center gap-1.5 ${
             isCurrent 
-              ? 'bg-indigo-700 text-white shadow-xs' 
-              : 'bg-white hover:bg-slate-100 text-slate-700 border border-[#ded5c4]'
+              ? 'bg-stone-800 text-white shadow-xs' 
+              : 'bg-white hover:bg-[#f6f3eb] text-stone-700 border border-[#ded7ca]'
           }"
           onclick="selectAndEnterReadingLesson('${lesson.id}', ${idx})"
         >
           <span>Bài ${idx + 1}: ${escapeHtml(ex.title.substring(0, 18))}${ex.title.length > 18 ? '...' : ''}</span>
-          ${isDone ? '<span class="text-emerald-300 font-black">✓</span>' : ''}
+          ${isDone ? '<span class="text-emerald-400 font-bold">✓</span>' : ''}
         </button>
       `;
     });
@@ -565,29 +565,28 @@ document.addEventListener('DOMContentLoaded', () => {
       const userVal = currentAnswers[q.id] || '';
       const isCorrect = isSubmitted && checkAnswerMatch(userVal, q.acceptableAnswers);
 
+      // Card with subtle left-border accent
+      const leftBorder = isSubmitted
+        ? (isCorrect ? 'border-l-[#40916c]' : 'border-l-[#d97768]')
+        : 'border-l-[#d5cfc2]';
+
       html += `
-        <div id="q_card_${q.id}" class="p-4 sm:p-5 rounded-2xl bg-white border ${
-          isSubmitted 
-            ? (isCorrect ? 'border-emerald-300 bg-emerald-50/20' : 'border-rose-300 bg-rose-50/20') 
-            : 'border-[#ded5c4]'
-        } shadow-xs transition-all">
-          <div class="flex items-start justify-between gap-3 mb-2.5">
+        <div id="q_card_${q.id}" class="p-4 sm:p-5 rounded-xl bg-white border border-[#e8e3d9] border-l-[3px] ${leftBorder} shadow-2xs transition-all">
+          <div class="flex items-start justify-between gap-3 mb-2">
             <div class="flex items-start gap-2.5">
-              <span class="inline-flex items-center justify-center w-6 h-6 rounded-full ${
-                isSubmitted 
-                  ? (isCorrect ? 'bg-emerald-600 text-white' : 'bg-rose-600 text-white') 
-                  : 'bg-indigo-100 text-indigo-800'
-              } font-extrabold text-xs shrink-0 mt-0.5">
-                ${q.id}
-              </span>
-              <div class="text-xs sm:text-sm font-bold text-slate-800 leading-snug">
-                ${escapeHtml(q.questionText || q.label || `Câu ${q.id}`)}
+              <span class="text-[11px] font-bold uppercase tracking-wider text-stone-400 mt-0.5 shrink-0">Câu ${q.id}</span>
+              <div class="text-sm font-medium text-stone-800 leading-snug">
+                ${escapeHtml(q.questionText || q.label || '')}
               </div>
             </div>
 
             ${isSubmitted ? `
-              <span class="text-xs font-bold px-2 py-0.5 rounded ${isCorrect ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-800'} shrink-0">
-                ${isCorrect ? '✓ Đúng' : '✗ Sai'}
+              <span class="text-xs font-semibold px-2 py-0.5 rounded-md ${
+                isCorrect 
+                  ? 'bg-[#eef7f2] text-[#2d6a4f] border border-[#c3e6d3]' 
+                  : 'bg-[#fdf0ee] text-[#a83226] border border-[#f5c6c0]'
+              } shrink-0">
+                ${isCorrect ? '✓ Đúng' : '✗ Chưa đúng'}
               </span>
             ` : ''}
           </div>
@@ -648,7 +647,7 @@ document.addEventListener('DOMContentLoaded', () => {
               onclick="${isSubmitted ? '' : `handleSelectAnswer('${example.id}', '${q.id}', '${escapeHtml(valToCheck)}')`}"
             >
               ${letter ? `<span class="reading-mcq-letter">${letter}</span>` : ''}
-              <span class="text-xs sm:text-sm text-slate-700 leading-normal flex-1">${escapeHtml(optText)}</span>
+              <span class="text-xs sm:text-sm text-stone-700 leading-normal flex-1">${escapeHtml(optText)}</span>
             </div>
           `;
         });
@@ -658,7 +657,7 @@ document.addEventListener('DOMContentLoaded', () => {
         html += `
           <div class="mt-3">
             <select 
-              class="w-full p-2.5 rounded-xl border border-[#ded5c4] bg-white text-xs sm:text-sm font-semibold text-slate-700 focus:outline-none focus:border-indigo-500 transition" 
+              class="w-full p-2.5 rounded-xl border border-[#ded5c4] bg-white text-xs sm:text-sm font-semibold text-stone-700 focus:outline-none focus:border-stone-500 transition" 
               ${isSubmitted ? 'disabled' : ''} 
               onchange="handleSelectAnswer('${example.id}', '${q.id}', this.value)"
             >
@@ -692,10 +691,76 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
       }
 
-      if (isSubmitted && !isCorrect) {
+      // Inline explanation block after grading (inserted directly below each answer)
+      if (isSubmitted) {
+        const d = sub.details ? sub.details[q.id] : null;
+        const explanation = d ? (d.explanation || '') : (q.explanation || '');
+        const evidence = d ? (d.evidence || '') : (q.evidence || '');
+
+        // Match vocabulary from example.vocabulary
+        const vocabList = example.vocabulary || [];
+        const textPool = [
+          q.questionText || '',
+          explanation,
+          evidence,
+          ...(q.acceptableAnswers || [])
+        ].join(' ').toLowerCase();
+
+        const matchedVocab = vocabList.filter(v => {
+          const w = (v.word || '').toLowerCase().trim();
+          if (!w) return false;
+          if (textPool.includes(w)) return true;
+          const root = w.split(/\s+/)[0];
+          if (root.length >= 4 && textPool.includes(root.slice(0, Math.min(root.length - 1, 6)))) return true;
+          return false;
+        });
+
         html += `
-          <div class="mt-2.5 text-xs text-rose-700 font-semibold bg-rose-50 p-2 rounded-lg border border-rose-200">
-            <span class="font-bold">Đáp án đúng:</span> ${q.acceptableAnswers.join(' / ')}
+          <div class="inline-explanation mt-3 pt-3 border-t border-dashed border-[#e4ded2] space-y-2 text-xs">
+            <div class="flex items-baseline gap-2">
+              <span class="text-stone-500 font-medium">Bạn trả lời:</span>
+              <span class="font-semibold ${isCorrect ? 'text-stone-800' : 'text-[#a83226] line-through'}">${escapeHtml(userVal || '(Bỏ trống)')}</span>
+            </div>
+
+            ${!isCorrect ? `
+              <div class="flex items-baseline gap-2">
+                <span class="text-stone-500 font-medium">Đáp án đúng:</span>
+                <span class="font-bold text-[#2d6a4f] text-[13px]">${q.acceptableAnswers.join(' / ')}</span>
+              </div>
+            ` : ''}
+
+            ${explanation ? `
+              <div class="text-stone-700 leading-relaxed pt-0.5">
+                <span class="font-semibold text-stone-800">Giải thích:</span> ${escapeHtml(explanation)}
+              </div>
+            ` : ''}
+
+            ${evidence ? `
+              <div class="flex items-start gap-2.5 bg-[#fbf9f4] p-2.5 rounded-lg border-l-2 border-stone-400 border border-stone-200/80 leading-relaxed text-[12px]">
+                <span class="font-semibold text-stone-800 shrink-0">Dẫn chứng:</span>
+                <span class="text-stone-700 italic flex-1">"${escapeHtml(evidence)}"</span>
+                <button type="button" class="text-[11px] font-semibold text-stone-700 hover:text-stone-950 bg-white hover:bg-stone-50 px-2.5 py-1 rounded border border-stone-300 shadow-2xs whitespace-nowrap transition cursor-pointer shrink-0" onclick="scrollToEvidence('${q.id}')">
+                  ↗ Vị trí trong bài
+                </button>
+              </div>
+            ` : ''}
+
+            ${matchedVocab.length > 0 ? `
+              <div class="pt-2 border-t border-stone-200/60">
+                <div class="text-[11px] font-semibold text-stone-500 uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                  <span>Từ vựng trọng tâm:</span>
+                </div>
+                <div class="flex flex-wrap gap-1.5">
+                  ${matchedVocab.map(v => `
+                    <div class="inline-flex items-baseline gap-1 px-2 py-0.5 rounded bg-[#f7f4ed] border border-[#e5dfd0] text-[11.5px]">
+                      <span class="font-bold text-stone-900">${escapeHtml(v.word)}</span>
+                      <span class="text-stone-600 font-normal">: ${escapeHtml(v.meaning)}</span>
+                    </div>
+                  `).join('')}
+                </div>
+              </div>
+            ` : ''}
           </div>
         `;
       }
@@ -830,60 +895,18 @@ document.addEventListener('DOMContentLoaded', () => {
       } else if (pct >= 75) {
         rEl.readingResultFeedback.textContent = '👏 Rất tốt! Bạn đã nắm vững các từ khóa và dẫn chứng quan trọng.';
       } else if (pct >= 50) {
-        rEl.readingResultFeedback.textContent = '👍 Khá tốt! Hãy đọc kỹ phần giải thích chi tiết bên dưới để tránh bẫy.';
+        rEl.readingResultFeedback.textContent = '👍 Khá tốt! Xem giải thích ngay dưới từng câu hỏi để hiểu rõ hơn.';
       } else {
-        rEl.readingResultFeedback.textContent = '💪 Cần cố gắng thêm! Xem dẫn chứng và giải thích để hiểu rõ hơn cách định vị thông tin.';
+        rEl.readingResultFeedback.textContent = '💪 Cần cố gắng thêm! Giải thích chi tiết nằm ngay dưới từng câu hỏi.';
       }
     }
 
-    if (rEl.readingExplanationsSection && rEl.readingExplanationsList) {
-      rEl.readingExplanationsSection.classList.remove('hidden');
-      let expHtml = '';
-
-      example.questions.forEach(q => {
-        const d = sub.details[q.id];
-        if (!d) return;
-
-        expHtml += `
-          <div class="p-3.5 sm:p-4 rounded-xl ${d.isCorrect ? 'bg-emerald-50/70 border border-emerald-200' : 'bg-rose-50/70 border border-rose-200'} space-y-2">
-            <div class="flex items-center justify-between gap-2">
-              <span class="font-bold text-xs ${d.isCorrect ? 'text-emerald-800' : 'text-rose-800'}">
-                Câu ${q.id}: ${d.isCorrect ? '✓ Đúng' : '✗ Sai'}
-              </span>
-              ${d.evidence ? `
-                <button 
-                  type="button" 
-                  class="text-[11px] font-bold text-indigo-700 hover:text-indigo-900 bg-white px-2 py-0.5 rounded border border-indigo-200 shadow-2xs transition"
-                  onclick="scrollToEvidence('${q.id}')"
-                >
-                  🔍 Vị trí trong bài
-                </button>
-              ` : ''}
-            </div>
-
-            <div class="text-xs text-slate-700">
-              <span class="font-bold">Câu trả lời của bạn:</span> ${escapeHtml(d.userAnswer || '(Bỏ trống)')}
-            </div>
-            <div class="text-xs text-slate-900">
-              <span class="font-bold text-emerald-800">Đáp án chính xác:</span> ${q.acceptableAnswers.join(' / ')}
-            </div>
-
-            ${d.explanation ? `
-              <div class="text-xs text-slate-700 pt-1 border-t border-slate-200/60 leading-relaxed font-medium">
-                <span class="font-bold text-indigo-900">Giải thích:</span> ${escapeHtml(d.explanation)}
-              </div>
-            ` : ''}
-
-            ${d.evidence ? `
-              <div class="text-xs text-amber-900 bg-amber-100/60 p-2 rounded border border-amber-200/80 italic">
-                <span class="font-bold not-italic">Dẫn chứng (Evidence):</span> "${escapeHtml(d.evidence)}"
-              </div>
-            ` : ''}
-          </div>
-        `;
-      });
-
-      rEl.readingExplanationsList.innerHTML = expHtml;
+    // Hide separate explanations and bottom vocab section - explanations and vocab are now inline in each question card
+    if (rEl.readingExplanationsSection) {
+      rEl.readingExplanationsSection.classList.add('hidden');
+    }
+    if (rEl.readingVocabSection) {
+      rEl.readingVocabSection.classList.add('hidden');
     }
   }
 
@@ -932,6 +955,14 @@ document.addEventListener('DOMContentLoaded', () => {
   function renderReadingVocab(example) {
     if (!rEl.readingVocabList) return;
 
+    const sub = readingState.submissions[example.id];
+    const isSubmitted = sub && sub.submitted;
+    if (isSubmitted) {
+      // After submission, vocabulary is already inlined in each question card
+      if (rEl.readingVocabSection) rEl.readingVocabSection.classList.add('hidden');
+      return;
+    }
+
     const vocab = example.vocabulary || [];
     if (vocab.length === 0) {
       if (rEl.readingVocabSection) rEl.readingVocabSection.classList.add('hidden');
@@ -945,11 +976,11 @@ document.addEventListener('DOMContentLoaded', () => {
       html += `
         <div class="p-3 rounded-xl bg-white border border-[#ded5c4] shadow-xs">
           <div class="flex items-baseline justify-between gap-1 mb-1">
-            <span class="font-extrabold text-xs sm:text-sm text-indigo-900">${escapeHtml(item.word)}</span>
-            <span class="text-[11px] font-medium text-slate-500 italic">${escapeHtml(item.meaning)}</span>
+            <span class="font-bold text-xs sm:text-sm text-stone-900">${escapeHtml(item.word)}</span>
+            <span class="text-[11px] font-medium text-stone-600 italic">${escapeHtml(item.meaning)}</span>
           </div>
           ${item.example ? `
-            <p class="text-[11px] text-slate-600 italic bg-[#f9f7f2] p-1.5 rounded border border-[#eae4d5]">
+            <p class="text-[11px] text-stone-600 italic bg-[#faf8f4] p-1.5 rounded border border-[#eae4d5]">
               "${escapeHtml(item.example)}"
             </p>
           ` : ''}
