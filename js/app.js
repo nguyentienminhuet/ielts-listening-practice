@@ -1349,6 +1349,100 @@ document.addEventListener('DOMContentLoaded', () => {
     el.scoreBanner.innerHTML = '';
   }
 
+  // Calculate seek time for a highlighted answer in audioscript
+  function getHighlightSeekTime(highlightEl, track, duration) {
+    if (!duration || isNaN(duration) || duration <= 0) {
+      duration = (el.audioElement && !isNaN(el.audioElement.duration) && el.audioElement.duration > 0)
+        ? el.audioElement.duration
+        : 0;
+    }
+    if (!duration || duration <= 0) return 0;
+
+    const qId = highlightEl.getAttribute('data-q');
+    // 1. Direct explicit timestamp attribute or track timestamp mapping
+    if (highlightEl.dataset.time) return Math.max(0, parseFloat(highlightEl.dataset.time));
+    if (highlightEl.dataset.start) return Math.max(0, parseFloat(highlightEl.dataset.start));
+    if (track && track.timestamps && qId && track.timestamps[qId] !== undefined) {
+      return Math.max(0, parseFloat(track.timestamps[qId]));
+    }
+
+    // 2. Dynamic character position in audioscript
+    const script = (track && track.audioscript) ? track.audioscript : '';
+    const plainTotal = script.replace(/<[^>]*>/g, '');
+    if (!plainTotal.length) return 0;
+
+    let charIndex = -1;
+    if (qId) {
+      const re = new RegExp(`<span[^>]*data-q=["']?${qId}["']?[^>]*>`, 'i');
+      const match = re.exec(script);
+      if (match) {
+        charIndex = script.slice(0, match.index).replace(/<[^>]*>/g, '').length;
+      }
+    }
+    if (charIndex === -1) {
+      const text = (highlightEl.textContent || '').trim();
+      if (text) {
+        charIndex = plainTotal.indexOf(text);
+      }
+    }
+    if (charIndex === -1) return 0;
+
+    const ratio = Math.max(0, Math.min(1, charIndex / plainTotal.length));
+
+    // Dynamic start preamble and outro buffer based on track duration
+    let tStart = 0;
+    let tEnd = duration;
+    if (duration < 45) {
+      tStart = Math.min(3, duration * 0.08);
+      tEnd = duration - 1;
+    } else if (duration < 120) {
+      tStart = Math.min(16, duration * 0.15);
+      tEnd = duration - 4;
+    } else {
+      tStart = Math.min(24, duration * 0.12);
+      tEnd = duration - 6;
+    }
+
+    const dialogueDuration = Math.max(5, tEnd - tStart);
+    // Pre-roll buffer: start ~2.2s before the answer word so the speaker's question/context is clearly heard
+    const estTime = Math.max(0, tStart + ratio * dialogueDuration - 2.2);
+    return estTime;
+  }
+
+  // Seek audio to highlighted segment and start playing
+  function seekAndPlayHighlight(highlightEl, track) {
+    if (!el.audioElement) return;
+
+    const performSeek = () => {
+      const dur = el.audioElement.duration || 0;
+      const targetTime = getHighlightSeekTime(highlightEl, track, dur);
+
+      el.audioElement.currentTime = targetTime;
+      const playPromise = el.audioElement.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(err => {
+          console.warn('Playback error or blocked by browser:', err);
+        });
+      }
+      updatePlayPauseUI(true);
+
+      // Immediately update time display and progress bar for responsive feedback
+      if (el.audioCurrentTime) {
+        el.audioCurrentTime.textContent = formatTime(targetTime);
+      }
+      if (el.audioProgress && dur > 0) {
+        el.audioProgress.value = (targetTime / dur) * 100;
+      }
+    };
+
+    if (isNaN(el.audioElement.duration) || el.audioElement.duration === 0) {
+      el.audioElement.addEventListener('loadedmetadata', performSeek, { once: true });
+      el.audioElement.load();
+    } else {
+      performSeek();
+    }
+  }
+
   // Render Audioscript & Review Tab
   function renderTranscript(track) {
     if (!el.transcriptContainer) return;
@@ -1362,9 +1456,15 @@ document.addEventListener('DOMContentLoaded', () => {
       contentHtml = `
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div class="bg-[#fdfbf7] p-5 sm:p-6 rounded-2xl border border-[#e2ddd3] shadow-sm">
-            <div class="flex items-center gap-2 pb-3 mb-4 border-b border-[#e5dfd2] font-bold text-slate-800 text-base">
-              <span class="w-3 h-3 rounded-full bg-blue-600"></span>
-              Audioscript (Tiếng Anh có Highlight Bằng Chứng)
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-[#e5dfd2]">
+              <div class="flex items-center gap-2 font-bold text-slate-800 text-base">
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                Audioscript (Tiếng Anh có Highlight Bằng Chứng)
+              </div>
+              <span class="text-xs font-semibold text-amber-800 bg-amber-50 border border-amber-300 rounded-full px-2.5 py-0.5 inline-flex items-center gap-1.5 shadow-xs">
+                <svg class="w-3.5 h-3.5 text-amber-600 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+                Click vào phần bôi vàng để nghe đoạn đó
+              </span>
             </div>
             <div class="leading-relaxed text-slate-700 space-y-3 font-sans text-base whitespace-pre-line">
               ${enScript}
@@ -1384,9 +1484,15 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       contentHtml = `
         <div class="bg-[#fdfbf7] p-6 sm:p-8 rounded-2xl border border-[#e2ddd3] shadow-sm max-w-3xl mx-auto">
-          <div class="flex items-center gap-2 pb-3 mb-4 border-b border-[#e5dfd2] font-bold text-slate-800 text-base">
-            <span class="w-3 h-3 rounded-full bg-blue-600"></span>
-            Audioscript (Tiếng Anh)
+          <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-[#e5dfd2]">
+            <div class="flex items-center gap-2 font-bold text-slate-800 text-base">
+              <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+              Audioscript (Tiếng Anh)
+            </div>
+            <span class="text-xs font-semibold text-amber-800 bg-amber-50 border border-amber-300 rounded-full px-2.5 py-0.5 inline-flex items-center gap-1.5 shadow-xs">
+              <svg class="w-3.5 h-3.5 text-amber-600 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+              Click vào phần bôi vàng để nghe đoạn đó
+            </span>
           </div>
           <div class="leading-relaxed text-slate-700 space-y-3 font-sans text-base whitespace-pre-line">
             ${enScript}
@@ -1397,12 +1503,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     el.transcriptContainer.innerHTML = contentHtml;
 
-    // Attach click event to highlighted answers so they pulse and show tooltip
+    // Attach click event to highlighted answers so they seek audio, play, and pulse
     const highlights = el.transcriptContainer.querySelectorAll('.highlight-answer');
     highlights.forEach(h => {
+      const qNum = h.getAttribute('data-q') || '';
+      h.setAttribute('title', `Click để nghe đoạn này${qNum ? ' (Câu ' + qNum + ')' : ''}`);
+
       h.addEventListener('click', () => {
-        h.classList.add('target-pulse');
-        setTimeout(() => h.classList.remove('target-pulse'), 4500);
+        highlights.forEach(item => item.classList.remove('playing-now', 'target-pulse'));
+        h.classList.add('playing-now', 'target-pulse');
+        setTimeout(() => h.classList.remove('target-pulse'), 3000);
+
+        seekAndPlayHighlight(h, track);
       });
     });
   }
